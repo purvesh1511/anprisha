@@ -1,6 +1,8 @@
 <?php
-$page_title = "Our Team";
 require_once 'includes/config.php';
+$page_title = "Our Team";
+$page_description = "Meet the Anprix team of developers, designers, SEO experts, and marketing specialists creating premium digital experiences for businesses.";
+$canonical_url = SITE_URL . '/team';
 require_once 'includes/header.php';
 ?>
 <?php
@@ -168,8 +170,8 @@ $team_members = [
                 <div class="relative overflow-hidden">
 
                     <img src="<?php echo $image; ?>"
-                        class="w-full h-[260px sm:h-[300px] md:h-[340px] object-cover transition-transform duration-500 group-hover:scale-110"
-                        alt="<?php echo $name; ?>" loading="lazy">
+                        class="w-full h-[260px] sm:h-[300px] md:h-[340px] object-cover transition-transform duration-500 group-hover:scale-110"
+                        alt="<?php echo $name; ?>">
 
                     <!-- OVERLAY -->
                     <div

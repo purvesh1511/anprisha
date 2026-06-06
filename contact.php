@@ -1,6 +1,8 @@
 <?php
-$page_title = "Contact Us";
 require_once 'includes/config.php';
+$page_title = "Contact Us";
+$page_description = "Get in touch with Anprix for web development, SEO, advertising, and digital marketing solutions. Contact our team today for a free consultation.";
+$canonical_url = SITE_URL . '/contact';
 require_once 'includes/header.php';
 ?>
 

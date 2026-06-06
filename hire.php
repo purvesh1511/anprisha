@@ -1,6 +1,8 @@
 <?php
-$page_title = "Hire Us";
 require_once 'includes/config.php';
+$page_title = "Hire Us";
+$page_description = "Hire Anprix for website development, SEO, Shopify, Google Ads, and digital marketing services. Fill out the form and our team will contact you within 24 hours.";
+$canonical_url = SITE_URL . '/hire';
 require_once 'includes/header.php';
 ?>
 
@@ -277,27 +279,27 @@ require_once 'includes/header.php';
 
                     <div class="flex flex-wrap gap-3 sm:gap-4">
 
-                        <a href="<?php echo SOCIAL_FACEBOOK; ?>" target="_blank"
+                        <a href="<?php echo SOCIAL_FACEBOOK; ?>" target="_blank" rel="noopener noreferrer"
                            class="w-10 sm:w-12 h-10 sm:h-12 rounded-full bg-white/10 flex items-center justify-center hover:text-[#00ffb3] transition">
                             <i class="fab fa-facebook-f"></i>
                         </a>
 
-                        <a href="<?php echo SOCIAL_TWITTER; ?>" target="_blank"
+                        <a href="<?php echo SOCIAL_TWITTER; ?>" target="_blank" rel="noopener noreferrer"
                            class="w-10 sm:w-12 h-10 sm:h-12 rounded-full bg-white/10 flex items-center justify-center hover:text-[#00b7ff] transition">
                             <i class="fa-brands fa-x-twitter"></i>
                         </a>
 
-                        <a href="<?php echo SOCIAL_LINKEDIN; ?>" target="_blank"
+                        <a href="<?php echo SOCIAL_LINKEDIN; ?>" target="_blank" rel="noopener noreferrer"
                            class="w-10 sm:w-12 h-10 sm:h-12 rounded-full bg-white/10 flex items-center justify-center hover:text-[#00ffb3] transition">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
 
-                        <a href="<?php echo SOCIAL_INSTAGRAM; ?>" target="_blank"
+                        <a href="<?php echo SOCIAL_INSTAGRAM; ?>" target="_blank" rel="noopener noreferrer"
                            class="w-10 sm:w-12 h-10 sm:h-12 rounded-full bg-white/10 flex items-center justify-center hover:text-[#00ffb3] transition">
                             <i class="fab fa-instagram"></i>
                         </a>
 
-                        <a href="<?php echo SOCIAL_GITHUB; ?>" target="_blank"
+                        <a href="<?php echo SOCIAL_GITHUB; ?>" target="_blank" rel="noopener noreferrer"
                            class="w-10 sm:w-12 h-10 sm:h-12 rounded-full bg-white/10 flex items-center justify-center hover:text-white transition">
                             <i class="fab fa-github"></i>
                         </a>
@@ -421,5 +423,35 @@ require_once 'includes/header.php';
 
     </div>
 </section>
+
+<!-- FAQ Schema -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"How quickly can you start my project?",
+      "acceptedAnswer":{"@type":"Answer","text":"We typically begin projects within 3-5 business days after contract signing and initial deposit."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do you offer ongoing support?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes! We offer monthly maintenance packages and ongoing support for all our clients."}
+    },
+    {
+      "@type":"Question",
+      "name":"What is your pricing model?",
+      "acceptedAnswer":{"@type":"Answer","text":"We offer fixed-price packages and custom quotes based on your specific project requirements."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do you sign NDAs?",
+      "acceptedAnswer":{"@type":"Answer","text":"Absolutely. We're happy to sign NDAs to protect your confidential information and ideas."}
+    }
+  ]
+}
+</script>
 
 <?php require_once 'includes/footer.php'; ?>

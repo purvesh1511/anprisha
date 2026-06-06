@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://anprix.com/sitemap.xml

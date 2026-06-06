@@ -12,19 +12,19 @@
                 </p>
                 <!-- Social Links -->
                 <div class="flex gap-3">
-                    <a href="#"
+                    <a href="<?= SOCIAL_FACEBOOK; ?>" target="_blank" rel="noopener noreferrer"
                         class="social-footer w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#00ffb3] hover:text-black transition-all duration-300">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a href="#"
+                    <a href="<?= SOCIAL_TWITTER; ?>" target="_blank" rel="noopener noreferrer"
                         class="social-footer w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#00ffb3] hover:text-black transition-all duration-300">
                         <i class="fab fa-twitter"></i>
                     </a>
-                    <a href="#"
+                    <a href="<?= SOCIAL_LINKEDIN; ?>" target="_blank" rel="noopener noreferrer"
                         class="social-footer w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#00ffb3] hover:text-black transition-all duration-300">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="#"
+                    <a href="<?= SOCIAL_INSTAGRAM; ?>" target="_blank" rel="noopener noreferrer"
                         class="social-footer w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#00ffb3] hover:text-black transition-all duration-300">
                         <i class="fab fa-instagram"></i>
                     </a>
@@ -36,49 +36,43 @@
                 <h4 class="text-xl font-bold mb-5">Services</h4>
                 <ul class="space-y-3 text-gray-500">
                     <li>
-                        <a href="services.php"
+                        <a href="website-development.php"
                         class="hover:text-[#00ffb3] transition">
                             Website Development
                         </a>
                     </li>
                     <li>
-                        <a href="services.php"
+                        <a href="seo.php"
                         class="hover:text-[#00ffb3] transition">
                             SEO Optimization
                         </a>
                     </li>
                     <li>
-                        <a href="services.php"
+                        <a href="advertising.php"
                         class="hover:text-[#00ffb3] transition">
                             Advertising Services
                         </a>
                     </li>
                     <li>
-                        <a href="services.php"
+                        <a href="digital-marketing.php"
                         class="hover:text-[#00ffb3] transition">
                             Digital Marketing
                         </a>
                     </li>
                     <li>
-                        <a href="services.php"
-                        class="hover:text-[#00ffb3] transition">
-                            Shopify Development
-                        </a>
-                    </li>
-                    <li>
-                        <a href="services.php"
+                        <a href="cms.php"
                         class="hover:text-[#00ffb3] transition">
                             CMS Development
                         </a>
                     </li>
                     <li>
-                        <a href="services.php"
+                        <a href="advertising.php"
                         class="hover:text-[#00ffb3] transition">
                             Google Ads
                         </a>
                     </li>
                     <li>
-                        <a href="services.php"
+                        <a href="branding-creative.php"
                         class="hover:text-[#00ffb3] transition">
                             Branding & Creative Services
                         </a>

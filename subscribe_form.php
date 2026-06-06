@@ -3,15 +3,34 @@
 header('Content-Type: application/json');
 
 require_once 'includes/config.php';
+require_once 'includes/security.php';
 require 'vendor/autoload.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception as MailException;
 
+$ip = client_ip();
+
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     echo json_encode([
         'status' => 'error',
         'message' => 'Invalid request method'
+    ]);
+    exit;
+}
+
+if (!csrf_check()) {
+    echo json_encode([
+        'status' => 'error',
+        'message' => 'Invalid request token. Please refresh and try again.'
+    ]);
+    exit;
+}
+
+if (!rate_limit_hit('subscribe:' . $ip, 3, 600)) {
+    echo json_encode([
+        'status' => 'error',
+        'message' => 'Too many attempts. Please try again later.'
     ]);
     exit;
 }
@@ -56,8 +75,6 @@ try {
         exit;
     }
 
-    $ip = $_SERVER['REMOTE_ADDR'];
-
     // Insert
     $stmt = $conn->prepare("
         INSERT INTO newsletter_subscribers (email, ip_address)
@@ -82,7 +99,7 @@ try {
     $mail->Port       = MAIL_PORT;
 
     $mail->setFrom(MAIL_USERNAME, SITE_NAME);
-    $mail->addAddress(ADMIN_EMAIL);
+    $mail->addAddress(admin_email());
     $mail->addReplyTo($email);
 
     $mail->isHTML(true);
@@ -90,11 +107,13 @@ try {
 
     $mail->Subject = 'New Newsletter Subscription - ' . SITE_NAME;
 
+    $safeIp = htmlspecialchars($ip, ENT_QUOTES, 'UTF-8');
+
     $mail->Body = "
         <h2>New Newsletter Subscription</h2>
-        <p><strong>Email:</strong> {$email}</p>
+        <p><strong>Email:</strong> " . htmlspecialchars($email) . "</p>
         <p><strong>Date:</strong> " . date('Y-m-d H:i:s') . "</p>
-        <p><strong>IP:</strong> {$ip}</p>
+        <p><strong>IP:</strong> {$safeIp}</p>
     ";
 
     $mail->send();
@@ -108,18 +127,18 @@ try {
     exit;
 
 } catch (MailException $e) {
-
+    error_log('[subscribe] mail: ' . $e->getMessage());
     echo json_encode([
         'status' => 'error',
-        'message' => 'Mail error: ' . $e->getMessage()
+        'message' => 'We could not subscribe you right now. Please try again shortly.'
     ]);
     exit;
 
 } catch (Exception $e) {
-
+    error_log('[subscribe] ' . $e->getMessage());
     echo json_encode([
         'status' => 'error',
-        'message' => $e->getMessage()
+        'message' => 'We could not subscribe you right now. Please try again shortly.'
     ]);
     exit;
 }

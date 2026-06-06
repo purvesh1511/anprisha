@@ -1,6 +1,8 @@
 <?php
-$page_title = "Portfolio";
 require_once 'includes/config.php';
+$page_title = "Portfolio";
+$page_description = "Explore our portfolio of website development, Shopify stores, SEO optimization, branding, and digital marketing projects delivered for modern businesses.";
+$canonical_url = SITE_URL . '/portfolio';
 require_once 'includes/header.php';
 ?>
 <?php
@@ -195,7 +197,7 @@ $portfolio_items = [
             <button
                 class="category-btn px-5 py-2.5 rounded-full text-sm md:text-base transition border border-white/10 hover:border-[#00b7ff]"
                 data-filter="shopify">
-                CMS
+                Shopify
             </button>
 
             <button

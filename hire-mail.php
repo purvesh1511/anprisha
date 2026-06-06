@@ -3,20 +3,34 @@
 header('Content-Type: application/json');
 
 require_once 'includes/config.php';
+require_once 'includes/security.php';
 require 'vendor/autoload.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-$response = [
-    'status' => 'error',
-    'message' => 'Something went wrong.'
-];
+$ip = client_ip();
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     echo json_encode([
         'status' => 'error',
         'message' => 'Invalid request method.'
+    ]);
+    exit;
+}
+
+if (!csrf_check()) {
+    echo json_encode([
+        'status' => 'error',
+        'message' => 'Invalid request token. Please refresh and try again.'
+    ]);
+    exit;
+}
+
+if (!rate_limit_hit('hire:' . $ip, 5, 600)) {
+    echo json_encode([
+        'status' => 'error',
+        'message' => 'Too many submissions. Please try again later.'
     ]);
     exit;
 }
@@ -29,6 +43,20 @@ $budget    = trim($_POST['budget'] ?? '');
 $service   = trim($_POST['service'] ?? '');
 $timeline  = trim($_POST['timeline'] ?? '');
 $details   = trim($_POST['details'] ?? '');
+$formType  = trim($_POST['form_type'] ?? 'hire');
+
+// Whitelist of services — keeps DB and emails consistent regardless of
+// which form (hire.php or index.php) the user came from.
+$allowedServices = [
+    'Digital Marketing',
+    'Advertising Services',
+    'Website Development',
+    'Software Development',
+    'Branding & Creative Services',
+];
+if ($service !== '' && !in_array($service, $allowedServices, true)) {
+    $service = '';
+}
 
 // VALIDATION
 if (empty($name)) {
@@ -60,17 +88,15 @@ try {
         throw new Exception('Database connection failed.');
     }
 
-    $ip = $_SERVER['REMOTE_ADDR'];
-
     // INSERT INTO DATABASE
     $stmt = $conn->prepare("
         INSERT INTO hire_requests
-        (name, email, phone, budget, service, timeline, details, ip_address)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+        (name, email, phone, budget, service, timeline, details, ip_address, form_type)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
     ");
 
     $stmt->bind_param(
-        "ssssssss",
+        "sssssssss",
         $name,
         $email,
         $phone,
@@ -78,7 +104,8 @@ try {
         $service,
         $timeline,
         $details,
-        $ip
+        $ip,
+        $formType
     );
 
     if (!$stmt->execute()) {
@@ -99,13 +126,15 @@ try {
     $mail->Port       = MAIL_PORT;
 
     $mail->setFrom(MAIL_USERNAME, SITE_NAME);
-    $mail->addAddress(ADMIN_EMAIL);
+    $mail->addAddress(admin_email());
     $mail->addReplyTo($email, $name);
 
     $mail->isHTML(true);
     $mail->CharSet = 'UTF-8';
 
-    $mail->Subject = '🚀 New Hire Request - ' . SITE_NAME;
+    $mail->Subject = 'New Hire Request - ' . SITE_NAME;
+
+    $safeIp = htmlspecialchars($ip, ENT_QUOTES, 'UTF-8');
 
     // ==========================
     // EMAIL TEMPLATE
@@ -118,8 +147,8 @@ try {
 
             <!-- HEADER -->
             <div style="background:linear-gradient(135deg,#111827,#1f2937);padding:25px;text-align:center;color:#fff;">
-                <h1 style="margin:0;font-size:22px;">🚀 New Hire Request</h1>
-                <p style="margin:5px 0 0;font-size:13px;opacity:0.8;">' . SITE_NAME . '</p>
+                <h1 style="margin:0;font-size:22px;">New Hire Request</h1>
+                <p style="margin:5px 0 0;font-size:13px;opacity:0.8;">' . htmlspecialchars(SITE_NAME) . '</p>
             </div>
 
             <!-- CONTENT -->
@@ -169,7 +198,7 @@ try {
 
                 <!-- FOOTER INFO -->
                 <div style="margin-top:25px;font-size:13px;color:#6b7280;">
-                    <p><strong>IP Address:</strong> ' . $ip . '</p>
+                    <p><strong>IP Address:</strong> ' . $safeIp . '</p>
                     <p><strong>Date:</strong> ' . date('Y-m-d H:i:s') . '</p>
                 </div>
 
@@ -197,10 +226,10 @@ try {
     exit;
 
 } catch (Exception $e) {
-
+    error_log('[hire-mail] ' . $e->getMessage());
     echo json_encode([
         'status' => 'error',
-        'message' => $e->getMessage()
+        'message' => 'We could not submit your request right now. Please try again shortly.'
     ]);
     exit;
 }

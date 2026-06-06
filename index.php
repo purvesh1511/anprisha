@@ -1,6 +1,8 @@
 <?php
-$page_title = "Home";
 require_once 'includes/config.php';
+$page_title = "Home";
+$page_description = "Anprix Solutions is a leading website design and development company in Ahmedabad, India, delivering custom websites, eCommerce solutions, and SEO-optimized web development services.";
+$canonical_url = SITE_URL;
 require_once 'includes/header.php';
 
 $testimonials = [
@@ -34,9 +36,6 @@ $testimonials = [
 ];
 
 ?>
-
-<!-- HERO SECTION -->
-<!-- HERO SECTION -->
 
 <!-- HERO SECTION -->
 
@@ -263,29 +262,11 @@ $testimonials = [
         </div>
 
         <!-- SERVICES GRID -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-
-            <!-- WEB DESIGN -->
-            <div
-                class="service-card glass-card rounded-[24px] md:rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1">
-
-                <div class="text-4xl md:text-5xl mb-5 md:mb-6 text-[#00ffb3]">
-                    <i class="fas fa-pen-ruler"></i>
-                </div>
-
-                <h3 class="text-xl md:text-2xl font-bold mb-4">
-                    Web Design
-                </h3>
-
-                <p class="text-gray-400 leading-7 md:leading-8 text-sm md:text-base">
-                    Modern UI/UX designs focused on usability, branding, and conversion-driven layouts.
-                </p>
-
-            </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6 md:gap-8">
 
             <!-- WEBSITE DEVELOPMENT -->
-            <div
-                class="service-card glass-card rounded-[24px] md:rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 hover:-translate-y-1">
+            <a href="website-development.php"
+                class="service-card glass-card rounded-[24px] md:rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 hover:-translate-y-1 block">
 
                 <div class="text-4xl md:text-5xl mb-5 md:mb-6 text-[#00b7ff]">
                     <i class="fas fa-laptop-code"></i>
@@ -299,11 +280,29 @@ $testimonials = [
                     Laravel, WordPress, Shopify, and custom web applications built for performance.
                 </p>
 
+            </a>
+
+            <!-- CMS DEVELOPMENT -->
+            <div
+                class="service-card glass-card rounded-[24px] md:rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1">
+
+                <div class="text-4xl md:text-5xl mb-5 md:mb-6 text-[#00ffb3]">
+                    <i class="fab fa-wordpress"></i>
+                </div>
+
+                <h3 class="text-xl md:text-2xl font-bold mb-4">
+                    <a href="cms.php" class="hover:text-[#00ffb3] transition">CMS Development</a>
+                </h3>
+
+                <p class="text-gray-400 leading-7 md:leading-8 text-sm md:text-base">
+                    WordPress, Shopify, and custom CMS platforms for easy content management and growth.
+                </p>
+
             </div>
 
             <!-- SEO SERVICES -->
-            <div
-                class="service-card glass-card rounded-[24px] md:rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1">
+            <a href="seo.php"
+                class="service-card glass-card rounded-[24px] md:rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1 block">
 
                 <div class="text-4xl md:text-5xl mb-5 md:mb-6 text-[#00ffb3]">
                     <i class="fas fa-chart-line"></i>
@@ -317,11 +316,11 @@ $testimonials = [
                     Technical SEO, keyword ranking, backlinks, and local search optimization.
                 </p>
 
-            </div>
+            </a>
 
             <!-- DIGITAL MARKETING -->
-            <div
-                class="service-card glass-card rounded-[24px] md:rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 hover:-translate-y-1">
+            <a href="digital-marketing.php"
+                class="service-card glass-card rounded-[24px] md:rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 hover:-translate-y-1 block">
 
                 <div class="text-4xl md:text-5xl mb-5 md:mb-6 text-[#00b7ff]">
                     <i class="fas fa-bullhorn"></i>
@@ -335,7 +334,43 @@ $testimonials = [
                     Social media growth, branding, funnels, and online marketing strategies.
                 </p>
 
-            </div>
+            </a>
+
+            <!-- ADVERTISING -->
+            <a href="advertising.php"
+                class="service-card glass-card rounded-[24px] md:rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1 block">
+
+                <div class="text-4xl md:text-5xl mb-5 md:mb-6 text-[#00b7ff]">
+                    <i class="fas fa-bullhorn"></i>
+                </div>
+
+                <h3 class="text-xl md:text-2xl font-bold mb-4">
+                    Advertising
+                </h3>
+
+                <p class="text-gray-400 leading-7 md:leading-8 text-sm md:text-base">
+                    Google Ads, social media ads, retargeting, and data-driven ad campaigns.
+                </p>
+
+            </a>
+
+            <!-- BRANDING & CREATIVE -->
+            <a href="branding-creative.php"
+                class="service-card glass-card rounded-[24px] md:rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1 block">
+
+                <div class="text-4xl md:text-5xl mb-5 md:mb-6 text-[#00ffb3]">
+                    <i class="fas fa-palette"></i>
+                </div>
+
+                <h3 class="text-xl md:text-2xl font-bold mb-4">
+                    Branding & Creative
+                </h3>
+
+                <p class="text-gray-400 leading-7 md:leading-8 text-sm md:text-base">
+                    Logo design, brand identity, visual storytelling, and creative strategy.
+                </p>
+
+            </a>
 
         </div>
 

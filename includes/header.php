@@ -4,37 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO -->
-    <title>
-        <?= isset($page_title)
-            ? $page_title . ' | Best Digital Marketing Agency in Ahmedabad, India'
-            : 'Best Digital Marketing Agency in Ahmedabad, India'; ?>
-    </title>
+    <?php
+    $page_title_full = (isset($page_title) ? $page_title . ' | ' : '') . 'Best Digital Marketing Agency in Ahmedabad, India';
+    $page_desc = $page_description ?? SITE_DESCRIPTION;
+    $canonical_url = $canonical_url ?? SITE_URL;
+    $og_image = SITE_OG_IMAGE;
+    ?>
 
-    <meta name="description"
-        content="Anprix Solutions is a digital marketing agency in Ahmedabad offering SEO, Google Ads, social media marketing, website development, Shopify solutions, and growth-focused digital marketing services.">
-
-    <meta name="keywords"
-        content="digital marketing agency, digital marketing advertising agency, digital marketing services, digital marketing agency near me, digital marketing company, SEO services Ahmedabad, Google Ads agency Ahmedabad, social media marketing Ahmedabad">
-
+    <title><?= htmlspecialchars($page_title_full) ?></title>
+    <meta name="description" content="<?= htmlspecialchars($page_desc) ?>">
+    <meta name="keywords" content="digital marketing agency, digital marketing advertising agency, digital marketing services, digital marketing agency near me, digital marketing company, SEO services Ahmedabad, Google Ads agency Ahmedabad, social media marketing Ahmedabad">
     <meta name="author" content="Anprix Solutions">
+    <meta name="robots" content="index, follow">
 
     <!-- Canonical -->
-    <link rel="canonical" href="<?= SITE_URL; ?>">
+    <link rel="canonical" href="<?= htmlspecialchars($canonical_url) ?>">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Best Digital Marketing Agency in Ahmedabad, India">
-    <meta property="og:description"
-        content="Grow your business with SEO, Google Ads, social media marketing, website development and digital marketing services.">
-    <meta property="og:url" content="<?= SITE_URL; ?>">
-    <meta property="og:site_name" content="<?= SITE_NAME; ?>">
+    <meta property="og:title" content="<?= htmlspecialchars($page_title_full) ?>">
+    <meta property="og:description" content="<?= htmlspecialchars($page_desc) ?>">
+    <meta property="og:url" content="<?= htmlspecialchars($canonical_url) ?>">
+    <meta property="og:site_name" content="<?= htmlspecialchars(SITE_NAME) ?>">
+    <meta property="og:image" content="<?= htmlspecialchars($og_image) ?>">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Best Digital Marketing Agency in Ahmedabad, India">
-    <meta name="twitter:description"
-        content="Digital marketing services, SEO, Google Ads and website development for business growth.">
+    <meta name="twitter:title" content="<?= htmlspecialchars($page_title_full) ?>">
+    <meta name="twitter:description" content="<?= htmlspecialchars($page_desc) ?>">
+    <meta name="twitter:image" content="<?= htmlspecialchars($og_image) ?>">
+    <meta name="twitter:site" content="<?= htmlspecialchars(SITE_TWITTER_HANDLE) ?>">
+
+    <!-- Icons -->
+    <link rel="icon" type="image/png" href="<?= SITE_URL ?>/assets/images/anprix-logo.png">
+    <link rel="apple-touch-icon" href="<?= SITE_URL ?>/assets/images/anprix-logo.png">
+    <meta name="theme-color" content="#050505">
 
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -56,20 +62,68 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 
-    <!-- Local Business Schema -->
+    <!-- Schemas -->
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"Organization",
+      "name":"Anprix Solutions",
+      "url":"<?= SITE_URL; ?>",
+      "logo":"<?= SITE_URL; ?>/assets/images/anprix-logo.png",
+      "description":"<?= SITE_DESCRIPTION; ?>",
+      "email":"<?= SITE_EMAIL; ?>",
+      "telephone":"<?= SITE_PHONE; ?>",
+      "address":{
+        "@type":"PostalAddress",
+        "addressLocality":"Gandhinagar",
+        "addressRegion":"Gujarat",
+        "addressCountry":"IN"
+      },
+      "sameAs":[
+        "<?= SOCIAL_FACEBOOK; ?>",
+        "<?= SOCIAL_TWITTER; ?>",
+        "<?= SOCIAL_LINKEDIN; ?>",
+        "<?= SOCIAL_INSTAGRAM; ?>"
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"WebSite",
+      "name":"Anprix Solutions",
+      "url":"<?= SITE_URL; ?>",
+      "description":"<?= SITE_DESCRIPTION; ?>"
+    }
+    </script>
+
     <script type="application/ld+json">
     {
       "@context":"https://schema.org",
       "@type":"LocalBusiness",
       "name":"Anprix Solutions",
       "url":"<?= SITE_URL; ?>",
-      "description":"Digital Marketing Agency in Ahmedabad providing SEO, Google Ads, Social Media Marketing, Website Development and Shopify Solutions.",
+      "image":"<?= SITE_URL; ?>/assets/images/anprix-logo.png",
+      "description":"<?= SITE_DESCRIPTION; ?>",
+      "email":"<?= SITE_EMAIL; ?>",
+      "telephone":"<?= SITE_PHONE; ?>",
       "address":{
         "@type":"PostalAddress",
-        "addressLocality":"Ahmedabad",
+        "streetAddress":"21 Info city",
+        "addressLocality":"Gandhinagar",
         "addressRegion":"Gujarat",
+        "postalCode":"382421",
         "addressCountry":"IN"
-      }
+      },
+      "openingHoursSpecification":[
+        {"@type":"OpeningHoursSpecification","dayOfWeek":"Monday","opens":"09:00","closes":"18:00"},
+        {"@type":"OpeningHoursSpecification","dayOfWeek":"Tuesday","opens":"09:00","closes":"18:00"},
+        {"@type":"OpeningHoursSpecification","dayOfWeek":"Wednesday","opens":"09:00","closes":"18:00"},
+        {"@type":"OpeningHoursSpecification","dayOfWeek":"Thursday","opens":"09:00","closes":"18:00"},
+        {"@type":"OpeningHoursSpecification","dayOfWeek":"Friday","opens":"09:00","closes":"18:00"},
+        {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"16:00"}
+      ]
     }
     </script>
 
@@ -92,7 +146,7 @@
         </div>
 
         <!-- DESKTOP MENU -->
-        <nav class="hidden md:flex items-center gap-10 text-gray-300 font-medium">
+        <nav class="hidden md:flex items-center gap-6 lg:gap-10 text-gray-300 font-medium">
 
             <a href="index.php"
                class="hover:text-[#00ffb3] transition <?php echo basename($_SERVER['PHP_SELF']) == 'index.php' ? 'text-[#00ffb3]' : ''; ?>">

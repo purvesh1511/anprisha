@@ -1,0 +1,519 @@
+<?php
+require_once 'includes/config.php';
+$page_title = "CMS & eCommerce Development";
+$page_description = "Anprix offers CMS development across WordPress, Shopify, and custom platforms plus eCommerce solutions including WooCommerce and Shopify stores.";
+$canonical_url = SITE_URL . '/cms';
+require_once 'includes/header.php';
+?>
+
+<!-- HERO -->
+<section class="py-24 sm:py-28 lg:py-32 relative overflow-hidden">
+
+    <div class="absolute top-[-80px] sm:top-0 left-[-120px] w-72 sm:w-80 md:w-96 h-72 sm:h-80 md:h-96 bg-[#00ffb3]/10 blur-[120px] md:blur-[150px] rounded-full">
+    </div>
+
+    <div class="absolute bottom-[-80px] sm:bottom-0 right-[-120px] w-72 sm:w-80 md:w-96 h-72 sm:h-80 md:h-96 bg-[#00b7ff]/10 blur-[120px] md:blur-[150px] rounded-full">
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+
+        <div class="max-w-4xl">
+
+            <p class="uppercase tracking-[4px] md:tracking-[5px] text-[#00ffb3] font-semibold mb-5 md:mb-6 text-xs sm:text-sm">
+                CMS & eCommerce
+            </p>
+
+            <h1 class="text-4xl sm:text-5xl lg:text-7xl font-black leading-tight lg:leading-[1.05] mb-8 md:mb-10">
+
+                <span class="green-text block sm:inline">
+                    CMS & eCommerce
+                </span>
+
+                Solutions For Your Business
+
+            </h1>
+
+            <p class="text-base sm:text-lg md:text-xl text-gray-400 leading-8 md:leading-10 max-w-3xl">
+
+                Anprix specializes in WordPress, Shopify, WooCommerce, and custom CMS
+                development to help you manage content and sell online with ease.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SERVICES DETAIL -->
+<section class="py-16 md:py-24 section-border overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 space-y-20 md:space-y-32">
+
+        <!-- ========================= -->
+        <!-- CMS SERVICE 1: WordPress -->
+        <!-- ========================= -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+
+            <div class="space-y-6">
+                <p class="green-text uppercase tracking-[4px] font-semibold text-sm">
+                    WordPress Development
+                </p>
+
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
+                    Custom WordPress <span class="green-text">Websites</span>
+                </h2>
+
+                <p class="text-gray-400 text-base md:text-lg leading-8 md:leading-9">
+                    We build fast, secure, and scalable WordPress websites with custom themes,
+                    plugins, and optimized performance for businesses of all sizes.
+                </p>
+
+                <div class="space-y-5">
+
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3]">
+                            <i class="fab fa-wordpress"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Custom Theme Development</h4>
+                            <p class="text-gray-500 text-sm">Tailor-made designs that match your brand</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff]">
+                            <i class="fas fa-plug"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Plugin Integration</h4>
+                            <p class="text-gray-500 text-sm">WooCommerce, SEO, forms, and more</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3]">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Performance Optimization</h4>
+                            <p class="text-gray-500 text-sm">Speed, caching, and SEO optimized</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="glass-card rounded-3xl p-6 md:p-10 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
+
+                <div class="bg-black/40 rounded-2xl p-6 md:p-8">
+                    <i class="fab fa-wordpress text-3xl mb-4 text-[#00ffb3]"></i>
+                    <h3 class="font-bold text-lg">WordPress</h3>
+                    <p class="text-gray-500 text-sm">Custom themes & plugins</p>
+                </div>
+
+                <div class="bg-black/40 rounded-2xl p-6 md:p-8">
+                    <i class="fas fa-shopping-cart text-3xl mb-4 text-[#00b7ff]"></i>
+                    <h3 class="font-bold text-lg">WooCommerce</h3>
+                    <p class="text-gray-500 text-sm">eCommerce stores</p>
+                </div>
+
+                <div class="bg-black/40 rounded-2xl p-6 md:p-8">
+                    <i class="fas fa-bolt text-3xl mb-4 text-[#00ffb3]"></i>
+                    <h3 class="font-bold text-lg">Performance</h3>
+                    <p class="text-gray-500 text-sm">Fast loading speed</p>
+                </div>
+
+                <div class="bg-black/40 rounded-2xl p-6 md:p-8">
+                    <i class="fas fa-shield-alt text-3xl mb-4 text-[#00b7ff]"></i>
+                    <h3 class="font-bold text-lg">Security</h3>
+                    <p class="text-gray-500 text-sm">Hardened & protected</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ========================= -->
+        <!-- CMS SERVICE 2: Shopify -->
+        <!-- ========================= -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+
+            <div class="glass-card rounded-3xl p-6 md:p-10 space-y-5 order-2 lg:order-1">
+
+                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
+                    <i class="fab fa-shopify text-[#00ffb3] text-2xl"></i>
+                    <div>
+                        <h3 class="font-bold text-lg">Custom Shopify Stores</h3>
+                        <p class="text-gray-500 text-sm">Premium theme development</p>
+                    </div>
+                </div>
+
+                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
+                    <i class="fas fa-credit-card text-[#00b7ff] text-2xl"></i>
+                    <div>
+                        <h3 class="font-bold text-lg">Payment Integration</h3>
+                        <p class="text-gray-500 text-sm">Multiple gateways supported</p>
+                    </div>
+                </div>
+
+                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
+                    <i class="fas fa-chart-line text-[#00ffb3] text-2xl"></i>
+                    <div>
+                        <h3 class="font-bold text-lg">SEO & Marketing</h3>
+                        <p class="text-gray-500 text-sm">Built-in conversion optimization</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="space-y-6 order-1 lg:order-2">
+
+                <p class="green-text uppercase tracking-[4px] font-semibold text-sm">
+                    Shopify Development
+                </p>
+
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black">
+                    Scale Your <span class="green-text">eCommerce</span> Store
+                </h2>
+
+                <p class="text-gray-400 text-base md:text-lg">
+                    Launch and grow your online store with custom Shopify development,
+                    theme customization, and powerful app integrations.
+                </p>
+
+                <a href="hire.php" class="btn-primary inline-block w-full sm:w-auto px-6 py-4 rounded-2xl text-center">
+                    Start Your Store
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- ========================= -->
+        <!-- CMS SERVICE 3: eCommerce -->
+        <!-- ========================= -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+
+            <div class="space-y-6">
+                <p class="green-text uppercase tracking-[4px] font-semibold text-sm">
+                    eCommerce Development
+                </p>
+
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
+                    Sell More With <span class="green-text">Online Stores</span>
+                </h2>
+
+                <p class="text-gray-400 text-base md:text-lg leading-8 md:leading-9">
+                    Launch high-converting eCommerce stores on Shopify, WooCommerce, or custom
+                    platforms built to maximize sales and scale your business.
+                </p>
+
+                <div class="space-y-5">
+
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3]">
+                            <i class="fab fa-shopify"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Shopify Stores</h4>
+                            <p class="text-gray-500 text-sm">Custom themes, apps & checkout optimization</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff]">
+                            <i class="fab fa-wordpress"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">WooCommerce</h4>
+                            <p class="text-gray-500 text-sm">WordPress-powered eCommerce solutions</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3]">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Payment & Shipping</h4>
+                            <p class="text-gray-500 text-sm">Secure gateways, tax & shipping automation</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="glass-card rounded-3xl p-6 md:p-10 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
+
+                <div class="bg-black/40 rounded-2xl p-6 md:p-8">
+                    <i class="fab fa-shopify text-3xl mb-4 text-[#00ffb3]"></i>
+                    <h3 class="font-bold text-lg">Shopify</h3>
+                    <p class="text-gray-500 text-sm">Premium eCommerce</p>
+                </div>
+
+                <div class="bg-black/40 rounded-2xl p-6 md:p-8">
+                    <i class="fas fa-shopping-cart text-3xl mb-4 text-[#00b7ff]"></i>
+                    <h3 class="font-bold text-lg">WooCommerce</h3>
+                    <p class="text-gray-500 text-sm">WordPress eCommerce</p>
+                </div>
+
+                <div class="bg-black/40 rounded-2xl p-6 md:p-8">
+                    <i class="fas fa-chart-line text-3xl mb-4 text-[#00ffb3]"></i>
+                    <h3 class="font-bold text-lg">Conversion</h3>
+                    <p class="text-gray-500 text-sm">Optimized for sales</p>
+                </div>
+
+                <div class="bg-black/40 rounded-2xl p-6 md:p-8">
+                    <i class="fas fa-mobile-alt text-3xl mb-4 text-[#00b7ff]"></i>
+                    <h3 class="font-bold text-lg">Mobile Ready</h3>
+                    <p class="text-gray-500 text-sm">Shopping on any device</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ========================= -->
+        <!-- CMS SERVICE 4: Custom CMS -->
+        <!-- ========================= -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+
+            <div class="space-y-6">
+
+                <p class="green-text uppercase tracking-[4px] font-semibold text-sm">
+                    Custom CMS Development
+                </p>
+
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black">
+                    Built For Your <span class="green-text">Unique Needs</span>
+                </h2>
+
+                <p class="text-gray-400">
+                    Tailor-made content management systems built from the ground up
+                    for businesses with specific requirements.
+                </p>
+
+                <a href="hire.php" class="btn-primary inline-block w-full sm:w-auto px-6 py-4 rounded-2xl text-center">
+                    Discuss Your Project
+                </a>
+
+            </div>
+
+            <div class="glass-card rounded-3xl p-6 md:p-10 grid grid-cols-2 gap-4">
+
+                <div class="bg-black/40 p-6 rounded-2xl text-center">
+                    <i class="fas fa-code text-3xl mb-3 text-[#00ffb3]"></i>
+                    <p>Laravel CMS</p>
+                </div>
+
+                <div class="bg-black/40 p-6 rounded-2xl text-center">
+                    <i class="fas fa-database text-3xl mb-3 text-[#00b7ff]"></i>
+                    <p>Custom Admin</p>
+                </div>
+
+                <div class="bg-black/40 p-6 rounded-2xl text-center">
+                    <i class="fas fa-cogs text-3xl mb-3 text-[#00ffb3]"></i>
+                    <p>API Ready</p>
+                </div>
+
+                <div class="bg-black/40 p-6 rounded-2xl text-center">
+                    <i class="fas fa-mobile-alt text-3xl mb-3 text-[#00b7ff]"></i>
+                    <p>Headless CMS</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- WHY CMS -->
+<section class="py-16 md:py-24 section-border overflow-hidden">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+
+        <div class="text-center mb-14 md:mb-20">
+
+            <p class="green-text uppercase tracking-[4px] font-semibold mb-5 text-sm">
+                WHY CHOOSE CMS & eCommerce
+            </p>
+
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-6 md:mb-8 leading-tight">
+                Benefits of CMS & eCommerce
+            </h2>
+
+            <p class="text-gray-400 text-base md:text-lg max-w-3xl mx-auto leading-8 md:leading-9">
+                A powerful CMS combined with eCommerce capabilities lets you manage content
+                and sell products from a single platform.
+            </p>
+
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+
+            <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00ffb3]/30 transition hover:-translate-y-1">
+                <div class="text-4xl font-black green-text mb-4">01</div>
+                <i class="fas fa-pencil-alt text-3xl mb-4 text-[#00ffb3]"></i>
+                <h3 class="text-xl md:text-2xl font-bold mb-3">Easy Content Management</h3>
+                <p class="text-gray-500 leading-7 text-sm md:text-base">
+                    Update text, images, and pages without any coding knowledge.
+                </p>
+            </div>
+
+            <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00b7ff]/30 transition hover:-translate-y-1">
+                <div class="text-4xl font-black blue-text mb-4">02</div>
+                <i class="fas fa-search text-3xl mb-4 text-[#00b7ff]"></i>
+                <h3 class="text-xl md:text-2xl font-bold mb-3">SEO Friendly</h3>
+                <p class="text-gray-500 leading-7 text-sm md:text-base">
+                    Built-in SEO tools to help your content rank higher on Google.
+                </p>
+            </div>
+
+            <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00ffb3]/30 transition hover:-translate-y-1">
+                <div class="text-4xl font-black green-text mb-4">03</div>
+                <i class="fas fa-expand-arrows-alt text-3xl mb-4 text-[#00ffb3]"></i>
+                <h3 class="text-xl md:text-2xl font-bold mb-3">Scalable & Flexible</h3>
+                <p class="text-gray-500 leading-7 text-sm md:text-base">
+                    Start small and expand with plugins, features, and integrations.
+                </p>
+            </div>
+
+            <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00b7ff]/30 transition hover:-translate-y-1">
+                <div class="text-4xl font-black blue-text mb-4">04</div>
+                <i class="fas fa-shopping-cart text-3xl mb-4 text-[#00b7ff]"></i>
+                <h3 class="text-xl md:text-2xl font-bold mb-3">eCommerce Ready</h3>
+                <p class="text-gray-500 leading-7 text-sm md:text-base">
+                    Built-in product management, payments, and inventory control.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CMS PLATFORMS -->
+<section class="py-16 md:py-24 section-border overflow-hidden">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 lg:gap-20 items-center">
+
+            <div>
+
+                <p class="green-text uppercase tracking-[4px] font-semibold mb-4 text-xs sm:text-sm">
+                    CMS & eCommerce PLATFORMS
+                </p>
+
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight mb-6 md:mb-8">
+                    We Work With Leading
+                    <span class="green-text block sm:inline">CMS & eCommerce Platforms</span>
+                </h2>
+
+                <p class="text-gray-400 text-base md:text-lg leading-8 md:leading-9 mb-8 md:mb-10">
+                    From WordPress and WooCommerce to Shopify and custom-built solutions, we have
+                    expertise across the most popular CMS and eCommerce platforms.
+                </p>
+
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+
+                <div class="glass-card rounded-2xl p-6 md:p-8 text-center hover:-translate-y-1 transition">
+                    <i class="fab fa-wordpress text-5xl mb-4 text-[#00ffb3]"></i>
+                    <h3 class="text-xl font-bold">WordPress</h3>
+                    <p class="text-gray-500 text-sm mt-2">The world's leading CMS</p>
+                </div>
+
+                <div class="glass-card rounded-2xl p-6 md:p-8 text-center hover:-translate-y-1 transition">
+                    <i class="fab fa-shopify text-5xl mb-4 text-[#00b7ff]"></i>
+                    <h3 class="text-xl font-bold">Shopify</h3>
+                    <p class="text-gray-500 text-sm mt-2">Premium eCommerce platform</p>
+                </div>
+
+                <div class="glass-card rounded-2xl p-6 md:p-8 text-center hover:-translate-y-1 transition">
+                    <i class="fas fa-shopping-cart text-5xl mb-4 text-[#00ffb3]"></i>
+                    <h3 class="text-xl font-bold">WooCommerce</h3>
+                    <p class="text-gray-500 text-sm mt-2">WordPress eCommerce</p>
+                </div>
+
+                <div class="glass-card rounded-2xl p-6 md:p-8 text-center hover:-translate-y-1 transition">
+                    <i class="fab fa-laravel text-5xl mb-4 text-[#00ffb3]"></i>
+                    <h3 class="text-xl font-bold">Laravel</h3>
+                    <p class="text-gray-500 text-sm mt-2">Custom CMS applications</p>
+                </div>
+
+                <div class="glass-card rounded-2xl p-6 md:p-8 text-center hover:-translate-y-1 transition">
+                    <i class="fas fa-code text-5xl mb-4 text-[#00b7ff]"></i>
+                    <h3 class="text-xl font-bold">Headless CMS</h3>
+                    <p class="text-gray-500 text-sm mt-2">API-first architecture</p>
+                </div>
+
+                <div class="glass-card rounded-2xl p-6 md:p-8 text-center hover:-translate-y-1 transition">
+                    <i class="fas fa-cogs text-5xl mb-4 text-[#00ffb3]"></i>
+                    <h3 class="text-xl font-bold">Custom Solutions</h3>
+                    <p class="text-gray-500 text-sm mt-2">Built for your needs</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CTA SECTION -->
+<section class="py-16 md:py-24 section-border overflow-hidden">
+
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+
+        <div class="glass-card rounded-[28px] md:rounded-[50px] p-8 sm:p-12 md:p-16 text-center relative overflow-hidden">
+
+            <div class="absolute top-[-80px] left-[-80px] w-56 sm:w-64 md:w-72 h-56 sm:h-64 md:h-72 bg-[#00ffb3]/10 blur-[120px] rounded-full">
+            </div>
+
+            <div class="absolute bottom-[-80px] right-[-80px] w-56 sm:w-64 md:w-72 h-56 sm:h-64 md:h-72 bg-[#00b7ff]/10 blur-[120px] rounded-full">
+            </div>
+
+            <div class="relative z-10">
+
+                <p class="green-text uppercase tracking-[4px] font-semibold mb-5 text-sm">
+                    LET'S BUILD YOUR CMS & eCommerce
+                </p>
+
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight mb-6 md:mb-8">
+                    Ready To Build Your CMS or eCommerce Site?
+                </h2>
+
+                <p class="text-gray-400 text-base sm:text-lg md:text-xl leading-8 md:leading-9 max-w-3xl mx-auto mb-10">
+                    Start your project with Anprix and get a powerful, easy-to-manage website
+                    or online store that helps your business grow.
+                </p>
+
+                <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-4 sm:gap-5">
+
+                    <a href="hire.php"
+                        class="btn-primary px-8 md:px-10 py-3.5 md:py-4 rounded-2xl text-base md:text-lg inline-flex items-center justify-center transition-transform hover:scale-105">
+                        <i class="fas fa-rocket mr-2"></i>
+                        Start Your Project
+                    </a>
+
+                    <a href="contact.php"
+                        class="border border-white/10 hover:border-[#00ffb3] hover:text-[#00ffb3] px-8 md:px-10 py-3.5 md:py-4 rounded-2xl text-base md:text-lg inline-flex items-center justify-center transition">
+                        <i class="fas fa-envelope mr-2"></i>
+                        Contact Us
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<?php require_once 'includes/footer.php'; ?>

@@ -3,10 +3,13 @@
 header('Content-Type: application/json');
 
 require_once 'includes/config.php';
+require_once 'includes/security.php';
 require 'vendor/autoload.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+
+$ip = client_ip();
 
 $response = [
     'status' => 'error',
@@ -14,6 +17,18 @@ $response = [
 ];
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    echo json_encode($response);
+    exit;
+}
+
+if (!csrf_check()) {
+    $response['message'] = 'Invalid request token. Please refresh and try again.';
+    echo json_encode($response);
+    exit;
+}
+
+if (!rate_limit_hit('contact:' . $ip, 5, 600)) {
+    $response['message'] = 'Too many submissions. Please try again later.';
     echo json_encode($response);
     exit;
 }
@@ -26,7 +41,6 @@ $message = trim($_POST['message'] ?? '');
 
 // VALIDATION
 if (empty($name)) {
-
     echo json_encode([
         'status' => 'error',
         'message' => 'Please enter your name.'
@@ -35,7 +49,6 @@ if (empty($name)) {
 }
 
 if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-
     echo json_encode([
         'status' => 'error',
         'message' => 'Please enter valid email address.'
@@ -44,7 +57,6 @@ if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
 }
 
 if (empty($message)) {
-
     echo json_encode([
         'status' => 'error',
         'message' => 'Please enter details.'
@@ -62,8 +74,6 @@ try {
     }
 
     // STORE DATA
-    $ip = $_SERVER['REMOTE_ADDR'];
-
     $stmt = $conn->prepare("
         INSERT INTO contact_inquiries
         (
@@ -104,7 +114,7 @@ try {
     $mail->setFrom(MAIL_USERNAME, SITE_NAME);
 
     // TO
-    $mail->addAddress(ADMIN_EMAIL);
+    $mail->addAddress(admin_email());
 
     // REPLY TO
     $mail->addReplyTo($email, $name);
@@ -113,6 +123,8 @@ try {
     $mail->isHTML(true);
 
     $mail->Subject = 'New Contact Inquiry - ' . SITE_NAME;
+
+    $safeIp = htmlspecialchars($ip, ENT_QUOTES, 'UTF-8');
 
     $mail->Body = '
     <html>
@@ -148,7 +160,7 @@ try {
 
                 <tr>
                     <td><strong>IP Address</strong></td>
-                    <td>' . $ip . '</td>
+                    <td>' . $safeIp . '</td>
                 </tr>
 
                 <tr>
@@ -171,10 +183,10 @@ try {
     ];
 
 } catch (Exception $e) {
-
+    error_log('[contact-submit] ' . $e->getMessage());
     $response = [
         'status' => 'error',
-        'message' => $e->getMessage()
+        'message' => 'We could not submit your inquiry right now. Please try again shortly.'
     ];
 }
 

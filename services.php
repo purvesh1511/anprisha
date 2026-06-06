@@ -1,6 +1,8 @@
 <?php
-$page_title = "Services";
 require_once 'includes/config.php';
+$page_title = "Services";
+$page_description = "Anprix offers website development, SEO optimization, Shopify solutions, Google Ads, digital marketing, branding, and advertising services to help businesses grow online.";
+$canonical_url = SITE_URL . '/services';
 require_once 'includes/header.php';
 ?>
 
@@ -102,6 +104,11 @@ require_once 'includes/header.php';
                     </div>
 
                 </div>
+
+                <a href="website-development.php" class="btn-primary inline-block w-full sm:w-auto px-6 py-4 rounded-2xl text-center">
+                    Explore Web Dev Services
+                </a>
+
             </div>
 
             <div class="glass-card rounded-3xl p-6 md:p-10 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
@@ -134,7 +141,141 @@ require_once 'includes/header.php';
         </div>
 
         <!-- ========================= -->
-        <!-- SERVICE 2 -->
+        <!-- SERVICE 2: CMS Development -->
+        <!-- ========================= -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+
+            <div class="space-y-6">
+                <p class="green-text uppercase tracking-[4px] font-semibold text-sm">
+                    CMS Development
+                </p>
+
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
+                    Powerful <span class="green-text">CMS Solutions</span>
+                </h2>
+
+                <p class="text-gray-400 text-base md:text-lg leading-8 md:leading-9">
+                    WordPress, Shopify, and custom CMS platforms built for easy content
+                    management, performance, and scalability.
+                </p>
+
+                <div class="space-y-5">
+
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3]">
+                            <i class="fab fa-wordpress"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">WordPress Development</h4>
+                            <p class="text-gray-500 text-sm">Custom themes, plugins & WooCommerce</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff]">
+                            <i class="fab fa-shopify"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Shopify Development</h4>
+                            <p class="text-gray-500 text-sm">eCommerce stores & custom themes</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <a href="cms.php"
+                   class="btn-primary inline-block w-full sm:w-auto px-6 py-4 rounded-2xl text-center">
+                    Explore CMS Services
+                </a>
+            </div>
+
+            <div class="glass-card rounded-3xl p-6 md:p-10 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
+
+                <div class="bg-black/40 rounded-2xl p-6 md:p-8">
+                    <i class="fab fa-wordpress text-3xl mb-4 text-[#00ffb3]"></i>
+                    <h3 class="font-bold text-lg">WordPress</h3>
+                    <p class="text-gray-500 text-sm">Custom themes & plugins</p>
+                </div>
+
+                <div class="bg-black/40 rounded-2xl p-6 md:p-8">
+                    <i class="fab fa-shopify text-3xl mb-4 text-[#00b7ff]"></i>
+                    <h3 class="font-bold text-lg">Shopify</h3>
+                    <p class="text-gray-500 text-sm">eCommerce stores</p>
+                </div>
+
+                <div class="bg-black/40 rounded-2xl p-6 md:p-8">
+                    <i class="fas fa-bolt text-3xl mb-4 text-[#00ffb3]"></i>
+                    <h3 class="font-bold text-lg">Performance</h3>
+                    <p class="text-gray-500 text-sm">Fast loading speed</p>
+                </div>
+
+                <div class="bg-black/40 rounded-2xl p-6 md:p-8">
+                    <i class="fas fa-shield-alt text-3xl mb-4 text-[#00b7ff]"></i>
+                    <h3 class="font-bold text-lg">Security</h3>
+                    <p class="text-gray-500 text-sm">Hardened & protected</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ========================= -->
+        <!-- SERVICE 3: eCommerce -->
+        <!-- ========================= -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+
+            <div class="glass-card rounded-3xl p-6 md:p-10 space-y-5 order-2 lg:order-1">
+
+                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
+                    <i class="fas fa-shopping-cart text-[#00ffb3] text-2xl"></i>
+                    <div>
+                        <h3 class="font-bold text-lg">Shopify Stores</h3>
+                        <p class="text-gray-500 text-sm">Custom themes & checkout optimization</p>
+                    </div>
+                </div>
+
+                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
+                    <i class="fab fa-wordpress text-[#00b7ff] text-2xl"></i>
+                    <div>
+                        <h3 class="font-bold text-lg">WooCommerce</h3>
+                        <p class="text-gray-500 text-sm">WordPress eCommerce solutions</p>
+                    </div>
+                </div>
+
+                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
+                    <i class="fas fa-credit-card text-[#00ffb3] text-2xl"></i>
+                    <div>
+                        <h3 class="font-bold text-lg">Payment Integration</h3>
+                        <p class="text-gray-500 text-sm">Secure gateways & fraud protection</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="space-y-6 order-1 lg:order-2">
+
+                <p class="green-text uppercase tracking-[4px] font-semibold text-sm">
+                    eCommerce Development
+                </p>
+
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black">
+                    Sell More With <span class="green-text">eCommerce</span>
+                </h2>
+
+                <p class="text-gray-400 text-base md:text-lg">
+                    Launch high-converting online stores on Shopify, WooCommerce, or custom platforms
+                    built to maximize sales and scale your business.
+                </p>
+
+                <a href="hire.php" class="btn-primary inline-block w-full sm:w-auto px-6 py-4 rounded-2xl text-center">
+                    Start Your Store
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- ========================= -->
+        <!-- SERVICE 4: SEO -->
         <!-- ========================= -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
 
@@ -180,16 +321,16 @@ require_once 'includes/header.php';
                     Improve rankings and organic traffic.
                 </p>
 
-                <button class="btn-primary w-full sm:w-auto px-6 py-4 rounded-2xl">
+                <a href="seo.php" class="btn-primary inline-block w-full sm:w-auto px-6 py-4 rounded-2xl text-center">
                     Explore SEO Services
-                </button>
+                </a>
 
             </div>
 
         </div>
 
         <!-- ========================= -->
-        <!-- SERVICE 3 -->
+        <!-- SERVICE 5: Advertising -->
         <!-- ========================= -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
 
@@ -207,9 +348,9 @@ require_once 'includes/header.php';
                     Google Ads & Social Ads
                 </p>
 
-                <button class="btn-primary w-full sm:w-auto px-6 py-4 rounded-2xl">
+                <a href="advertising.php" class="btn-primary inline-block w-full sm:w-auto px-6 py-4 rounded-2xl text-center">
                     Start Advertising
-                </button>
+                </a>
 
             </div>
 
@@ -240,7 +381,7 @@ require_once 'includes/header.php';
         </div>
 
         <!-- ========================= -->
-        <!-- SERVICE 4 -->
+        <!-- SERVICE 6: Digital Marketing -->
         <!-- ========================= -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
 
@@ -286,14 +427,69 @@ require_once 'includes/header.php';
                     Complete marketing solutions
                 </p>
 
-                <button class="btn-primary w-full sm:w-auto px-6 py-4 rounded-2xl">
+                <a href="digital-marketing.php" class="btn-primary inline-block w-full sm:w-auto px-6 py-4 rounded-2xl text-center">
                     Start Marketing
-                </button>
+                </a>
 
             </div>
 
         </div>
 
+    </div>
+</section>
+
+<!-- ========================= -->
+<!-- SERVICE 7: Branding & Creative -->
+<!-- ========================= -->
+<section class="py-16 md:py-24 section-border overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+
+            <div class="space-y-6">
+
+                <p class="green-text uppercase tracking-[4px] font-semibold text-sm">
+                    Branding & Creative
+                </p>
+
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black">
+                    Build an <span class="green-text">Unforgettable Brand</span>
+                </h2>
+
+                <p class="text-gray-400 text-base md:text-lg">
+                    Logo design, brand identity, visual storytelling, and creative strategy.
+                </p>
+
+                <a href="branding-creative.php" class="btn-primary inline-block w-full sm:w-auto px-6 py-4 rounded-2xl text-center">
+                    Explore Branding Services
+                </a>
+
+            </div>
+
+            <div class="glass-card rounded-3xl p-6 md:p-10 grid grid-cols-2 gap-4">
+
+                <div class="bg-black/40 p-6 rounded-2xl text-center">
+                    <i class="fas fa-pen-nib text-3xl mb-3 text-[#00ffb3]"></i>
+                    <p>Logo Design</p>
+                </div>
+
+                <div class="bg-black/40 p-6 rounded-2xl text-center">
+                    <i class="fas fa-palette text-3xl mb-3 text-[#00b7ff]"></i>
+                    <p>Brand Identity</p>
+                </div>
+
+                <div class="bg-black/40 p-6 rounded-2xl text-center">
+                    <i class="fas fa-video text-3xl mb-3 text-[#00ffb3]"></i>
+                    <p>Visual Stories</p>
+                </div>
+
+                <div class="bg-black/40 p-6 rounded-2xl text-center">
+                    <i class="fas fa-print text-3xl mb-3 text-[#00b7ff]"></i>
+                    <p>Packaging & Print</p>
+                </div>
+
+            </div>
+
+        </div>
     </div>
 </section>
 
