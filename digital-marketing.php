@@ -1,5 +1,5 @@
 <?php
-require_once 'includes/config.php';
+require_once 'config/config.php';
 $page_title = "Digital Marketing - Best Digital Marketing Agency in Ahmedabad, India";
 $page_description = "Anprix Solutions is a digital marketing agency in Ahmedabad offering SEO, Google Ads, social media marketing, and growth-focused services.";
 $canonical_url = SITE_URL . '/digital-marketing';

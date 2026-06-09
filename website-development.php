@@ -1,5 +1,5 @@
 <?php
-require_once 'includes/config.php';
+require_once 'config/config.php';
 $page_title = "Website Development";
 $page_description = "Anprix builds custom websites using Laravel, WordPress, Shopify, and modern frontend technologies — fast, responsive, and built for conversion.";
 $canonical_url = SITE_URL . '/website-development';

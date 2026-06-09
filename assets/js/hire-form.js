@@ -252,16 +252,7 @@ $(document).ready(function () {
       url: "hire-mail",
       type: "POST",
       dataType: "json",
-
-      data: {
-        name: name,
-        email: email,
-        phone: form.find('input[name="phone"]').val(),
-        service: service,
-        budget: form.find('select[name="budget"]').val(),
-        timeline: form.find('select[name="timeline"]').val(),
-        details: details,
-      },
+      data: form.serialize(),
 
       success: function (response) {
         if (response.status === "success") {
@@ -391,11 +382,11 @@ $(document).ready(function () {
   // ============================================
   // NEWSLETTER
   // ============================================
-  $(".newsletter-form").on("submit", function (e) {
+  $("#newsletterForm").on("submit", function (e) {
     e.preventDefault();
 
     const form = $(this);
-    const email = form.find('input[name="newsletter_email"]').val();
+    const email = form.find('input[name="email"]').val();
 
     if (!isValidEmail(email)) {
       showToast("Please enter valid email.", "error");
@@ -410,10 +401,10 @@ $(document).ready(function () {
       .prop("disabled", true);
 
     $.ajax({
-      url: "/subscribe_form", // ✅ FIXED (clean URL)
+      url: "subscribe_form",
       type: "POST",
       dataType: "json",
-      data: { email: email },
+      data: form.serialize(),
 
       success: function (response) {
         if (response.status === "success") {

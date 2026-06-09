@@ -1,5 +1,5 @@
 <?php
-require_once 'includes/config.php';
+require_once 'config/config.php';
 $page_title = "Advertising Services";
 $page_description = "Anprix offers Google Ads, social media advertising, retargeting, display ads, and PPC campaign management to drive targeted traffic and maximize ROI.";
 $canonical_url = SITE_URL . '/advertising';

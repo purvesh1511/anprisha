@@ -1,5 +1,5 @@
 <?php
-require_once 'includes/config.php';
+require_once 'config/config.php';
 $page_title = "SEO Services";
 $page_description = "Anprix offers technical SEO, on-page optimization, local SEO, link building, and content SEO services to boost your Google rankings and organic traffic.";
 $canonical_url = SITE_URL . '/seo';

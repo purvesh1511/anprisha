@@ -1,5 +1,5 @@
 <?php
-require_once 'includes/config.php';
+require_once 'config/config.php';
 $page_title = "Contact Us";
 $page_description = "Get in touch with Anprix for web development, SEO, advertising, and digital marketing solutions. Contact our team today for a free consultation.";
 $canonical_url = SITE_URL . '/contact';
@@ -221,7 +221,8 @@ require_once 'includes/header.php';
                     </p>
 
                     <!-- FORM -->
-                    <form id="contactForm" class="space-y-4 md:space-y-5">
+                    <form id="contactForm" class="space-y-4 md:space-y-5" method="POST">
+                        <?php csrf_field(); ?>
                         <input type="hidden" name="form_type" value="contact">
                         <!-- NAME -->
                         <input type="text"

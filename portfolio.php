@@ -1,5 +1,5 @@
 <?php
-require_once 'includes/config.php';
+require_once 'config/config.php';
 $page_title = "Portfolio";
 $page_description = "Explore our portfolio of website development, Shopify stores, SEO optimization, branding, and digital marketing projects delivered for modern businesses.";
 $canonical_url = SITE_URL . '/portfolio';

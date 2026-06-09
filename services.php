@@ -1,5 +1,5 @@
 <?php
-require_once 'includes/config.php';
+require_once 'config/config.php';
 $page_title = "Services";
 $page_description = "Anprix offers website development, SEO optimization, Shopify solutions, Google Ads, digital marketing, branding, and advertising services to help businesses grow online.";
 $canonical_url = SITE_URL . '/services';

@@ -1,5 +1,5 @@
 <?php
-require_once 'includes/config.php';
+require_once 'config/config.php';
 $page_title = "CMS & eCommerce Development";
 $page_description = "Anprix offers CMS development across WordPress, Shopify, and custom platforms plus eCommerce solutions including WooCommerce and Shopify stores.";
 $canonical_url = SITE_URL . '/cms';

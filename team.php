@@ -1,5 +1,5 @@
 <?php
-require_once 'includes/config.php';
+require_once 'config/config.php';
 $page_title = "Our Team";
 $page_description = "Meet the Anprix team of developers, designers, SEO experts, and marketing specialists creating premium digital experiences for businesses.";
 $canonical_url = SITE_URL . '/team';

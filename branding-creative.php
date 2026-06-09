@@ -1,5 +1,5 @@
 <?php
-require_once 'includes/config.php';
+require_once 'config/config.php';
 $page_title = "Branding & Creative Services";
 $page_description = "Anprix offers logo design, brand identity, visual storytelling, packaging design, and creative strategy services to build unforgettable brands.";
 $canonical_url = SITE_URL . '/branding-creative';

@@ -1,6 +1,6 @@
 <?php
 http_response_code(404);
-require_once 'includes/config.php';
+require_once 'config/config.php';
 $page_title = "Page Not Found";
 $page_description = "The page you are looking for does not exist. Return to Anprix Solutions homepage.";
 $canonical_url = SITE_URL;

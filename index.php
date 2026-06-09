@@ -1,5 +1,5 @@
 <?php
-require_once 'includes/config.php';
+require_once 'config/config.php';
 $page_title = "Home";
 $page_description = "Anprix Solutions is a leading website design and development company in Ahmedabad, India, delivering custom websites, eCommerce solutions, and SEO-optimized web development services.";
 $canonical_url = SITE_URL;
@@ -624,6 +624,7 @@ $testimonials = [
 
                 <form class="ajax-form space-y-5 sm:space-y-6" method="POST" id="hireForm">
 
+                    <?php csrf_field(); ?>
                     <input type="hidden" name="form_type" value="hire">
 
                     <!-- NAME + PHONE -->

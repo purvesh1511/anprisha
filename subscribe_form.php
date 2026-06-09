@@ -2,8 +2,7 @@
 
 header('Content-Type: application/json');
 
-require_once 'includes/config.php';
-require_once 'includes/security.php';
+require_once 'config/config.php';
 require 'vendor/autoload.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -27,7 +26,7 @@ if (!csrf_check()) {
     exit;
 }
 
-if (!rate_limit_hit('subscribe:' . $ip, 3, 600)) {
+if (!rate_limit_hit('subscribe:' . $ip, 10, 600)) {
     echo json_encode([
         'status' => 'error',
         'message' => 'Too many attempts. Please try again later.'

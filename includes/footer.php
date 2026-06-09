@@ -130,14 +130,15 @@
                 <!-- Newsletter Signup -->
                 <div class="mt-6">
                     <h5 class="text-md font-semibold mb-3">Subscribe to Newsletter</h5>
-                    <form class="newsletter-form flex gap-2" method="POST">
-                        <input type="email" name="newsletter_email" placeholder="Your email address"
+                    <form id="newsletterForm" class="newsletter-form flex gap-2" method="POST">
+                        <?php csrf_field(); ?>
+                        <input type="email" name="email" placeholder="Your email address" required
                             class="flex-1 bg-black/40 border border-white/10 rounded-xl px-4 py-2 text-white text-sm focus:outline-none focus:border-[#00ffb3]">
                         <button type="submit" class="btn-primary px-4 py-2 rounded-xl text-sm">
                             <i class="fas fa-paper-plane"></i>
                         </button>
                     </form>
-                    <p class="text-gray-600 text-xs mt-3">Get updates about new projects and offers.</p>
+                    <p id="newsletterMsg" class="text-gray-600 text-xs mt-3">Get updates about new projects and offers.</p>
                 </div>
             </div>
         </div>

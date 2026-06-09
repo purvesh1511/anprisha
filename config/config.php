@@ -10,16 +10,20 @@
 
 // ---- Error reporting (disable in production) ----
 error_reporting(E_ALL);
-ini_set('display_errors', 0);
+ini_set('display_errors', 1);
 ini_set('log_errors', 1);
 
 date_default_timezone_set('Asia/Kolkata');
 
 // ---- Load local credentials if present ----
-$localConfig = dirname(__DIR__) . '/config.local.php';
+$localConfig = __DIR__ . '/config.local.php';
 if (is_readable($localConfig)) {
     require_once $localConfig;
 }
+
+// ---- Security helpers (CSRF, rate limiting) ----
+require_once dirname(__DIR__) . '/includes/security.php';
+
 
 // ---- Non-secret fallbacks (safe to be in the repo) ----
 if (!defined('SITE_NAME'))          define('SITE_NAME',          'Anprix');

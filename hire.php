@@ -1,5 +1,5 @@
 <?php
-require_once 'includes/config.php';
+require_once 'config/config.php';
 $page_title = "Hire Us";
 $page_description = "Hire Anprix for website development, SEO, Shopify, Google Ads, and digital marketing services. Fill out the form and our team will contact you within 24 hours.";
 $canonical_url = SITE_URL . '/hire';
@@ -75,6 +75,7 @@ require_once 'includes/header.php';
 
                 <form class="ajax-form space-y-5 sm:space-y-6" method="POST" id="hireForm">
 
+                    <?php csrf_field(); ?>
                     <input type="hidden" name="form_type" value="hire">
 
                     <!-- NAME + PHONE -->
@@ -116,11 +117,11 @@ require_once 'includes/header.php';
                         <select name="service" required
                             class="w-full bg-black/40 border border-white/10 rounded-2xl px-4 sm:px-5 py-3 sm:py-4 text-white focus:outline-none focus:border-[#00ffb3]">
                             <option value="">Select a Service</option>
-                            <option value="Digital_Marketing">Digital Marketing</option>
-                            <option value="Advertising_Services">Advertising Services</option>
-                            <option value="Website_Development">Website Development</option>
-                            <option value="Software_Development">Software Development</option>
-                            <option value="Branding_Creative_Services">Branding & Creative Services</option>
+                            <option value="Digital Marketing">Digital Marketing</option>
+                            <option value="Advertising Services">Advertising Services</option>
+                            <option value="Website Development">Website Development</option>
+                            <option value="Software Development">Software Development</option>
+                            <option value="Branding & Creative Services">Branding & Creative Services</option>
                         </select>
                     </div>
 

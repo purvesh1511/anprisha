@@ -1,5 +1,6 @@
 .aider*
 vendor
-# Local-only credentials live one level above the project root
+# Local-only credentials
 ../config.local.php
 config.local.php
+config/config.local.php
