@@ -12,7 +12,7 @@ require_once 'includes/header.php';
 
         <div class="max-w-2xl mx-auto">
 
-            <div class="text-8xl sm:text-9xl font-black green-text mb-6">
+            <div class="text-7xl sm:text-8xl lg:text-9xl font-black green-text mb-6">
                 404
             </div>
 

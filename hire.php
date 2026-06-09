@@ -281,27 +281,27 @@ require_once 'includes/header.php';
                     <div class="flex flex-wrap gap-3 sm:gap-4">
 
                         <a href="<?php echo SOCIAL_FACEBOOK; ?>" target="_blank" rel="noopener noreferrer"
-                           class="w-10 sm:w-12 h-10 sm:h-12 rounded-full bg-white/10 flex items-center justify-center hover:text-[#00ffb3] transition">
+                           class="w-11 sm:w-12 h-11 sm:h-12 rounded-full bg-white/10 flex items-center justify-center hover:text-[#00ffb3] transition">
                             <i class="fab fa-facebook-f"></i>
                         </a>
 
                         <a href="<?php echo SOCIAL_TWITTER; ?>" target="_blank" rel="noopener noreferrer"
-                           class="w-10 sm:w-12 h-10 sm:h-12 rounded-full bg-white/10 flex items-center justify-center hover:text-[#00b7ff] transition">
+                           class="w-11 sm:w-12 h-11 sm:h-12 rounded-full bg-white/10 flex items-center justify-center hover:text-[#00b7ff] transition">
                             <i class="fa-brands fa-x-twitter"></i>
                         </a>
 
                         <a href="<?php echo SOCIAL_LINKEDIN; ?>" target="_blank" rel="noopener noreferrer"
-                           class="w-10 sm:w-12 h-10 sm:h-12 rounded-full bg-white/10 flex items-center justify-center hover:text-[#00ffb3] transition">
+                           class="w-11 sm:w-12 h-11 sm:h-12 rounded-full bg-white/10 flex items-center justify-center hover:text-[#00ffb3] transition">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
 
                         <a href="<?php echo SOCIAL_INSTAGRAM; ?>" target="_blank" rel="noopener noreferrer"
-                           class="w-10 sm:w-12 h-10 sm:h-12 rounded-full bg-white/10 flex items-center justify-center hover:text-[#00ffb3] transition">
+                           class="w-11 sm:w-12 h-11 sm:h-12 rounded-full bg-white/10 flex items-center justify-center hover:text-[#00ffb3] transition">
                             <i class="fab fa-instagram"></i>
                         </a>
 
                         <a href="<?php echo SOCIAL_GITHUB; ?>" target="_blank" rel="noopener noreferrer"
-                           class="w-10 sm:w-12 h-10 sm:h-12 rounded-full bg-white/10 flex items-center justify-center hover:text-white transition">
+                           class="w-11 sm:w-12 h-11 sm:h-12 rounded-full bg-white/10 flex items-center justify-center hover:text-white transition">
                             <i class="fab fa-github"></i>
                         </a>
 

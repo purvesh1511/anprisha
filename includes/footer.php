@@ -12,22 +12,22 @@
                 </p>
                 <!-- Social Links -->
                 <div class="flex gap-3">
-                    <a href="<?= SOCIAL_FACEBOOK; ?>" target="_blank" rel="noopener noreferrer"
-                        class="social-footer w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#00ffb3] hover:text-black transition-all duration-300">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="<?= SOCIAL_TWITTER; ?>" target="_blank" rel="noopener noreferrer"
-                        class="social-footer w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#00ffb3] hover:text-black transition-all duration-300">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="<?= SOCIAL_LINKEDIN; ?>" target="_blank" rel="noopener noreferrer"
-                        class="social-footer w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#00ffb3] hover:text-black transition-all duration-300">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="<?= SOCIAL_INSTAGRAM; ?>" target="_blank" rel="noopener noreferrer"
-                        class="social-footer w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#00ffb3] hover:text-black transition-all duration-300">
-                        <i class="fab fa-instagram"></i>
-                    </a>
+<a href="<?= SOCIAL_FACEBOOK; ?>" target="_blank" rel="noopener noreferrer"
+    class="social-footer w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#00ffb3] hover:text-black transition-all duration-300">
+    <i class="fab fa-facebook-f"></i>
+</a>
+<a href="<?= SOCIAL_TWITTER; ?>" target="_blank" rel="noopener noreferrer"
+    class="social-footer w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#00ffb3] hover:text-black transition-all duration-300">
+    <i class="fab fa-twitter"></i>
+</a>
+<a href="<?= SOCIAL_LINKEDIN; ?>" target="_blank" rel="noopener noreferrer"
+    class="social-footer w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#00ffb3] hover:text-black transition-all duration-300">
+    <i class="fab fa-linkedin-in"></i>
+</a>
+<a href="<?= SOCIAL_INSTAGRAM; ?>" target="_blank" rel="noopener noreferrer"
+    class="social-footer w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#00ffb3] hover:text-black transition-all duration-300">
+    <i class="fab fa-instagram"></i>
+</a>
                 </div>
             </div>
 
@@ -35,12 +35,6 @@
             <div>
                 <h4 class="text-xl font-bold mb-5">Services</h4>
                 <ul class="space-y-3 text-gray-500">
-                    <li>
-                        <a href="services.php"
-                        class="text-[#00ffb3] hover:text-white transition text-sm font-semibold">
-                            View All Services →
-                        </a>
-                    </li>
                     <li>
                         <a href="website-development.php"
                         class="hover:text-[#00ffb3] transition">

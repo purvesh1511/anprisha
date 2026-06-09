@@ -323,7 +323,7 @@ require_once 'includes/header.php';
 
             </div>
 
-            <div class="glass-card rounded-3xl p-6 md:p-10 grid grid-cols-2 gap-4">
+            <div class="glass-card rounded-3xl p-6 md:p-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
 
                 <div class="bg-black/40 p-6 rounded-2xl text-center">
                     <i class="fas fa-chart-pie text-3xl mb-3 text-[#00ffb3]"></i>

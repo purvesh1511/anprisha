@@ -41,7 +41,7 @@ $testimonials = [
 
 <section class="hero-gradient min-h-screen flex items-center pt-24 lg:pt-32 overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <div class="grid lg:grid-cols-2 gap-14 lg:gap-16 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-16 items-center">
 
 
         <!-- LEFT CONTENT -->
@@ -86,7 +86,7 @@ $testimonials = [
             </div>
 
             <!-- Stats -->
-            <div class="grid grid-cols-3 gap-4 sm:gap-6 mt-12 mb-5 lg:mt-14 text-center lg:text-left">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mt-12 mb-5 lg:mt-14 text-center lg:text-left">
                 <div>
                     <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold green-text">
                         250+
@@ -201,7 +201,7 @@ $testimonials = [
         SEO best practices to build websites that not only look great but also drive measurable results.
     </p>
 
-    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
 
         <div class="glass-card p-6 rounded-3xl">
             <h3 class="text-xl font-bold mb-3">SEO-Friendly Development</h3>
@@ -513,7 +513,7 @@ $testimonials = [
         </div>
 
         <!-- BOTTOM STATS -->
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mt-14 md:mt-20">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mt-14 md:mt-20">
 
             <!-- STAT -->
             <div class="glass-card rounded-2xl md:rounded-3xl p-6 md:p-8 text-center border border-white/10">

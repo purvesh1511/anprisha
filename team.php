@@ -244,7 +244,7 @@ $team_members = [
                         <?php foreach ($socials as $key => $iconData): ?>
                         <?php if (!empty($member['social'][$key])): ?>
                         <a href="<?php echo htmlspecialchars($member['social'][$key]); ?>" target="_blank"
-                            rel="noopener noreferrer" class="w-9 h-9 flex items-center justify-center rounded-full
+                            rel="noopener noreferrer" class="w-11 h-11 flex items-center justify-center rounded-full
                                           bg-white/5 hover:bg-white/10 transition border border-white/10">
 
                             <i class="<?php echo $iconData[0]; ?>"></i>
