@@ -26,7 +26,7 @@ if (!csrf_check()) {
     exit;
 }
 
-if (!rate_limit_hit('hire:' . $ip, 500, 600)) {
+if (!rate_limit_hit('hire:' . $ip, 5, 600)) {
     echo json_encode([
         'status' => 'error',
         'message' => 'Too many submissions. Please try again later.'
