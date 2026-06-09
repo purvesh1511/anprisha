@@ -36,27 +36,15 @@
                 <h4 class="text-xl font-bold mb-5">Services</h4>
                 <ul class="space-y-3 text-gray-500">
                     <li>
+                        <a href="services.php"
+                        class="text-[#00ffb3] hover:text-white transition text-sm font-semibold">
+                            View All Services →
+                        </a>
+                    </li>
+                    <li>
                         <a href="website-development.php"
                         class="hover:text-[#00ffb3] transition">
                             Website Development
-                        </a>
-                    </li>
-                    <li>
-                        <a href="seo.php"
-                        class="hover:text-[#00ffb3] transition">
-                            SEO Optimization
-                        </a>
-                    </li>
-                    <li>
-                        <a href="advertising.php"
-                        class="hover:text-[#00ffb3] transition">
-                            Advertising Services
-                        </a>
-                    </li>
-                    <li>
-                        <a href="digital-marketing.php"
-                        class="hover:text-[#00ffb3] transition">
-                            Digital Marketing
                         </a>
                     </li>
                     <li>
@@ -66,15 +54,27 @@
                         </a>
                     </li>
                     <li>
+                        <a href="seo.php"
+                        class="hover:text-[#00ffb3] transition">
+                            SEO Services
+                        </a>
+                    </li>
+                    <li>
+                        <a href="digital-marketing.php"
+                        class="hover:text-[#00ffb3] transition">
+                            Digital Marketing
+                        </a>
+                    </li>
+                    <li>
                         <a href="advertising.php"
                         class="hover:text-[#00ffb3] transition">
-                            Google Ads
+                            Advertising
                         </a>
                     </li>
                     <li>
                         <a href="branding-creative.php"
                         class="hover:text-[#00ffb3] transition">
-                            Branding & Creative Services
+                            Branding & Creative
                         </a>
                     </li>
                 </ul>

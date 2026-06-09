@@ -304,3 +304,13 @@ html {
         transform: translateY(0);
     }
 }
+
+/* Header Services Dropdown */
+header .group .glass-card {
+    transform: translateY(4px);
+    transition: all 0.2s ease;
+}
+
+header .group:hover .glass-card {
+    transform: translateY(0);
+}

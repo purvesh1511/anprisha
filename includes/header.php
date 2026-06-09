@@ -130,7 +130,11 @@
 </head>
 <body>
 
-<!-- HEADER -->
+<?php
+$service_pages = ['services.php', 'website-development.php', 'cms.php', 'seo.php', 'digital-marketing.php', 'advertising.php', 'branding-creative.php'];
+$is_service_page = in_array(basename($_SERVER['PHP_SELF']), $service_pages);
+?>
+
 <!-- HEADER -->
 <header class="fixed top-0 left-0 w-full z-50 bg-black/80 backdrop-blur-lg border-b border-white/5">
     
@@ -153,10 +157,45 @@
                 Home
             </a>
 
-            <a href="services.php"
-               class="hover:text-[#00ffb3] transition <?php echo basename($_SERVER['PHP_SELF']) == 'services.php' ? 'text-[#00ffb3]' : ''; ?>">
-                Services
-            </a>
+            <!-- SERVICES DROPDOWN -->
+            <div class="relative group">
+                <a href="services.php"
+                   class="flex items-center gap-1.5 hover:text-[#00ffb3] transition <?php echo $is_service_page ? 'text-[#00ffb3]' : ''; ?>">
+                    Services
+                    <svg class="w-3.5 h-3.5 mt-0.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </a>
+
+                <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                    <div class="glass-card rounded-2xl py-2 min-w-[220px] shadow-2xl border border-white/10">
+                        <a href="website-development.php"
+                           class="block px-5 py-2.5 text-sm hover:text-[#00ffb3] hover:bg-white/5 transition <?php echo basename($_SERVER['PHP_SELF']) == 'website-development.php' ? 'text-[#00ffb3]' : ''; ?>">
+                            Website Development
+                        </a>
+                        <a href="cms.php"
+                           class="block px-5 py-2.5 text-sm hover:text-[#00ffb3] hover:bg-white/5 transition <?php echo basename($_SERVER['PHP_SELF']) == 'cms.php' ? 'text-[#00ffb3]' : ''; ?>">
+                            CMS Development
+                        </a>
+                        <a href="seo.php"
+                           class="block px-5 py-2.5 text-sm hover:text-[#00ffb3] hover:bg-white/5 transition <?php echo basename($_SERVER['PHP_SELF']) == 'seo.php' ? 'text-[#00ffb3]' : ''; ?>">
+                            SEO Services
+                        </a>
+                        <a href="digital-marketing.php"
+                           class="block px-5 py-2.5 text-sm hover:text-[#00ffb3] hover:bg-white/5 transition <?php echo basename($_SERVER['PHP_SELF']) == 'digital-marketing.php' ? 'text-[#00ffb3]' : ''; ?>">
+                            Digital Marketing
+                        </a>
+                        <a href="advertising.php"
+                           class="block px-5 py-2.5 text-sm hover:text-[#00ffb3] hover:bg-white/5 transition <?php echo basename($_SERVER['PHP_SELF']) == 'advertising.php' ? 'text-[#00ffb3]' : ''; ?>">
+                            Advertising
+                        </a>
+                        <a href="branding-creative.php"
+                           class="block px-5 py-2.5 text-sm hover:text-[#00ffb3] hover:bg-white/5 transition <?php echo basename($_SERVER['PHP_SELF']) == 'branding-creative.php' ? 'text-[#00ffb3]' : ''; ?>">
+                            Branding & Creative
+                        </a>
+                    </div>
+                </div>
+            </div>
 
             <a href="portfolio.php"
                class="hover:text-[#00ffb3] transition <?php echo basename($_SERVER['PHP_SELF']) == 'portfolio.php' ? 'text-[#00ffb3]' : ''; ?>">
@@ -217,10 +256,24 @@
                 Home
             </a>
 
-            <a href="services.php"
-               class="hover:text-[#00ffb3] transition <?php echo basename($_SERVER['PHP_SELF']) == 'services.php' ? 'text-[#00ffb3]' : ''; ?>">
-                Services
-            </a>
+            <!-- MOBILE SERVICES ACCORDION -->
+            <div>
+                <button class="w-full flex items-center justify-between hover:text-[#00ffb3] transition <?php echo $is_service_page ? 'text-[#00ffb3]' : ''; ?>"
+                        onclick="$(this).next().slideToggle(300);$(this).find('.arrow').toggleClass('rotate-180')">
+                    <span>Services</span>
+                    <svg class="arrow w-4 h-4 transition-transform duration-200 <?php echo $is_service_page ? 'rotate-180' : ''; ?>" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="pl-4 mt-2 space-y-3 text-sm text-gray-400 border-l border-white/10 ml-1 <?php echo $is_service_page ? '' : 'hidden'; ?>">
+                    <a href="website-development.php" class="block hover:text-[#00ffb3] transition <?php echo basename($_SERVER['PHP_SELF']) == 'website-development.php' ? 'text-[#00ffb3]' : ''; ?>">Website Development</a>
+                    <a href="cms.php" class="block hover:text-[#00ffb3] transition <?php echo basename($_SERVER['PHP_SELF']) == 'cms.php' ? 'text-[#00ffb3]' : ''; ?>">CMS Development</a>
+                    <a href="seo.php" class="block hover:text-[#00ffb3] transition <?php echo basename($_SERVER['PHP_SELF']) == 'seo.php' ? 'text-[#00ffb3]' : ''; ?>">SEO Services</a>
+                    <a href="digital-marketing.php" class="block hover:text-[#00ffb3] transition <?php echo basename($_SERVER['PHP_SELF']) == 'digital-marketing.php' ? 'text-[#00ffb3]' : ''; ?>">Digital Marketing</a>
+                    <a href="advertising.php" class="block hover:text-[#00ffb3] transition <?php echo basename($_SERVER['PHP_SELF']) == 'advertising.php' ? 'text-[#00ffb3]' : ''; ?>">Advertising</a>
+                    <a href="branding-creative.php" class="block hover:text-[#00ffb3] transition <?php echo basename($_SERVER['PHP_SELF']) == 'branding-creative.php' ? 'text-[#00ffb3]' : ''; ?>">Branding & Creative</a>
+                </div>
+            </div>
 
             <a href="portfolio.php"
                class="hover:text-[#00ffb3] transition <?php echo basename($_SERVER['PHP_SELF']) == 'portfolio.php' ? 'text-[#00ffb3]' : ''; ?>">
