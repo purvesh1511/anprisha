@@ -26,7 +26,7 @@ if (!csrf_check()) {
     exit;
 }
 
-if (!rate_limit_hit('hire:' . $ip, 5, 600)) {
+if (!rate_limit_hit('hire:' . $ip, 500, 600)) {
     echo json_encode([
         'status' => 'error',
         'message' => 'Too many submissions. Please try again later.'
@@ -90,12 +90,12 @@ try {
     // INSERT INTO DATABASE
     $stmt = $conn->prepare("
         INSERT INTO hire_requests
-        (name, email, phone, budget, service, timeline, details, ip_address, form_type)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+        (name, email, phone, budget, service, timeline, details, ip_address)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
     ");
 
     $stmt->bind_param(
-        "sssssssss",
+        "ssssssss",
         $name,
         $email,
         $phone,
@@ -103,8 +103,7 @@ try {
         $service,
         $timeline,
         $details,
-        $ip,
-        $formType
+        $ip
     );
 
     if (!$stmt->execute()) {
