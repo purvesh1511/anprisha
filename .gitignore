@@ -4,3 +4,4 @@ vendor
 ../config.local.php
 config.local.php
 config/config.local.php
+.claude/settings.local.json
