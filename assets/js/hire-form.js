@@ -249,7 +249,7 @@ $(document).ready(function () {
       .prop("disabled", true);
 
     $.ajax({
-      url: "hire-mail",
+      url: "hire_mail",
       type: "POST",
       dataType: "json",
       data: form.serialize(),
@@ -349,7 +349,7 @@ $(document).ready(function () {
       .prop("disabled", true);
 
     $.ajax({
-      url: "contact-submit",
+      url: "contact_submit",
 
       type: "POST",
 
