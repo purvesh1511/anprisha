@@ -10,63 +10,63 @@ require_once 'includes/header.php';
 $team_members = [
     [
         'id' => 1,
-        'name' => 'James Carter',
-        'role' => 'Founder & CEO',
+        'name' => 'Bharat Patel',
+        'role' => 'Project Manager/Team Lead',
         'role_color' => 'green',
-        'bio' => 'Leading digital innovation with expertise in business strategy and technology solutions.',
+        'bio' => 'Leading project delivery with strong technical expertise and team coordination for successful digital solutions.',
         'image' => 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200',
         'social' => [
-            'linkedin' => 'https://linkedin.com/in/james-carter',
-            'twitter' => 'https://twitter.com/jamescarter',
-            'github' => 'https://github.com/jamescarter'
+            'linkedin' => 'https://linkedin.com/in/bharat-patel',
+            'twitter' => 'https://twitter.com/bharatpatel',
+            'facebook' => 'https://facebook.com/bharatpatel'
         ],
-        'skills' => ['Leadership', 'Strategy', 'Innovation'],
-        'experience' => '15+ years'
+        'skills' => ['Project Management', 'Team Leadership', 'Web Development'],
+        'experience' => '10+ years'
     ],
     [
         'id' => 2,
-        'name' => 'Amelia Watson',
-        'role' => 'UI/UX Designer',
+        'name' => 'Mohmad Ali',
+        'role' => 'Business Developer',
         'role_color' => 'blue',
-        'bio' => 'Creating modern interfaces and premium user experiences for digital products.',
-        'image' => 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1200',
+        'bio' => 'Driving business growth through strategic partnerships, client relationships, and innovative sales approaches.',
+        'image' => 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1200',
         'social' => [
-            'linkedin' => 'https://linkedin.com/in/amelia-watson',
-            'dribbble' => 'https://dribbble.com/ameliawatson',
-            'behance' => 'https://behance.net/ameliawatson'
+            'linkedin' => 'https://linkedin.com/in/mohmad-ali',
+            'twitter' => 'https://twitter.com/mohmadali',
+            'facebook' => 'https://facebook.com/mohmadali'
         ],
-        'skills' => ['UI Design', 'UX Research', 'Prototyping'],
+        'skills' => ['Business Strategy', 'Client Relations', 'Sales'],
         'experience' => '8+ years'
     ],
     [
         'id' => 3,
-        'name' => 'Daniel Brown',
-        'role' => 'SEO Specialist',
+        'name' => 'Bhargav Ravaya',
+        'role' => 'Sr Software Developer',
         'role_color' => 'green',
-        'bio' => 'Expert in SEO optimization, technical audits, and organic traffic growth.',
-        'image' => 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1200',
+        'bio' => 'Building scalable web applications with clean code, modern frameworks, and a focus on performance.',
+        'image' => 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1200',
         'social' => [
-            'linkedin' => 'https://linkedin.com/in/daniel-brown',
-            'twitter' => 'https://twitter.com/danielbrown',
-            'github' => 'https://github.com/danielbrown'
+            'linkedin' => 'https://linkedin.com/in/bhargav-ravaya',
+            'github' => 'https://github.com/bhargavravaya',
+            'twitter' => 'https://twitter.com/bhargavravaya'
         ],
-        'skills' => ['Technical SEO', 'Analytics', 'Link Building'],
-        'experience' => '10+ years'
+        'skills' => ['PHP', 'Laravel', 'JavaScript', 'API Design'],
+        'experience' => '6+ years'
     ],
     [
         'id' => 4,
-        'name' => 'Sophia Miller',
-        'role' => 'Marketing Manager',
+        'name' => 'Biren Malvi',
+        'role' => 'Ads Manager',
         'role_color' => 'blue',
-        'bio' => 'Managing digital campaigns, paid advertising, and branding strategies.',
-        'image' => 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1200',
+        'bio' => 'Managing paid advertising campaigns across Google Ads and social media to drive targeted traffic and ROI.',
+        'image' => 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=1200',
         'social' => [
-            'linkedin' => 'https://linkedin.com/in/sophia-miller',
-            'twitter' => 'https://twitter.com/sophiamiller',
-            'instagram' => 'https://instagram.com/sophiamiller'
+            'linkedin' => 'https://linkedin.com/in/biren-malvi',
+            'twitter' => 'https://twitter.com/birenmalvi',
+            'facebook' => 'https://facebook.com/birenmalvi'
         ],
-        'skills' => ['PPC', 'Social Media', 'Brand Strategy'],
-        'experience' => '12+ years'
+        'skills' => ['Google Ads', 'Social Media Ads', 'Analytics', 'ROI Optimization'],
+        'experience' => '5+ years'
     ]
 ];
 ?>
@@ -361,8 +361,8 @@ $team_members = [
                 <div
                     class="glass-card rounded-2xl md:rounded-[35px] p-8 md:p-10 text-center hover:-translate-y-1 transition">
                     <h3 class="text-4xl sm:text-5xl md:text-6xl font-black green-text mb-3 md:mb-4 counter"
-                        data-target="250">
-                        <span>250</span>+
+                        data-target="100">
+                        <span>100</span>+
                     </h3>
                     <p class="text-gray-500 text-sm md:text-lg">Projects Delivered</p>
                 </div>
@@ -371,8 +371,8 @@ $team_members = [
                 <div
                     class="glass-card rounded-2xl md:rounded-[35px] p-8 md:p-10 text-center hover:-translate-y-1 transition">
                     <h3 class="text-4xl sm:text-5xl md:text-6xl font-black blue-text mb-3 md:mb-4 counter"
-                        data-target="150">
-                        <span>150</span>+
+                        data-target="50">
+                        <span>50</span>+
                     </h3>
                     <p class="text-gray-500 text-sm md:text-lg">Happy Clients</p>
                 </div>

@@ -308,8 +308,8 @@ require_once 'includes/header.php';
                     <div
                         class="glass-card rounded-2xl md:rounded-[30px] p-6 sm:p-8 md:p-10 hover:-translate-y-1 transition">
                         <h3 class="text-3xl sm:text-4xl md:text-5xl font-black green-text mb-3 md:mb-4 counter"
-                            data-target="250">
-                            <span>250</span>+
+                            data-target="100">
+                            <span>100</span>+
                         </h3>
                         <p class="text-gray-500 text-sm md:text-base">Completed Projects</p>
                     </div>
@@ -318,8 +318,8 @@ require_once 'includes/header.php';
                     <div
                         class="glass-card rounded-2xl md:rounded-[30px] p-6 sm:p-8 md:p-10 hover:-translate-y-1 transition">
                         <h3 class="text-3xl sm:text-4xl md:text-5xl font-black blue-text mb-3 md:mb-4 counter"
-                            data-target="150">
-                            <span>150</span>+
+                            data-target="50">
+                            <span>50</span>+
                         </h3>
                         <p class="text-gray-500 text-sm md:text-base">Happy Clients</p>
                     </div>

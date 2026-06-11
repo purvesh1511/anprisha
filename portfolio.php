@@ -354,7 +354,7 @@ $portfolio_items = [
             <!-- STAT 1 -->
             <div class="glass-card rounded-2xl md:rounded-3xl p-6 md:p-8 text-center hover:-translate-y-1 transition-transform">
 
-                <div class="text-4xl sm:text-5xl font-black green-text mb-3 counter flex items-center justify-center gap-2" data-target="250">
+                <div class="text-4xl sm:text-5xl font-black green-text mb-3 counter flex items-center justify-center gap-2" data-target="100">
                     <i class="fa-solid fa-briefcase text-xl sm:text-2xl"></i>
                     <span>0</span>
                 </div>
@@ -368,7 +368,7 @@ $portfolio_items = [
             <!-- STAT 2 -->
             <div class="glass-card rounded-2xl md:rounded-3xl p-6 md:p-8 text-center hover:-translate-y-1 transition-transform">
 
-                <div class="text-4xl sm:text-5xl font-black blue-text mb-3 counter flex items-center justify-center gap-2" data-target="150">
+                <div class="text-4xl sm:text-5xl font-black blue-text mb-3 counter flex items-center justify-center gap-2" data-target="50">
                     <i class="fa-solid fa-users text-xl sm:text-2xl"></i>
                     <span>0</span>
                 </div>

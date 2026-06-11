@@ -7,31 +7,31 @@ require_once 'includes/header.php';
 
 $testimonials = [
     [
-        'name' => 'James Smith',
-        'role' => 'CEO, Tech Startup',
-        'initials' => 'JS',
-        'message' => 'Anprix completely transformed our business website. Their SEO strategy improved our Google rankings and we started receiving more leads within weeks.',
+        'name' => 'Arjun Singh',
+        'role' => 'Software Engineer',
+        'initials' => 'AS',
+        'message' => 'High-quality work with a strong focus on performance and scalability. I would definitely recommend them.',
         'stars' => 5,
         'color' => 'from-[#00ffb3] to-[#00b7ff]',
         'star_color' => '#00ffb3'
     ],
     [
-        'name' => 'Amelia Khan',
-        'role' => 'eCommerce Brand Owner',
-        'initials' => 'AK',
-        'message' => 'We hired Anprix for Shopify development and Google Ads. Their team created a premium store and helped us increase sales significantly.',
+        'name' => 'Sripani',
+        'role' => 'Laravel Developer',
+        'initials' => 'SP',
+        'message' => 'Very professional approach and strong technical skills. The project was completed on time with great attention to detail.',
         'stars' => 5,
         'color' => 'from-[#00b7ff] to-[#00ffb3]',
         'star_color' => '#00b7ff'
     ],
     [
-        'name' => 'Robert Brown',
-        'role' => 'Marketing Director',
-        'initials' => 'RB',
-        'message' => 'Their digital marketing campaigns generated quality leads for our company. Professional communication, modern design, and excellent support.',
+        'name' => 'Sagar Mehta',
+        'role' => 'Wordpress Developer',
+        'initials' => 'SG',
+        'message' => 'Working with this team was a pleasure. They understood our requirements clearly and delivered beyond expectations.',
         'stars' => 5,
-        'color' => 'from-[#00ffb3] to-[#00b7ff]',
-        'star_color' => '#00ffb3'
+        'color' => 'from-[#00b7ff] to-[#00ffb3]',
+        'star_color' => '#00b7ff'
     ]
 ];
 
@@ -56,7 +56,7 @@ $testimonials = [
             </div>
 
             <!-- H1 -->
-            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight mb-6 lg:mb-8">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-6 lg:mb-8">
                 Website Development
                 <span class="green-text">Company</span>
                 in
@@ -73,7 +73,7 @@ $testimonials = [
             </p>
 
             <!-- Buttons -->
-            <div class="flex flex-col sm:flex-row gap-4 sm:gap-5 justify-center lg:justify-start">
+            <div class="flex flex-col sm:flex-row gap-4 sm:gap-5 mb-5 justify-center lg:justify-start">
                 <a href="contact.php"
                     class="btn-primary px-7 sm:px-8 py-4 rounded-2xl text-base sm:text-lg shadow-2xl w-full sm:w-auto text-center">
                     Get Free Consultation
@@ -86,7 +86,7 @@ $testimonials = [
             </div>
 
             <!-- Stats -->
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mt-12 mb-5 lg:mt-14 text-center lg:text-left">
+            <!-- <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mt-12 mb-5 lg:mt-14 text-center lg:text-left">
                 <div>
                     <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold green-text">
                         250+
@@ -113,73 +113,64 @@ $testimonials = [
                         Technical Support
                     </p>
                 </div>
-            </div>
+            </div> -->
         </div>
 
         <!-- RIGHT CONTENT -->
-        <div class="relative mt-6 lg:mt-0">
+        <div class="relative mt-6 lg:mt-0 flex items-center justify-center">
 
             <div class="absolute -top-10 -left-10 w-48 sm:w-72 h-48 sm:h-72 bg-[#00ffb3]/10 blur-[100px] rounded-full"></div>
             <div class="absolute bottom-0 right-0 w-48 sm:w-72 h-48 sm:h-72 bg-[#00b7ff]/10 blur-[100px] rounded-full"></div>
 
-            <div class="relative glass-card rounded-[28px] sm:rounded-[35px] p-5 sm:p-8 lg:p-10 shadow-2xl">
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6">
-
-                    <!-- Custom Development -->
-                    <div class="bg-black/40 border border-white/5 rounded-3xl p-5 sm:p-6">
-                        <div class="text-3xl sm:text-4xl mb-4 text-[#00ffb3]">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <h3 class="text-xl sm:text-2xl font-bold mb-3">
-                            Custom Website Development
-                        </h3>
-                        <p class="text-gray-400 leading-7 text-sm sm:text-base">
-                            Tailor-made websites designed to match your business goals and brand identity.
-                        </p>
-                    </div>
-
-                    <!-- Ecommerce -->
-                    <div class="bg-black/40 border border-white/5 rounded-3xl p-5 sm:p-6">
-                        <div class="text-3xl sm:text-4xl mb-4 text-[#00b7ff]">
-                            <i class="fas fa-shopping-cart"></i>
-                        </div>
-                        <h3 class="text-xl sm:text-2xl font-bold mb-3">
-                            eCommerce Development
-                        </h3>
-                        <p class="text-gray-400 leading-7 text-sm sm:text-base">
-                            Shopify, WooCommerce, and custom online stores built to maximize sales.
-                        </p>
-                    </div>
-
-                    <!-- Laravel -->
-                    <div class="bg-black/40 border border-white/5 rounded-3xl p-5 sm:p-6">
-                        <div class="text-3xl sm:text-4xl mb-4 text-[#00ffb3]">
-                            <i class="fab fa-laravel"></i>
-                        </div>
-                        <h3 class="text-xl sm:text-2xl font-bold mb-3">
-                            Laravel Development
-                        </h3>
-                        <p class="text-gray-400 leading-7 text-sm sm:text-base">
-                            Scalable and secure Laravel web applications for startups and enterprises.
-                        </p>
-                    </div>
-
-                    <!-- Website Redesign -->
-                    <div class="bg-black/40 border border-white/5 rounded-3xl p-5 sm:p-6">
-                        <div class="text-3xl sm:text-4xl mb-4 text-[#00b7ff]">
-                            <i class="fas fa-sync-alt"></i>
-                        </div>
-                        <h3 class="text-xl sm:text-2xl font-bold mb-3">
-                            Website Redesign
-                        </h3>
-                        <p class="text-gray-400 leading-7 text-sm sm:text-base">
-                            Modernize outdated websites with improved UI/UX, speed, SEO, and conversions.
-                        </p>
-                    </div>
-
+            <!-- MAIN IMAGE SHOWCASE -->
+            <div class="relative w-full max-w-full lg:max-w-2xl mx-auto">
+                <div class="glass-card rounded-[22px] sm:rounded-[30px] p-1 sm:p-2 hero-image-glow pulse-ring text-center">
+                    <img src="assets/images/heroright1.png"
+                         alt="Anprix Solutions - Website Development Company"
+                         class="w-full max-w-[90%] sm:max-w-[500px] md:max-w-[620px] lg:max-w-[720px] mx-auto animate-float">
                 </div>
+
+                <!-- Floating Badge: Web Development -->
+                <div class="floating-badge absolute -top-3 -right-1 sm:-top-6 sm:-right-4 rounded-2xl px-3 py-2 sm:px-4 sm:py-3 animate-float">
+                    <div class="flex items-center gap-2.5">
+                        <div class="w-9 h-9 rounded-xl bg-[#00ffb3]/20 flex items-center justify-center text-[#00ffb3]">
+                            <i class="fas fa-code text-sm"></i>
+                        </div>
+                        <div class="text-left">
+                            <p class="text-[10px] text-gray-500 uppercase tracking-wide">Expert In</p>
+                            <p class="text-sm font-semibold">Web Development</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Floating Badge: SEO -->
+                <div class="floating-badge absolute -bottom-2 -left-1 sm:-bottom-5 sm:-left-5 rounded-2xl px-3 py-2 sm:px-4 sm:py-3 animate-float-delayed">
+                    <div class="flex items-center gap-2.5">
+                        <div class="w-9 h-9 rounded-xl bg-[#00b7ff]/20 flex items-center justify-center text-[#00b7ff]">
+                            <i class="fas fa-chart-line text-sm"></i>
+                        </div>
+                        <div class="text-left">
+                            <p class="text-[10px] text-gray-500 uppercase tracking-wide">Top Rated</p>
+                            <p class="text-sm font-semibold">SEO Services</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Floating Badge: eCommerce -->
+                <!-- <div class="floating-badge absolute -bottom-3 -right-3 sm:-bottom-5 sm:-right-5 rounded-2xl px-4 py-3 animate-float" style="animation-delay: 2s;">
+                    <div class="flex items-center gap-2.5">
+                        <div class="w-9 h-9 rounded-xl bg-[#00ffb3]/20 flex items-center justify-center text-[#00ffb3]">
+                            <i class="fas fa-shopping-cart text-sm"></i>
+                        </div>
+                        <div class="text-left">
+                            <p class="text-[10px] text-gray-500 uppercase tracking-wide">Premium</p>
+                            <p class="text-sm font-semibold">eCommerce Stores</p>
+                        </div>
+                    </div>
+                </div> -->
+
             </div>
+
         </div>
 
     </div>
@@ -187,48 +178,288 @@ $testimonials = [
 
 </section>
 
-<!-- SEO CONTENT SECTION -->
+<!-- HOW WE WORK SECTION -->
+<section class="py-16 md:py-24 section-border overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
 
-<section class="py-20">
+        <div class="text-center mb-14 md:mb-20 fade-in-up">
+            <p class="green-text font-semibold tracking-[0.25em] uppercase mb-4 text-sm">
+                HOW WE WORK
+            </p>
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-6 leading-tight">
+                From Idea to Launch in
+                <span class="green-text">4 Simple Steps</span>
+            </h2>
+            <p class="max-w-3xl mx-auto text-gray-400 text-base md:text-lg leading-8">
+                A streamlined process designed to deliver high-quality websites and digital solutions on time.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+
+            <!-- STEP 1 -->
+            <div class="process-card glass-card rounded-[24px] p-6 md:p-8 border border-white/10 text-center fade-in-up delay-100">
+                <div class="relative inline-flex mb-5">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#00ffb3]/20 to-[#00b7ff]/10 flex items-center justify-center">
+                        <i class="fas fa-lightbulb text-2xl text-[#00ffb3]"></i>
+                    </div>
+                    <span class="process-number absolute -top-2 -right-2 text-lg font-black">01</span>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Discovery</h3>
+                <p class="text-gray-400 text-sm leading-7">
+                    We analyze your business goals, target audience, and competitors to define the perfect strategy.
+                </p>
+            </div>
+
+            <!-- STEP 2 -->
+            <div class="process-card glass-card rounded-[24px] p-6 md:p-8 border border-white/10 text-center fade-in-up delay-200">
+                <div class="relative inline-flex mb-5">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#00b7ff]/20 to-[#00ffb3]/10 flex items-center justify-center">
+                        <i class="fas fa-paint-brush text-2xl text-[#00b7ff]"></i>
+                    </div>
+                    <span class="process-number absolute -top-2 -right-2 text-lg font-black">02</span>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Design</h3>
+                <p class="text-gray-400 text-sm leading-7">
+                    Modern UI/UX design with wireframes and prototypes tailored to your brand identity.
+                </p>
+            </div>
+
+            <!-- STEP 3 -->
+            <div class="process-card glass-card rounded-[24px] p-6 md:p-8 border border-white/10 text-center fade-in-up delay-300">
+                <div class="relative inline-flex mb-5">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#00ffb3]/20 to-[#00b7ff]/10 flex items-center justify-center">
+                        <i class="fas fa-code text-2xl text-[#00ffb3]"></i>
+                    </div>
+                    <span class="process-number absolute -top-2 -right-2 text-lg font-black">03</span>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Develop</h3>
+                <p class="text-gray-400 text-sm leading-7">
+                    Clean, scalable code with SEO best practices, speed optimization, and rigorous testing.
+                </p>
+            </div>
+
+            <!-- STEP 4 -->
+            <div class="process-card glass-card rounded-[24px] p-6 md:p-8 border border-white/10 text-center fade-in-up delay-400">
+                <div class="relative inline-flex mb-5">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#00b7ff]/20 to-[#00ffb3]/10 flex items-center justify-center">
+                        <i class="fas fa-rocket text-2xl text-[#00b7ff]"></i>
+                    </div>
+                    <span class="process-number absolute -top-2 -right-2 text-lg font-black">04</span>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Launch & Grow</h3>
+                <p class="text-gray-400 text-sm leading-7">
+                    Deploy, monitor, optimize, and provide ongoing support to ensure long-term success.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- WHY CHOOSE SECTION - ADVANCED LAYOUT -->
+
+<section class="py-16 md:py-24 overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2 class="text-4xl font-bold mb-8">
-        Why Choose Our Website Development Company?
-    </h2>
 
-    <p class="text-lg text-gray-400 leading-9 mb-6">
-        We specialize in creating high-performance websites that help businesses establish a
-        strong online presence. Our team combines creative design, modern technologies, and
-        SEO best practices to build websites that not only look great but also drive measurable results.
-    </p>
+    <div class="text-center mb-12 md:mb-16 fade-in-up">
+        <p class="green-text font-semibold tracking-[0.25em] uppercase mb-4 text-sm">
+            WHY ANPRIX
+        </p>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-6 leading-tight">
+            Built for <span class="green-text">Performance</span>.<br class="sm:hidden">
+            Driven by <span class="blue-text">Results</span>.
+        </h2>
+        <p class="max-w-3xl mx-auto text-gray-400 text-base md:text-lg leading-8">
+            We combine creative design, modern technology, and SEO expertise to build
+            websites that don't just look great — they drive real business growth.
+        </p>
+    </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-6 md:gap-8">
 
-        <div class="glass-card p-6 rounded-3xl">
-            <h3 class="text-xl font-bold mb-3">SEO-Friendly Development</h3>
-            <p class="text-gray-400">
-                Optimized website architecture for better Google rankings.
-            </p>
+        <!-- LEFT: STATS DASHBOARD PANEL -->
+        <div class="lg:col-span-2 fade-in-up">
+            <div class="why-panel rounded-[28px] md:rounded-[36px] p-7 sm:p-9 md:p-10 h-full">
+                <div class="dot-pattern"></div>
+                <div class="why-panel-content">
+
+                    <!-- Brand mark -->
+                    <div class="flex items-center gap-3 mb-8">
+                        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-[#00ffb3] to-[#00b7ff] flex items-center justify-center text-black font-black text-lg">
+                            A
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold">Anprix Solutions</p>
+                            <p class="text-xs text-gray-500">Est. 2025</p>
+                        </div>
+                    </div>
+
+                    <!-- Stats grid -->
+                    <div class="grid grid-cols-2 gap-5 mb-8">
+
+                        <!-- Stat 1 -->
+                        <div class="why-stat flex items-center gap-3">
+                            <div class="why-stat-ring">
+                                <svg viewBox="0 0 55 55">
+                                    <circle class="ring-bg" cx="27.5" cy="27.5" r="25"/>
+                                    <circle class="ring-fg" id="ring1" cx="27.5" cy="27.5" r="25"
+                                        style="stroke: #00ffb3; --offset: 31;"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="why-stat-number">100+</span>
+                                <p class="text-gray-500 text-xs leading-tight mt-1">Websites Delivered</p>
+                            </div>
+                        </div>
+
+                        <!-- Stat 2 -->
+                        <div class="why-stat flex items-center gap-3">
+                            <div class="why-stat-ring">
+                                <svg viewBox="0 0 55 55">
+                                    <circle class="ring-bg" cx="27.5" cy="27.5" r="25"/>
+                                    <circle class="ring-fg" id="ring2" cx="27.5" cy="27.5" r="25"
+                                        style="stroke: #00b7ff; --offset: 47;"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="why-stat-number">50+</span>
+                                <p class="text-gray-500 text-xs leading-tight mt-1">Happy Clients</p>
+                            </div>
+                        </div>
+
+                        <!-- Stat 3 -->
+                        <div class="why-stat flex items-center gap-3">
+                            <div class="why-stat-ring">
+                                <svg viewBox="0 0 55 55">
+                                    <circle class="ring-bg" cx="27.5" cy="27.5" r="25"/>
+                                    <circle class="ring-fg" id="ring3" cx="27.5" cy="27.5" r="25"
+                                        style="stroke: #00ffb3; --offset: 16;"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="why-stat-number">98%</span>
+                                <p class="text-gray-500 text-xs leading-tight mt-1">Client Satisfaction</p>
+                            </div>
+                        </div>
+
+                        <!-- Stat 4 -->
+                        <div class="why-stat flex items-center gap-3">
+                            <div class="why-stat-ring">
+                                <svg viewBox="0 0 55 55">
+                                    <circle class="ring-bg" cx="27.5" cy="27.5" r="25"/>
+                                    <circle class="ring-fg" id="ring4" cx="27.5" cy="27.5" r="25"
+                                        style="stroke: #00b7ff; --offset: 0;"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="why-stat-number">24/7</span>
+                                <p class="text-gray-500 text-xs leading-tight mt-1">Premium Support</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Description -->
+                    <p class="text-gray-400 text-sm leading-7 border-t border-white/5 pt-6">
+                        From startups to enterprises, we deliver high-performance digital solutions
+                        that help businesses establish a strong online presence, generate quality leads,
+                        and scale revenue.
+                    </p>
+
+                    <!-- Trust bar -->
+                    <div class="flex flex-wrap items-center gap-4 mt-6 pt-4 border-t border-white/5">
+                        <div class="flex items-center gap-1.5 text-xs text-gray-500">
+                            <i class="fas fa-star text-[#00ffb3] text-[10px]"></i>
+                            <span>4.9 avg rating</span>
+                        </div>
+                        <div class="flex items-center gap-1.5 text-xs text-gray-500">
+                            <i class="fas fa-shield-alt text-[#00b7ff] text-[10px]"></i>
+                            <span>SSL secure</span>
+                        </div>
+                        <div class="flex items-center gap-1.5 text-xs text-gray-500">
+                            <i class="fas fa-clock text-[#00ffb3] text-[10px]"></i>
+                            <span>Fast turnaround</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
 
-        <div class="glass-card p-6 rounded-3xl">
-            <h3 class="text-xl font-bold mb-3">Mobile Responsive</h3>
-            <p class="text-gray-400">
-                Fully responsive websites across all devices and screen sizes.
-            </p>
-        </div>
+        <!-- RIGHT: FEATURE CARDS 2x2 -->
+        <div class="lg:col-span-3">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-5 h-full">
 
-        <div class="glass-card p-6 rounded-3xl">
-            <h3 class="text-xl font-bold mb-3">Fast Loading Speed</h3>
-            <p class="text-gray-400">
-                Performance-optimized websites for better user experience.
-            </p>
-        </div>
+                <!-- Card 1 -->
+                <div class="why-feature-card fade-in-up delay-100">
+                    <div class="why-feature-icon mb-5" style="background: rgba(0, 255, 179, 0.1); color: #00ffb3;">
+                        <div class="why-feature-icon-glow" style="background: #00ffb3;"></div>
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold mb-3">SEO-First Development</h3>
+                    <p class="text-gray-400 text-sm leading-7">
+                        Every site is built with semantic HTML, structured data, and
+                        optimized architecture to rank higher on Google from day one.
+                    </p>
+                    <div class="mt-4 flex items-center gap-2 text-xs text-gray-500">
+                        <span class="w-1.5 h-1.5 rounded-full bg-[#00ffb3]"></span>
+                        PageSpeed 90+
+                    </div>
+                </div>
 
-        <div class="glass-card p-6 rounded-3xl">
-            <h3 class="text-xl font-bold mb-3">Ongoing Support</h3>
-            <p class="text-gray-400">
-                Dedicated maintenance and technical support after launch.
-            </p>
+                <!-- Card 2 -->
+                <div class="why-feature-card fade-in-up delay-200">
+                    <div class="why-feature-icon mb-5" style="background: rgba(0, 183, 255, 0.1); color: #00b7ff;">
+                        <div class="why-feature-icon-glow" style="background: #00b7ff;"></div>
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold mb-3">Fully Responsive</h3>
+                    <p class="text-gray-400 text-sm leading-7">
+                        Flawless experience across every device — mobile, tablet, laptop,
+                        and desktop — with pixel-perfect adaptive layouts.
+                    </p>
+                    <div class="mt-4 flex items-center gap-2 text-xs text-gray-500">
+                        <span class="w-1.5 h-1.5 rounded-full bg-[#00b7ff]"></span>
+                        100% mobile-friendly
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="why-feature-card fade-in-up delay-300">
+                    <div class="why-feature-icon mb-5" style="background: rgba(0, 255, 179, 0.1); color: #00ffb3;">
+                        <div class="why-feature-icon-glow" style="background: #00ffb3;"></div>
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold mb-3">Lightning Fast Speed</h3>
+                    <p class="text-gray-400 text-sm leading-7">
+                        Performance-optimized code, lazy-loaded assets, CDN integration,
+                        and caching strategies for sub-second load times.
+                    </p>
+                    <div class="mt-4 flex items-center gap-2 text-xs text-gray-500">
+                        <span class="w-1.5 h-1.5 rounded-full bg-[#00ffb3]"></span>
+                        Avg load &lt; 1.5s
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="why-feature-card fade-in-up delay-400">
+                    <div class="why-feature-icon mb-5" style="background: rgba(0, 183, 255, 0.1); color: #00b7ff;">
+                        <div class="why-feature-icon-glow" style="background: #00b7ff;"></div>
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold mb-3">Dedicated Support</h3>
+                    <p class="text-gray-400 text-sm leading-7">
+                        Ongoing maintenance, security monitoring, performance audits,
+                        and 24/7 technical support to keep your site running smoothly.
+                    </p>
+                    <div class="mt-4 flex items-center gap-2 text-xs text-gray-500">
+                        <span class="w-1.5 h-1.5 rounded-full bg-[#00b7ff]"></span>
+                        Response &lt; 2hrs
+                    </div>
+                </div>
+
+            </div>
         </div>
 
     </div>
@@ -244,7 +475,7 @@ $testimonials = [
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
 
         <!-- HEADING -->
-        <div class="text-center mb-14 md:mb-20">
+        <div class="text-center mb-14 md:mb-20 fade-in-up">
 
             <p class="green-text font-semibold tracking-[0.25em] uppercase mb-4 text-sm">
                 OUR SERVICES
@@ -262,11 +493,11 @@ $testimonials = [
         </div>
 
         <!-- SERVICES GRID -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6 md:gap-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 md:gap-8">
 
             <!-- WEBSITE DEVELOPMENT -->
             <a href="website-development.php"
-                class="service-card glass-card rounded-[24px] md:rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 hover:-translate-y-1 block">
+                class="service-card glass-card rounded-[24px] md:rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 hover:-translate-y-1 block fade-in-up delay-100">
 
                 <div class="text-4xl md:text-5xl mb-5 md:mb-6 text-[#00b7ff]">
                     <i class="fas fa-laptop-code"></i>
@@ -284,7 +515,7 @@ $testimonials = [
 
             <!-- CMS DEVELOPMENT -->
             <div
-                class="service-card glass-card rounded-[24px] md:rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1">
+                class="service-card glass-card rounded-[24px] md:rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1 fade-in-up delay-200">
 
                 <div class="text-4xl md:text-5xl mb-5 md:mb-6 text-[#00ffb3]">
                     <i class="fab fa-wordpress"></i>
@@ -302,7 +533,7 @@ $testimonials = [
 
             <!-- SEO SERVICES -->
             <a href="seo.php"
-                class="service-card glass-card rounded-[24px] md:rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1 block">
+                class="service-card glass-card rounded-[24px] md:rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1 block fade-in-up delay-300">
 
                 <div class="text-4xl md:text-5xl mb-5 md:mb-6 text-[#00ffb3]">
                     <i class="fas fa-chart-line"></i>
@@ -320,7 +551,7 @@ $testimonials = [
 
             <!-- DIGITAL MARKETING -->
             <a href="digital-marketing.php"
-                class="service-card glass-card rounded-[24px] md:rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 hover:-translate-y-1 block">
+                class="service-card glass-card rounded-[24px] md:rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 hover:-translate-y-1 block fade-in-up delay-100">
 
                 <div class="text-4xl md:text-5xl mb-5 md:mb-6 text-[#00b7ff]">
                     <i class="fas fa-bullhorn"></i>
@@ -338,7 +569,7 @@ $testimonials = [
 
             <!-- ADVERTISING -->
             <a href="advertising.php"
-                class="service-card glass-card rounded-[24px] md:rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1 block">
+                class="service-card glass-card rounded-[24px] md:rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1 block fade-in-up delay-200">
 
                 <div class="text-4xl md:text-5xl mb-5 md:mb-6 text-[#00b7ff]">
                     <i class="fas fa-bullhorn"></i>
@@ -356,7 +587,7 @@ $testimonials = [
 
             <!-- BRANDING & CREATIVE -->
             <a href="branding-creative.php"
-                class="service-card glass-card rounded-[24px] md:rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1 block">
+                class="service-card glass-card rounded-[24px] md:rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1 block fade-in-up delay-300">
 
                 <div class="text-4xl md:text-5xl mb-5 md:mb-6 text-[#00ffb3]">
                     <i class="fas fa-palette"></i>
@@ -382,7 +613,7 @@ $testimonials = [
     <div class="max-w-5xl mx-auto px-4 sm:px-6">
 
         <div
-            class="relative overflow-hidden rounded-[28px] md:rounded-[40px] border border-white/10 bg-gradient-to-r from-[#00ffb3]/10 to-[#00b7ff]/10 px-6 sm:px-10 md:px-14 py-12 md:py-16 text-center">
+            class="relative overflow-hidden rounded-[28px] md:rounded-[40px] border border-white/10 bg-gradient-to-r from-[#00ffb3]/10 to-[#00b7ff]/10 px-6 sm:px-10 md:px-14 py-12 md:py-16 text-center fade-in-up">
 
             <!-- BLUR BACKGROUND (FIXED: behind content) -->
             <div class="absolute inset-0 -z-10 backdrop-blur-xl"></div>
@@ -441,7 +672,7 @@ $testimonials = [
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
 
         <!-- HEADING -->
-        <div class="text-center mb-14 md:mb-20">
+        <div class="text-center mb-14 md:mb-20 fade-in-up">
             <p class="green-text font-semibold tracking-[0.25em] uppercase mb-4 text-sm">
                 CLIENT TESTIMONIALS
             </p>
@@ -460,14 +691,16 @@ $testimonials = [
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
 
             <?php
-            
-
+            $anim_delays = ['delay-100', 'delay-200', 'delay-300'];
+            $idx = 0;
             foreach($testimonials as $testimonial):
+            $current_delay = $anim_delays[$idx % 3];
+            $idx++;
             ?>
 
             <!-- CARD -->
             <div
-                class="glass-card rounded-[24px] md:rounded-[30px] p-6 md:p-8 border border-white/10 hover:border-[<?php echo $testimonial['star_color']; ?>]/30 transition-all duration-300 hover:-translate-y-1">
+                class="glass-card rounded-[24px] md:rounded-[30px] p-6 md:p-8 border border-white/10 hover:border-[<?php echo $testimonial['star_color']; ?>]/30 transition-all duration-300 hover:-translate-y-1 fade-in-up <?php echo $current_delay; ?>">
 
                 <!-- STARS -->
                 <div class="flex items-center gap-1 mb-5 md:mb-6 text-lg md:text-xl"
@@ -516,23 +749,23 @@ $testimonials = [
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mt-14 md:mt-20">
 
             <!-- STAT -->
-            <div class="glass-card rounded-2xl md:rounded-3xl p-6 md:p-8 text-center border border-white/10">
-                <h3 class="text-3xl sm:text-4xl md:text-5xl font-black green-text mb-3 counter" data-target="250">
-                    <span>250</span>+
+            <div class="stat-card glass-card rounded-2xl md:rounded-3xl p-6 md:p-8 text-center border border-white/10 fade-in-up delay-100">
+                <h3 class="text-3xl sm:text-4xl md:text-5xl font-black green-text mb-3 counter" data-target="100">
+                    <span>100</span>+
                 </h3>
                 <p class="text-gray-500 text-sm md:text-base leading-6">Completed Projects</p>
             </div>
 
             <!-- STAT -->
-            <div class="glass-card rounded-2xl md:rounded-3xl p-6 md:p-8 text-center border border-white/10">
-                <h3 class="text-3xl sm:text-4xl md:text-5xl font-black blue-text mb-3 counter" data-target="150">
-                    <span>150</span>+
+            <div class="stat-card glass-card rounded-2xl md:rounded-3xl p-6 md:p-8 text-center border border-white/10 fade-in-up delay-200">
+                <h3 class="text-3xl sm:text-4xl md:text-5xl font-black blue-text mb-3 counter" data-target="50">
+                    <span>50</span>+
                 </h3>
                 <p class="text-gray-500 text-sm md:text-base leading-6">Happy Clients</p>
             </div>
 
             <!-- STAT -->
-            <div class="glass-card rounded-2xl md:rounded-3xl p-6 md:p-8 text-center border border-white/10">
+            <div class="stat-card glass-card rounded-2xl md:rounded-3xl p-6 md:p-8 text-center border border-white/10 fade-in-up delay-300">
                 <h3 class="text-3xl sm:text-4xl md:text-5xl font-black green-text mb-3 counter" data-target="98">
                     <span>98</span>%
                 </h3>
@@ -540,7 +773,7 @@ $testimonials = [
             </div>
 
             <!-- STAT -->
-            <div class="glass-card rounded-2xl md:rounded-3xl p-6 md:p-8 text-center border border-white/10">
+            <div class="stat-card glass-card rounded-2xl md:rounded-3xl p-6 md:p-8 text-center border border-white/10 fade-in-up delay-400">
                 <h3 class="text-3xl sm:text-4xl md:text-5xl font-black blue-text mb-3 counter" data-target="24">
                     <span>24</span>/7
                 </h3>
@@ -559,7 +792,7 @@ $testimonials = [
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start lg:items-center">
 
             <!-- LEFT CONTENT -->
-            <div>
+            <div class="fade-in-up">
 
                 <p class="green-text font-semibold tracking-[0.25em] uppercase mb-4 text-sm">
                     HIRE ANPRIX
@@ -616,7 +849,7 @@ $testimonials = [
             </div>
 
             <!-- RIGHT FORM -->
-            <div class="glass-card rounded-[24px] md:rounded-[35px] p-6 sm:p-8 md:p-10 border border-white/10">
+            <div class="glass-card rounded-[24px] md:rounded-[35px] p-6 sm:p-8 md:p-10 border border-white/10 fade-in-up delay-200">
 
                 <h3 class="text-2xl sm:text-3xl md:text-4xl font-black mb-6">
                     Hire Us

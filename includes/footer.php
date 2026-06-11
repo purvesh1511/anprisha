@@ -150,7 +150,36 @@
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
 <script src="assets/js/hire-form.js"></script>
-<!-- Custom JavaScript -->
+
+<!-- Scroll Animation Script -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        document.querySelectorAll('.fade-in-up, .fade-in, .fade-in-scale').forEach(function(el) {
+            observer.observe(el);
+        });
+
+        // Animate SVG ring fills on scroll
+        var ringObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.3 });
+
+        document.querySelectorAll('.ring-fg').forEach(function(el) {
+            ringObserver.observe(el);
+        });
+    });
+</script>
 
 </body>
 
