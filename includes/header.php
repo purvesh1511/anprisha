@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <?php
-    $page_title_full = (isset($page_title) ? $page_title . ' | ' : '') . 'Best Digital Marketing Agency in Ahmedabad, India';
+    $page_title_full = $seo_title ?? (isset($page_title) ? $page_title . ' | ' : '') . 'Best Digital Marketing Agency in Ahmedabad, India';
     $page_desc = $page_description ?? SITE_DESCRIPTION;
     $canonical_url = $canonical_url ?? SITE_URL;
     $og_image = SITE_OG_IMAGE;
@@ -101,6 +101,34 @@
     <script type="application/ld+json">
     {
       "@context":"https://schema.org",
+      "@type":"Product",
+      "name":"Anprix Digital Solutions",
+      "aggregateRating":{
+        "@type":"AggregateRating",
+        "ratingValue":"4.9",
+        "reviewCount":"85",
+        "bestRating":"5"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"FAQPage",
+      "mainEntity":[
+        {"@type":"Question","name":"How much does website development cost in Ahmedabad?","acceptedAnswer":{"@type":"Answer","text":"Website development costs in Ahmedabad typically range from ₹15,000 for a basic static website to ₹1,50,000+ for a custom Laravel or Shopify eCommerce store. We provide a free consultation and detailed quote."}},
+        {"@type":"Question","name":"How long does a website project typically take?","acceptedAnswer":{"@type":"Answer","text":"A standard business website takes 2-4 weeks. eCommerce stores and custom web applications typically take 4-8 weeks depending on features and functionality."}},
+        {"@type":"Question","name":"Do you provide SEO services after the website is built?","acceptedAnswer":{"@type":"Answer","text":"Yes. We offer comprehensive SEO services including technical SEO, on-page optimization, keyword research, content strategy, link building, and monthly reporting."}},
+        {"@type":"Question","name":"Can you redesign my existing website?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. We specialize in website redesign and modernization with modern UI/UX, faster performance, SEO optimization, and mobile responsiveness."}},
+        {"@type":"Question","name":"What digital marketing services do you offer?","acceptedAnswer":{"@type":"Answer","text":"We offer Google Ads management, social media marketing, SEO, content marketing, email marketing, and conversion rate optimization tailored to your business goals."}}
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
       "@type":"LocalBusiness",
       "name":"Anprix Solutions",
       "url":"<?= SITE_URL; ?>",
@@ -145,7 +173,7 @@ $is_service_page = in_array(basename($_SERVER['PHP_SELF']), $service_pages);
             <a href="<?php echo SITE_URL; ?>">
                 <img src="<?php echo SITE_URL; ?>/assets/images/anprix-logo.png"
                     alt="Anprix Logo"
-                    class="h-14 w-auto" />
+                    class="h-12 sm:h-14 w-auto max-w-[140px] sm:max-w-none" />
             </a>
         </div>
 

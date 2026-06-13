@@ -1,7 +1,7 @@
 <!-- FOOTER -->
 <footer class="border-t border-white/5 bg-black">
     <div class="max-w-7xl mx-auto px-6 py-16">
-        <div class="grid md:grid-cols-4 gap-10">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
 
             <!-- ABOUT Section -->
             <div>
@@ -145,6 +145,14 @@
         </div>
     </div>
 </footer>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/916355035217?text=Hi%20Anprix!%20I%27d%20like%20to%20discuss%20a%20project."
+   target="_blank" rel="noopener noreferrer"
+   class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">Chat with us!</span>
+</a>
 
 <!-- Scripts -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>

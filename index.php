@@ -1,7 +1,8 @@
 <?php
 require_once 'config/config.php';
 $page_title = "Home";
-$page_description = "Anprix Solutions is a leading website design and development company in Ahmedabad, India, delivering custom websites, eCommerce solutions, and SEO-optimized web development services.";
+$seo_title = "Website Development, SEO & Digital Marketing Company in Ahmedabad | Anprix";
+$page_description = "Anprix Solutions is a leading website development, SEO, and digital marketing company in Ahmedabad, India. We build high-performance websites, Shopify stores, run Google Ads, and grow your business online.";
 $canonical_url = SITE_URL;
 require_once 'includes/header.php';
 
@@ -41,7 +42,7 @@ $testimonials = [
 
 <section class="hero-gradient min-h-screen flex items-center pt-24 lg:pt-32 overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-16 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
 
         <!-- LEFT CONTENT -->
@@ -57,31 +58,38 @@ $testimonials = [
 
             <!-- H1 -->
             <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-6 lg:mb-8">
-                Website Development
-                <span class="green-text">Company</span>
-                in
-                <span class="blue-text">Ahmedabad, India</span>
+                Build Websites.
+                <span class="green-text">Rank on Google.</span>
+                <span class="blue-text">Generate More Leads.</span>
             </h1>
 
             <!-- Description -->
             <p class="text-gray-400 text-base sm:text-lg leading-8 sm:leading-9 mb-8 lg:mb-10 max-w-2xl mx-auto lg:mx-0">
-                Anprix Solutions is a leading website design and development company in Ahmedabad, India,
-                delivering custom websites, eCommerce solutions, corporate websites, static websites,
-                dynamic websites, CMS development, Shopify stores, Laravel web applications, and website
-                redesign services. We build fast, secure, mobile-friendly, and SEO-optimized websites
-                that help businesses improve their online presence, generate more leads, and increase revenue.
+                Anprix Solutions is a leading website development, SEO, and digital marketing company in Ahmedabad, India.
+                We build custom websites, Shopify stores, and Laravel web applications, then optimize them with
+                technical SEO, Google Ads, and social media marketing to drive traffic, leads, and revenue.
             </p>
+
+            <!-- Service Tags -->
+            <div class="flex flex-wrap gap-2 mb-8 justify-center lg:justify-start">
+                <span class="text-xs px-3 py-1.5 rounded-full bg-[#00ffb3]/10 border border-[#00ffb3]/20 text-[#00ffb3]">Website Development</span>
+                <span class="text-xs px-3 py-1.5 rounded-full bg-[#00b7ff]/10 border border-[#00b7ff]/20 text-[#00b7ff]">SEO Services</span>
+                <span class="text-xs px-3 py-1.5 rounded-full bg-[#00ffb3]/10 border border-[#00ffb3]/20 text-[#00ffb3]">Google Ads</span>
+                <span class="text-xs px-3 py-1.5 rounded-full bg-[#00b7ff]/10 border border-[#00b7ff]/20 text-[#00b7ff]">Social Media Marketing</span>
+                <span class="text-xs px-3 py-1.5 rounded-full bg-[#00ffb3]/10 border border-[#00ffb3]/20 text-[#00ffb3]">Shopify Development</span>
+            </div>
 
             <!-- Buttons -->
             <div class="flex flex-col sm:flex-row gap-4 sm:gap-5 mb-5 justify-center lg:justify-start">
                 <a href="contact.php"
                     class="btn-primary px-7 sm:px-8 py-4 rounded-2xl text-base sm:text-lg shadow-2xl w-full sm:w-auto text-center">
-                    Get Free Consultation
+                    <i class="fas fa-rocket mr-2"></i>
+                    Get Free SEO Audit
                 </a>
 
-                <a href="portfolio.php"
+                <a href="hire.php"
                     class="border border-white/10 hover:border-[#00ffb3] hover:text-[#00ffb3] px-7 sm:px-8 py-4 rounded-2xl text-base sm:text-lg transition w-full sm:w-auto text-center">
-                    View Portfolio
+                    Start Your Project
                 </a>
             </div>
 
@@ -127,11 +135,11 @@ $testimonials = [
                 <div class="glass-card rounded-[22px] sm:rounded-[30px] p-1 sm:p-2 hero-image-glow pulse-ring text-center">
                     <img src="assets/images/heroright1.png"
                          alt="Anprix Solutions - Website Development Company"
-                         class="w-full max-w-[90%] sm:max-w-[500px] md:max-w-[620px] lg:max-w-[720px] mx-auto animate-float">
+                         class="w-full max-w-[85%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-[85%] xl:max-w-[680px] mx-auto animate-float">
                 </div>
 
                 <!-- Floating Badge: Web Development -->
-                <div class="floating-badge absolute -top-3 -right-1 sm:-top-6 sm:-right-4 rounded-2xl px-3 py-2 sm:px-4 sm:py-3 animate-float">
+                <div class="floating-badge absolute -top-3 right-1 sm:-top-6 sm:-right-4 rounded-2xl px-3 py-2 sm:px-4 sm:py-3 animate-float">
                     <div class="flex items-center gap-2.5">
                         <div class="w-9 h-9 rounded-xl bg-[#00ffb3]/20 flex items-center justify-center text-[#00ffb3]">
                             <i class="fas fa-code text-sm"></i>
@@ -144,7 +152,7 @@ $testimonials = [
                 </div>
 
                 <!-- Floating Badge: SEO -->
-                <div class="floating-badge absolute -bottom-2 -left-1 sm:-bottom-5 sm:-left-5 rounded-2xl px-3 py-2 sm:px-4 sm:py-3 animate-float-delayed">
+                <div class="floating-badge absolute -bottom-2 left-1 sm:-bottom-5 sm:-left-5 rounded-2xl px-3 py-2 sm:px-4 sm:py-3 animate-float-delayed">
                     <div class="flex items-center gap-2.5">
                         <div class="w-9 h-9 rounded-xl bg-[#00b7ff]/20 flex items-center justify-center text-[#00b7ff]">
                             <i class="fas fa-chart-line text-sm"></i>
@@ -178,299 +186,235 @@ $testimonials = [
 
 </section>
 
-<!-- HOW WE WORK SECTION -->
+<!-- TRUST BAR -->
+<section class="py-8 md:py-10 border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+            <div class="text-center fade-in-up delay-100">
+                <div class="text-2xl sm:text-3xl font-black green-text">100+</div>
+                <p class="text-gray-500 text-xs sm:text-sm mt-1">Websites Delivered</p>
+            </div>
+            <div class="text-center fade-in-up delay-200">
+                <div class="text-2xl sm:text-3xl font-black blue-text">50+</div>
+                <p class="text-gray-500 text-xs sm:text-sm mt-1">Happy Clients</p>
+            </div>
+            <div class="text-center fade-in-up delay-300">
+                <div class="text-2xl sm:text-3xl font-black green-text">98%</div>
+                <p class="text-gray-500 text-xs sm:text-sm mt-1">Client Satisfaction</p>
+            </div>
+            <div class="text-center fade-in-up delay-400">
+                <div class="text-2xl sm:text-3xl font-black blue-text">24/7</div>
+                <p class="text-gray-500 text-xs sm:text-sm mt-1">Premium Support</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CASE STUDIES / RESULTS SECTION -->
 <section class="py-16 md:py-24 section-border overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
 
         <div class="text-center mb-14 md:mb-20 fade-in-up">
             <p class="green-text font-semibold tracking-[0.25em] uppercase mb-4 text-sm">
-                HOW WE WORK
+                RECENT RESULTS
             </p>
             <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-6 leading-tight">
-                From Idea to Launch in
-                <span class="green-text">4 Simple Steps</span>
+                Real Projects, <span class="green-text">Real Growth</span>
             </h2>
             <p class="max-w-3xl mx-auto text-gray-400 text-base md:text-lg leading-8">
-                A streamlined process designed to deliver high-quality websites and digital solutions on time.
+                Here are some measurable results we've delivered for our clients through strategic digital solutions.
             </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
 
-            <!-- STEP 1 -->
-            <div class="process-card glass-card rounded-[24px] p-6 md:p-8 border border-white/10 text-center fade-in-up delay-100">
-                <div class="relative inline-flex mb-5">
-                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#00ffb3]/20 to-[#00b7ff]/10 flex items-center justify-center">
-                        <i class="fas fa-lightbulb text-2xl text-[#00ffb3]"></i>
-                    </div>
-                    <span class="process-number absolute -top-2 -right-2 text-lg font-black">01</span>
+            <div class="glass-card rounded-[24px] p-6 md:p-8 border border-white/10 text-center fade-in-up delay-100 hover:-translate-y-1 transition-all duration-300">
+                <div class="text-4xl md:text-5xl font-black green-text mb-2">300%</div>
+                <p class="text-gray-400 text-sm mb-3">Traffic Increase</p>
+                <div class="w-full h-1.5 rounded-full bg-white/5 overflow-hidden">
+                    <div class="h-full rounded-full bg-gradient-to-r from-[#00ffb3] to-[#00b7ff]" style="width: 90%"></div>
                 </div>
-                <h3 class="text-xl font-bold mb-3">Discovery</h3>
-                <p class="text-gray-400 text-sm leading-7">
-                    We analyze your business goals, target audience, and competitors to define the perfect strategy.
-                </p>
+                <p class="text-gray-500 text-xs mt-3">SEO + Content strategy</p>
             </div>
 
-            <!-- STEP 2 -->
-            <div class="process-card glass-card rounded-[24px] p-6 md:p-8 border border-white/10 text-center fade-in-up delay-200">
-                <div class="relative inline-flex mb-5">
-                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#00b7ff]/20 to-[#00ffb3]/10 flex items-center justify-center">
-                        <i class="fas fa-paint-brush text-2xl text-[#00b7ff]"></i>
-                    </div>
-                    <span class="process-number absolute -top-2 -right-2 text-lg font-black">02</span>
+            <div class="glass-card rounded-[24px] p-6 md:p-8 border border-white/10 text-center fade-in-up delay-200 hover:-translate-y-1 transition-all duration-300">
+                <div class="text-4xl md:text-5xl font-black blue-text mb-2">150+</div>
+                <p class="text-gray-400 text-sm mb-3">Leads Generated</p>
+                <div class="w-full h-1.5 rounded-full bg-white/5 overflow-hidden">
+                    <div class="h-full rounded-full bg-gradient-to-r from-[#00b7ff] to-[#00ffb3]" style="width: 85%"></div>
                 </div>
-                <h3 class="text-xl font-bold mb-3">Design</h3>
-                <p class="text-gray-400 text-sm leading-7">
-                    Modern UI/UX design with wireframes and prototypes tailored to your brand identity.
-                </p>
+                <p class="text-gray-500 text-xs mt-3">Google Ads campaign</p>
             </div>
 
-            <!-- STEP 3 -->
-            <div class="process-card glass-card rounded-[24px] p-6 md:p-8 border border-white/10 text-center fade-in-up delay-300">
-                <div class="relative inline-flex mb-5">
-                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#00ffb3]/20 to-[#00b7ff]/10 flex items-center justify-center">
-                        <i class="fas fa-code text-2xl text-[#00ffb3]"></i>
-                    </div>
-                    <span class="process-number absolute -top-2 -right-2 text-lg font-black">03</span>
+            <div class="glass-card rounded-[24px] p-6 md:p-8 border border-white/10 text-center fade-in-up delay-300 hover:-translate-y-1 transition-all duration-300">
+                <div class="text-4xl md:text-5xl font-black green-text mb-2">95</div>
+                <p class="text-gray-400 text-sm mb-3">PageSpeed Score</p>
+                <div class="w-full h-1.5 rounded-full bg-white/5 overflow-hidden">
+                    <div class="h-full rounded-full bg-gradient-to-r from-[#00ffb3] to-[#00b7ff]" style="width: 95%"></div>
                 </div>
-                <h3 class="text-xl font-bold mb-3">Develop</h3>
-                <p class="text-gray-400 text-sm leading-7">
-                    Clean, scalable code with SEO best practices, speed optimization, and rigorous testing.
-                </p>
+                <p class="text-gray-500 text-xs mt-3">Performance optimization</p>
             </div>
 
-            <!-- STEP 4 -->
-            <div class="process-card glass-card rounded-[24px] p-6 md:p-8 border border-white/10 text-center fade-in-up delay-400">
-                <div class="relative inline-flex mb-5">
-                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#00b7ff]/20 to-[#00ffb3]/10 flex items-center justify-center">
-                        <i class="fas fa-rocket text-2xl text-[#00b7ff]"></i>
-                    </div>
-                    <span class="process-number absolute -top-2 -right-2 text-lg font-black">04</span>
+            <div class="glass-card rounded-[24px] p-6 md:p-8 border border-white/10 text-center fade-in-up delay-400 hover:-translate-y-1 transition-all duration-300">
+                <div class="text-4xl md:text-5xl font-black blue-text mb-2">3x</div>
+                <p class="text-gray-400 text-sm mb-3">Sales Growth</p>
+                <div class="w-full h-1.5 rounded-full bg-white/5 overflow-hidden">
+                    <div class="h-full rounded-full bg-gradient-to-r from-[#00b7ff] to-[#00ffb3]" style="width: 88%"></div>
                 </div>
-                <h3 class="text-xl font-bold mb-3">Launch & Grow</h3>
-                <p class="text-gray-400 text-sm leading-7">
-                    Deploy, monitor, optimize, and provide ongoing support to ensure long-term success.
-                </p>
+                <p class="text-gray-500 text-xs mt-3">Shopify redesign + SEO</p>
             </div>
 
         </div>
+
+        <div class="text-center mt-10 fade-in-up">
+            <a href="portfolio.php"
+               class="inline-flex items-center gap-2 text-[#00ffb3] hover:text-white transition border border-[#00ffb3]/30 hover:border-[#00ffb3] px-6 py-3 rounded-2xl text-sm font-semibold">
+                View Full Portfolio
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+
     </div>
 </section>
 
-<!-- WHY CHOOSE SECTION - ADVANCED LAYOUT -->
-
-<section class="py-16 md:py-24 overflow-hidden">
+<!-- HOW WE WORK - 2-COLUMN LAYOUT -->
+<section class="py-16 md:py-24 lg:py-28 section-border overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-    <div class="text-center mb-12 md:mb-16 fade-in-up">
-        <p class="green-text font-semibold tracking-[0.25em] uppercase mb-4 text-sm">
-            WHY ANPRIX
-        </p>
-        <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-6 leading-tight">
-            Built for <span class="green-text">Performance</span>.<br class="sm:hidden">
-            Driven by <span class="blue-text">Results</span>.
-        </h2>
-        <p class="max-w-3xl mx-auto text-gray-400 text-base md:text-lg leading-8">
-            We combine creative design, modern technology, and SEO expertise to build
-            websites that don't just look great — they drive real business growth.
-        </p>
-    </div>
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
-    <div class="grid grid-cols-1 lg:grid-cols-5 gap-6 md:gap-8">
+            <!-- LEFT COLUMN - enhanced -->
+            <div class="lg:sticky lg:top-24 fade-in-up">
 
-        <!-- LEFT: STATS DASHBOARD PANEL -->
-        <div class="lg:col-span-2 fade-in-up">
-            <div class="why-panel rounded-[28px] md:rounded-[36px] p-7 sm:p-9 md:p-10 h-full">
-                <div class="dot-pattern"></div>
-                <div class="why-panel-content">
+                <!-- DECORATIVE GLASS ELEMENT -->
+                <div class="relative inline-block mb-8">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-[#00ffb3]/20 to-[#00b7ff]/20 rounded-2xl blur-xl opacity-60"></div>
+                    <div class="relative px-5 py-2.5 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm">
+                        <p class="green-text font-semibold tracking-[0.25em] uppercase text-xs flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-[#00ffb3] animate-pulse shadow-lg shadow-[#00ffb3]/50"></span>
+                            HOW WE WORK
+                            <span class="w-2 h-2 rounded-full bg-[#00b7ff] animate-pulse shadow-lg shadow-[#00b7ff]/50"></span>
+                        </p>
+                    </div>
+                </div>
 
-                    <!-- Brand mark -->
-                    <div class="flex items-center gap-3 mb-8">
-                        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-[#00ffb3] to-[#00b7ff] flex items-center justify-center text-black font-black text-lg">
-                            A
+                <!-- HEADING -->
+                <h2 class="text-4xl sm:text-5xl md:text-6xl font-black mb-6 leading-[1.1]">
+                    How We <span class="green-text">Deliver</span><br>
+                    <span class="text-white/70">Results</span>
+                </h2>
+
+                <!-- GRADIENT DECORATIVE LINE -->
+                <div class="w-24 h-1 bg-gradient-to-r from-[#00ffb3] to-[#00b7ff] rounded-full mb-8"></div>
+
+                <!-- DESCRIPTION -->
+                <p class="text-gray-400 text-base md:text-lg leading-8 mb-8">
+                    A streamlined process designed to deliver high-quality websites
+                    and digital solutions on time, every time.
+                </p>
+
+                <!-- MINI STATS ROW -->
+                <div class="flex flex-wrap gap-6 mb-10">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-[#00ffb3]/20 to-[#00b7ff]/10 flex items-center justify-center">
+                            <i class="fas fa-rocket text-sm text-[#00ffb3]"></i>
                         </div>
                         <div>
-                            <p class="text-sm font-semibold">Anprix Solutions</p>
-                            <p class="text-xs text-gray-500">Est. 2025</p>
+                            <p class="text-white font-bold text-sm">Fast</p>
+                            <p class="text-gray-500 text-xs">2-week delivery</p>
                         </div>
                     </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-[#00b7ff]/20 to-[#00ffb3]/10 flex items-center justify-center">
+                            <i class="fas fa-code text-sm text-[#00b7ff]"></i>
+                        </div>
+                        <div>
+                            <p class="text-white font-bold text-sm">Modern</p>
+                            <p class="text-gray-500 text-xs">SEO-optimized code</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-[#00ffb3]/20 to-[#00b7ff]/10 flex items-center justify-center">
+                            <i class="fas fa-headset text-sm text-[#00ffb3]"></i>
+                        </div>
+                        <div>
+                            <p class="text-white font-bold text-sm">Support</p>
+                            <p class="text-gray-500 text-xs">24/7 dedicated</p>
+                        </div>
+                    </div>
+                </div>
 
-                    <!-- Stats grid -->
-                    <div class="grid grid-cols-2 gap-5 mb-8">
+                <!-- CTA BUTTON -->
+                <a href="#contactForm"
+                    class="btn-primary inline-flex items-center gap-3 px-8 py-4 rounded-full text-sm font-bold hover:scale-105 transition-all shadow-lg shadow-[#00ffb3]/20">
+                    Start Your Project
+                    <span class="w-7 h-7 rounded-full bg-white/10 flex items-center justify-center">
+                        <i class="fas fa-arrow-right text-xs"></i>
+                    </span>
+                </a>
+            </div>
 
-                        <!-- Stat 1 -->
-                        <div class="why-stat flex items-center gap-3">
-                            <div class="why-stat-ring">
-                                <svg viewBox="0 0 55 55">
-                                    <circle class="ring-bg" cx="27.5" cy="27.5" r="25"/>
-                                    <circle class="ring-fg" id="ring1" cx="27.5" cy="27.5" r="25"
-                                        style="stroke: #00ffb3; --offset: 31;"/>
-                                </svg>
-                            </div>
-                            <div>
-                                <span class="why-stat-number">100+</span>
-                                <p class="text-gray-500 text-xs leading-tight mt-1">Websites Delivered</p>
-                            </div>
+            <!-- RIGHT COLUMN -->
+            <div>
+                <div class="flex flex-col gap-5">
+<?php
+$how_work_steps = [
+    ['num' => '01', 'title' => 'Discovery',
+     'desc' => 'We analyze your business goals, target audience, and competitors to define the perfect strategy.',
+     'color' => '#00ffb3', 'icon' => 'fa-lightbulb'],
+    ['num' => '02', 'title' => 'Design',
+     'desc' => 'Modern UI/UX design with wireframes and prototypes tailored to your brand identity.',
+     'color' => '#00b7ff', 'icon' => 'fa-paint-brush'],
+    ['num' => '03', 'title' => 'Develop',
+     'desc' => 'Clean, scalable code with SEO best practices, speed optimization, and rigorous testing.',
+     'color' => '#00ffb3', 'icon' => 'fa-code'],
+    ['num' => '04', 'title' => 'Launch & Grow',
+     'desc' => 'Deploy, monitor, optimize, and provide ongoing support to ensure long-term success.',
+     'color' => '#00b7ff', 'icon' => 'fa-rocket'],
+];
+?>
+
+                    <?php foreach ($how_work_steps as $i => $s): ?>
+                    <div class="process-step-card glass-card rounded-2xl p-6 md:p-7 relative border border-white/5 hover:bg-white/5 transition-all fade-in-up"
+                        style="transition-delay: <?= $i * 0.1 ?>s">
+
+                        <div class="process-step-number text-6xl md:text-7xl font-black text-white/10 absolute right-6 top-2 select-none">
+                            <?= $s['num'] ?>
                         </div>
 
-                        <!-- Stat 2 -->
-                        <div class="why-stat flex items-center gap-3">
-                            <div class="why-stat-ring">
-                                <svg viewBox="0 0 55 55">
-                                    <circle class="ring-bg" cx="27.5" cy="27.5" r="25"/>
-                                    <circle class="ring-fg" id="ring2" cx="27.5" cy="27.5" r="25"
-                                        style="stroke: #00b7ff; --offset: 47;"/>
-                                </svg>
+                        <div class="relative z-10 pr-20">
+                            <div class="flex items-center gap-3 mb-3">
+                                <div class="w-10 h-10 rounded-xl flex items-center justify-center"
+                                    style="background: <?= $s['color'] ?>20; color: <?= $s['color'] ?>;">
+                                    <i class="fas <?= $s['icon'] ?>"></i>
+                                </div>
+                                <h3 class="text-xl md:text-2xl font-bold">
+                                    <?= $s['title'] ?>
+                                </h3>
                             </div>
-                            <div>
-                                <span class="why-stat-number">50+</span>
-                                <p class="text-gray-500 text-xs leading-tight mt-1">Happy Clients</p>
-                            </div>
-                        </div>
-
-                        <!-- Stat 3 -->
-                        <div class="why-stat flex items-center gap-3">
-                            <div class="why-stat-ring">
-                                <svg viewBox="0 0 55 55">
-                                    <circle class="ring-bg" cx="27.5" cy="27.5" r="25"/>
-                                    <circle class="ring-fg" id="ring3" cx="27.5" cy="27.5" r="25"
-                                        style="stroke: #00ffb3; --offset: 16;"/>
-                                </svg>
-                            </div>
-                            <div>
-                                <span class="why-stat-number">98%</span>
-                                <p class="text-gray-500 text-xs leading-tight mt-1">Client Satisfaction</p>
-                            </div>
-                        </div>
-
-                        <!-- Stat 4 -->
-                        <div class="why-stat flex items-center gap-3">
-                            <div class="why-stat-ring">
-                                <svg viewBox="0 0 55 55">
-                                    <circle class="ring-bg" cx="27.5" cy="27.5" r="25"/>
-                                    <circle class="ring-fg" id="ring4" cx="27.5" cy="27.5" r="25"
-                                        style="stroke: #00b7ff; --offset: 0;"/>
-                                </svg>
-                            </div>
-                            <div>
-                                <span class="why-stat-number">24/7</span>
-                                <p class="text-gray-500 text-xs leading-tight mt-1">Premium Support</p>
+                            <p class="text-gray-400 leading-7">
+                                <?= $s['desc'] ?>
+                            </p>
+                            <div class="flex items-center gap-2 mt-4">
+                                <span class="w-1.5 h-1.5 rounded-full"
+                                    style="background: <?= $s['color'] ?>"></span>
+                                <span class="text-xs text-gray-500">
+                                    Step <?= $s['num'] ?>
+                                </span>
                             </div>
                         </div>
 
                     </div>
-
-                    <!-- Description -->
-                    <p class="text-gray-400 text-sm leading-7 border-t border-white/5 pt-6">
-                        From startups to enterprises, we deliver high-performance digital solutions
-                        that help businesses establish a strong online presence, generate quality leads,
-                        and scale revenue.
-                    </p>
-
-                    <!-- Trust bar -->
-                    <div class="flex flex-wrap items-center gap-4 mt-6 pt-4 border-t border-white/5">
-                        <div class="flex items-center gap-1.5 text-xs text-gray-500">
-                            <i class="fas fa-star text-[#00ffb3] text-[10px]"></i>
-                            <span>4.9 avg rating</span>
-                        </div>
-                        <div class="flex items-center gap-1.5 text-xs text-gray-500">
-                            <i class="fas fa-shield-alt text-[#00b7ff] text-[10px]"></i>
-                            <span>SSL secure</span>
-                        </div>
-                        <div class="flex items-center gap-1.5 text-xs text-gray-500">
-                            <i class="fas fa-clock text-[#00ffb3] text-[10px]"></i>
-                            <span>Fast turnaround</span>
-                        </div>
-                    </div>
+                    <?php endforeach; ?>
 
                 </div>
             </div>
-        </div>
 
-        <!-- RIGHT: FEATURE CARDS 2x2 -->
-        <div class="lg:col-span-3">
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-5 h-full">
-
-                <!-- Card 1 -->
-                <div class="why-feature-card fade-in-up delay-100">
-                    <div class="why-feature-icon mb-5" style="background: rgba(0, 255, 179, 0.1); color: #00ffb3;">
-                        <div class="why-feature-icon-glow" style="background: #00ffb3;"></div>
-                        <i class="fas fa-search"></i>
-                    </div>
-                    <h3 class="text-lg sm:text-xl font-bold mb-3">SEO-First Development</h3>
-                    <p class="text-gray-400 text-sm leading-7">
-                        Every site is built with semantic HTML, structured data, and
-                        optimized architecture to rank higher on Google from day one.
-                    </p>
-                    <div class="mt-4 flex items-center gap-2 text-xs text-gray-500">
-                        <span class="w-1.5 h-1.5 rounded-full bg-[#00ffb3]"></span>
-                        PageSpeed 90+
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="why-feature-card fade-in-up delay-200">
-                    <div class="why-feature-icon mb-5" style="background: rgba(0, 183, 255, 0.1); color: #00b7ff;">
-                        <div class="why-feature-icon-glow" style="background: #00b7ff;"></div>
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h3 class="text-lg sm:text-xl font-bold mb-3">Fully Responsive</h3>
-                    <p class="text-gray-400 text-sm leading-7">
-                        Flawless experience across every device — mobile, tablet, laptop,
-                        and desktop — with pixel-perfect adaptive layouts.
-                    </p>
-                    <div class="mt-4 flex items-center gap-2 text-xs text-gray-500">
-                        <span class="w-1.5 h-1.5 rounded-full bg-[#00b7ff]"></span>
-                        100% mobile-friendly
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="why-feature-card fade-in-up delay-300">
-                    <div class="why-feature-icon mb-5" style="background: rgba(0, 255, 179, 0.1); color: #00ffb3;">
-                        <div class="why-feature-icon-glow" style="background: #00ffb3;"></div>
-                        <i class="fas fa-bolt"></i>
-                    </div>
-                    <h3 class="text-lg sm:text-xl font-bold mb-3">Lightning Fast Speed</h3>
-                    <p class="text-gray-400 text-sm leading-7">
-                        Performance-optimized code, lazy-loaded assets, CDN integration,
-                        and caching strategies for sub-second load times.
-                    </p>
-                    <div class="mt-4 flex items-center gap-2 text-xs text-gray-500">
-                        <span class="w-1.5 h-1.5 rounded-full bg-[#00ffb3]"></span>
-                        Avg load &lt; 1.5s
-                    </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="why-feature-card fade-in-up delay-400">
-                    <div class="why-feature-icon mb-5" style="background: rgba(0, 183, 255, 0.1); color: #00b7ff;">
-                        <div class="why-feature-icon-glow" style="background: #00b7ff;"></div>
-                        <i class="fas fa-headset"></i>
-                    </div>
-                    <h3 class="text-lg sm:text-xl font-bold mb-3">Dedicated Support</h3>
-                    <p class="text-gray-400 text-sm leading-7">
-                        Ongoing maintenance, security monitoring, performance audits,
-                        and 24/7 technical support to keep your site running smoothly.
-                    </p>
-                    <div class="mt-4 flex items-center gap-2 text-xs text-gray-500">
-                        <span class="w-1.5 h-1.5 rounded-full bg-[#00b7ff]"></span>
-                        Response &lt; 2hrs
-                    </div>
-                </div>
-
-            </div>
         </div>
 
     </div>
-
-</div>
-
 </section>
-
-
-
-<!-- SERVICES SECTION -->
+<!-- WHY CHOOSE - REMOVED --><!-- SERVICES SECTION -->
 <section class="py-16 md:py-24 section-border overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
 
@@ -641,20 +585,20 @@ $testimonials = [
                 <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-4 sm:gap-5">
 
                     <!-- PRIMARY BUTTON -->
-                    <a href="hire.php"
+                    <a href="contact.php"
                         class="btn-primary w-full sm:w-auto px-8 md:px-10 py-3.5 md:py-4 rounded-2xl text-base md:text-lg shadow-2xl inline-flex items-center justify-center transition-all hover:scale-[1.02]">
 
-                        <i class="fas fa-rocket mr-2"></i>
-                        Start Your Project
+                        <i class="fas fa-file-alt mr-2"></i>
+                        Request Proposal
 
                     </a>
 
                     <!-- SECONDARY BUTTON -->
-                    <a href="contact.php"
+                    <a href="hire.php"
                         class="w-full sm:w-auto border border-white/10 hover:border-[#00ffb3] hover:text-[#00ffb3] px-8 md:px-10 py-3.5 md:py-4 rounded-2xl text-base md:text-lg transition-all inline-flex items-center justify-center">
 
-                        <i class="fas fa-headset mr-2"></i>
-                        Contact Us
+                        <i class="fas fa-calendar-check mr-2"></i>
+                        Book Free Consultation
 
                     </a>
 
@@ -785,11 +729,104 @@ $testimonials = [
     </div>
 </section>
 
+<!-- FAQ SECTION -->
+<section class="py-16 md:py-24 section-border overflow-hidden">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+
+        <div class="text-center mb-14 md:mb-16 fade-in-up">
+            <p class="green-text font-semibold tracking-[0.25em] uppercase mb-4 text-sm">
+                FAQ
+            </p>
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-6 leading-tight">
+                Frequently Asked <span class="green-text">Questions</span>
+            </h2>
+            <p class="max-w-3xl mx-auto text-gray-400 text-base md:text-lg leading-8">
+                Everything you need to know about our website development, SEO, and digital marketing services.
+            </p>
+        </div>
+
+        <div class="space-y-4" itemscope itemtype="https://schema.org/FAQPage">
+
+            <div class="glass-card rounded-2xl border border-white/10 overflow-hidden fade-in-up delay-100" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <button class="faq-btn w-full flex items-center justify-between p-5 sm:p-6 text-left transition" onclick="$(this).next().slideToggle(300);$(this).find('.faq-icon').toggleClass('rotate-180')">
+                    <span class="font-bold text-base sm:text-lg pr-4" itemprop="name">How much does website development cost in Ahmedabad?</span>
+                    <svg class="faq-icon w-5 h-5 shrink-0 text-[#00ffb3] transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="hidden px-5 sm:px-6 pb-5 sm:pb-6" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text" class="text-gray-400 text-sm sm:text-base leading-7">
+                        Website development costs in Ahmedabad typically range from ₹15,000 for a basic static website to ₹1,50,000+ for a custom Laravel or Shopify eCommerce store. The final cost depends on complexity, features, design requirements, and SEO optimization. We provide a free consultation and detailed quote after understanding your project needs.
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card rounded-2xl border border-white/10 overflow-hidden fade-in-up delay-200" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <button class="faq-btn w-full flex items-center justify-between p-5 sm:p-6 text-left transition" onclick="$(this).next().slideToggle(300);$(this).find('.faq-icon').toggleClass('rotate-180')">
+                    <span class="font-bold text-base sm:text-lg pr-4" itemprop="name">How long does a website project typically take?</span>
+                    <svg class="faq-icon w-5 h-5 shrink-0 text-[#00ffb3] transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="hidden px-5 sm:px-6 pb-5 sm:pb-6" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text" class="text-gray-400 text-sm sm:text-base leading-7">
+                        A standard business website takes 2-4 weeks from design to launch. eCommerce stores and custom web applications typically take 4-8 weeks depending on features and functionality. We follow a structured 4-step process — Discovery, Design, Develop, and Launch — to ensure timely delivery without compromising quality.
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card rounded-2xl border border-white/10 overflow-hidden fade-in-up delay-300" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <button class="faq-btn w-full flex items-center justify-between p-5 sm:p-6 text-left transition" onclick="$(this).next().slideToggle(300);$(this).find('.faq-icon').toggleClass('rotate-180')">
+                    <span class="font-bold text-base sm:text-lg pr-4" itemprop="name">Do you provide SEO services after the website is built?</span>
+                    <svg class="faq-icon w-5 h-5 shrink-0 text-[#00ffb3] transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="hidden px-5 sm:px-6 pb-5 sm:pb-6" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text" class="text-gray-400 text-sm sm:text-base leading-7">
+                        Yes. We offer comprehensive SEO services including technical SEO, on-page optimization, keyword research, content strategy, link building, and monthly performance reporting. Our SEO packages are designed to improve Google rankings, increase organic traffic, and generate quality leads for your business.
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card rounded-2xl border border-white/10 overflow-hidden fade-in-up delay-400" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <button class="faq-btn w-full flex items-center justify-between p-5 sm:p-6 text-left transition" onclick="$(this).next().slideToggle(300);$(this).find('.faq-icon').toggleClass('rotate-180')">
+                    <span class="font-bold text-base sm:text-lg pr-4" itemprop="name">Can you redesign my existing website?</span>
+                    <svg class="faq-icon w-5 h-5 shrink-0 text-[#00ffb3] transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="hidden px-5 sm:px-6 pb-5 sm:pb-6" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text" class="text-gray-400 text-sm sm:text-base leading-7">
+                        Absolutely. We specialize in website redesign and modernization. Whether your site is outdated, slow, or not generating leads, we can rebuild it with modern UI/UX, faster performance, SEO optimization, and mobile responsiveness — without losing your existing search rankings.
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card rounded-2xl border border-white/10 overflow-hidden fade-in-up delay-500" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <button class="faq-btn w-full flex items-center justify-between p-5 sm:p-6 text-left transition" onclick="$(this).next().slideToggle(300);$(this).find('.faq-icon').toggleClass('rotate-180')">
+                    <span class="font-bold text-base sm:text-lg pr-4" itemprop="name">What digital marketing services do you offer?</span>
+                    <svg class="faq-icon w-5 h-5 shrink-0 text-[#00ffb3] transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="hidden px-5 sm:px-6 pb-5 sm:pb-6" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text" class="text-gray-400 text-sm sm:text-base leading-7">
+                        We offer a full range of digital marketing services including Google Ads management, social media marketing (Facebook, Instagram, LinkedIn), search engine optimization (SEO), content marketing, email marketing, and conversion rate optimization. Each campaign is data-driven and tailored to your business goals.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
 <!-- HIRE US FORM SECTION -->
 <section class="py-16 md:py-24 section-border bg-[#050505] overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start lg:items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start lg:items-center">
 
             <!-- LEFT CONTENT -->
             <div class="fade-in-up">
@@ -954,7 +991,7 @@ $testimonials = [
                     <!-- BUTTON -->
                     <button type="submit"
                         class="w-full btn-primary py-4 sm:py-5 rounded-2xl text-base sm:text-lg font-semibold transition hover:scale-[1.02] active:scale-[0.98]">
-                        Submit Request
+                        Get Free Proposal
                         <i class="fa-solid fa-paper-plane ml-2"></i>
                     </button>
 
