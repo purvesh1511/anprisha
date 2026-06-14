@@ -368,42 +368,91 @@ require_once 'includes/header.php';
 
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+        <div class="flex flex-col lg:flex-row items-stretch gap-0 relative">
 
-            <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00ffb3]/30 transition hover:-translate-y-1">
-                <div class="text-4xl font-black green-text mb-4">01</div>
-                <i class="fas fa-heart text-3xl mb-4 text-[#00ffb3]"></i>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Brand Loyalty</h3>
-                <p class="text-gray-500 leading-7 text-sm md:text-base">
-                    Customers connect emotionally with strong brands.
-                </p>
+            <div class="flex-1 relative group">
+                <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 h-full hover:-translate-y-1 relative z-10">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="text-4xl font-black green-text">01</div>
+                        <i class="fas fa-heart text-3xl text-[#00ffb3] icon-hover"></i>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-3">Brand Loyalty</h3>
+                    <p class="text-gray-500 leading-7 text-sm md:text-base">
+                        Customers connect emotionally with strong brands.
+                    </p>
+                </div>
             </div>
 
-            <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00b7ff]/30 transition hover:-translate-y-1">
-                <div class="text-4xl font-black blue-text mb-4">02</div>
-                <i class="fas fa-star text-3xl mb-4 text-[#00b7ff]"></i>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Stand Out</h3>
-                <p class="text-gray-500 leading-7 text-sm md:text-base">
-                    Differentiate from competitors in your market.
-                </p>
+            <div class="chain-link hidden lg:flex">
+                <div class="chain-line"></div>
+                <i class="fas fa-link text-[#00ffb3] chain-icon"></i>
+                <div class="chain-line"></div>
+            </div>
+            <div class="chain-vertical lg:hidden">
+                <div class="chain-line-v"></div>
+                <i class="fas fa-link text-[#00ffb3] chain-icon-v"></i>
+                <div class="chain-line-v"></div>
             </div>
 
-            <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00ffb3]/30 transition hover:-translate-y-1">
-                <div class="text-4xl font-black green-text mb-4">03</div>
-                <i class="fas fa-shield-alt text-3xl mb-4 text-[#00ffb3]"></i>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Trust & Credibility</h3>
-                <p class="text-gray-500 leading-7 text-sm md:text-base">
-                    Professional branding builds instant trust.
-                </p>
+            <div class="flex-1 relative group">
+                <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 h-full hover:-translate-y-1 relative z-10">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="text-4xl font-black blue-text">02</div>
+                        <i class="fas fa-star text-3xl text-[#00b7ff] icon-hover"></i>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-3">Stand Out</h3>
+                    <p class="text-gray-500 leading-7 text-sm md:text-base">
+                        Differentiate from competitors in your market.
+                    </p>
+                </div>
             </div>
 
-            <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00b7ff]/30 transition hover:-translate-y-1">
-                <div class="text-4xl font-black blue-text mb-4">04</div>
-                <i class="fas fa-chart-line text-3xl mb-4 text-[#00b7ff]"></i>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Higher Value</h3>
-                <p class="text-gray-500 leading-7 text-sm md:text-base">
-                    Strong brands command premium pricing.
-                </p>
+            <div class="chain-link hidden lg:flex">
+                <div class="chain-line"></div>
+                <i class="fas fa-link text-[#00ffb3] chain-icon"></i>
+                <div class="chain-line"></div>
+            </div>
+            <div class="chain-vertical lg:hidden">
+                <div class="chain-line-v"></div>
+                <i class="fas fa-link text-[#00ffb3] chain-icon-v"></i>
+                <div class="chain-line-v"></div>
+            </div>
+
+            <div class="flex-1 relative group">
+                <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 h-full hover:-translate-y-1 relative z-10">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="text-4xl font-black green-text">03</div>
+                        <i class="fas fa-shield-alt text-3xl text-[#00ffb3] icon-hover"></i>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-3">Trust & Credibility</h3>
+                    <p class="text-gray-500 leading-7 text-sm md:text-base">
+                        Professional branding builds instant trust.
+                    </p>
+                </div>
+            </div>
+
+            <div class="chain-link hidden lg:flex">
+                <div class="chain-line"></div>
+                <i class="fas fa-link text-[#00ffb3] chain-icon"></i>
+                <div class="chain-line"></div>
+            </div>
+            <div class="chain-vertical lg:hidden">
+                <div class="chain-line-v"></div>
+                <i class="fas fa-link text-[#00ffb3] chain-icon-v"></i>
+                <div class="chain-line-v"></div>
+            </div>
+
+            <div class="flex-1 relative group">
+                <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 h-full hover:-translate-y-1 relative z-10">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="text-4xl font-black blue-text">04</div>
+                        <i class="fas fa-chart-line text-3xl text-[#00b7ff] icon-hover"></i>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-3">Higher Value</h3>
+                    <p class="text-gray-500 leading-7 text-sm md:text-base">
+                        Strong brands command premium pricing.
+                    </p>
+                </div>
             </div>
 
         </div>

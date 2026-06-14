@@ -2,7 +2,7 @@
 require_once 'config/config.php';
 $page_title = "CMS & eCommerce Development";
 $page_description = "Anprix offers CMS development across WordPress, Shopify, and custom platforms plus eCommerce solutions including WooCommerce and Shopify stores.";
-$canonical_url = SITE_URL . '/cms';
+$canonical_url = SITE_URL . '/cms-development';
 require_once 'includes/header.php';
 ?>
 
@@ -16,32 +16,76 @@ require_once 'includes/header.php';
     </div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
-        <div class="max-w-4xl">
+            <!-- LEFT CONTENT -->
+            <div>
 
-            <p class="uppercase tracking-[4px] md:tracking-[5px] text-[#00ffb3] font-semibold mb-5 md:mb-6 text-xs sm:text-sm">
-                CMS & eCommerce
-            </p>
-
-            <h1 class="text-4xl sm:text-5xl lg:text-7xl font-black leading-tight lg:leading-[1.05] mb-8 md:mb-10">
-
-                <span class="green-text block sm:inline">
+                <p class="uppercase tracking-[4px] md:tracking-[5px] text-[#00ffb3] font-semibold mb-5 md:mb-6 text-xs sm:text-sm">
                     CMS & eCommerce
-                </span>
+                </p>
 
-                Solutions For Your Business
+                <h1 class="text-4xl sm:text-5xl lg:text-7xl font-black leading-tight lg:leading-[1.05] mb-8 md:mb-10">
 
-            </h1>
+                    <span class="green-text block sm:inline">
+                        CMS & eCommerce
+                    </span>
 
-            <p class="text-base sm:text-lg md:text-xl text-gray-400 leading-8 md:leading-10 max-w-3xl">
+                    Solutions For Your Business
 
-                Anprix specializes in WordPress, Shopify, WooCommerce, and custom CMS
-                development to help you manage content and sell online with ease.
+                </h1>
 
-            </p>
+                <p class="text-base sm:text-lg md:text-xl text-gray-400 leading-8 md:leading-10">
+
+                    Anprix specializes in WordPress, Shopify, WooCommerce, and custom CMS
+                    development to help you manage content and sell online with ease.
+
+                </p>
+
+            </div>
+
+            <!-- RIGHT IMAGE -->
+            <div class="relative flex items-center justify-center">
+
+                <div class="absolute -top-10 -left-10 w-48 sm:w-72 h-48 sm:h-72 bg-[#00ffb3]/10 blur-[100px] rounded-full"></div>
+                <div class="absolute bottom-0 right-0 w-48 sm:w-72 h-48 sm:h-72 bg-[#00b7ff]/10 blur-[100px] rounded-full"></div>
+
+                <div class="relative w-full max-w-full lg:max-w-2xl mx-auto">
+                    <div class="glass-card rounded-[22px] sm:rounded-[30px] p-1 sm:p-2 hero-image-glow pulse-ring text-center">
+                        <img src="assets/images/cms-development.png"
+                             alt="Anprix Solutions - CMS & eCommerce Development"
+                             class="w-full max-w-[85%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-[85%] xl:max-w-[680px] mx-auto animate-float">
+                    </div>
+
+                    <div class="floating-badge absolute -top-3 right-1 sm:-top-6 sm:-right-4 rounded-2xl px-3 py-2 sm:px-4 sm:py-3 animate-float">
+                        <div class="flex items-center gap-2.5">
+                            <div class="w-9 h-9 rounded-xl bg-[#00ffb3]/20 flex items-center justify-center text-[#00ffb3]">
+                                <i class="fas fa-shopping-cart text-sm icon-float"></i>
+                            </div>
+                            <div class="text-left">
+                                <p class="text-[10px] text-gray-500 uppercase tracking-wide">Expert In</p>
+                                <p class="text-sm font-semibold">CMS & eCommerce</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="floating-badge absolute -bottom-2 left-1 sm:-bottom-5 sm:-left-5 rounded-2xl px-3 py-2 sm:px-4 sm:py-3 animate-float-delayed">
+                        <div class="flex items-center gap-2.5">
+                            <div class="w-9 h-9 rounded-xl bg-[#00b7ff]/20 flex items-center justify-center text-[#00b7ff]">
+                                <i class="fas fa-chart-line text-sm icon-float"></i>
+                            </div>
+                            <div class="text-left">
+                                <p class="text-[10px] text-gray-500 uppercase tracking-wide">Results</p>
+                                <p class="text-sm font-semibold">Conversion-Driven</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
-
     </div>
 
 </section>
@@ -348,43 +392,91 @@ require_once 'includes/header.php';
             </p>
 
         </div>
+        <div class="flex flex-col lg:flex-row items-stretch gap-0 relative">
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-
-            <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00ffb3]/30 transition hover:-translate-y-1">
-                <div class="text-4xl font-black green-text mb-4">01</div>
-                <i class="fas fa-pencil-alt text-3xl mb-4 text-[#00ffb3]"></i>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Easy Content Management</h3>
-                <p class="text-gray-500 leading-7 text-sm md:text-base">
-                    Update text, images, and pages without any coding knowledge.
-                </p>
+            <div class="flex-1 relative group">
+                <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 h-full hover:-translate-y-1 relative z-10">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="text-4xl font-black green-text">01</div>
+                        <i class="fas fa-pencil-alt text-3xl text-[#00ffb3] icon-hover"></i>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-3">Easy Content Management</h3>
+                    <p class="text-gray-500 leading-7 text-sm md:text-base">
+                        Update text, images, and pages without any coding knowledge.
+                    </p>
+                </div>
             </div>
 
-            <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00b7ff]/30 transition hover:-translate-y-1">
-                <div class="text-4xl font-black blue-text mb-4">02</div>
-                <i class="fas fa-search text-3xl mb-4 text-[#00b7ff]"></i>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">SEO Friendly</h3>
-                <p class="text-gray-500 leading-7 text-sm md:text-base">
-                    Built-in SEO tools to help your content rank higher on Google.
-                </p>
+            <div class="chain-link hidden lg:flex">
+                <div class="chain-line"></div>
+                <i class="fas fa-link text-[#00ffb3] chain-icon"></i>
+                <div class="chain-line"></div>
+            </div>
+            <div class="chain-vertical lg:hidden">
+                <div class="chain-line-v"></div>
+                <i class="fas fa-link text-[#00ffb3] chain-icon-v"></i>
+                <div class="chain-line-v"></div>
             </div>
 
-            <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00ffb3]/30 transition hover:-translate-y-1">
-                <div class="text-4xl font-black green-text mb-4">03</div>
-                <i class="fas fa-expand-arrows-alt text-3xl mb-4 text-[#00ffb3]"></i>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Scalable & Flexible</h3>
-                <p class="text-gray-500 leading-7 text-sm md:text-base">
-                    Start small and expand with plugins, features, and integrations.
-                </p>
+            <div class="flex-1 relative group">
+                <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 h-full hover:-translate-y-1 relative z-10">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="text-4xl font-black blue-text">02</div>
+                        <i class="fas fa-search text-3xl text-[#00b7ff] icon-hover"></i>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-3">SEO Friendly</h3>
+                    <p class="text-gray-500 leading-7 text-sm md:text-base">
+                        Built-in SEO tools to help your content rank higher on Google.
+                    </p>
+                </div>
             </div>
 
-            <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00b7ff]/30 transition hover:-translate-y-1">
-                <div class="text-4xl font-black blue-text mb-4">04</div>
-                <i class="fas fa-shopping-cart text-3xl mb-4 text-[#00b7ff]"></i>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">eCommerce Ready</h3>
-                <p class="text-gray-500 leading-7 text-sm md:text-base">
-                    Built-in product management, payments, and inventory control.
-                </p>
+            <div class="chain-link hidden lg:flex">
+                <div class="chain-line"></div>
+                <i class="fas fa-link text-[#00ffb3] chain-icon"></i>
+                <div class="chain-line"></div>
+            </div>
+            <div class="chain-vertical lg:hidden">
+                <div class="chain-line-v"></div>
+                <i class="fas fa-link text-[#00ffb3] chain-icon-v"></i>
+                <div class="chain-line-v"></div>
+            </div>
+
+            <div class="flex-1 relative group">
+                <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 h-full hover:-translate-y-1 relative z-10">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="text-4xl font-black green-text">03</div>
+                        <i class="fas fa-expand-arrows-alt text-3xl text-[#00ffb3] icon-hover"></i>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-3">Scalable & Flexible</h3>
+                    <p class="text-gray-500 leading-7 text-sm md:text-base">
+                        Start small and expand with plugins, features, and integrations.
+                    </p>
+                </div>
+            </div>
+
+            <div class="chain-link hidden lg:flex">
+                <div class="chain-line"></div>
+                <i class="fas fa-link text-[#00ffb3] chain-icon"></i>
+                <div class="chain-line"></div>
+            </div>
+            <div class="chain-vertical lg:hidden">
+                <div class="chain-line-v"></div>
+                <i class="fas fa-link text-[#00ffb3] chain-icon-v"></i>
+                <div class="chain-line-v"></div>
+            </div>
+
+            <div class="flex-1 relative group">
+                <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 h-full hover:-translate-y-1 relative z-10">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="text-4xl font-black blue-text">04</div>
+                        <i class="fas fa-shopping-cart text-3xl text-[#00b7ff] icon-hover"></i>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-3">eCommerce Ready</h3>
+                    <p class="text-gray-500 leading-7 text-sm md:text-base">
+                        Built-in product management, payments, and inventory control.
+                    </p>
+                </div>
             </div>
 
         </div>
@@ -418,36 +510,36 @@ require_once 'includes/header.php';
 
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 min-w-0">
 
-                <div class="glass-card rounded-2xl p-6 md:p-8 text-center hover:-translate-y-1 transition">
-                    <i class="fab fa-wordpress text-5xl mb-4 text-[#00ffb3]"></i>
-                    <h3 class="text-xl font-bold">WordPress</h3>
-                    <p class="text-gray-500 text-sm mt-2">The world's leading CMS</p>
-                </div>
+            <div class="glass-card rounded-2xl p-6 md:p-8 text-center hover:-translate-y-1 transition">
+                <i class="fab fa-wordpress text-5xl mb-4 text-[#00ffb3]"></i>
+                <h3 class="text-xl font-bold">WordPress</h3>
+                <p class="text-gray-500 text-sm mt-2">The world's leading CMS</p>
+            </div>
 
-                <div class="glass-card rounded-2xl p-6 md:p-8 text-center hover:-translate-y-1 transition">
-                    <i class="fab fa-shopify text-5xl mb-4 text-[#00b7ff]"></i>
-                    <h3 class="text-xl font-bold">Shopify</h3>
-                    <p class="text-gray-500 text-sm mt-2">Premium eCommerce platform</p>
-                </div>
+            <div class="glass-card rounded-2xl p-6 md:p-8 text-center hover:-translate-y-1 transition">
+                <i class="fab fa-shopify text-5xl mb-4 text-[#00b7ff]"></i>
+                <h3 class="text-xl font-bold">Shopify</h3>
+                <p class="text-gray-500 text-sm mt-2">Premium eCommerce platform</p>
+            </div>
 
-                <div class="glass-card rounded-2xl p-6 md:p-8 text-center hover:-translate-y-1 transition">
-                    <i class="fas fa-shopping-cart text-5xl mb-4 text-[#00ffb3]"></i>
-                    <h3 class="text-xl font-bold">WooCommerce</h3>
-                    <p class="text-gray-500 text-sm mt-2">WordPress eCommerce</p>
-                </div>
+            <div class="glass-card rounded-2xl p-6 md:p-8 text-center hover:-translate-y-1 transition">
+                <i class="fas fa-shopping-cart text-5xl mb-4 text-[#00ffb3]"></i>
+                <h3 class="text-xl font-bold break-words">WooCommerce</h3>
+                <p class="text-gray-500 text-sm mt-2">WordPress eCommerce</p>
+            </div>
 
-                <div class="glass-card rounded-2xl p-6 md:p-8 text-center hover:-translate-y-1 transition">
-                    <i class="fab fa-laravel text-5xl mb-4 text-[#00ffb3]"></i>
-                    <h3 class="text-xl font-bold">Laravel</h3>
-                    <p class="text-gray-500 text-sm mt-2">Custom CMS applications</p>
-                </div>
+            <div class="glass-card rounded-2xl p-6 md:p-8 text-center hover:-translate-y-1 transition">
+                <i class="fab fa-laravel text-5xl mb-4 text-[#00ffb3]"></i>
+                <h3 class="text-xl font-bold">Laravel</h3>
+                <p class="text-gray-500 text-sm mt-2">Custom CMS applications</p>
+            </div>
 
-                <div class="glass-card rounded-2xl p-6 md:p-8 text-center hover:-translate-y-1 transition">
-                    <i class="fas fa-code text-5xl mb-4 text-[#00b7ff]"></i>
-                    <h3 class="text-xl font-bold">Headless CMS</h3>
-                    <p class="text-gray-500 text-sm mt-2">API-first architecture</p>
+            <div class="glass-card rounded-2xl p-6 md:p-8 text-center hover:-translate-y-1 transition">
+                <i class="fas fa-code text-5xl mb-4 text-[#00b7ff]"></i>
+                <h3 class="text-xl font-bold">Headless CMS</h3>
+                <p class="text-gray-500 text-sm mt-2">API-first architecture</p>
                 </div>
 
                 <div class="glass-card rounded-2xl p-6 md:p-8 text-center hover:-translate-y-1 transition">

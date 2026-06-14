@@ -142,7 +142,7 @@ $testimonials = [
                 <div class="floating-badge absolute -top-3 right-1 sm:-top-6 sm:-right-4 rounded-2xl px-3 py-2 sm:px-4 sm:py-3 animate-float">
                     <div class="flex items-center gap-2.5">
                         <div class="w-9 h-9 rounded-xl bg-[#00ffb3]/20 flex items-center justify-center text-[#00ffb3]">
-                            <i class="fas fa-code text-sm"></i>
+                            <i class="fas fa-code text-sm icon-float"></i>
                         </div>
                         <div class="text-left">
                             <p class="text-[10px] text-gray-500 uppercase tracking-wide">Expert In</p>
@@ -155,7 +155,7 @@ $testimonials = [
                 <div class="floating-badge absolute -bottom-2 left-1 sm:-bottom-5 sm:-left-5 rounded-2xl px-3 py-2 sm:px-4 sm:py-3 animate-float-delayed">
                     <div class="flex items-center gap-2.5">
                         <div class="w-9 h-9 rounded-xl bg-[#00b7ff]/20 flex items-center justify-center text-[#00b7ff]">
-                            <i class="fas fa-chart-line text-sm"></i>
+                            <i class="fas fa-chart-line text-sm icon-float"></i>
                         </div>
                         <div class="text-left">
                             <p class="text-[10px] text-gray-500 uppercase tracking-wide">Top Rated</p>
@@ -191,19 +191,27 @@ $testimonials = [
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
             <div class="text-center fade-in-up delay-100">
-                <div class="text-2xl sm:text-3xl font-black green-text">100+</div>
+                <div class="text-2xl sm:text-3xl font-black green-text counter" data-target="100">
+                    <span>100</span>+
+                </div>
                 <p class="text-gray-500 text-xs sm:text-sm mt-1">Websites Delivered</p>
             </div>
             <div class="text-center fade-in-up delay-200">
-                <div class="text-2xl sm:text-3xl font-black blue-text">50+</div>
+                <div class="text-2xl sm:text-3xl font-black blue-text counter" data-target="50">
+                    <span>50</span>+
+                </div>
                 <p class="text-gray-500 text-xs sm:text-sm mt-1">Happy Clients</p>
             </div>
             <div class="text-center fade-in-up delay-300">
-                <div class="text-2xl sm:text-3xl font-black green-text">98%</div>
+                <div class="text-2xl sm:text-3xl font-black green-text counter" data-target="98">
+                    <span>98</span>%
+                </div>
                 <p class="text-gray-500 text-xs sm:text-sm mt-1">Client Satisfaction</p>
             </div>
             <div class="text-center fade-in-up delay-400">
-                <div class="text-2xl sm:text-3xl font-black blue-text">24/7</div>
+                <div class="text-2xl sm:text-3xl font-black blue-text counter" data-target="24">
+                    <span>24</span>/7
+                </div>
                 <p class="text-gray-500 text-xs sm:text-sm mt-1">Premium Support</p>
             </div>
         </div>
@@ -229,7 +237,9 @@ $testimonials = [
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
 
             <div class="glass-card rounded-[24px] p-6 md:p-8 border border-white/10 text-center fade-in-up delay-100 hover:-translate-y-1 transition-all duration-300">
-                <div class="text-4xl md:text-5xl font-black green-text mb-2">300%</div>
+                <div class="text-4xl md:text-5xl font-black green-text mb-2 counter" data-target="300">
+                    <span>300</span>%
+                </div>
                 <p class="text-gray-400 text-sm mb-3">Traffic Increase</p>
                 <div class="w-full h-1.5 rounded-full bg-white/5 overflow-hidden">
                     <div class="h-full rounded-full bg-gradient-to-r from-[#00ffb3] to-[#00b7ff]" style="width: 90%"></div>
@@ -238,7 +248,9 @@ $testimonials = [
             </div>
 
             <div class="glass-card rounded-[24px] p-6 md:p-8 border border-white/10 text-center fade-in-up delay-200 hover:-translate-y-1 transition-all duration-300">
-                <div class="text-4xl md:text-5xl font-black blue-text mb-2">150+</div>
+                <div class="text-4xl md:text-5xl font-black blue-text mb-2 counter" data-target="150">
+                    <span>150</span>+
+                </div>
                 <p class="text-gray-400 text-sm mb-3">Leads Generated</p>
                 <div class="w-full h-1.5 rounded-full bg-white/5 overflow-hidden">
                     <div class="h-full rounded-full bg-gradient-to-r from-[#00b7ff] to-[#00ffb3]" style="width: 85%"></div>
@@ -247,7 +259,9 @@ $testimonials = [
             </div>
 
             <div class="glass-card rounded-[24px] p-6 md:p-8 border border-white/10 text-center fade-in-up delay-300 hover:-translate-y-1 transition-all duration-300">
-                <div class="text-4xl md:text-5xl font-black green-text mb-2">95</div>
+                <div class="text-4xl md:text-5xl font-black green-text mb-2 counter" data-target="95">
+                    <span>95</span>
+                </div>
                 <p class="text-gray-400 text-sm mb-3">PageSpeed Score</p>
                 <div class="w-full h-1.5 rounded-full bg-white/5 overflow-hidden">
                     <div class="h-full rounded-full bg-gradient-to-r from-[#00ffb3] to-[#00b7ff]" style="width: 95%"></div>
@@ -256,7 +270,9 @@ $testimonials = [
             </div>
 
             <div class="glass-card rounded-[24px] p-6 md:p-8 border border-white/10 text-center fade-in-up delay-400 hover:-translate-y-1 transition-all duration-300">
-                <div class="text-4xl md:text-5xl font-black blue-text mb-2">3x</div>
+                <div class="text-4xl md:text-5xl font-black blue-text mb-2 counter" data-target="3">
+                    <span>3</span>x
+                </div>
                 <p class="text-gray-400 text-sm mb-3">Sales Growth</p>
                 <div class="w-full h-1.5 rounded-full bg-white/5 overflow-hidden">
                     <div class="h-full rounded-full bg-gradient-to-r from-[#00b7ff] to-[#00ffb3]" style="width: 88%"></div>
@@ -270,7 +286,7 @@ $testimonials = [
             <a href="portfolio.php"
                class="inline-flex items-center gap-2 text-[#00ffb3] hover:text-white transition border border-[#00ffb3]/30 hover:border-[#00ffb3] px-6 py-3 rounded-2xl text-sm font-semibold">
                 View Full Portfolio
-                <i class="fas fa-arrow-right"></i>
+                <i class="fas fa-arrow-right icon-hover"></i>
             </a>
         </div>
 
@@ -317,7 +333,7 @@ $testimonials = [
                 <div class="flex flex-wrap gap-6 mb-10">
                     <div class="flex items-center gap-3">
                         <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-[#00ffb3]/20 to-[#00b7ff]/10 flex items-center justify-center">
-                            <i class="fas fa-rocket text-sm text-[#00ffb3]"></i>
+                            <i class="fas fa-rocket text-sm text-[#00ffb3] icon-hover"></i>
                         </div>
                         <div>
                             <p class="text-white font-bold text-sm">Fast</p>
@@ -326,7 +342,7 @@ $testimonials = [
                     </div>
                     <div class="flex items-center gap-3">
                         <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-[#00b7ff]/20 to-[#00ffb3]/10 flex items-center justify-center">
-                            <i class="fas fa-code text-sm text-[#00b7ff]"></i>
+                            <i class="fas fa-code text-sm text-[#00b7ff] icon-hover"></i>
                         </div>
                         <div>
                             <p class="text-white font-bold text-sm">Modern</p>
@@ -335,7 +351,7 @@ $testimonials = [
                     </div>
                     <div class="flex items-center gap-3">
                         <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-[#00ffb3]/20 to-[#00b7ff]/10 flex items-center justify-center">
-                            <i class="fas fa-headset text-sm text-[#00ffb3]"></i>
+                            <i class="fas fa-headset text-sm text-[#00ffb3] icon-hover"></i>
                         </div>
                         <div>
                             <p class="text-white font-bold text-sm">Support</p>
@@ -375,8 +391,8 @@ $how_work_steps = [
 ?>
 
                     <?php foreach ($how_work_steps as $i => $s): ?>
-                    <div class="process-step-card glass-card rounded-2xl p-6 md:p-7 relative border border-white/5 hover:bg-white/5 transition-all fade-in-up"
-                        style="transition-delay: <?= $i * 0.1 ?>s">
+                    <div class="process-step-card glass-card rounded-2xl p-6 md:p-7 relative border border-white/5 fade-in-up"
+                        style="--step-color: <?= $s['color'] ?>; transition-delay: <?= $i * 0.1 ?>s">
 
                         <div class="process-step-number text-6xl md:text-7xl font-black text-white/10 absolute right-6 top-2 select-none">
                             <?= $s['num'] ?>
@@ -392,10 +408,10 @@ $how_work_steps = [
                                     <?= $s['title'] ?>
                                 </h3>
                             </div>
-                            <p class="text-gray-400 leading-7">
+                            <p class="text-gray-400 leading-7 relative z-10">
                                 <?= $s['desc'] ?>
                             </p>
-                            <div class="flex items-center gap-2 mt-4">
+                            <div class="flex items-center gap-2 mt-4 relative z-10">
                                 <span class="w-1.5 h-1.5 rounded-full"
                                     style="background: <?= $s['color'] ?>"></span>
                                 <span class="text-xs text-gray-500">
@@ -466,7 +482,7 @@ $how_work_steps = [
                 </div>
 
                 <h3 class="text-xl md:text-2xl font-bold mb-4">
-                    <a href="cms.php" class="hover:text-[#00ffb3] transition">CMS Development</a>
+                    <a href="cms-development.php" class="hover:text-[#00ffb3] transition">CMS Development</a>
                 </h3>
 
                 <p class="text-gray-400 leading-7 md:leading-8 text-sm md:text-base">
@@ -996,7 +1012,7 @@ $how_work_steps = [
                     </button>
 
                     <p class="text-center text-gray-500 text-xs mt-4">
-                        <i class="fa-solid fa-lock mr-1"></i>
+                        <i class="fa-solid fa-lock mr-1 icon-hover"></i>
                         Your information is secure. We'll never share your data.
                     </p>
 

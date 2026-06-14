@@ -58,15 +58,21 @@ require_once 'includes/header.php';
                 <!-- STATS ROW -->
                 <div class="flex flex-wrap gap-6 sm:gap-8 mt-10 pt-8 border-t border-white/5">
                     <div>
-                        <p class="text-2xl sm:text-3xl font-black green-text">100+</p>
+                        <p class="text-2xl sm:text-3xl font-black green-text counter" data-target="100">
+                            <span>100</span>+
+                        </p>
                         <p class="text-gray-500 text-xs sm:text-sm mt-1">Projects Done</p>
                     </div>
                     <div>
-                        <p class="text-2xl sm:text-3xl font-black blue-text">50+</p>
+                        <p class="text-2xl sm:text-3xl font-black blue-text counter" data-target="50">
+                            <span>50</span>+
+                        </p>
                         <p class="text-gray-500 text-xs sm:text-sm mt-1">Happy Clients</p>
                     </div>
                     <div>
-                        <p class="text-2xl sm:text-3xl font-black green-text">24/7</p>
+                        <p class="text-2xl sm:text-3xl font-black green-text counter" data-target="24">
+                            <span>24</span>/7
+                        </p>
                         <p class="text-gray-500 text-xs sm:text-sm mt-1">Support</p>
                     </div>
                 </div>
@@ -271,7 +277,7 @@ require_once 'includes/header.php';
                     </button>
 
                     <p class="text-center text-gray-500 text-xs mt-4">
-                        <i class="fa-solid fa-shield mr-1"></i>
+                        <i class="fa-solid fa-shield mr-1 icon-hover"></i>
                         Your information is secure. We'll never share your data.
                     </p>
 
@@ -397,27 +403,27 @@ require_once 'includes/header.php';
 
                         <a href="<?php echo SOCIAL_FACEBOOK; ?>" target="_blank" rel="noopener noreferrer"
                            class="w-11 sm:w-12 h-11 sm:h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#00ffb3]/20 hover:text-[#00ffb3] transition-all hover:scale-110">
-                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-facebook-f social-icon"></i>
                         </a>
 
                         <a href="<?php echo SOCIAL_TWITTER; ?>" target="_blank" rel="noopener noreferrer"
                            class="w-11 sm:w-12 h-11 sm:h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#00b7ff]/20 hover:text-[#00b7ff] transition-all hover:scale-110">
-                            <i class="fa-brands fa-x-twitter"></i>
+                            <i class="fa-brands fa-x-twitter social-icon"></i>
                         </a>
 
                         <a href="<?php echo SOCIAL_LINKEDIN; ?>" target="_blank" rel="noopener noreferrer"
                            class="w-11 sm:w-12 h-11 sm:h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#00ffb3]/20 hover:text-[#00ffb3] transition-all hover:scale-110">
-                            <i class="fab fa-linkedin-in"></i>
+                            <i class="fab fa-linkedin-in social-icon"></i>
                         </a>
 
                         <a href="<?php echo SOCIAL_INSTAGRAM; ?>" target="_blank" rel="noopener noreferrer"
                            class="w-11 sm:w-12 h-11 sm:h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#00ffb3]/20 hover:text-[#00ffb3] transition-all hover:scale-110">
-                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-instagram social-icon"></i>
                         </a>
 
                         <a href="<?php echo SOCIAL_GITHUB; ?>" target="_blank" rel="noopener noreferrer"
                            class="w-11 sm:w-12 h-11 sm:h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 hover:text-white transition-all hover:scale-110">
-                            <i class="fab fa-github"></i>
+                            <i class="fab fa-github social-icon"></i>
                         </a>
 
                     </div>
@@ -438,7 +444,7 @@ require_once 'includes/header.php';
         <div class="text-center mb-12 sm:mb-16">
 
             <p class="green-text uppercase tracking-[4px] font-semibold mb-4 sm:mb-5 text-sm sm:text-base flex items-center justify-center gap-2">
-                <i class="fa-solid fa-circle-question"></i>
+                <i class="fa-solid fa-circle-question icon-float"></i>
                 FAQ
             </p>
 

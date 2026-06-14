@@ -105,9 +105,15 @@ $loc_stats = [
 
                 <!-- Mini Stats -->
                 <div class="flex flex-wrap items-center gap-5 sm:gap-8 mt-10 pt-6 border-t border-white/5">
-                    <?php foreach ($hero_stats as $i => $s): ?>
+                    <?php foreach ($hero_stats as $i => $s):
+                    $val = $s['value'];
+                    $target = (int)$val;
+                    $suffix = str_replace((string)$target, '', $val);
+                    ?>
                     <div class="hero-mini-stat">
-                        <span class="text-xl sm:text-2xl font-black <?= $s['class'] ?>"><?= $s['value'] ?></span>
+                        <span class="text-xl sm:text-2xl font-black <?= $s['class'] ?> counter" data-target="<?= $target ?>">
+                            <span><?= $target ?></span><?= $suffix ?>
+                        </span>
                         <p class="text-[11px] text-gray-500 mt-0.5"><?= $s['label'] ?></p>
                     </div>
                     <?php if ($i < count($hero_stats) - 1): ?>
@@ -128,7 +134,7 @@ $loc_stats = [
 
                             <div class="mb-6">
                                 <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#00ffb3]/20 to-[#00b7ff]/10 flex items-center justify-center mx-auto mb-4">
-                                    <i class="fas fa-paper-plane text-2xl text-[#00ffb3] float-icon"></i>
+                                    <i class="fas fa-paper-plane text-2xl text-[#00ffb3] icon-float"></i>
                                 </div>
                                 <h3 class="text-xl font-bold">Get In Touch</h3>
                                 <p class="text-xs text-gray-500 mt-1">We reply within 24 hours</p>
@@ -206,7 +212,7 @@ $loc_stats = [
                         $extra = '<div class="flex items-center gap-3 mt-1.5">'
                             . '<a href="tel:' . SITE_PHONE . '" class="text-xs text-[#00b7ff] hover:underline inline-flex items-center gap-1">Call now <i class="fas fa-arrow-right text-[10px]"></i></a>'
                             . '<span class="text-gray-600">|</span>'
-                            . '<span class="text-xs text-gray-500 flex items-center gap-1"><i class="fab fa-whatsapp text-[#25D366]"></i> WhatsApp</span>'
+                            . '<span class="text-xs text-gray-500 flex items-center gap-1"><i class="fab fa-whatsapp icon-hover text-[#25D366]"></i> WhatsApp</span>'
                             . '</div>';
                     elseif ($key === 'location'):
                         $title    = SITE_COUNTRY;
@@ -345,7 +351,7 @@ $loc_stats = [
 
                     <div class="fade-in-up">
                         <p class="green-text uppercase tracking-[4px] font-semibold mb-4 text-sm flex items-center gap-2">
-                            <i class="fas fa-globe"></i>
+                            <i class="fas fa-globe icon-float"></i>
                             OUR LOCATION
                         </p>
                         <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight mb-6">
@@ -359,7 +365,7 @@ $loc_stats = [
 
                         <div class="flex flex-wrap gap-4">
                             <div class="flex items-center gap-3 glass-card rounded-2xl px-5 py-3">
-                                <i class="fas fa-map-pin text-[<?= $contact_info['location']['color'] ?>]"></i>
+                                    <i class="fas fa-map-pin icon-hover text-[<?= $contact_info['location']['color'] ?>]"></i>
                                 <div>
                                     <p class="text-xs text-gray-500">Address</p>
                                     <p class="text-sm font-semibold"><?= $contact_info['location']['value'] ?></p>
@@ -368,10 +374,22 @@ $loc_stats = [
                         </div>
                     </div>
 
-                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-5 fade-in-up delay-200">
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-5">
+                        <?php $loc_delays = ['delay-100', 'delay-200', 'delay-300']; $ld = 0; ?>
                         <?php foreach ($loc_stats as $s): ?>
-                        <div class="glass-card rounded-[20px] p-6 md:p-8 text-center hover:-translate-y-1 transition-all duration-300 stat-card">
-                            <div class="text-3xl sm:text-4xl font-black <?= $s['class'] ?> mb-2"><?= $s['value'] ?></div>
+                        <?php
+                        $loc_targets = ['100+'=>100, '50+'=>50, '24/7'=>24];
+                        $target = $loc_targets[$s['value']] ?? 0;
+                        $suffix = '';
+                        if (strpos($s['value'], '+') !== false) $suffix = '+';
+                        elseif (strpos($s['value'], '/') !== false) $suffix = '/7';
+                        $display = rtrim($s['value'], '+');
+                        $display = rtrim($display, '/7');
+                        ?>
+                        <div class="stat-card glass-card rounded-[20px] p-6 md:p-8 text-center border border-white/10 fade-in-up <?= $loc_delays[$ld++] ?>">
+                            <div class="text-3xl sm:text-4xl font-black <?= $s['class'] ?> mb-2 counter flex items-center justify-center gap-1" data-target="<?= $target ?>">
+                                <span><?= $display ?></span><?= $suffix ?>
+                            </div>
                             <p class="text-gray-500 text-xs sm:text-sm"><?= $s['label'] ?></p>
                         </div>
                         <?php endforeach; ?>

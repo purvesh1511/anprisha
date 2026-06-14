@@ -352,7 +352,7 @@ $portfolio_items = [
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
 
             <!-- STAT 1 -->
-            <div class="glass-card rounded-2xl md:rounded-3xl p-6 md:p-8 text-center hover:-translate-y-1 transition-transform">
+            <div class="stat-card glass-card rounded-2xl md:rounded-3xl p-6 md:p-8 text-center border border-white/10 fade-in-up delay-100">
 
                 <div class="text-4xl sm:text-5xl font-black green-text mb-3 counter flex items-center justify-center gap-2" data-target="100">
                     <i class="fa-solid fa-briefcase text-xl sm:text-2xl"></i>
@@ -366,7 +366,7 @@ $portfolio_items = [
             </div>
 
             <!-- STAT 2 -->
-            <div class="glass-card rounded-2xl md:rounded-3xl p-6 md:p-8 text-center hover:-translate-y-1 transition-transform">
+            <div class="stat-card glass-card rounded-2xl md:rounded-3xl p-6 md:p-8 text-center border border-white/10 fade-in-up delay-200">
 
                 <div class="text-4xl sm:text-5xl font-black blue-text mb-3 counter flex items-center justify-center gap-2" data-target="50">
                     <i class="fa-solid fa-users text-xl sm:text-2xl"></i>
@@ -380,7 +380,7 @@ $portfolio_items = [
             </div>
 
             <!-- STAT 3 -->
-            <div class="glass-card rounded-2xl md:rounded-3xl p-6 md:p-8 text-center hover:-translate-y-1 transition-transform">
+            <div class="stat-card glass-card rounded-2xl md:rounded-3xl p-6 md:p-8 text-center border border-white/10 fade-in-up delay-300">
 
                 <div class="text-4xl sm:text-5xl font-black green-text mb-3 counter flex items-center justify-center gap-2" data-target="98">
                     <i class="fa-solid fa-chart-line text-xl sm:text-2xl"></i>
@@ -394,7 +394,7 @@ $portfolio_items = [
             </div>
 
             <!-- STAT 4 -->
-            <div class="glass-card rounded-2xl md:rounded-3xl p-6 md:p-8 text-center hover:-translate-y-1 transition-transform">
+            <div class="stat-card glass-card rounded-2xl md:rounded-3xl p-6 md:p-8 text-center border border-white/10 fade-in-up delay-400">
 
                 <div class="text-4xl sm:text-5xl font-black blue-text mb-3 counter flex items-center justify-center gap-2" data-target="24">
                     <i class="fa-solid fa-headset text-xl sm:text-2xl"></i>
@@ -402,7 +402,7 @@ $portfolio_items = [
                 </div>
 
                 <p class="text-gray-500 text-sm sm:text-base">
-                    Hour Support
+                    24/7 Support
                 </p>
 
             </div>

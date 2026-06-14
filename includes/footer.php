@@ -14,20 +14,20 @@
                 <div class="flex gap-3">
 <a href="<?= SOCIAL_FACEBOOK; ?>" target="_blank" rel="noopener noreferrer"
     class="social-footer w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#00ffb3] hover:text-black transition-all duration-300">
-    <i class="fab fa-facebook-f"></i>
-</a>
-<a href="<?= SOCIAL_TWITTER; ?>" target="_blank" rel="noopener noreferrer"
-    class="social-footer w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#00ffb3] hover:text-black transition-all duration-300">
-    <i class="fab fa-twitter"></i>
-</a>
-<a href="<?= SOCIAL_LINKEDIN; ?>" target="_blank" rel="noopener noreferrer"
-    class="social-footer w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#00ffb3] hover:text-black transition-all duration-300">
-    <i class="fab fa-linkedin-in"></i>
-</a>
-<a href="<?= SOCIAL_INSTAGRAM; ?>" target="_blank" rel="noopener noreferrer"
-    class="social-footer w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#00ffb3] hover:text-black transition-all duration-300">
-    <i class="fab fa-instagram"></i>
-</a>
+                    <i class="fab fa-facebook-f social-icon"></i>
+                </a>
+                <a href="<?= SOCIAL_TWITTER; ?>" target="_blank" rel="noopener noreferrer"
+                    class="social-footer w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#00ffb3] hover:text-black transition-all duration-300">
+                    <i class="fab fa-twitter social-icon"></i>
+                </a>
+                <a href="<?= SOCIAL_LINKEDIN; ?>" target="_blank" rel="noopener noreferrer"
+                    class="social-footer w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#00ffb3] hover:text-black transition-all duration-300">
+                    <i class="fab fa-linkedin-in social-icon"></i>
+                </a>
+                <a href="<?= SOCIAL_INSTAGRAM; ?>" target="_blank" rel="noopener noreferrer"
+                    class="social-footer w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#00ffb3] hover:text-black transition-all duration-300">
+                    <i class="fab fa-instagram social-icon"></i>
+                </a>
                 </div>
             </div>
 
@@ -42,7 +42,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="cms.php"
+                        <a href="cms-development.php"
                         class="hover:text-[#00ffb3] transition">
                             CMS Development
                         </a>
@@ -93,28 +93,28 @@
                 <ul class="space-y-3 text-gray-500 mb-6">
                     <!-- EMAIL -->
                     <li class="flex items-center gap-3">
-                        <i class="fas fa-envelope text-[#00ffb3] w-5"></i>
+                        <i class="fas fa-envelope text-[#00ffb3] w-5 icon-hover"></i>
                         <a href="mailto:<?php echo SITE_EMAIL; ?>" class="hover:text-[#00ffb3] transition">
                             <?php echo SITE_EMAIL; ?>
                         </a>
                     </li>
                     <!-- PHONE -->
                     <li class="flex items-center gap-3">
-                        <i class="fas fa-phone-alt text-[#00ffb3] w-5"></i>
+                        <i class="fas fa-phone-alt text-[#00ffb3] w-5 icon-hover"></i>
                         <a href="tel:<?php echo SITE_PHONE; ?>" class="hover:text-[#00ffb3] transition">
                             <?php echo SITE_PHONE; ?>
                         </a>
                     </li>
                     <!-- LOCATION -->
                     <li class="flex items-center gap-3">
-                        <i class="fas fa-map-marker-alt text-[#00ffb3] w-5"></i>
+                        <i class="fas fa-map-marker-alt text-[#00ffb3] w-5 icon-hover"></i>
                         <span>
                             <?php echo SITE_ADDRESS; ?>
                         </span>
                     </li>
                     <!-- SUPPORT -->
                     <li class="flex items-center gap-3">
-                        <i class="fas fa-clock text-[#00ffb3] w-5"></i>
+                        <i class="fas fa-clock text-[#00ffb3] w-5 icon-hover"></i>
                         <span>
                             24/7 Support Available
                         </span>
@@ -150,7 +150,7 @@
 <a href="https://wa.me/916355035217?text=Hi%20Anprix!%20I%27d%20like%20to%20discuss%20a%20project."
    target="_blank" rel="noopener noreferrer"
    class="whatsapp-float" aria-label="Chat on WhatsApp">
-    <i class="fab fa-whatsapp"></i>
+    <i class="fab fa-whatsapp icon-float"></i>
     <span class="whatsapp-tooltip">Chat with us!</span>
 </a>
 

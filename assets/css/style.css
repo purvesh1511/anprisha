@@ -658,6 +658,7 @@ header .group:hover .glass-card {
     box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
     transition: all 0.3s ease;
     text-decoration: none;
+    animation: whatsappPulse 2s ease-in-out infinite;
 }
 
 .whatsapp-float:hover {
@@ -1007,6 +1008,21 @@ header .group:hover .glass-card {
 .process-step-card {
     transition: all 0.4s ease;
     position: relative;
+    overflow: hidden;
+}
+
+.process-step-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    border-radius: inherit;
+    background: linear-gradient(135deg, color-mix(in srgb, var(--step-color, #00ffb3) 15%, transparent), color-mix(in srgb, var(--step-color, #00ffb3) 5%, transparent));
+}
+
+.process-step-card:hover::before {
+    opacity: 1;
 }
 
 .process-step-number {
@@ -1016,13 +1032,13 @@ header .group:hover .glass-card {
 }
 
 .process-step-card:hover {
-    transform: translateY(-2px);
-    border-color: rgba(0, 255, 179, 0.3) !important;
-    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px);
+    border-color: color-mix(in srgb, var(--step-color, #00ffb3) 40%, transparent) !important;
+    box-shadow: 0 12px 48px color-mix(in srgb, var(--step-color, #00ffb3) 12%, transparent);
 }
 
 .process-step-card:hover .process-step-number {
-    opacity: 0.15;
+    opacity: 0.08;
 }
 
 .process-sticky-heading {
@@ -1032,4 +1048,204 @@ header .group:hover .glass-card {
 /* Fade in animation for scroll-linked content swap */
 .animate-fade-in {
     animation: fadeInUp 0.4s ease-out;
+}
+
+/* ===== Icon Animations ===== */
+@keyframes iconFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+@keyframes iconPulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.1); opacity: 0.85; }
+}
+
+@keyframes whatsappPulse {
+    0%, 100% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4); }
+    50% { box-shadow: 0 4px 40px rgba(37, 211, 102, 0.7); }
+}
+
+@keyframes iconGlow {
+    0%, 100% { filter: drop-shadow(0 0 4px currentColor); }
+    50% { filter: drop-shadow(0 0 12px currentColor); }
+}
+
+@keyframes iconSpin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Utility classes */
+.icon-float {
+    animation: iconFloat 3s ease-in-out infinite;
+}
+.icon-float-delayed {
+    animation: iconFloat 3s ease-in-out infinite;
+    animation-delay: 1.5s;
+}
+.icon-pulse {
+    animation: iconPulse 2s ease-in-out infinite;
+}
+.icon-glow {
+    animation: iconGlow 3s ease-in-out infinite;
+}
+.icon-spin {
+    animation: iconSpin 8s linear infinite;
+}
+
+/* Hover animation for all icons in cards, stat boxes, features, service sections */
+.icon-hover {
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), color 0.3s ease, filter 0.3s ease;
+    display: inline-block;
+}
+.icon-hover:hover {
+    transform: scale(1.25);
+    filter: brightness(1.3);
+}
+
+/* Auto-hover for icons in glass cards (service cards, stat cards, feature boxes) */
+.glass-card i[class*="fa-"]:not(.no-animate),
+.stat-card i[class*="fa-"]:not(.no-animate),
+.process-step-card i[class*="fa-"]:not(.no-animate),
+.service-card i[class*="fa-"]:not(.no-animate) {
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), color 0.3s ease, filter 0.3s ease;
+    display: inline-block;
+}
+.glass-card:hover i[class*="fa-"]:not(.no-animate),
+.stat-card:hover i[class*="fa-"]:not(.no-animate),
+.process-step-card:hover i[class*="fa-"]:not(.no-animate),
+.service-card:hover i[class*="fa-"]:not(.no-animate) {
+    transform: scale(1.2);
+    filter: brightness(1.25);
+}
+
+/* Auto-float for hero gradient icons and decorative icons */
+.hero-gradient i[class*="fa-"]:not(.no-animate),
+.hero-section i[class*="fa-"]:not(.no-animate) {
+    animation: iconFloat 4s ease-in-out infinite;
+}
+
+/* Social media icon hover effect */
+.social-icon {
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), color 0.3s ease;
+    display: inline-block;
+}
+.social-icon:hover {
+    transform: scale(1.3);
+}
+
+/* Button icon shift on hover */
+.btn-primary i[class*="fa-"],
+.btn-secondary i[class*="fa-"],
+.btn-outline i[class*="fa-"] {
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+.btn-primary:hover i[class*="fa-"],
+.btn-secondary:hover i[class*="fa-"],
+.btn-outline:hover i[class*="fa-"] {
+    transform: translateX(3px);
+}
+
+/* Hero mini stat icon pulse */
+.hero-mini-stat i[class*="fa-"] {
+    animation: iconPulse 3s ease-in-out infinite;
+}
+
+/* Step number bullet pulse */
+.process-step-card .flex .w-1\\.5 {
+    animation: iconPulse 2s ease-in-out infinite;
+}
+
+/* Service tag icons float */
+.rounded-full.glass-card i[class*="fa-"] {
+    animation: iconFloat 5s ease-in-out infinite;
+}
+
+/* Icon hover for hero floating decorative blobs */
+.contact-blob i[class*="fa-"] {
+    animation: iconSpin 12s linear infinite;
+}
+
+/* Portfolio card icon scale on hover */
+.portfolio-card i[class*="fa-"],
+.portfolio-item i[class*="fa-"] {
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    display: inline-block;
+}
+.portfolio-card:hover i[class*="fa-"],
+.portfolio-item:hover i[class*="fa-"] {
+    transform: scale(1.3);
+}
+
+/* Nav icon subtle animation */
+nav a i[class*="fa-"] {
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+nav a:hover i[class*="fa-"] {
+    transform: translateY(-2px);
+}
+
+/* Footer social/contact icons */
+footer i[class*="fa-"] {
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+footer a:hover i[class*="fa-"] {
+    transform: scale(1.2);
+}
+
+/* ===== Chain Connector Layout ===== */
+.chain-link {
+    align-items: center;
+    gap: 6px;
+    padding: 0 4px;
+    position: relative;
+    z-index: 5;
+}
+
+.chain-line {
+    width: 24px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(0, 255, 179, 0.4), transparent);
+    border-radius: 2px;
+}
+
+.chain-icon {
+    font-size: 16px;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    animation: iconPulse 2s ease-in-out infinite;
+}
+
+.group:hover + .chain-link .chain-icon,
+.chain-link:hover .chain-icon {
+    opacity: 1;
+    color: #00ffb3;
+}
+
+.chain-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 0;
+    position: relative;
+    z-index: 5;
+}
+
+.chain-line-v {
+    width: 2px;
+    height: 24px;
+    background: linear-gradient(180deg, transparent, rgba(0, 255, 179, 0.4), transparent);
+    border-radius: 2px;
+}
+
+.chain-icon-v {
+    font-size: 16px;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    animation: iconPulse 2s ease-in-out infinite;
 }

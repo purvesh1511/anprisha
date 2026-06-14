@@ -183,7 +183,7 @@ require_once 'includes/header.php';
 
                 </div>
 
-                <a href="cms.php"
+                <a href="cms-development.php"
                    class="btn-primary inline-block w-full sm:w-auto px-6 py-4 rounded-2xl text-center">
                     Explore CMS Services
                 </a>

@@ -16,30 +16,74 @@ require_once 'includes/header.php';
     </div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
-        <div class="max-w-4xl">
+            <!-- LEFT CONTENT -->
+            <div>
 
-            <p class="uppercase tracking-[4px] md:tracking-[5px] text-[#00ffb3] font-semibold mb-5 md:mb-6 text-xs sm:text-sm">
-                Website Development
-            </p>
+                <p class="uppercase tracking-[4px] md:tracking-[5px] text-[#00ffb3] font-semibold mb-5 md:mb-6 text-xs sm:text-sm">
+                    Website Development
+                </p>
 
-            <h1 class="text-4xl sm:text-5xl lg:text-7xl font-black leading-tight lg:leading-[1.05] mb-8 md:mb-10">
+                <h1 class="text-4xl sm:text-5xl lg:text-7xl font-black leading-tight lg:leading-[1.05] mb-8 md:mb-10">
 
-                High-Performance
-                <span class="green-text block sm:inline">
-                    Business Websites
-                </span>
+                    High-Performance
+                    <span class="green-text block sm:inline">
+                        Business Websites
+                    </span>
 
-            </h1>
+                </h1>
 
-            <p class="text-base sm:text-lg md:text-xl text-gray-400 leading-8 md:leading-10 max-w-3xl">
+                <p class="text-base sm:text-lg md:text-xl text-gray-400 leading-8 md:leading-10">
 
-                Anprix builds fast, responsive, and conversion-focused websites using Laravel, WordPress, Shopify, and modern frontend technologies tailored to your business goals.
+                    Anprix builds fast, responsive, and conversion-focused websites using Laravel, WordPress, Shopify, and modern frontend technologies tailored to your business goals.
 
-            </p>
+                </p>
+
+            </div>
+
+            <!-- RIGHT IMAGE -->
+            <div class="relative flex items-center justify-center">
+
+                <div class="absolute -top-10 -left-10 w-48 sm:w-72 h-48 sm:h-72 bg-[#00ffb3]/10 blur-[100px] rounded-full"></div>
+                <div class="absolute bottom-0 right-0 w-48 sm:w-72 h-48 sm:h-72 bg-[#00b7ff]/10 blur-[100px] rounded-full"></div>
+
+                <div class="relative w-full max-w-full lg:max-w-2xl mx-auto">
+                    <div class="glass-card rounded-[22px] sm:rounded-[30px] p-1 sm:p-2 hero-image-glow pulse-ring text-center">
+                        <img src="assets/images/web-development.png"
+                             alt="Anprix Solutions - Website Development Company"
+                             class="w-full max-w-[85%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-[85%] xl:max-w-[680px] mx-auto animate-float">
+                    </div>
+
+                    <div class="floating-badge absolute -top-3 right-1 sm:-top-6 sm:-right-4 rounded-2xl px-3 py-2 sm:px-4 sm:py-3 animate-float">
+                        <div class="flex items-center gap-2.5">
+                            <div class="w-9 h-9 rounded-xl bg-[#00ffb3]/20 flex items-center justify-center text-[#00ffb3]">
+                                <i class="fas fa-code text-sm icon-float"></i>
+                            </div>
+                            <div class="text-left">
+                                <p class="text-[10px] text-gray-500 uppercase tracking-wide">Expert In</p>
+                                <p class="text-sm font-semibold">Web Development</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="floating-badge absolute -bottom-2 left-1 sm:-bottom-5 sm:-left-5 rounded-2xl px-3 py-2 sm:px-4 sm:py-3 animate-float-delayed">
+                        <div class="flex items-center gap-2.5">
+                            <div class="w-9 h-9 rounded-xl bg-[#00b7ff]/20 flex items-center justify-center text-[#00b7ff]">
+                                <i class="fas fa-chart-line text-sm icon-float"></i>
+                            </div>
+                            <div class="text-left">
+                                <p class="text-[10px] text-gray-500 uppercase tracking-wide">Results</p>
+                                <p class="text-sm font-semibold">Conversion-Driven</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
-
     </div>
 
 </section>
@@ -439,42 +483,91 @@ require_once 'includes/header.php';
 
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+        <div class="flex flex-col lg:flex-row items-stretch gap-0 relative">
 
-            <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00ffb3]/30 transition hover:-translate-y-1">
-                <div class="text-4xl font-black green-text mb-4">01</div>
-                <i class="fas fa-bolt text-3xl mb-4 text-[#00ffb3]"></i>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Blazing Fast</h3>
-                <p class="text-gray-500 leading-7 text-sm md:text-base">
-                    Optimized for speed with fast load times.
-                </p>
+            <div class="flex-1 relative group">
+                <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 h-full hover:-translate-y-1 relative z-10">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="text-4xl font-black green-text">01</div>
+                        <i class="fas fa-bolt text-3xl text-[#00ffb3] icon-hover"></i>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-3">Blazing Fast</h3>
+                    <p class="text-gray-500 leading-7 text-sm md:text-base">
+                        Optimized for speed with fast load times.
+                    </p>
+                </div>
             </div>
 
-            <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00b7ff]/30 transition hover:-translate-y-1">
-                <div class="text-4xl font-black blue-text mb-4">02</div>
-                <i class="fas fa-mobile-alt text-3xl mb-4 text-[#00b7ff]"></i>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Fully Responsive</h3>
-                <p class="text-gray-500 leading-7 text-sm md:text-base">
-                    Perfect experience on any device.
-                </p>
+            <div class="chain-link hidden lg:flex">
+                <div class="chain-line"></div>
+                <i class="fas fa-link text-[#00ffb3] chain-icon"></i>
+                <div class="chain-line"></div>
+            </div>
+            <div class="chain-vertical lg:hidden">
+                <div class="chain-line-v"></div>
+                <i class="fas fa-link text-[#00ffb3] chain-icon-v"></i>
+                <div class="chain-line-v"></div>
             </div>
 
-            <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00ffb3]/30 transition hover:-translate-y-1">
-                <div class="text-4xl font-black green-text mb-4">03</div>
-                <i class="fas fa-search text-3xl mb-4 text-[#00ffb3]"></i>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">SEO Optimized</h3>
-                <p class="text-gray-500 leading-7 text-sm md:text-base">
-                    Built with search engines in mind.
-                </p>
+            <div class="flex-1 relative group">
+                <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 h-full hover:-translate-y-1 relative z-10">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="text-4xl font-black blue-text">02</div>
+                        <i class="fas fa-mobile-alt text-3xl text-[#00b7ff] icon-hover"></i>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-3">Fully Responsive</h3>
+                    <p class="text-gray-500 leading-7 text-sm md:text-base">
+                        Perfect experience on any device.
+                    </p>
+                </div>
             </div>
 
-            <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00b7ff]/30 transition hover:-translate-y-1">
-                <div class="text-4xl font-black blue-text mb-4">04</div>
-                <i class="fas fa-shield-alt text-3xl mb-4 text-[#00b7ff]"></i>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Secure & Scalable</h3>
-                <p class="text-gray-500 leading-7 text-sm md:text-base">
-                    Enterprise-grade security that grows with you.
-                </p>
+            <div class="chain-link hidden lg:flex">
+                <div class="chain-line"></div>
+                <i class="fas fa-link text-[#00ffb3] chain-icon"></i>
+                <div class="chain-line"></div>
+            </div>
+            <div class="chain-vertical lg:hidden">
+                <div class="chain-line-v"></div>
+                <i class="fas fa-link text-[#00ffb3] chain-icon-v"></i>
+                <div class="chain-line-v"></div>
+            </div>
+
+            <div class="flex-1 relative group">
+                <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 h-full hover:-translate-y-1 relative z-10">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="text-4xl font-black green-text">03</div>
+                        <i class="fas fa-search text-3xl text-[#00ffb3] icon-hover"></i>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-3">SEO Optimized</h3>
+                    <p class="text-gray-500 leading-7 text-sm md:text-base">
+                        Built with search engines in mind.
+                    </p>
+                </div>
+            </div>
+
+            <div class="chain-link hidden lg:flex">
+                <div class="chain-line"></div>
+                <i class="fas fa-link text-[#00ffb3] chain-icon"></i>
+                <div class="chain-line"></div>
+            </div>
+            <div class="chain-vertical lg:hidden">
+                <div class="chain-line-v"></div>
+                <i class="fas fa-link text-[#00ffb3] chain-icon-v"></i>
+                <div class="chain-line-v"></div>
+            </div>
+
+            <div class="flex-1 relative group">
+                <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 h-full hover:-translate-y-1 relative z-10">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="text-4xl font-black blue-text">04</div>
+                        <i class="fas fa-shield-alt text-3xl text-[#00b7ff] icon-hover"></i>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-3">Secure & Scalable</h3>
+                    <p class="text-gray-500 leading-7 text-sm md:text-base">
+                        Enterprise-grade security that grows with you.
+                    </p>
+                </div>
             </div>
 
         </div>

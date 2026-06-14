@@ -373,42 +373,91 @@ require_once 'includes/header.php';
 
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+        <div class="flex flex-col lg:flex-row items-stretch gap-0 relative">
 
-            <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00ffb3]/30 transition hover:-translate-y-1">
-                <div class="text-4xl font-black green-text mb-4">01</div>
-                <i class="fas fa-rocket text-3xl mb-4 text-[#00ffb3]"></i>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Instant Traffic</h3>
-                <p class="text-gray-500 leading-7 text-sm md:text-base">
-                    Get visitors to your site the moment your campaign launches.
-                </p>
+            <div class="flex-1 relative group">
+                <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 h-full hover:-translate-y-1 relative z-10">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="text-4xl font-black green-text">01</div>
+                        <i class="fas fa-rocket text-3xl text-[#00ffb3] icon-hover"></i>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-3">Instant Traffic</h3>
+                    <p class="text-gray-500 leading-7 text-sm md:text-base">
+                        Get visitors to your site the moment your campaign launches.
+                    </p>
+                </div>
             </div>
 
-            <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00b7ff]/30 transition hover:-translate-y-1">
-                <div class="text-4xl font-black blue-text mb-4">02</div>
-                <i class="fas fa-crosshairs text-3xl mb-4 text-[#00b7ff]"></i>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Precision Targeting</h3>
-                <p class="text-gray-500 leading-7 text-sm md:text-base">
-                    Reach the right audience by demographics, interests & behavior.
-                </p>
+            <div class="chain-link hidden lg:flex">
+                <div class="chain-line"></div>
+                <i class="fas fa-link text-[#00ffb3] chain-icon"></i>
+                <div class="chain-line"></div>
+            </div>
+            <div class="chain-vertical lg:hidden">
+                <div class="chain-line-v"></div>
+                <i class="fas fa-link text-[#00ffb3] chain-icon-v"></i>
+                <div class="chain-line-v"></div>
             </div>
 
-            <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00ffb3]/30 transition hover:-translate-y-1">
-                <div class="text-4xl font-black green-text mb-4">03</div>
-                <i class="fas fa-coins text-3xl mb-4 text-[#00ffb3]"></i>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Budget Control</h3>
-                <p class="text-gray-500 leading-7 text-sm md:text-base">
-                    Set your budget and only pay when someone clicks or converts.
-                </p>
+            <div class="flex-1 relative group">
+                <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 h-full hover:-translate-y-1 relative z-10">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="text-4xl font-black blue-text">02</div>
+                        <i class="fas fa-crosshairs text-3xl text-[#00b7ff] icon-hover"></i>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-3">Precision Targeting</h3>
+                    <p class="text-gray-500 leading-7 text-sm md:text-base">
+                        Reach the right audience by demographics, interests & behavior.
+                    </p>
+                </div>
             </div>
 
-            <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00b7ff]/30 transition hover:-translate-y-1">
-                <div class="text-4xl font-black blue-text mb-4">04</div>
-                <i class="fas fa-chart-bar text-3xl mb-4 text-[#00b7ff]"></i>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Measurable ROI</h3>
-                <p class="text-gray-500 leading-7 text-sm md:text-base">
-                    Track every dollar with detailed analytics and reporting.
-                </p>
+            <div class="chain-link hidden lg:flex">
+                <div class="chain-line"></div>
+                <i class="fas fa-link text-[#00ffb3] chain-icon"></i>
+                <div class="chain-line"></div>
+            </div>
+            <div class="chain-vertical lg:hidden">
+                <div class="chain-line-v"></div>
+                <i class="fas fa-link text-[#00ffb3] chain-icon-v"></i>
+                <div class="chain-line-v"></div>
+            </div>
+
+            <div class="flex-1 relative group">
+                <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 h-full hover:-translate-y-1 relative z-10">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="text-4xl font-black green-text">03</div>
+                        <i class="fas fa-coins text-3xl text-[#00ffb3] icon-hover"></i>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-3">Budget Control</h3>
+                    <p class="text-gray-500 leading-7 text-sm md:text-base">
+                        Set your budget and only pay when someone clicks or converts.
+                    </p>
+                </div>
+            </div>
+
+            <div class="chain-link hidden lg:flex">
+                <div class="chain-line"></div>
+                <i class="fas fa-link text-[#00ffb3] chain-icon"></i>
+                <div class="chain-line"></div>
+            </div>
+            <div class="chain-vertical lg:hidden">
+                <div class="chain-line-v"></div>
+                <i class="fas fa-link text-[#00ffb3] chain-icon-v"></i>
+                <div class="chain-line-v"></div>
+            </div>
+
+            <div class="flex-1 relative group">
+                <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 h-full hover:-translate-y-1 relative z-10">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="text-4xl font-black blue-text">04</div>
+                        <i class="fas fa-chart-bar text-3xl text-[#00b7ff] icon-hover"></i>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-3">Measurable ROI</h3>
+                    <p class="text-gray-500 leading-7 text-sm md:text-base">
+                        Track every dollar with detailed analytics and reporting.
+                    </p>
+                </div>
             </div>
 
         </div>

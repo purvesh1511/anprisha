@@ -182,7 +182,7 @@ $team_members = [
                     <div
                         class="absolute top-4 right-4 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full text-[10px] sm:text-xs z-10 border border-white/10">
 
-                        <i class="fas fa-briefcase mr-1 text-[#00ffb3]"></i>
+                        <i class="fas fa-briefcase mr-1 text-[#00ffb3] icon-hover"></i>
                         <?php echo htmlspecialchars($member['experience']); ?>
 
                     </div>
@@ -359,7 +359,7 @@ $team_members = [
 
                 <!-- STAT -->
                 <div
-                    class="glass-card rounded-2xl md:rounded-[35px] p-8 md:p-10 text-center hover:-translate-y-1 transition">
+                    class="stat-card glass-card rounded-2xl md:rounded-[35px] p-8 md:p-10 text-center border border-white/10 fade-in-up delay-100">
                     <h3 class="text-4xl sm:text-5xl md:text-6xl font-black green-text mb-3 md:mb-4 counter"
                         data-target="100">
                         <span>100</span>+
@@ -369,7 +369,7 @@ $team_members = [
 
                 <!-- STAT -->
                 <div
-                    class="glass-card rounded-2xl md:rounded-[35px] p-8 md:p-10 text-center hover:-translate-y-1 transition">
+                    class="stat-card glass-card rounded-2xl md:rounded-[35px] p-8 md:p-10 text-center border border-white/10 fade-in-up delay-200">
                     <h3 class="text-4xl sm:text-5xl md:text-6xl font-black blue-text mb-3 md:mb-4 counter"
                         data-target="50">
                         <span>50</span>+
@@ -379,7 +379,7 @@ $team_members = [
 
                 <!-- STAT -->
                 <div
-                    class="glass-card rounded-2xl md:rounded-[35px] p-8 md:p-10 text-center hover:-translate-y-1 transition">
+                    class="stat-card glass-card rounded-2xl md:rounded-[35px] p-8 md:p-10 text-center border border-white/10 fade-in-up delay-300">
                     <h3 class="text-4xl sm:text-5xl md:text-6xl font-black green-text mb-3 md:mb-4 counter"
                         data-target="98">
                         <span>98</span>%
@@ -389,7 +389,7 @@ $team_members = [
 
                 <!-- STAT -->
                 <div
-                    class="glass-card rounded-2xl md:rounded-[35px] p-8 md:p-10 text-center hover:-translate-y-1 transition">
+                    class="stat-card glass-card rounded-2xl md:rounded-[35px] p-8 md:p-10 text-center border border-white/10 fade-in-up delay-400">
                     <h3 class="text-4xl sm:text-5xl md:text-6xl font-black blue-text mb-3 md:mb-4 counter"
                         data-target="24">
                         <span>24</span>/7
@@ -427,7 +427,7 @@ $team_members = [
 
                 <!-- LABEL -->
                 <p class="green-text uppercase tracking-[4px] font-semibold mb-4 text-sm">
-                    <i class="fas fa-users mr-2"></i>
+                        <i class="fas fa-users mr-2 icon-hover"></i>
                     JOIN OUR JOURNEY
                 </p>
 
@@ -448,17 +448,17 @@ $team_members = [
                 <div class="flex flex-col sm:flex-row justify-center gap-6 mb-10 text-sm text-gray-300">
 
                     <div class="flex items-center justify-center gap-2">
-                        <i class="fas fa-code text-[#00ffb3]"></i>
+                        <i class="fas fa-code text-[#00ffb3] icon-float"></i>
                         Developers
                     </div>
 
                     <div class="flex items-center justify-center gap-2">
-                        <i class="fas fa-paint-brush text-[#00b7ff]"></i>
+                        <i class="fas fa-paint-brush text-[#00b7ff] icon-float"></i>
                         Designers
                     </div>
 
                     <div class="flex items-center justify-center gap-2">
-                        <i class="fas fa-bullhorn text-[#00ffb3]"></i>
+                        <i class="fas fa-bullhorn text-[#00ffb3] icon-float"></i>
                         Marketers
                     </div>
 
