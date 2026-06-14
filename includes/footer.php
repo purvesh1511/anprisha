@@ -5,27 +5,31 @@
 
             <!-- ABOUT Section -->
             <div>
-                <img src="<?php echo SITE_URL; ?>/assets/images/anprix-logo.png"
-                    alt="Anprix Logo" class="h-14 mb-5" />
-                <p class="text-gray-500 leading-8 mb-6">
+                <img src="<?php echo SITE_URL; ?>/assets/images/anprix-logo.webp"
+                    alt="Anprix Logo" width="140" height="56" class="h-14 mb-5" />
+                <p class="text-gray-400 leading-8 mb-6">
                     Professional website development, SEO optimization, Shopify development, digital marketing, branding, advertising, and custom web solutions designed to help businesses grow online.
                 </p>
                 <!-- Social Links -->
                 <div class="flex gap-3">
 <a href="<?= SOCIAL_FACEBOOK; ?>" target="_blank" rel="noopener noreferrer"
-    class="social-footer w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#00ffb3] hover:text-black transition-all duration-300">
+    class="social-footer w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#00ffb3] hover:text-black transition-all duration-300"
+    aria-label="Facebook">
                     <i class="fab fa-facebook-f social-icon"></i>
                 </a>
                 <a href="<?= SOCIAL_TWITTER; ?>" target="_blank" rel="noopener noreferrer"
-                    class="social-footer w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#00ffb3] hover:text-black transition-all duration-300">
+                    class="social-footer w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#00ffb3] hover:text-black transition-all duration-300"
+                    aria-label="Twitter">
                     <i class="fab fa-twitter social-icon"></i>
                 </a>
                 <a href="<?= SOCIAL_LINKEDIN; ?>" target="_blank" rel="noopener noreferrer"
-                    class="social-footer w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#00ffb3] hover:text-black transition-all duration-300">
+                    class="social-footer w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#00ffb3] hover:text-black transition-all duration-300"
+                    aria-label="LinkedIn">
                     <i class="fab fa-linkedin-in social-icon"></i>
                 </a>
                 <a href="<?= SOCIAL_INSTAGRAM; ?>" target="_blank" rel="noopener noreferrer"
-                    class="social-footer w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#00ffb3] hover:text-black transition-all duration-300">
+                    class="social-footer w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#00ffb3] hover:text-black transition-all duration-300"
+                    aria-label="Instagram">
                     <i class="fab fa-instagram social-icon"></i>
                 </a>
                 </div>
@@ -34,7 +38,7 @@
             <!-- SERVICES Section -->
             <div>
                 <h4 class="text-xl font-bold mb-5">Services</h4>
-                <ul class="space-y-3 text-gray-500">
+                <ul class="space-y-3 text-gray-400">
                     <li>
                         <a href="website-development.php"
                         class="hover:text-[#00ffb3] transition">
@@ -77,7 +81,7 @@
             <!-- QUICK LINKS Section -->
             <div>
                 <h4 class="text-xl font-bold mb-5">Quick Links</h4>
-                <ul class="space-y-3 text-gray-500">
+                <ul class="space-y-3 text-gray-400">
                     <li><a href="index.php" class="hover:text-[#00ffb3] transition">Home</a></li>
                     <li><a href="services.php" class="hover:text-[#00ffb3] transition">Services</a></li>
                     <li><a href="portfolio.php" class="hover:text-[#00ffb3] transition">Portfolio</a></li>
@@ -90,7 +94,7 @@
             <!-- CONTACT & Newsletter Section -->
             <div>
                 <h4 class="text-xl font-bold mb-5">Contact Us</h4>
-                <ul class="space-y-3 text-gray-500 mb-6">
+                <ul class="space-y-3 text-gray-400 mb-6">
                     <!-- EMAIL -->
                     <li class="flex items-center gap-3">
                         <i class="fas fa-envelope text-[#00ffb3] w-5 icon-hover"></i>
@@ -128,18 +132,18 @@
                         <?php csrf_field(); ?>
                         <input type="email" name="email" placeholder="Your email address" required
                             class="flex-1 bg-black/40 border border-white/10 rounded-xl px-4 py-2 text-white text-sm focus:outline-none focus:border-[#00ffb3]">
-                        <button type="submit" class="btn-primary px-4 py-2 rounded-xl text-sm">
+                        <button type="submit" class="btn-primary px-4 py-2 rounded-xl text-sm" aria-label="Subscribe">
                             <i class="fas fa-paper-plane"></i>
                         </button>
                     </form>
-                    <p id="newsletterMsg" class="text-gray-600 text-xs mt-3">Get updates about new projects and offers.</p>
+                    <p id="newsletterMsg" class="text-gray-400 text-xs mt-3">Get updates about new projects and offers.</p>
                 </div>
             </div>
         </div>
 
         <!-- Bottom Bar -->
         <div class="border-t border-white/5 mt-14 pt-8 flex flex-wrap justify-between items-center gap-4">
-            <div class="text-center text-gray-600 text-sm">
+            <div class="text-center text-gray-400 text-sm">
                 © <?php echo date('Y'); ?> <?php echo SITE_NAME; ?>. All Rights Reserved.
             </div>
         </div>
@@ -155,9 +159,9 @@
 </a>
 
 <!-- Scripts -->
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
 
-<script src="assets/js/hire-form.js"></script>
+<script src="assets/js/hire-form.min.js" defer></script>
 
 <!-- Scroll Animation Script -->
 <script>

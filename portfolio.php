@@ -221,6 +221,8 @@ $portfolio_items = [
 <section class="py-16 md:py-28 overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
 
+        <h2 class="sr-only">Portfolio</h2>
+
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8" id="portfolio-grid">
 
             <?php foreach($portfolio_items as $item): ?>

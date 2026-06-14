@@ -51,8 +51,9 @@ require_once 'includes/header.php';
 
                 <div class="relative w-full max-w-full lg:max-w-2xl mx-auto">
                     <div class="glass-card rounded-[22px] sm:rounded-[30px] p-1 sm:p-2 hero-image-glow pulse-ring text-center">
-                        <img src="assets/images/seo.png"
+                        <img src="assets/images/seo.webp"
                              alt="Anprix Solutions - SEO Services"
+                             width="680" height="500" fetchpriority="high"
                              class="w-full max-w-[85%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-[85%] xl:max-w-[680px] mx-auto animate-float">
                     </div>
 
@@ -186,7 +187,7 @@ require_once 'includes/header.php';
                             <i class="fas fa-tags"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg">Meta Tags & Headers</h4>
+                            <h3 class="font-bold text-lg">Meta Tags & Headers</h3>
                             <p class="text-gray-500 text-sm">Title tags, meta descriptions & H1-H6</p>
                         </div>
                     </div>
@@ -196,7 +197,7 @@ require_once 'includes/header.php';
                             <i class="fas fa-link"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg">Internal Linking</h4>
+                            <h3 class="font-bold text-lg">Internal Linking</h3>
                             <p class="text-gray-500 text-sm">Strategic link architecture</p>
                         </div>
                     </div>
@@ -206,7 +207,7 @@ require_once 'includes/header.php';
                             <i class="fas fa-image"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg">Image Optimization</h4>
+                            <h3 class="font-bold text-lg">Image Optimization</h3>
                             <p class="text-gray-500 text-sm">Alt tags, compression & lazy loading</p>
                         </div>
                     </div>
@@ -338,7 +339,7 @@ require_once 'includes/header.php';
                             <i class="fas fa-pen-fancy"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg">Guest Blogging</h4>
+                            <h3 class="font-bold text-lg">Guest Blogging</h3>
                             <p class="text-gray-500 text-sm">High-quality content on relevant sites</p>
                         </div>
                     </div>
@@ -348,7 +349,7 @@ require_once 'includes/header.php';
                             <i class="fas fa-handshake"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg">Outreach Campaigns</h4>
+                            <h3 class="font-bold text-lg">Outreach Campaigns</h3>
                             <p class="text-gray-500 text-sm">Strategic partnership building</p>
                         </div>
                     </div>
@@ -358,7 +359,7 @@ require_once 'includes/header.php';
                             <i class="fas fa-shield-alt"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg">Toxic Link Removal</h4>
+                            <h3 class="font-bold text-lg">Toxic Link Removal</h3>
                             <p class="text-gray-500 text-sm">Disavow harmful backlinks</p>
                         </div>
                     </div>

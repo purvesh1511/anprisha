@@ -141,7 +141,7 @@ require_once 'includes/header.php';
                             <i class="fas fa-video"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg">Brand Videos</h4>
+                            <h3 class="font-bold text-lg">Brand Videos</h3>
                             <p class="text-gray-500 text-sm">Explainer, promo & corporate videos</p>
                         </div>
                     </div>
@@ -151,7 +151,7 @@ require_once 'includes/header.php';
                             <i class="fas fa-camera"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg">Photography</h4>
+                            <h3 class="font-bold text-lg">Photography</h3>
                             <p class="text-gray-500 text-sm">Product & brand photography</p>
                         </div>
                     </div>
@@ -161,7 +161,7 @@ require_once 'includes/header.php';
                             <i class="fas fa-play-circle"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg">Motion Graphics</h4>
+                            <h3 class="font-bold text-lg">Motion Graphics</h3>
                             <p class="text-gray-500 text-sm">Animated content & explainers</p>
                         </div>
                     </div>
@@ -289,7 +289,7 @@ require_once 'includes/header.php';
                             <i class="fas fa-bullseye"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg">Brand Positioning</h4>
+                            <h3 class="font-bold text-lg">Brand Positioning</h3>
                             <p class="text-gray-500 text-sm">Define your market position</p>
                         </div>
                     </div>
@@ -299,7 +299,7 @@ require_once 'includes/header.php';
                             <i class="fas fa-comments"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg">Messaging Framework</h4>
+                            <h3 class="font-bold text-lg">Messaging Framework</h3>
                             <p class="text-gray-500 text-sm">Voice, tone & key messages</p>
                         </div>
                     </div>
@@ -309,7 +309,7 @@ require_once 'includes/header.php';
                             <i class="fas fa-ad"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg">Campaign Creative</h4>
+                            <h3 class="font-bold text-lg">Campaign Creative</h3>
                             <p class="text-gray-500 text-sm">Visual direction for ads & content</p>
                         </div>
                     </div>

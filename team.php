@@ -302,9 +302,9 @@ $team_members = [
                         </div>
 
                         <div>
-                            <h4 class="text-lg md:text-2xl font-bold mb-2">
+                            <h3 class="text-lg md:text-2xl font-bold mb-2">
                                 Creative Design Thinking
-                            </h4>
+                            </h3>
                             <p class="text-gray-500 text-sm md:text-base leading-7 md:leading-8">
                                 We create modern experiences that connect brands with customers.
                             </p>
@@ -321,9 +321,9 @@ $team_members = [
                         </div>
 
                         <div>
-                            <h4 class="text-lg md:text-2xl font-bold mb-2">
+                            <h3 class="text-lg md:text-2xl font-bold mb-2">
                                 Technical Excellence
-                            </h4>
+                            </h3>
                             <p class="text-gray-500 text-sm md:text-base leading-7 md:leading-8">
                                 High-performance development using modern technologies.
                             </p>
@@ -340,9 +340,9 @@ $team_members = [
                         </div>
 
                         <div>
-                            <h4 class="text-lg md:text-2xl font-bold mb-2">
+                            <h3 class="text-lg md:text-2xl font-bold mb-2">
                                 Result Driven Marketing
-                            </h4>
+                            </h3>
                             <p class="text-gray-500 text-sm md:text-base leading-7 md:leading-8">
                                 Strategies designed to improve traffic, leads, and online growth.
                             </p>

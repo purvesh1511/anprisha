@@ -52,6 +52,7 @@ require_once 'includes/header.php';
                     <div class="glass-card rounded-[22px] sm:rounded-[30px] p-1 sm:p-2 hero-image-glow pulse-ring text-center">
                         <img src="assets/images/web-development.png"
                              alt="Anprix Solutions - Website Development Company"
+                             width="680" height="500" fetchpriority="high"
                              class="w-full max-w-[85%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-[85%] xl:max-w-[680px] mx-auto animate-float">
                     </div>
 
@@ -185,7 +186,7 @@ require_once 'includes/header.php';
                             <i class="fas fa-cogs"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg">Custom Web Apps</h4>
+                            <h3 class="font-bold text-lg">Custom Web Apps</h3>
                             <p class="text-gray-500 text-sm">Tailored solutions for complex requirements</p>
                         </div>
                     </div>
@@ -195,7 +196,7 @@ require_once 'includes/header.php';
                             <i class="fas fa-database"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg">Database Architecture</h4>
+                            <h3 class="font-bold text-lg">Database Architecture</h3>
                             <p class="text-gray-500 text-sm">Optimized MySQL & PostgreSQL schemas</p>
                         </div>
                     </div>
@@ -205,7 +206,7 @@ require_once 'includes/header.php';
                             <i class="fas fa-cloud"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg">API Development</h4>
+                            <h3 class="font-bold text-lg">API Development</h3>
                             <p class="text-gray-500 text-sm">RESTful & GraphQL APIs</p>
                         </div>
                     </div>
@@ -337,7 +338,7 @@ require_once 'includes/header.php';
                             <i class="fab fa-shopify"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg">Custom Themes</h4>
+                            <h3 class="font-bold text-lg">Custom Themes</h3>
                             <p class="text-gray-500 text-sm">Tailored to your brand identity</p>
                         </div>
                     </div>
@@ -347,7 +348,7 @@ require_once 'includes/header.php';
                             <i class="fas fa-puzzle-piece"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg">App Integrations</h4>
+                            <h3 class="font-bold text-lg">App Integrations</h3>
                             <p class="text-gray-500 text-sm">Extend functionality with plugins</p>
                         </div>
                     </div>
@@ -357,7 +358,7 @@ require_once 'includes/header.php';
                             <i class="fas fa-credit-card"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg">Checkout Optimization</h4>
+                            <h3 class="font-bold text-lg">Checkout Optimization</h3>
                             <p class="text-gray-500 text-sm">Reduce cart abandonment</p>
                         </div>
                     </div>

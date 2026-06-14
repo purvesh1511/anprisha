@@ -133,8 +133,9 @@ $testimonials = [
             <!-- MAIN IMAGE SHOWCASE -->
             <div class="relative w-full max-w-full lg:max-w-2xl mx-auto">
                 <div class="glass-card rounded-[22px] sm:rounded-[30px] p-1 sm:p-2 hero-image-glow pulse-ring text-center">
-                    <img src="assets/images/heroright1.png"
+                    <img src="assets/images/heroright1.webp"
                          alt="Anprix Solutions - Website Development Company"
+                         width="680" height="500" fetchpriority="high"
                          class="w-full max-w-[85%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-[85%] xl:max-w-[680px] mx-auto animate-float">
                 </div>
 
@@ -688,7 +689,7 @@ $how_work_steps = [
 
                     <!-- INFO -->
                     <div>
-                        <h4 class="text-base md:text-lg font-bold">
+                        <h3 class="text-base md:text-lg font-bold">
                             <?php echo $testimonial['name']; ?>
                         </h4>
 
@@ -870,7 +871,7 @@ $how_work_steps = [
                             ✓
                         </div>
                         <div>
-                            <h4 class="font-bold">Premium Website Design</h4>
+                            <h3 class="font-bold">Premium Website Design</h3>
                             <p class="text-gray-500 text-sm md:text-base">Modern responsive websites optimized for
                                 speed.</p>
                         </div>
@@ -882,7 +883,7 @@ $how_work_steps = [
                             ✓
                         </div>
                         <div>
-                            <h4 class="font-bold">SEO & Google Ranking</h4>
+                            <h3 class="font-bold">SEO & Google Ranking</h3>
                             <p class="text-gray-500 text-sm md:text-base">Improve visibility and ranking on Google.</p>
                         </div>
                     </div>
@@ -893,7 +894,7 @@ $how_work_steps = [
                             ✓
                         </div>
                         <div>
-                            <h4 class="font-bold">Marketing & Ads</h4>
+                            <h3 class="font-bold">Marketing & Ads</h3>
                             <p class="text-gray-500 text-sm md:text-base">Generate leads using powerful campaigns.</p>
                         </div>
                     </div>
@@ -946,10 +947,10 @@ $how_work_steps = [
 
                     <!-- SERVICE -->
                     <div>
-                        <label class="block text-sm font-medium text-gray-300 mb-2 sm:mb-3">
+                        <label for="index-service" class="block text-sm font-medium text-gray-300 mb-2 sm:mb-3">
                             Select Service *
                         </label>
-                        <select name="service" required
+                        <select id="index-service" name="service" required
                             class="w-full bg-black/40 border border-white/10 rounded-2xl px-4 sm:px-5 py-3 sm:py-4 text-white focus:outline-none focus:border-[#00ffb3]">
                             <option value="">Select a Service</option>
                             <option value="Digital Marketing">Digital Marketing</option>
@@ -964,10 +965,10 @@ $how_work_steps = [
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
 
                         <div>
-                            <label class="block text-sm font-medium text-gray-300 mb-2 sm:mb-3">
+                            <label for="index-budget" class="block text-sm font-medium text-gray-300 mb-2 sm:mb-3">
                                 Estimated Budget
                             </label>
-                            <select name="budget"
+                            <select id="index-budget" name="budget"
                                 class="w-full bg-black/40 border border-white/10 rounded-2xl px-4 sm:px-5 py-3 sm:py-4 text-white focus:outline-none focus:border-[#00ffb3]">
                                 <option value="">Select Budget Range</option>
                                 <option value="Less than $5,000">Less than $5,000</option>
@@ -978,10 +979,10 @@ $how_work_steps = [
                         </div>
 
                         <div>
-                            <label class="block text-sm font-medium text-gray-300 mb-2 sm:mb-3">
+                            <label for="index-timeline" class="block text-sm font-medium text-gray-300 mb-2 sm:mb-3">
                                 Project Timeline
                             </label>
-                            <select name="timeline"
+                            <select id="index-timeline" name="timeline"
                                 class="w-full bg-black/40 border border-white/10 rounded-2xl px-4 sm:px-5 py-3 sm:py-4 text-white focus:outline-none focus:border-[#00ffb3]">
                                 <option value="">Select Timeline</option>
                                 <option value="ASAP (Within 2 weeks)">ASAP (Within 2 weeks)</option>

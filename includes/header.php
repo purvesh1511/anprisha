@@ -13,8 +13,6 @@
 
     <title><?= htmlspecialchars($page_title_full) ?></title>
     <meta name="description" content="<?= htmlspecialchars($page_desc) ?>">
-    <meta name="keywords" content="digital marketing agency, digital marketing advertising agency, digital marketing services, digital marketing agency near me, digital marketing company, SEO services Ahmedabad, Google Ads agency Ahmedabad, social media marketing Ahmedabad">
-    <meta name="author" content="Anprix Solutions">
     <meta name="robots" content="index, follow">
 
     <!-- Canonical -->
@@ -29,6 +27,7 @@
     <meta property="og:image" content="<?= htmlspecialchars($og_image) ?>">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_IN">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
@@ -38,9 +37,14 @@
     <meta name="twitter:site" content="<?= htmlspecialchars(SITE_TWITTER_HANDLE) ?>">
 
     <!-- Icons -->
-    <link rel="icon" type="image/png" href="<?= SITE_URL ?>/assets/images/anprix-logo.png">
-    <link rel="apple-touch-icon" href="<?= SITE_URL ?>/assets/images/anprix-logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?= SITE_URL ?>/assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="<?= SITE_URL ?>/assets/images/apple-touch-icon.png">
     <meta name="theme-color" content="#050505">
+
+    <!-- Preconnect for third-party origins -->
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://code.jquery.com">
 
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -54,13 +58,12 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.min.css">
 
     <!-- Schemas -->
     <script type="application/ld+json">
@@ -69,7 +72,7 @@
       "@type":"Organization",
       "name":"Anprix Solutions",
       "url":"<?= SITE_URL; ?>",
-      "logo":"<?= SITE_URL; ?>/assets/images/anprix-logo.png",
+      "logo":"<?= SITE_URL; ?>/assets/images/anprix-logo.webp",
       "description":"<?= SITE_DESCRIPTION; ?>",
       "email":"<?= SITE_EMAIL; ?>",
       "telephone":"<?= SITE_PHONE; ?>",
@@ -101,28 +104,22 @@
     <script type="application/ld+json">
     {
       "@context":"https://schema.org",
-      "@type":"Product",
-      "name":"Anprix Digital Solutions",
+      "@type":"Service",
+      "name":"Anprix Digital Services",
+      "provider":{
+        "@type":"Organization",
+        "name":"Anprix Solutions"
+      },
       "aggregateRating":{
         "@type":"AggregateRating",
         "ratingValue":"4.9",
         "reviewCount":"85",
         "bestRating":"5"
+      },
+      "areaServed":"IN",
+      "audience":{
+        "@type":"BusinessAudience"
       }
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-      "@context":"https://schema.org",
-      "@type":"FAQPage",
-      "mainEntity":[
-        {"@type":"Question","name":"How much does website development cost in Ahmedabad?","acceptedAnswer":{"@type":"Answer","text":"Website development costs in Ahmedabad typically range from ₹15,000 for a basic static website to ₹1,50,000+ for a custom Laravel or Shopify eCommerce store. We provide a free consultation and detailed quote."}},
-        {"@type":"Question","name":"How long does a website project typically take?","acceptedAnswer":{"@type":"Answer","text":"A standard business website takes 2-4 weeks. eCommerce stores and custom web applications typically take 4-8 weeks depending on features and functionality."}},
-        {"@type":"Question","name":"Do you provide SEO services after the website is built?","acceptedAnswer":{"@type":"Answer","text":"Yes. We offer comprehensive SEO services including technical SEO, on-page optimization, keyword research, content strategy, link building, and monthly reporting."}},
-        {"@type":"Question","name":"Can you redesign my existing website?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. We specialize in website redesign and modernization with modern UI/UX, faster performance, SEO optimization, and mobile responsiveness."}},
-        {"@type":"Question","name":"What digital marketing services do you offer?","acceptedAnswer":{"@type":"Answer","text":"We offer Google Ads management, social media marketing, SEO, content marketing, email marketing, and conversion rate optimization tailored to your business goals."}}
-      ]
     }
     </script>
 
@@ -132,7 +129,7 @@
       "@type":"LocalBusiness",
       "name":"Anprix Solutions",
       "url":"<?= SITE_URL; ?>",
-      "image":"<?= SITE_URL; ?>/assets/images/anprix-logo.png",
+      "image":"<?= SITE_URL; ?>/assets/images/anprix-logo.webp",
       "description":"<?= SITE_DESCRIPTION; ?>",
       "email":"<?= SITE_EMAIL; ?>",
       "telephone":"<?= SITE_PHONE; ?>",
@@ -171,8 +168,8 @@ $is_service_page = in_array(basename($_SERVER['PHP_SELF']), $service_pages);
         <!-- LOGO -->
         <div class="flex items-center gap-4">
             <a href="<?php echo SITE_URL; ?>">
-                <img src="<?php echo SITE_URL; ?>/assets/images/anprix-logo.png"
-                    alt="Anprix Logo"
+                <img src="<?php echo SITE_URL; ?>/assets/images/anprix-logo.webp"
+                    alt="Anprix Logo" width="140" height="56"
                     class="h-12 sm:h-14 w-auto max-w-[140px] sm:max-w-none" />
             </a>
         </div>
@@ -253,7 +250,8 @@ $is_service_page = in_array(basename($_SERVER['PHP_SELF']), $service_pages);
 
             <!-- MOBILE MENU BUTTON -->
             <button id="mobileMenuBtn"
-                    class="md:hidden btn-primary p-3 rounded-xl flex items-center justify-center">
+                    class="md:hidden btn-primary p-3 rounded-xl flex items-center justify-center"
+                    aria-label="Toggle navigation menu">
 
                 <svg xmlns="http://www.w3.org/2000/svg"
                      class="h-6 w-6"

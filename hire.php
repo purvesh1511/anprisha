@@ -83,8 +83,9 @@ require_once 'includes/header.php';
                 <div class="relative">
                     <div class="absolute -inset-4 bg-gradient-to-br from-[#00ffb3]/20 to-[#00b7ff]/20 rounded-[40px] blur-2xl opacity-60"></div>
                     <div class="relative glass-card rounded-[30px] p-4 border border-white/10 overflow-hidden">
-                        <img src="assets/images/hire.png"
+                        <img src="assets/images/hire.webp"
                              alt="Hire Anprix"
+                             width="680" height="500"
                              class="w-full h-auto rounded-2xl"
                              loading="lazy">
                     </div>
@@ -185,7 +186,7 @@ require_once 'includes/header.php';
 
                     <!-- SERVICE -->
                     <div>
-                        <label class="block text-sm font-medium text-gray-300 mb-2 sm:mb-3 flex items-center gap-2">
+                        <label for="hire-service" class="block text-sm font-medium text-gray-300 mb-2 sm:mb-3 flex items-center gap-2">
                             <i class="fa-solid fa-briefcase text-[#00b7ff] text-xs"></i>
                             Select Service *
                         </label>
@@ -193,7 +194,7 @@ require_once 'includes/header.php';
                             <span class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500">
                                 <i class="fa-solid fa-tag text-sm"></i>
                             </span>
-                            <select name="service" required
+                            <select id="hire-service" name="service" required
                                 class="w-full bg-black/40 border border-white/10 rounded-2xl pl-11 pr-5 py-3 sm:py-4 text-white focus:outline-none focus:border-[#00ffb3] appearance-none"
                                 style="background-image: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22 viewBox=%220 0 12 12%22><path fill=%22%23666%22 d=%22M6 8L1 3h10z%22/></svg>'); background-repeat: no-repeat; background-position: right 1rem center;">
                                 <option value="">Select a Service</option>
@@ -210,7 +211,7 @@ require_once 'includes/header.php';
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
 
                         <div>
-                            <label class="block text-sm font-medium text-gray-300 mb-2 sm:mb-3 flex items-center gap-2">
+                            <label for="hire-budget" class="block text-sm font-medium text-gray-300 mb-2 sm:mb-3 flex items-center gap-2">
                                 <i class="fa-solid fa-coins text-[#00ffb3] text-xs"></i>
                                 Estimated Budget
                             </label>
@@ -218,7 +219,7 @@ require_once 'includes/header.php';
                                 <span class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500">
                                     <i class="fa-solid fa-dollar-sign text-sm"></i>
                                 </span>
-                                <select name="budget"
+                                <select id="hire-budget" name="budget"
                                     class="w-full bg-black/40 border border-white/10 rounded-2xl pl-11 pr-5 py-3 sm:py-4 text-white focus:outline-none focus:border-[#00ffb3] appearance-none"
                                     style="background-image: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22 viewBox=%220 0 12 12%22><path fill=%22%23666%22 d=%22M6 8L1 3h10z%22/></svg>'); background-repeat: no-repeat; background-position: right 1rem center;">
                                     <option value="">Select Budget Range</option>
@@ -231,7 +232,7 @@ require_once 'includes/header.php';
                         </div>
 
                         <div>
-                            <label class="block text-sm font-medium text-gray-300 mb-2 sm:mb-3 flex items-center gap-2">
+                            <label for="hire-timeline" class="block text-sm font-medium text-gray-300 mb-2 sm:mb-3 flex items-center gap-2">
                                 <i class="fa-solid fa-clock text-[#00b7ff] text-xs"></i>
                                 Project Timeline
                             </label>
@@ -239,7 +240,7 @@ require_once 'includes/header.php';
                                 <span class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500">
                                     <i class="fa-solid fa-calendar text-sm"></i>
                                 </span>
-                                <select name="timeline"
+                                <select id="hire-timeline" name="timeline"
                                     class="w-full bg-black/40 border border-white/10 rounded-2xl pl-11 pr-5 py-3 sm:py-4 text-white focus:outline-none focus:border-[#00ffb3] appearance-none"
                                     style="background-image: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22 viewBox=%220 0 12 12%22><path fill=%22%23666%22 d=%22M6 8L1 3h10z%22/></svg>'); background-repeat: no-repeat; background-position: right 1rem center;">
                                     <option value="">Select Timeline</option>

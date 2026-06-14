@@ -142,7 +142,7 @@ require_once 'includes/header.php';
                             <i class="fab fa-facebook"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg">Facebook & Instagram Ads</h4>
+                            <h3 class="font-bold text-lg">Facebook & Instagram Ads</h3>
                             <p class="text-gray-500 text-sm">Visual campaigns with audience targeting</p>
                         </div>
                     </div>
@@ -152,7 +152,7 @@ require_once 'includes/header.php';
                             <i class="fab fa-linkedin-in"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg">LinkedIn Ads</h4>
+                            <h3 class="font-bold text-lg">LinkedIn Ads</h3>
                             <p class="text-gray-500 text-sm">B2B lead generation campaigns</p>
                         </div>
                     </div>
@@ -162,7 +162,7 @@ require_once 'includes/header.php';
                             <i class="fab fa-twitter"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg">Twitter Ads</h4>
+                            <h3 class="font-bold text-lg">Twitter Ads</h3>
                             <p class="text-gray-500 text-sm">Trend-based ad placements</p>
                         </div>
                     </div>
@@ -294,7 +294,7 @@ require_once 'includes/header.php';
                             <i class="fas fa-chart-line"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg">Conversion Tracking</h4>
+                            <h3 class="font-bold text-lg">Conversion Tracking</h3>
                             <p class="text-gray-500 text-sm">Track leads, sales & form submissions</p>
                         </div>
                     </div>
@@ -304,7 +304,7 @@ require_once 'includes/header.php';
                             <i class="fas fa-flask"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg">A/B Testing</h4>
+                            <h3 class="font-bold text-lg">A/B Testing</h3>
                             <p class="text-gray-500 text-sm">Test creatives, audiences & landing pages</p>
                         </div>
                     </div>
@@ -314,7 +314,7 @@ require_once 'includes/header.php';
                             <i class="fas fa-file-invoice"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg">Monthly Reporting</h4>
+                            <h3 class="font-bold text-lg">Monthly Reporting</h3>
                             <p class="text-gray-500 text-sm">Detailed performance reports & insights</p>
                         </div>
                     </div>

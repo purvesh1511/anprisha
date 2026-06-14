@@ -51,8 +51,9 @@ require_once 'includes/header.php';
 
                 <div class="relative w-full max-w-full lg:max-w-2xl mx-auto">
                     <div class="glass-card rounded-[22px] sm:rounded-[30px] p-1 sm:p-2 hero-image-glow pulse-ring text-center">
-                        <img src="assets/images/digital-marketing.png"
+                        <img src="assets/images/digital-marketing.webp"
                              alt="Anprix Solutions - Digital Marketing Services"
+                             width="680" height="500" fetchpriority="high"
                              class="w-full max-w-[85%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-[85%] xl:max-w-[680px] mx-auto animate-float">
                     </div>
 
@@ -186,7 +187,7 @@ require_once 'includes/header.php';
                             <i class="fab fa-instagram"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg">Instagram Marketing</h4>
+                            <h3 class="font-bold text-lg">Instagram Marketing</h3>
                             <p class="text-gray-500 text-sm">Reels, stories, and growth campaigns</p>
                         </div>
                     </div>
@@ -196,7 +197,7 @@ require_once 'includes/header.php';
                             <i class="fab fa-linkedin-in"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg">LinkedIn Marketing</h4>
+                            <h3 class="font-bold text-lg">LinkedIn Marketing</h3>
                             <p class="text-gray-500 text-sm">B2B lead generation & branding</p>
                         </div>
                     </div>
@@ -206,7 +207,7 @@ require_once 'includes/header.php';
                             <i class="fab fa-facebook"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg">Facebook Advertising</h4>
+                            <h3 class="font-bold text-lg">Facebook Advertising</h3>
                             <p class="text-gray-500 text-sm">Targeted ad campaigns & retargeting</p>
                         </div>
                     </div>
@@ -338,7 +339,7 @@ require_once 'includes/header.php';
                             <i class="fab fa-google"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg">Google Ads</h4>
+                            <h3 class="font-bold text-lg">Google Ads</h3>
                             <p class="text-gray-500 text-sm">Search, display & shopping campaigns</p>
                         </div>
                     </div>
@@ -348,7 +349,7 @@ require_once 'includes/header.php';
                             <i class="fas fa-bullseye"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg">Retargeting</h4>
+                            <h3 class="font-bold text-lg">Retargeting</h3>
                             <p class="text-gray-500 text-sm">Re-engage lost visitors</p>
                         </div>
                     </div>
@@ -358,7 +359,7 @@ require_once 'includes/header.php';
                             <i class="fas fa-chart-pie"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg">Analytics & Tracking</h4>
+                            <h3 class="font-bold text-lg">Analytics & Tracking</h3>
                             <p class="text-gray-500 text-sm">Conversion tracking & reporting</p>
                         </div>
                     </div>

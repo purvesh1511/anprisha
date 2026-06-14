@@ -52,8 +52,9 @@ require_once 'includes/header.php';
 
                 <div class="relative w-full max-w-full lg:max-w-2xl mx-auto">
                     <div class="glass-card rounded-[22px] sm:rounded-[30px] p-1 sm:p-2 hero-image-glow pulse-ring text-center">
-                        <img src="assets/images/cms-development.png"
+                        <img src="assets/images/cms-development.webp"
                              alt="Anprix Solutions - CMS & eCommerce Development"
+                             width="680" height="500" fetchpriority="high"
                              class="w-full max-w-[85%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-[85%] xl:max-w-[680px] mx-auto animate-float">
                     </div>
 
@@ -120,7 +121,7 @@ require_once 'includes/header.php';
                             <i class="fab fa-wordpress"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg">Custom Theme Development</h4>
+                            <h3 class="font-bold text-lg">Custom Theme Development</h3>
                             <p class="text-gray-500 text-sm">Tailor-made designs that match your brand</p>
                         </div>
                     </div>
@@ -130,7 +131,7 @@ require_once 'includes/header.php';
                             <i class="fas fa-plug"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg">Plugin Integration</h4>
+                            <h3 class="font-bold text-lg">Plugin Integration</h3>
                             <p class="text-gray-500 text-sm">WooCommerce, SEO, forms, and more</p>
                         </div>
                     </div>
@@ -140,7 +141,7 @@ require_once 'includes/header.php';
                             <i class="fas fa-tachometer-alt"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg">Performance Optimization</h4>
+                            <h3 class="font-bold text-lg">Performance Optimization</h3>
                             <p class="text-gray-500 text-sm">Speed, caching, and SEO optimized</p>
                         </div>
                     </div>
@@ -259,7 +260,7 @@ require_once 'includes/header.php';
                             <i class="fab fa-shopify"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg">Shopify Stores</h4>
+                            <h3 class="font-bold text-lg">Shopify Stores</h3>
                             <p class="text-gray-500 text-sm">Custom themes, apps & checkout optimization</p>
                         </div>
                     </div>
@@ -269,7 +270,7 @@ require_once 'includes/header.php';
                             <i class="fab fa-wordpress"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg">WooCommerce</h4>
+                            <h3 class="font-bold text-lg">WooCommerce</h3>
                             <p class="text-gray-500 text-sm">WordPress-powered eCommerce solutions</p>
                         </div>
                     </div>
@@ -279,7 +280,7 @@ require_once 'includes/header.php';
                             <i class="fas fa-credit-card"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg">Payment & Shipping</h4>
+                            <h3 class="font-bold text-lg">Payment & Shipping</h3>
                             <p class="text-gray-500 text-sm">Secure gateways, tax & shipping automation</p>
                         </div>
                     </div>

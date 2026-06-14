@@ -9,8 +9,13 @@
  */
 
 // ---- Error reporting (disable in production) ----
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+if (!defined('ENVIRONMENT') || ENVIRONMENT !== 'production') {
+    error_reporting(E_ALL);
+    ini_set('display_errors', 1);
+} else {
+    error_reporting(0);
+    ini_set('display_errors', 0);
+}
 ini_set('log_errors', 1);
 
 date_default_timezone_set('Asia/Kolkata');
@@ -36,7 +41,7 @@ if (!defined('SITE_PHONE_ALT'))     define('SITE_PHONE_ALT',     '+91 9106807914
 if (!defined('SITE_ADDRESS'))       define('SITE_ADDRESS',       '21 Info city, Gandhinagar, Gujarat 382421');
 if (!defined('SITE_CITY_STATE_ZIP'))define('SITE_CITY_STATE_ZIP','Gandhinagar, Gujarat 382421');
 if (!defined('SITE_DESCRIPTION'))   define('SITE_DESCRIPTION',   'Anprix Solutions is a digital marketing agency in Ahmedabad offering SEO, Google Ads, social media marketing, website development, Shopify solutions, and growth-focused digital marketing services.');
-if (!defined('SITE_OG_IMAGE'))      define('SITE_OG_IMAGE',      SITE_URL . '/assets/images/anprix-logo.png');
+if (!defined('SITE_OG_IMAGE'))      define('SITE_OG_IMAGE',      SITE_URL . '/assets/images/anprix-logo.webp');
 if (!defined('SITE_TWITTER_HANDLE'))define('SITE_TWITTER_HANDLE','@anprix');
 if (!defined('SITE_COUNTRY'))       define('SITE_COUNTRY',       'India');
 

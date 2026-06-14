@@ -87,7 +87,7 @@ require_once 'includes/header.php';
                             <i class="fas fa-palette"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg">Custom Website Design</h4>
+                            <h3 class="font-bold text-lg">Custom Website Design</h3>
                             <p class="text-gray-500 text-sm">Modern UI/UX layouts</p>
                         </div>
                     </div>
@@ -98,7 +98,7 @@ require_once 'includes/header.php';
                             <i class="fab fa-shopify"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg">Shopify Development</h4>
+                            <h3 class="font-bold text-lg">Shopify Development</h3>
                             <p class="text-gray-500 text-sm">eCommerce solutions</p>
                         </div>
                     </div>
@@ -166,7 +166,7 @@ require_once 'includes/header.php';
                             <i class="fab fa-wordpress"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg">WordPress Development</h4>
+                            <h3 class="font-bold text-lg">WordPress Development</h3>
                             <p class="text-gray-500 text-sm">Custom themes, plugins & WooCommerce</p>
                         </div>
                     </div>
@@ -176,7 +176,7 @@ require_once 'includes/header.php';
                             <i class="fab fa-shopify"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg">Shopify Development</h4>
+                            <h3 class="font-bold text-lg">Shopify Development</h3>
                             <p class="text-gray-500 text-sm">eCommerce stores & custom themes</p>
                         </div>
                     </div>
