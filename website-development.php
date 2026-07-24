@@ -1,7 +1,8 @@
 <?php
 require_once 'config/config.php';
-$page_title = "Website Development";
-$page_description = "Anprix builds custom websites using Laravel, WordPress, Shopify, and modern frontend technologies — fast, responsive, and built for conversion.";
+$page_title = "Website Development Company in Ahmedabad, India";
+$seo_title = "Website Development Company in Ahmedabad, India | Anprix Solutions";
+$page_description = "Anprix Solutions is a leading website development company in Ahmedabad, India. We create visually appealing, user-friendly, responsive, and SEO-friendly websites for startups, businesses, and enterprises.";
 $canonical_url = SITE_URL . '/website-development';
 require_once 'includes/header.php';
 ?>
@@ -22,21 +23,21 @@ require_once 'includes/header.php';
             <div>
 
                 <p class="uppercase tracking-[4px] md:tracking-[5px] text-[#00ffb3] font-semibold mb-5 md:mb-6 text-xs sm:text-sm">
-                    Website Development
+                    Professional Website Development Services
                 </p>
 
                 <h1 class="text-4xl sm:text-5xl lg:text-7xl font-black leading-tight lg:leading-[1.05] mb-8 md:mb-10">
 
-                    High-Performance
+                    Website Development Company
                     <span class="green-text block sm:inline">
-                        Business Websites
+                        in Ahmedabad, India
                     </span>
 
                 </h1>
 
                 <p class="text-base sm:text-lg md:text-xl text-gray-400 leading-8 md:leading-10">
 
-                    Anprix builds fast, responsive, and conversion-focused websites using Laravel, WordPress, Shopify, and modern frontend technologies tailored to your business goals.
+                    Anprix Solutions is a leading web development company in Ahmedabad, India, dedicated to helping businesses establish a powerful online presence through innovative and result-driven website solutions. We specialize in creating visually appealing, user-friendly, responsive, and SEO-friendly websites that help businesses stand out in a competitive market.
 
                 </p>
 
@@ -463,7 +464,7 @@ require_once 'includes/header.php';
     </div>
 </section>
 
-<!-- WHY WEBSITE DEVELOPMENT -->
+<!-- WHY CHOOSE ANPRIX -->
 <section class="py-16 md:py-24 section-border overflow-hidden">
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
@@ -471,104 +472,85 @@ require_once 'includes/header.php';
         <div class="text-center mb-14 md:mb-20">
 
             <p class="green-text uppercase tracking-[4px] font-semibold mb-5 text-sm">
-                WHY CHOOSE PROFESSIONAL WEB DEVELOPMENT
+                WHY CHOOSE ANPRIX SOLUTIONS
             </p>
 
             <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-6 md:mb-8 leading-tight">
-                Benefits of a Custom Website
+                Your Trusted Web Development Company
             </h2>
 
             <p class="text-gray-400 text-base md:text-lg max-w-3xl mx-auto leading-8 md:leading-9">
-                A professionally built website is the foundation of your online presence and digital marketing success.
+                Our team combines creativity, technology, and industry expertise to deliver customized website solutions tailored to your business goals.
             </p>
 
         </div>
 
-        <div class="flex flex-col lg:flex-row items-stretch gap-0 relative">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
 
-            <div class="flex-1 relative group">
-                <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 h-full hover:-translate-y-1 relative z-10">
-                    <div class="flex items-start justify-between mb-4">
-                        <div class="text-4xl font-black green-text">01</div>
-                        <i class="fas fa-bolt text-3xl text-[#00ffb3] icon-hover"></i>
-                    </div>
-                    <h3 class="text-xl md:text-2xl font-bold mb-3">Blazing Fast</h3>
-                    <p class="text-gray-500 leading-7 text-sm md:text-base">
-                        Optimized for speed with fast load times.
-                    </p>
+            <!-- Custom Website Solutions -->
+            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1">
+                <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
+                    <i class="fas fa-laptop-code text-2xl"></i>
                 </div>
+                <h3 class="text-xl md:text-2xl font-bold mb-3">Custom Website Solutions</h3>
+                <p class="text-gray-400 leading-7 text-sm md:text-base">
+                    Every business is unique, and your website should reflect that. We create tailored solutions based on your business requirements, target audience, and industry trends. Our custom development approach ensures your website aligns perfectly with your brand identity and business objectives.
+                </p>
             </div>
 
-            <div class="chain-link hidden lg:flex">
-                <div class="chain-line"></div>
-                <i class="fas fa-link text-[#00ffb3] chain-icon"></i>
-                <div class="chain-line"></div>
-            </div>
-            <div class="chain-vertical lg:hidden">
-                <div class="chain-line-v"></div>
-                <i class="fas fa-link text-[#00ffb3] chain-icon-v"></i>
-                <div class="chain-line-v"></div>
-            </div>
-
-            <div class="flex-1 relative group">
-                <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 h-full hover:-translate-y-1 relative z-10">
-                    <div class="flex items-start justify-between mb-4">
-                        <div class="text-4xl font-black blue-text">02</div>
-                        <i class="fas fa-mobile-alt text-3xl text-[#00b7ff] icon-hover"></i>
-                    </div>
-                    <h3 class="text-xl md:text-2xl font-bold mb-3">Fully Responsive</h3>
-                    <p class="text-gray-500 leading-7 text-sm md:text-base">
-                        Perfect experience on any device.
-                    </p>
+            <!-- Professional Expertise -->
+            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 hover:-translate-y-1">
+                <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5">
+                    <i class="fas fa-users text-2xl"></i>
                 </div>
+                <h3 class="text-xl md:text-2xl font-bold mb-3">Professional Expertise</h3>
+                <p class="text-gray-400 leading-7 text-sm md:text-base">
+                    With years of experience in website design and development, Anprix Solutions has helped businesses across Ahmedabad and India achieve their digital goals. Our expertise allows us to deliver high-quality websites that combine functionality, performance, and aesthetics.
+                </p>
             </div>
 
-            <div class="chain-link hidden lg:flex">
-                <div class="chain-line"></div>
-                <i class="fas fa-link text-[#00ffb3] chain-icon"></i>
-                <div class="chain-line"></div>
-            </div>
-            <div class="chain-vertical lg:hidden">
-                <div class="chain-line-v"></div>
-                <i class="fas fa-link text-[#00ffb3] chain-icon-v"></i>
-                <div class="chain-line-v"></div>
-            </div>
-
-            <div class="flex-1 relative group">
-                <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 h-full hover:-translate-y-1 relative z-10">
-                    <div class="flex items-start justify-between mb-4">
-                        <div class="text-4xl font-black green-text">03</div>
-                        <i class="fas fa-search text-3xl text-[#00ffb3] icon-hover"></i>
-                    </div>
-                    <h3 class="text-xl md:text-2xl font-bold mb-3">SEO Optimized</h3>
-                    <p class="text-gray-500 leading-7 text-sm md:text-base">
-                        Built with search engines in mind.
-                    </p>
+            <!-- Responsive Web Design -->
+            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1">
+                <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
+                    <i class="fas fa-mobile-alt text-2xl"></i>
                 </div>
+                <h3 class="text-xl md:text-2xl font-bold mb-3">Responsive Web Design</h3>
+                <p class="text-gray-400 leading-7 text-sm md:text-base">
+                    Today, most users browse websites on mobile devices. We ensure every website is fully responsive and provides an excellent user experience across desktops, tablets, and smartphones.
+                </p>
             </div>
 
-            <div class="chain-link hidden lg:flex">
-                <div class="chain-line"></div>
-                <i class="fas fa-link text-[#00ffb3] chain-icon"></i>
-                <div class="chain-line"></div>
-            </div>
-            <div class="chain-vertical lg:hidden">
-                <div class="chain-line-v"></div>
-                <i class="fas fa-link text-[#00ffb3] chain-icon-v"></i>
-                <div class="chain-line-v"></div>
-            </div>
-
-            <div class="flex-1 relative group">
-                <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 h-full hover:-translate-y-1 relative z-10">
-                    <div class="flex items-start justify-between mb-4">
-                        <div class="text-4xl font-black blue-text">04</div>
-                        <i class="fas fa-shield-alt text-3xl text-[#00b7ff] icon-hover"></i>
-                    </div>
-                    <h3 class="text-xl md:text-2xl font-bold mb-3">Secure & Scalable</h3>
-                    <p class="text-gray-500 leading-7 text-sm md:text-base">
-                        Enterprise-grade security that grows with you.
-                    </p>
+            <!-- SEO-Friendly Development -->
+            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 hover:-translate-y-1">
+                <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5">
+                    <i class="fas fa-search text-2xl"></i>
                 </div>
+                <h3 class="text-xl md:text-2xl font-bold mb-3">SEO-Friendly Development</h3>
+                <p class="text-gray-400 leading-7 text-sm md:text-base">
+                    A beautiful website is ineffective if customers cannot find it online. Our website development services incorporate SEO best practices, including optimized site structure, fast loading speed, mobile responsiveness, and clean coding standards to improve search engine visibility.
+                </p>
+            </div>
+
+            <!-- Affordable Pricing -->
+            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1">
+                <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
+                    <i class="fas fa-dollar-sign text-2xl"></i>
+                </div>
+                <h3 class="text-xl md:text-2xl font-bold mb-3">Affordable Pricing</h3>
+                <p class="text-gray-400 leading-7 text-sm md:text-base">
+                    We believe professional website development should be accessible to businesses of all sizes. Our flexible pricing options allow startups, SMEs, and enterprises to benefit from high-quality web development services without exceeding their budget.
+                </p>
+            </div>
+
+            <!-- Fast Loading Websites -->
+            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 hover:-translate-y-1">
+                <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5">
+                    <i class="fas fa-bolt text-2xl"></i>
+                </div>
+                <h3 class="text-xl md:text-2xl font-bold mb-3">Fast Loading Websites</h3>
+                <p class="text-gray-400 leading-7 text-sm md:text-base">
+                    Website speed directly impacts user experience and search engine rankings. We develop high-performance websites optimized for speed, ensuring visitors enjoy a seamless browsing experience while improving your chances of ranking higher on search engines.
+                </p>
             </div>
 
         </div>
@@ -671,7 +653,7 @@ require_once 'includes/header.php';
                 </h2>
 
                 <p class="text-gray-400 text-base sm:text-lg md:text-xl leading-8 md:leading-9 max-w-3xl mx-auto mb-10">
-                    Partner with Anprix and get a custom-built website designed for performance, conversions, and growth — on time and on budget.
+                    From corporate websites and business websites to eCommerce stores and custom web applications, we provide comprehensive web development services designed to enhance user experience and drive measurable results.
                 </p>
 
                 <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-4 sm:gap-5">

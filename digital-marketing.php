@@ -1,7 +1,8 @@
 <?php
 require_once 'config/config.php';
-$page_title = "Digital Marketing - Best Digital Marketing Agency in Ahmedabad, India";
-$page_description = "Anprix Solutions is a digital marketing agency in Ahmedabad offering SEO, Google Ads, social media marketing, and growth-focused services.";
+$page_title = "Digital Marketing Agency in Ahmedabad, India";
+$seo_title = "Digital Marketing Agency in Ahmedabad, India | Anprix Solutions";
+$page_description = "Anprix Solutions is a leading digital marketing agency in Ahmedabad, Gujarat, India. We help businesses generate quality leads, increase brand awareness, drive website traffic, and improve sales.";
 $canonical_url = SITE_URL . '/digital-marketing';
 require_once 'includes/header.php';
 ?>
@@ -22,22 +23,23 @@ require_once 'includes/header.php';
             <div>
 
                 <p class="uppercase tracking-[4px] md:tracking-[5px] text-[#00ffb3] font-semibold mb-5 md:mb-6 text-xs sm:text-sm">
-                    Digital Marketing
+                    Digital Marketing Agency
                 </p>
 
                 <h1 class="text-4xl sm:text-5xl lg:text-7xl font-black leading-tight lg:leading-[1.05] mb-8 md:mb-10">
 
+                    Digital Marketing Agency
                     <span class="green-text block sm:inline">
-                        Digital Marketing
+                        in Ahmedabad
                     </span>
 
-                    Solutions To Grow Your Brand
+                    Grow Your Business with Anprix Solutions
 
                 </h1>
 
                 <p class="text-base sm:text-lg md:text-xl text-gray-400 leading-8 md:leading-10">
 
-                    Anprix delivers data-driven digital marketing services including SEO, social media, content marketing, PPC, email campaigns, and branding to grow your online presence.
+                    Anprix Solutions is a leading digital marketing agency in Ahmedabad, Gujarat, India, dedicated to helping businesses generate quality leads, increase brand awareness, drive website traffic, and improve sales. We combine creativity, data-driven strategies, and advanced technology to deliver measurable business results.
 
                 </p>
 
@@ -102,15 +104,7 @@ require_once 'includes/header.php';
             <div class="glass-card rounded-3xl p-6 md:p-10 space-y-5 order-2 lg:order-1">
 
                 <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fas fa-search text-[#00ffb3] text-2xl"></i>
-                    <div>
-                        <h3 class="font-bold text-lg">Technical SEO</h3>
-                        <p class="text-gray-500 text-sm">Speed, structure & crawl optimization</p>
-                    </div>
-                </div>
-
-                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fas fa-map-marker-alt text-[#00b7ff] text-2xl"></i>
+                    <i class="fas fa-map-marker-alt text-[#00ffb3] text-2xl"></i>
                     <div>
                         <h3 class="font-bold text-lg">Local SEO</h3>
                         <p class="text-gray-500 text-sm">Google Business & Maps ranking</p>
@@ -118,18 +112,34 @@ require_once 'includes/header.php';
                 </div>
 
                 <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fas fa-link text-[#00ffb3] text-2xl"></i>
+                    <i class="fas fa-cog text-[#00b7ff] text-2xl"></i>
                     <div>
-                        <h3 class="font-bold text-lg">Link Building</h3>
+                        <h3 class="font-bold text-lg">Technical SEO</h3>
+                        <p class="text-gray-500 text-sm">Speed, structure & crawl optimization</p>
+                    </div>
+                </div>
+
+                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
+                    <i class="fas fa-file-alt text-[#00ffb3] text-2xl"></i>
+                    <div>
+                        <h3 class="font-bold text-lg">On-Page SEO</h3>
+                        <p class="text-gray-500 text-sm">Keyword & content optimization</p>
+                    </div>
+                </div>
+
+                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
+                    <i class="fas fa-link text-[#00b7ff] text-2xl"></i>
+                    <div>
+                        <h3 class="font-bold text-lg">Off-Page SEO</h3>
                         <p class="text-gray-500 text-sm">High-authority backlinks</p>
                     </div>
                 </div>
 
                 <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fas fa-file-alt text-[#00b7ff] text-2xl"></i>
+                    <i class="fas fa-shopping-cart text-[#00ffb3] text-2xl"></i>
                     <div>
-                        <h3 class="font-bold text-lg">On-Page SEO</h3>
-                        <p class="text-gray-500 text-sm">Keyword & content optimization</p>
+                        <h3 class="font-bold text-lg">eCommerce SEO</h3>
+                        <p class="text-gray-500 text-sm">Product & category optimization</p>
                     </div>
                 </div>
 
@@ -177,13 +187,23 @@ require_once 'includes/header.php';
                 </h2>
 
                 <p class="text-gray-400 text-base md:text-lg leading-8 md:leading-9">
-                    Grow your brand on Instagram, Facebook, LinkedIn, and Twitter with engaging content, strategic campaigns, and data-driven social media management.
+                    Social media platforms provide excellent opportunities to connect with customers, build brand awareness, and drive engagement. We create compelling content, manage campaigns, and optimize strategies to help businesses build meaningful relationships with their audiences.
                 </p>
 
                 <div class="space-y-5">
 
                     <div class="flex gap-4">
                         <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3]">
+                            <i class="fab fa-facebook"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">Facebook Marketing</h3>
+                            <p class="text-gray-500 text-sm">Targeted ad campaigns & community building</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff]">
                             <i class="fab fa-instagram"></i>
                         </div>
                         <div>
@@ -193,7 +213,7 @@ require_once 'includes/header.php';
                     </div>
 
                     <div class="flex gap-4">
-                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff]">
+                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3]">
                             <i class="fab fa-linkedin-in"></i>
                         </div>
                         <div>
@@ -203,12 +223,12 @@ require_once 'includes/header.php';
                     </div>
 
                     <div class="flex gap-4">
-                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3]">
-                            <i class="fab fa-facebook"></i>
+                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff]">
+                            <i class="fab fa-youtube"></i>
                         </div>
                         <div>
-                            <h3 class="font-bold text-lg">Facebook Advertising</h3>
-                            <p class="text-gray-500 text-sm">Targeted ad campaigns & retargeting</p>
+                            <h3 class="font-bold text-lg">YouTube Marketing</h3>
+                            <p class="text-gray-500 text-sm">Video content & advertising</p>
                         </div>
                     </div>
 
@@ -219,15 +239,15 @@ require_once 'includes/header.php';
             <div class="glass-card rounded-3xl p-6 md:p-10 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
 
                 <div class="bg-black/40 rounded-2xl p-6 md:p-8">
-                    <i class="fab fa-instagram text-3xl mb-4 text-[#00ffb3]"></i>
-                    <h3 class="font-bold text-lg">Instagram</h3>
-                    <p class="text-gray-500 text-sm">Visual storytelling</p>
+                    <i class="fab fa-facebook text-3xl mb-4 text-[#00ffb3]"></i>
+                    <h3 class="font-bold text-lg">Facebook</h3>
+                    <p class="text-gray-500 text-sm">Community building</p>
                 </div>
 
                 <div class="bg-black/40 rounded-2xl p-6 md:p-8">
-                    <i class="fab fa-facebook text-3xl mb-4 text-[#00b7ff]"></i>
-                    <h3 class="font-bold text-lg">Facebook</h3>
-                    <p class="text-gray-500 text-sm">Community building</p>
+                    <i class="fab fa-instagram text-3xl mb-4 text-[#00b7ff]"></i>
+                    <h3 class="font-bold text-lg">Instagram</h3>
+                    <p class="text-gray-500 text-sm">Visual storytelling</p>
                 </div>
 
                 <div class="bg-black/40 rounded-2xl p-6 md:p-8">
@@ -237,9 +257,9 @@ require_once 'includes/header.php';
                 </div>
 
                 <div class="bg-black/40 rounded-2xl p-6 md:p-8">
-                    <i class="fab fa-twitter text-3xl mb-4 text-[#00b7ff]"></i>
-                    <h3 class="font-bold text-lg">Twitter (X)</h3>
-                    <p class="text-gray-500 text-sm">Real-time engagement</p>
+                    <i class="fab fa-youtube text-3xl mb-4 text-[#00b7ff]"></i>
+                    <h3 class="font-bold text-lg">YouTube</h3>
+                    <p class="text-gray-500 text-sm">Video marketing</p>
                 </div>
 
             </div>
@@ -314,53 +334,73 @@ require_once 'includes/header.php';
         </div>
 
         <!-- ========================= -->
-        <!-- DM SERVICE 4: PPC & Advertising -->
+        <!-- DM SERVICE 4: Google Ads Management -->
         <!-- ========================= -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
 
             <div class="space-y-6">
 
                 <p class="green-text uppercase tracking-[4px] font-semibold text-sm">
-                    PPC & Advertising
+                    Google Ads Management
                 </p>
 
                 <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
-                    Data-Driven <span class="green-text">Ad Campaigns</span>
+                    Data-Driven <span class="green-text">Google Ads Campaigns</span>
                 </h2>
 
                 <p class="text-gray-400 text-base md:text-lg leading-8 md:leading-9">
-                    Maximize ROI with targeted Google Ads, social media advertising, and retargeting campaigns managed by experienced digital marketing professionals.
+                    Google Ads is a powerful way to generate immediate visibility and qualified leads. We create highly targeted campaigns designed to maximize conversions while minimizing wasted ad spend.
                 </p>
 
                 <div class="space-y-5">
 
                     <div class="flex gap-4">
                         <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3]">
-                            <i class="fab fa-google"></i>
+                            <i class="fas fa-search"></i>
                         </div>
                         <div>
-                            <h3 class="font-bold text-lg">Google Ads</h3>
-                            <p class="text-gray-500 text-sm">Search, display & shopping campaigns</p>
+                            <h3 class="font-bold text-lg">Search Ads</h3>
+                            <p class="text-gray-500 text-text-gray-500 text-sm">Text-based search campaigns</p>
                         </div>
                     </div>
 
                     <div class="flex gap-4">
                         <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff]">
-                            <i class="fas fa-bullseye"></i>
+                            <i class="fas fa-image"></i>
                         </div>
                         <div>
-                            <h3 class="font-bold text-lg">Retargeting</h3>
-                            <p class="text-gray-500 text-sm">Re-engage lost visitors</p>
+                            <h3 class="font-bold text-lg">Display Ads</h3>
+                            <p class="text-gray-500 text-sm">Visual banner campaigns across the web</p>
                         </div>
                     </div>
 
                     <div class="flex gap-4">
                         <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3]">
-                            <i class="fas fa-chart-pie"></i>
+                            <i class="fas fa-shopping-bag"></i>
                         </div>
                         <div>
-                            <h3 class="font-bold text-lg">Analytics & Tracking</h3>
-                            <p class="text-gray-500 text-sm">Conversion tracking & reporting</p>
+                            <h3 class="font-bold text-lg">Shopping Ads</h3>
+                            <p class="text-gray-500 text-sm">Product listing campaigns</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff]">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">Performance Max Campaigns</h3>
+                            <p class="text-gray-500 text-sm">AI-powered campaign optimization</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3]">
+                            <i class="fas fa-redo"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">Remarketing Campaigns</h3>
+                            <p class="text-gray-500 text-sm">Re-engage lost visitors</p>
                         </div>
                     </div>
 
@@ -371,23 +411,28 @@ require_once 'includes/header.php';
             <div class="glass-card rounded-3xl p-6 md:p-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
 
                 <div class="bg-black/40 p-6 rounded-2xl text-center">
-                    <i class="fab fa-google text-3xl mb-3 text-[#00ffb3]"></i>
-                    <p>Google Ads</p>
+                    <i class="fas fa-search text-3xl mb-3 text-[#00ffb3]"></i>
+                    <p>Search Ads</p>
                 </div>
 
                 <div class="bg-black/40 p-6 rounded-2xl text-center">
-                    <i class="fab fa-facebook text-3xl mb-3 text-[#00b7ff]"></i>
-                    <p>Social Ads</p>
+                    <i class="fas fa-image text-3xl mb-3 text-[#00b7ff]"></i>
+                    <p>Display Ads</p>
                 </div>
 
                 <div class="bg-black/40 p-6 rounded-2xl text-center">
-                    <i class="fas fa-bullseye text-3xl mb-3 text-[#00ffb3]"></i>
-                    <p>Retargeting</p>
+                    <i class="fas fa-shopping-bag text-3xl mb-3 text-[#00ffb3]"></i>
+                    <p>Shopping Ads</p>
                 </div>
 
                 <div class="bg-black/40 p-6 rounded-2xl text-center">
-                    <i class="fas fa-chart-line text-3xl mb-3 text-[#00b7ff]"></i>
-                    <p>Analytics</p>
+                    <i class="fas fa-bolt text-3xl mb-3 text-[#00b7ff]"></i>
+                    <p>Performance Max</p>
+                </div>
+
+                <div class="bg-black/40 p-6 rounded-2xl text-center sm:col-span-2">
+                    <i class="fas fa-redo text-3xl mb-3 text-[#00ffb3]"></i>
+                    <p>Remarketing</p>
                 </div>
 
             </div>
@@ -464,7 +509,7 @@ require_once 'includes/header.php';
     </div>
 </section>
 
-<!-- WHY DIGITAL MARKETING -->
+<!-- WHY CHOOSE ANPRIX FOR DIGITAL MARKETING -->
 <section class="py-16 md:py-24 section-border overflow-hidden">
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
@@ -472,104 +517,107 @@ require_once 'includes/header.php';
         <div class="text-center mb-14 md:mb-20">
 
             <p class="green-text uppercase tracking-[4px] font-semibold mb-5 text-sm">
-                WHY CHOOSE DIGITAL MARKETING
+                WHY CHOOSE ANPRIX SOLUTIONS
             </p>
 
             <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-6 md:mb-8 leading-tight">
-                Benefits of Digital Marketing
+                Your Trusted Digital Marketing Agency
             </h2>
 
             <p class="text-gray-400 text-base md:text-lg max-w-3xl mx-auto leading-8 md:leading-9">
-                Digital marketing helps you reach the right audience, build brand awareness, and drive measurable growth for your business.
+                Our team of digital marketing experts understands that every business is unique. We develop customized marketing strategies tailored to your goals, industry, target audience, and budget.
             </p>
 
         </div>
 
-        <div class="flex flex-col lg:flex-row items-stretch gap-0 relative">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
 
-            <div class="flex-1 relative group">
-                <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 h-full hover:-translate-y-1 relative z-10">
-                    <div class="flex items-start justify-between mb-4">
-                        <div class="text-4xl font-black green-text">01</div>
-                        <i class="fas fa-globe text-3xl text-[#00ffb3] icon-hover"></i>
-                    </div>
-                    <h3 class="text-xl md:text-2xl font-bold mb-3">Global Reach</h3>
-                    <p class="text-gray-500 leading-7 text-sm md:text-base">
-                        Reach customers worldwide with targeted campaigns.
-                    </p>
+            <!-- Experienced Experts -->
+            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1">
+                <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
+                    <i class="fas fa-users text-2xl"></i>
                 </div>
+                <h3 class="text-xl md:text-2xl font-bold mb-3">Experienced Digital Marketing Experts</h3>
+                <p class="text-gray-400 leading-7 text-sm md:text-base">
+                    Our team has extensive experience managing successful campaigns across multiple industries. We stay updated with the latest digital marketing trends, platform updates, and best practices to ensure your campaigns remain competitive.
+                </p>
             </div>
 
-            <div class="chain-link hidden lg:flex">
-                <div class="chain-line"></div>
-                <i class="fas fa-link text-[#00ffb3] chain-icon"></i>
-                <div class="chain-line"></div>
-            </div>
-            <div class="chain-vertical lg:hidden">
-                <div class="chain-line-v"></div>
-                <i class="fas fa-link text-[#00ffb3] chain-icon-v"></i>
-                <div class="chain-line-v"></div>
-            </div>
-
-            <div class="flex-1 relative group">
-                <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 h-full hover:-translate-y-1 relative z-10">
-                    <div class="flex items-start justify-between mb-4">
-                        <div class="text-4xl font-black blue-text">02</div>
-                        <i class="fas fa-bullseye text-3xl text-[#00b7ff] icon-hover"></i>
-                    </div>
-                    <h3 class="text-xl md:text-2xl font-bold mb-3">Targeted Audience</h3>
-                    <p class="text-gray-500 leading-7 text-sm md:text-base">
-                        Reach the right people at the right time.
-                    </p>
+            <!-- Result-Oriented -->
+            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 hover:-translate-y-1">
+                <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5">
+                    <i class="fas fa-bullseye text-2xl"></i>
                 </div>
+                <h3 class="text-xl md:text-2xl font-bold mb-3">Result-Oriented Strategies</h3>
+                <p class="text-gray-400 leading-7 text-sm md:text-base">
+                    We focus on outcomes that matter. Whether your goal is lead generation, increased website traffic, higher sales, or improved brand visibility, our strategies are designed to deliver measurable results.
+                </p>
             </div>
 
-            <div class="chain-link hidden lg:flex">
-                <div class="chain-line"></div>
-                <i class="fas fa-link text-[#00ffb3] chain-icon"></i>
-                <div class="chain-line"></div>
-            </div>
-            <div class="chain-vertical lg:hidden">
-                <div class="chain-line-v"></div>
-                <i class="fas fa-link text-[#00ffb3] chain-icon-v"></i>
-                <div class="chain-line-v"></div>
-            </div>
-
-            <div class="flex-1 relative group">
-                <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 h-full hover:-translate-y-1 relative z-10">
-                    <div class="flex items-start justify-between mb-4">
-                        <div class="text-4xl font-black green-text">03</div>
-                        <i class="fas fa-chart-line text-3xl text-[#00ffb3] icon-hover"></i>
-                    </div>
-                    <h3 class="text-xl md:text-2xl font-bold mb-3">Measurable ROI</h3>
-                    <p class="text-gray-500 leading-7 text-sm md:text-base">
-                        Track every dollar spent with detailed analytics.
-                    </p>
+            <!-- Customized Solutions -->
+            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1">
+                <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
+                    <i class="fas fa-cogs text-2xl"></i>
                 </div>
+                <h3 class="text-xl md:text-2xl font-bold mb-3">Customized Marketing Solutions</h3>
+                <p class="text-gray-400 leading-7 text-sm md:text-base">
+                    Every business has different challenges and objectives. We create personalized marketing plans that align with your business goals and maximize return on investment.
+                </p>
             </div>
 
-            <div class="chain-link hidden lg:flex">
-                <div class="chain-line"></div>
-                <i class="fas fa-link text-[#00ffb3] chain-icon"></i>
-                <div class="chain-line"></div>
-            </div>
-            <div class="chain-vertical lg:hidden">
-                <div class="chain-line-v"></div>
-                <i class="fas fa-link text-[#00ffb3] chain-icon-v"></i>
-                <div class="chain-line-v"></div>
-            </div>
-
-            <div class="flex-1 relative group">
-                <div class="glass-card rounded-3xl p-6 md:p-10 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 h-full hover:-translate-y-1 relative z-10">
-                    <div class="flex items-start justify-between mb-4">
-                        <div class="text-4xl font-black blue-text">04</div>
-                        <i class="fas fa-rocket text-3xl text-[#00b7ff] icon-hover"></i>
-                    </div>
-                    <h3 class="text-xl md:text-2xl font-bold mb-3">Fast Growth</h3>
-                    <p class="text-gray-500 leading-7 text-sm md:text-base">
-                        Scale your business faster than traditional marketing.
-                    </p>
+            <!-- Affordable Pricing -->
+            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 hover:-translate-y-1">
+                <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5">
+                    <i class="fas fa-dollar-sign text-2xl"></i>
                 </div>
+                <h3 class="text-xl md:text-2xl font-bold mb-3">Affordable Pricing</h3>
+                <p class="text-gray-400 leading-7 text-sm md:text-base">
+                    We offer flexible and cost-effective digital marketing packages suitable for startups, SMEs, and established businesses. Our solutions are designed to provide value without compromising quality.
+                </p>
+            </div>
+
+            <!-- Transparent Reporting -->
+            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1">
+                <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
+                    <i class="fas fa-chart-bar text-2xl"></i>
+                </div>
+                <h3 class="text-xl md:text-2xl font-bold mb-3">Transparent Reporting</h3>
+                <p class="text-gray-400 leading-7 text-sm md:text-base">
+                    Transparency is at the core of our approach. We provide regular performance reports, campaign insights, and actionable recommendations so you always know how your marketing investment is performing.
+                </p>
+            </div>
+
+            <!-- Dedicated Account Management -->
+            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 hover:-translate-y-1">
+                <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5">
+                    <i class="fas fa-user-tie text-2xl"></i>
+                </div>
+                <h3 class="text-xl md:text-2xl font-bold mb-3">Dedicated Account Management</h3>
+                <p class="text-gray-400 leading-7 text-sm md:text-base">
+                    Every client receives dedicated support from experienced professionals who monitor campaigns, provide updates, and ensure smooth communication throughout the project.
+                </p>
+            </div>
+
+            <!-- Data-Driven -->
+            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1">
+                <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
+                    <i class="fas fa-database text-2xl"></i>
+                </div>
+                <h3 class="text-xl md:text-2xl font-bold mb-3">Data-Driven Campaign Optimization</h3>
+                <p class="text-gray-400 leading-7 text-sm md:text-base">
+                    Our decisions are backed by data. We continuously analyze campaign performance, audience behavior, and conversion metrics to improve results and maximize efficiency.
+                </p>
+            </div>
+
+            <!-- Long-Term Growth -->
+            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 hover:-translate-y-1 sm:col-span-2 lg:col-span-1">
+                <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5">
+                    <i class="fas fa-rocket text-2xl"></i>
+                </div>
+                <h3 class="text-xl md:text-2xl font-bold mb-3">Long-Term Growth Focus</h3>
+                <p class="text-gray-400 leading-7 text-sm md:text-base">
+                    We don't believe in short-term wins alone. Our goal is to build sustainable digital growth strategies that help your business succeed over the long term.
+                </p>
             </div>
 
         </div>
@@ -672,7 +720,7 @@ require_once 'includes/header.php';
                 </h2>
 
                 <p class="text-gray-400 text-base sm:text-lg md:text-xl leading-8 md:leading-9 max-w-3xl mx-auto mb-10">
-                    Partner with Anprix and get a complete digital marketing strategy tailored to your business goals and budget.
+                    From SEO and Google Ads to social media marketing and conversion optimization, we provide comprehensive digital marketing services that help businesses thrive in the digital age.
                 </p>
 
                 <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-4 sm:gap-5">

@@ -76,7 +76,7 @@ require_once 'includes/header.php';
                 </h2>
 
                 <p class="text-gray-400 text-base md:text-lg leading-8 md:leading-9">
-                    We build fast, responsive and conversion-focused websites.
+                    We build fast, responsive and conversion-focused websites. Our team combines creativity, technology, and industry expertise to deliver customized website solutions tailored to your business goals.
                 </p>
 
                 <div class="space-y-5">
@@ -216,6 +216,170 @@ require_once 'includes/header.php';
                 </div>
 
             </div>
+        </div>
+
+        <!-- ========================= -->
+        <!-- SERVICE: WordPress Development -->
+        <!-- ========================= -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+
+            <div class="glass-card rounded-3xl p-6 md:p-10 space-y-5 order-2 lg:order-1">
+
+                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
+                    <i class="fab fa-wordpress text-[#00ffb3] text-2xl"></i>
+                    <div>
+                        <h3 class="font-bold text-lg">Custom WordPress Websites</h3>
+                        <p class="text-gray-500 text-sm">Tailor-made designs & functionality</p>
+                    </div>
+                </div>
+
+                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
+                    <i class="fas fa-plug text-[#00b7ff] text-2xl"></i>
+                    <div>
+                        <h3 class="font-bold text-lg">Plugin Development</h3>
+                        <p class="text-gray-500 text-sm">Custom features & integrations</p>
+                    </div>
+                </div>
+
+                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
+                    <i class="fas fa-tachometer-alt text-[#00ffb3] text-2xl"></i>
+                    <div>
+                        <h3 class="font-bold text-lg">Performance Optimization</h3>
+                        <p class="text-gray-500 text-sm">Speed & caching optimization</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="space-y-6 order-1 lg:order-2">
+
+                <p class="green-text uppercase tracking-[4px] font-semibold text-sm">
+                    WordPress Development
+                </p>
+
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black">
+                    Professional <span class="green-text">WordPress Sites</span>
+                </h2>
+
+                <p class="text-gray-400 text-base md:text-lg">
+                    As a leading WordPress website development company in Ahmedabad, we deliver innovative and result-driven WordPress solutions tailored to your business goals.
+                </p>
+
+                <a href="wordpress-development.php" class="btn-primary inline-block w-full sm:w-auto px-6 py-4 rounded-2xl text-center">
+                    Explore WordPress Services
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- ========================= -->
+        <!-- SERVICE: eCommerce Development -->
+        <!-- ========================= -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+
+            <div class="space-y-6">
+                <p class="green-text uppercase tracking-[4px] font-semibold text-sm">
+                    eCommerce Development
+                </p>
+
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black">
+                    Sell More With <span class="green-text">eCommerce</span>
+                </h2>
+
+                <p class="text-gray-400 text-base md:text-lg">
+                    Launch high-converting online stores on Shopify, WooCommerce, Magento, or custom platforms built to maximize sales and scale your business.
+                </p>
+
+                <a href="ecommerce-development.php" class="btn-primary inline-block w-full sm:w-auto px-6 py-4 rounded-2xl text-center">
+                    Explore eCommerce Services
+                </a>
+
+            </div>
+
+            <div class="glass-card rounded-3xl p-6 md:p-10 space-y-5 order-2 lg:order-1">
+
+                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
+                    <i class="fas fa-shopping-cart text-[#00ffb3] text-2xl"></i>
+                    <div>
+                        <h3 class="font-bold text-lg">Custom eCommerce Stores</h3>
+                        <p class="text-gray-500 text-sm">Tailored to your brand</p>
+                    </div>
+                </div>
+
+                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
+                    <i class="fas fa-store text-[#00b7ff] text-2xl"></i>
+                    <div>
+                        <h3 class="font-bold text-lg">Multi-Vendor Marketplaces</h3>
+                        <p class="text-gray-500 text-sm">Amazon & Etsy-style platforms</p>
+                    </div>
+                </div>
+
+                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
+                    <i class="fas fa-credit-card text-[#00ffb3] text-2xl"></i>
+                    <div>
+                        <h3 class="font-bold text-lg">Secure Payments</h3>
+                        <p class="text-gray-500 text-sm">Multiple gateway support</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ========================= -->
+        <!-- SERVICE: Website Redesign -->
+        <!-- ========================= -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+
+            <div class="glass-card rounded-3xl p-6 md:p-10 space-y-5 order-2 lg:order-1">
+
+                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
+                    <i class="fas fa-paint-brush text-[#00ffb3] text-2xl"></i>
+                    <div>
+                        <h3 class="font-bold text-lg">Modern UI/UX Design</h3>
+                        <p class="text-gray-500 text-sm">Fresh, contemporary look</p>
+                    </div>
+                </div>
+
+                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
+                    <i class="fas fa-tachometer-alt text-[#00b7ff] text-2xl"></i>
+                    <div>
+                        <h3 class="font-bold text-lg">Performance Boost</h3>
+                        <p class="text-gray-500 text-sm">Faster loading times</p>
+                    </div>
+                </div>
+
+                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
+                    <i class="fas fa-search text-[#00ffb3] text-2xl"></i>
+                    <div>
+                        <h3 class="font-bold text-lg">SEO Preservation</h3>
+                        <p class="text-gray-500 text-sm">Maintain search rankings</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="space-y-6 order-1 lg:order-2">
+
+                <p class="green-text uppercase tracking-[4px] font-semibold text-sm">
+                    Website Redesign
+                </p>
+
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black">
+                    Transform Your <span class="green-text">Website</span>
+                </h2>
+
+                <p class="text-gray-400 text-base md:text-lg">
+                    Transform outdated websites into modern, high-performing digital assets with improved UX, speed, and SEO.
+                </p>
+
+                <a href="website-redesign.php" class="btn-primary inline-block w-full sm:w-auto px-6 py-4 rounded-2xl text-center">
+                    Explore Redesign Services
+                </a>
+
+            </div>
+
         </div>
 
         <!-- ========================= -->

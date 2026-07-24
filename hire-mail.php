@@ -2,7 +2,8 @@
 
 header('Content-Type: application/json');
 
-require_once 'config/config.php';
+require_once 'includes/config.php';
+require_once 'includes/security.php';
 require 'vendor/autoload.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -90,12 +91,12 @@ try {
     // INSERT INTO DATABASE
     $stmt = $conn->prepare("
         INSERT INTO hire_requests
-        (name, email, phone, budget, service, timeline, details, ip_address)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+        (name, email, phone, budget, service, timeline, details, ip_address, form_type)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
     ");
 
     $stmt->bind_param(
-        "ssssssss",
+        "sssssssss",
         $name,
         $email,
         $phone,
@@ -103,7 +104,8 @@ try {
         $service,
         $timeline,
         $details,
-        $ip
+        $ip,
+        $formType
     );
 
     if (!$stmt->execute()) {

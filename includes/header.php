@@ -70,16 +70,23 @@
     {
       "@context":"https://schema.org",
       "@type":"Organization",
+      "@id":"<?= SITE_URL; ?>/#organization",
       "name":"Anprix Solutions",
       "url":"<?= SITE_URL; ?>",
       "logo":"<?= SITE_URL; ?>/assets/images/anprix-logo.webp",
       "description":"<?= SITE_DESCRIPTION; ?>",
-      "email":"<?= SITE_EMAIL; ?>",
-      "telephone":"<?= SITE_PHONE; ?>",
+      "contactPoint":{
+        "@type":"ContactPoint",
+        "email":"<?= SITE_EMAIL; ?>",
+        "telephone":"<?= SITE_PHONE; ?>",
+        "contactType":"customer service"
+      },
       "address":{
         "@type":"PostalAddress",
+        "streetAddress":"A-304, Shubh city height",
         "addressLocality":"Gandhinagar",
         "addressRegion":"Gujarat",
+        "postalCode":"382421",
         "addressCountry":"IN"
       },
       "sameAs":[
@@ -95,6 +102,7 @@
     {
       "@context":"https://schema.org",
       "@type":"WebSite",
+      "@id":"<?= SITE_URL; ?>/#website",
       "name":"Anprix Solutions",
       "url":"<?= SITE_URL; ?>",
       "description":"<?= SITE_DESCRIPTION; ?>"
@@ -105,20 +113,16 @@
     {
       "@context":"https://schema.org",
       "@type":"Service",
+      "@id":"<?= SITE_URL; ?>/#service",
       "name":"Anprix Digital Services",
+      "description":"Full-service digital marketing agency offering SEO, Google Ads, social media marketing, website development, Shopify solutions, and growth-focused digital marketing services.",
       "provider":{
-        "@type":"Organization",
-        "name":"Anprix Solutions"
+        "@id":"<?= SITE_URL; ?>/#organization"
       },
-      "aggregateRating":{
-        "@type":"AggregateRating",
-        "ratingValue":"4.9",
-        "reviewCount":"85",
-        "bestRating":"5"
-      },
-      "areaServed":"IN",
-      "audience":{
-        "@type":"BusinessAudience"
+      "serviceType":["SEO","Google Ads","Social Media Marketing","Website Development","Shopify Development"],
+      "areaServed":{
+        "@type":"Country",
+        "name":"India"
       }
     }
     </script>
@@ -127,20 +131,27 @@
     {
       "@context":"https://schema.org",
       "@type":"LocalBusiness",
+      "@id":"<?= SITE_URL; ?>/#localbusiness",
       "name":"Anprix Solutions",
       "url":"<?= SITE_URL; ?>",
       "image":"<?= SITE_URL; ?>/assets/images/anprix-logo.webp",
       "description":"<?= SITE_DESCRIPTION; ?>",
-      "email":"<?= SITE_EMAIL; ?>",
       "telephone":"<?= SITE_PHONE; ?>",
+      "priceRange":"$$",
+      "contactPoint":{
+        "@type":"ContactPoint",
+        "email":"<?= SITE_EMAIL; ?>",
+        "contactType":"customer service"
+      },
       "address":{
         "@type":"PostalAddress",
-        "streetAddress":"21 Info city",
+        "streetAddress":"A-304, Shubh city height",
         "addressLocality":"Gandhinagar",
         "addressRegion":"Gujarat",
         "postalCode":"382421",
         "addressCountry":"IN"
       },
+      "openingHours":"Mo-Fr 09:00-18:00,Sa 10:00-16:00",
       "openingHoursSpecification":[
         {"@type":"OpeningHoursSpecification","dayOfWeek":"Monday","opens":"09:00","closes":"18:00"},
         {"@type":"OpeningHoursSpecification","dayOfWeek":"Tuesday","opens":"09:00","closes":"18:00"},
@@ -148,7 +159,13 @@
         {"@type":"OpeningHoursSpecification","dayOfWeek":"Thursday","opens":"09:00","closes":"18:00"},
         {"@type":"OpeningHoursSpecification","dayOfWeek":"Friday","opens":"09:00","closes":"18:00"},
         {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"16:00"}
-      ]
+      ],
+      "aggregateRating":{
+        "@type":"AggregateRating",
+        "ratingValue":4.9,
+        "reviewCount":85,
+        "bestRating":5
+      }
     }
     </script>
 
@@ -156,7 +173,7 @@
 <body>
 
 <?php
-$service_pages = ['services.php', 'website-development.php', 'cms-development.php', 'seo.php', 'digital-marketing.php', 'advertising.php', 'branding-creative.php'];
+$service_pages = ['services.php', 'website-development.php', 'wordpress-development.php', 'ecommerce-development.php', 'website-redesign.php', 'cms-development.php', 'seo.php', 'digital-marketing.php', 'advertising.php', 'branding-creative.php'];
 $is_service_page = in_array(basename($_SERVER['PHP_SELF']), $service_pages);
 ?>
 
@@ -193,29 +210,41 @@ $is_service_page = in_array(basename($_SERVER['PHP_SELF']), $service_pages);
                 </a>
 
                 <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                    <div class="glass-card rounded-2xl py-2 min-w-[220px] shadow-2xl border border-white/10">
+                    <div class="glass-card rounded-2xl py-2 min-w-[220px] shadow-2xl border border-white/10" style="background: rgba(10,10,10,0.96); backdrop-filter: blur(20px);">
                         <a href="website-development.php"
-                           class="block px-5 py-2.5 text-sm hover:text-[#00ffb3] hover:bg-white/5 transition <?php echo basename($_SERVER['PHP_SELF']) == 'website-development.php' ? 'text-[#00ffb3]' : ''; ?>">
+                           class="block px-5 py-2.5 text-sm hover:text-[#00ffb3] hover:bg-white/10 rounded-lg mx-1 transition <?php echo basename($_SERVER['PHP_SELF']) == 'website-development.php' ? 'text-[#00ffb3]' : ''; ?>">
                             Website Development
                         </a>
+                        <a href="wordpress-development.php"
+                           class="block px-5 py-2.5 text-sm hover:text-[#00ffb3] hover:bg-white/10 rounded-lg mx-1 transition <?php echo basename($_SERVER['PHP_SELF']) == 'wordpress-development.php' ? 'text-[#00ffb3]' : ''; ?>">
+                            WordPress Development
+                        </a>
+                        <a href="ecommerce-development.php"
+                           class="block px-5 py-2.5 text-sm hover:text-[#00ffb3] hover:bg-white/10 rounded-lg mx-1 transition <?php echo basename($_SERVER['PHP_SELF']) == 'ecommerce-development.php' ? 'text-[#00ffb3]' : ''; ?>">
+                            eCommerce Development
+                        </a>
+                        <a href="website-redesign.php"
+                           class="block px-5 py-2.5 text-sm hover:text-[#00ffb3] hover:bg-white/10 rounded-lg mx-1 transition <?php echo basename($_SERVER['PHP_SELF']) == 'website-redesign.php' ? 'text-[#00ffb3]' : ''; ?>">
+                            Website Redesign
+                        </a>
                         <a href="cms-development.php"
-                           class="block px-5 py-2.5 text-sm hover:text-[#00ffb3] hover:bg-white/5 transition <?php echo basename($_SERVER['PHP_SELF']) == 'cms-development.php' ? 'text-[#00ffb3]' : ''; ?>">
+                           class="block px-5 py-2.5 text-sm hover:text-[#00ffb3] hover:bg-white/10 rounded-lg mx-1 transition <?php echo basename($_SERVER['PHP_SELF']) == 'cms-development.php' ? 'text-[#00ffb3]' : ''; ?>">
                             CMS Development
                         </a>
                         <a href="seo.php"
-                           class="block px-5 py-2.5 text-sm hover:text-[#00ffb3] hover:bg-white/5 transition <?php echo basename($_SERVER['PHP_SELF']) == 'seo.php' ? 'text-[#00ffb3]' : ''; ?>">
+                           class="block px-5 py-2.5 text-sm hover:text-[#00ffb3] hover:bg-white/10 rounded-lg mx-1 transition <?php echo basename($_SERVER['PHP_SELF']) == 'seo.php' ? 'text-[#00ffb3]' : ''; ?>">
                             SEO Services
                         </a>
                         <a href="digital-marketing.php"
-                           class="block px-5 py-2.5 text-sm hover:text-[#00ffb3] hover:bg-white/5 transition <?php echo basename($_SERVER['PHP_SELF']) == 'digital-marketing.php' ? 'text-[#00ffb3]' : ''; ?>">
+                           class="block px-5 py-2.5 text-sm hover:text-[#00ffb3] hover:bg-white/10 rounded-lg mx-1 transition <?php echo basename($_SERVER['PHP_SELF']) == 'digital-marketing.php' ? 'text-[#00ffb3]' : ''; ?>">
                             Digital Marketing
                         </a>
                         <a href="advertising.php"
-                           class="block px-5 py-2.5 text-sm hover:text-[#00ffb3] hover:bg-white/5 transition <?php echo basename($_SERVER['PHP_SELF']) == 'advertising.php' ? 'text-[#00ffb3]' : ''; ?>">
+                           class="block px-5 py-2.5 text-sm hover:text-[#00ffb3] hover:bg-white/10 rounded-lg mx-1 transition <?php echo basename($_SERVER['PHP_SELF']) == 'advertising.php' ? 'text-[#00ffb3]' : ''; ?>">
                             Advertising
                         </a>
                         <a href="branding-creative.php"
-                           class="block px-5 py-2.5 text-sm hover:text-[#00ffb3] hover:bg-white/5 transition <?php echo basename($_SERVER['PHP_SELF']) == 'branding-creative.php' ? 'text-[#00ffb3]' : ''; ?>">
+                           class="block px-5 py-2.5 text-sm hover:text-[#00ffb3] hover:bg-white/10 rounded-lg mx-1 transition <?php echo basename($_SERVER['PHP_SELF']) == 'branding-creative.php' ? 'text-[#00ffb3]' : ''; ?>">
                             Branding & Creative
                         </a>
                     </div>
@@ -291,13 +320,16 @@ $is_service_page = in_array(basename($_SERVER['PHP_SELF']), $service_pages);
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                     </svg>
                 </button>
-                <div class="pl-4 mt-2 space-y-3 text-sm text-gray-400 border-l border-white/10 ml-1 <?php echo $is_service_page ? '' : 'hidden'; ?>">
-                    <a href="website-development.php" class="block hover:text-[#00ffb3] transition <?php echo basename($_SERVER['PHP_SELF']) == 'website-development.php' ? 'text-[#00ffb3]' : ''; ?>">Website Development</a>
-                    <a href="cms-development.php" class="block hover:text-[#00ffb3] transition <?php echo basename($_SERVER['PHP_SELF']) == 'cms-development.php' ? 'text-[#00ffb3]' : ''; ?>">CMS Development</a>
-                    <a href="seo.php" class="block hover:text-[#00ffb3] transition <?php echo basename($_SERVER['PHP_SELF']) == 'seo.php' ? 'text-[#00ffb3]' : ''; ?>">SEO Services</a>
-                    <a href="digital-marketing.php" class="block hover:text-[#00ffb3] transition <?php echo basename($_SERVER['PHP_SELF']) == 'digital-marketing.php' ? 'text-[#00ffb3]' : ''; ?>">Digital Marketing</a>
-                    <a href="advertising.php" class="block hover:text-[#00ffb3] transition <?php echo basename($_SERVER['PHP_SELF']) == 'advertising.php' ? 'text-[#00ffb3]' : ''; ?>">Advertising</a>
-                    <a href="branding-creative.php" class="block hover:text-[#00ffb3] transition <?php echo basename($_SERVER['PHP_SELF']) == 'branding-creative.php' ? 'text-[#00ffb3]' : ''; ?>">Branding & Creative</a>
+                <div class="pl-4 mt-2 space-y-1 text-sm text-gray-300 border-l border-white/10 ml-1 <?php echo $is_service_page ? '' : 'hidden'; ?>">
+                    <a href="website-development.php" class="block py-2 px-3 rounded-lg hover:text-[#00ffb3] hover:bg-white/10 transition <?php echo basename($_SERVER['PHP_SELF']) == 'website-development.php' ? 'text-[#00ffb3] bg-white/5' : ''; ?>">Website Development</a>
+                    <a href="wordpress-development.php" class="block py-2 px-3 rounded-lg hover:text-[#00ffb3] hover:bg-white/10 transition <?php echo basename($_SERVER['PHP_SELF']) == 'wordpress-development.php' ? 'text-[#00ffb3] bg-white/5' : ''; ?>">WordPress Development</a>
+                    <a href="ecommerce-development.php" class="block py-2 px-3 rounded-lg hover:text-[#00ffb3] hover:bg-white/10 transition <?php echo basename($_SERVER['PHP_SELF']) == 'ecommerce-development.php' ? 'text-[#00ffb3] bg-white/5' : ''; ?>">eCommerce Development</a>
+                    <a href="website-redesign.php" class="block py-2 px-3 rounded-lg hover:text-[#00ffb3] hover:bg-white/10 transition <?php echo basename($_SERVER['PHP_SELF']) == 'website-redesign.php' ? 'text-[#00ffb3] bg-white/5' : ''; ?>">Website Redesign</a>
+                    <a href="cms-development.php" class="block py-2 px-3 rounded-lg hover:text-[#00ffb3] hover:bg-white/10 transition <?php echo basename($_SERVER['PHP_SELF']) == 'cms-development.php' ? 'text-[#00ffb3] bg-white/5' : ''; ?>">CMS Development</a>
+                    <a href="seo.php" class="block py-2 px-3 rounded-lg hover:text-[#00ffb3] hover:bg-white/10 transition <?php echo basename($_SERVER['PHP_SELF']) == 'seo.php' ? 'text-[#00ffb3] bg-white/5' : ''; ?>">SEO Services</a>
+                    <a href="digital-marketing.php" class="block py-2 px-3 rounded-lg hover:text-[#00ffb3] hover:bg-white/10 transition <?php echo basename($_SERVER['PHP_SELF']) == 'digital-marketing.php' ? 'text-[#00ffb3] bg-white/5' : ''; ?>">Digital Marketing</a>
+                    <a href="advertising.php" class="block py-2 px-3 rounded-lg hover:text-[#00ffb3] hover:bg-white/10 transition <?php echo basename($_SERVER['PHP_SELF']) == 'advertising.php' ? 'text-[#00ffb3] bg-white/5' : ''; ?>">Advertising</a>
+                    <a href="branding-creative.php" class="block py-2 px-3 rounded-lg hover:text-[#00ffb3] hover:bg-white/10 transition <?php echo basename($_SERVER['PHP_SELF']) == 'branding-creative.php' ? 'text-[#00ffb3] bg-white/5' : ''; ?>">Branding & Creative</a>
                 </div>
             </div>
 

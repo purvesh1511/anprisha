@@ -46,6 +46,24 @@
                         </a>
                     </li>
                     <li>
+                        <a href="wordpress-development.php"
+                        class="hover:text-[#00ffb3] transition">
+                            WordPress Development
+                        </a>
+                    </li>
+                    <li>
+                        <a href="ecommerce-development.php"
+                        class="hover:text-[#00ffb3] transition">
+                            eCommerce Development
+                        </a>
+                    </li>
+                    <li>
+                        <a href="website-redesign.php"
+                        class="hover:text-[#00ffb3] transition">
+                            Website Redesign
+                        </a>
+                    </li>
+                    <li>
                         <a href="cms-development.php"
                         class="hover:text-[#00ffb3] transition">
                             CMS Development

@@ -474,12 +474,66 @@ $how_work_steps = [
 
             </a>
 
+            <!-- WORDPRESS DEVELOPMENT -->
+            <a href="wordpress-development.php"
+                class="service-card glass-card rounded-[24px] md:rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 hover:-translate-y-1 block fade-in-up delay-200">
+
+                <div class="text-4xl md:text-5xl mb-5 md:mb-6 text-[#00ffb3]">
+                    <i class="fab fa-wordpress"></i>
+                </div>
+
+                <h3 class="text-xl md:text-2xl font-bold mb-4">
+                    WordPress Development
+                </h3>
+
+                <p class="text-gray-400 leading-7 md:leading-8 text-sm md:text-base">
+                    Custom themes, plugins, WooCommerce stores, and CMS solutions built on WordPress.
+                </p>
+
+            </a>
+
+            <!-- ECOMMERCE DEVELOPMENT -->
+            <a href="ecommerce-development.php"
+                class="service-card glass-card rounded-[24px] md:rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 hover:-translate-y-1 block fade-in-up delay-300">
+
+                <div class="text-4xl md:text-5xl mb-5 md:mb-6 text-[#00b7ff]">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+
+                <h3 class="text-xl md:text-2xl font-bold mb-4">
+                    eCommerce Development
+                </h3>
+
+                <p class="text-gray-400 leading-7 md:leading-8 text-sm md:text-base">
+                    High-converting online stores on Shopify, WooCommerce, Magento, and custom platforms.
+                </p>
+
+            </a>
+
+            <!-- WEBSITE REDESIGN -->
+            <a href="website-redesign.php"
+                class="service-card glass-card rounded-[24px] md:rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1 block fade-in-up delay-100">
+
+                <div class="text-4xl md:text-5xl mb-5 md:mb-6 text-[#00ffb3]">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+
+                <h3 class="text-xl md:text-2xl font-bold mb-4">
+                    Website Redesign
+                </h3>
+
+                <p class="text-gray-400 leading-7 md:leading-8 text-sm md:text-base">
+                    Transform outdated websites into modern, high-performing digital assets with improved UX and speed.
+                </p>
+
+            </a>
+
             <!-- CMS DEVELOPMENT -->
             <div
                 class="service-card glass-card rounded-[24px] md:rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1 fade-in-up delay-200">
 
                 <div class="text-4xl md:text-5xl mb-5 md:mb-6 text-[#00ffb3]">
-                    <i class="fab fa-wordpress"></i>
+                    <i class="fas fa-cogs"></i>
                 </div>
 
                 <h3 class="text-xl md:text-2xl font-bold mb-4">
@@ -487,7 +541,7 @@ $how_work_steps = [
                 </h3>
 
                 <p class="text-gray-400 leading-7 md:leading-8 text-sm md:text-base">
-                    WordPress, Shopify, and custom CMS platforms for easy content management and growth.
+                    Custom CMS platforms, headless CMS, and content management solutions for easy growth.
                 </p>
 
             </div>
@@ -533,7 +587,7 @@ $how_work_steps = [
                 class="service-card glass-card rounded-[24px] md:rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1 block fade-in-up delay-200">
 
                 <div class="text-4xl md:text-5xl mb-5 md:mb-6 text-[#00b7ff]">
-                    <i class="fas fa-bullhorn"></i>
+                    <i class="fas fa-ad"></i>
                 </div>
 
                 <h3 class="text-xl md:text-2xl font-bold mb-4">
