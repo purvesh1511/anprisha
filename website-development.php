@@ -1,9 +1,11 @@
 <?php
 require_once 'config/config.php';
-$page_title = "Website Development Company in Ahmedabad, India";
-$seo_title = "Website Development Company in Ahmedabad, India | Anprix Solutions";
-$page_description = "Anprix Solutions is a leading website development company in Ahmedabad, India. We create visually appealing, user-friendly, responsive, and SEO-friendly websites for startups, businesses, and enterprises.";
-$canonical_url = SITE_URL . '/website-development';
+require_once 'config/seo_keyword.php';
+$page_key = 'website-development';
+$seo_title = $seo_pages[$page_key]['title'];
+$page_description = $seo_pages[$page_key]['description'];
+$page_keywords = $seo_pages[$page_key]['keywords'];
+$canonical_url = $seo_pages[$page_key]['canonical'];
 require_once 'includes/header.php';
 ?>
 
@@ -26,7 +28,7 @@ require_once 'includes/header.php';
                     Professional Website Development Services
                 </p>
 
-                <h1 class="text-4xl sm:text-5xl lg:text-7xl font-black leading-tight lg:leading-[1.05] mb-8 md:mb-10">
+                <h1 class="text-xl sm:text-4xl lg:text-5xl font-black leading-tight lg:leading-[1.05] mb-8 md:mb-10">
 
                     Website Development Company
                     <span class="green-text block sm:inline">
@@ -141,7 +143,7 @@ require_once 'includes/header.php';
                     Custom Website Design
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
                     Websites That <span class="green-text">Convert</span>
                 </h2>
 
@@ -172,7 +174,7 @@ require_once 'includes/header.php';
                     Laravel Development
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
                     Powerful Backend <span class="green-text">Applications</span>
                 </h2>
 
@@ -293,7 +295,7 @@ require_once 'includes/header.php';
                     Frontend Development
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
                     Modern, Fast <span class="green-text">Interfaces</span>
                 </h2>
 
@@ -324,7 +326,7 @@ require_once 'includes/header.php';
                     Shopify Development
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
                     Launch Your <span class="green-text">Online Store</span>
                 </h2>
 
@@ -441,7 +443,7 @@ require_once 'includes/header.php';
                     WordPress Development
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
                     Flexible, Powerful <span class="green-text">WordPress Sites</span>
                 </h2>
 
@@ -475,7 +477,7 @@ require_once 'includes/header.php';
                 WHY CHOOSE ANPRIX SOLUTIONS
             </p>
 
-            <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-6 md:mb-8 leading-tight">
+            <h2 class="text-xl sm:text-3xl md:text-4xl font-black mb-6 md:mb-8 leading-tight">
                 Your Trusted Web Development Company
             </h2>
 
@@ -492,7 +494,7 @@ require_once 'includes/header.php';
                 <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
                     <i class="fas fa-laptop-code text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Custom Website Solutions</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">Custom Website Solutions</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
                     Every business is unique, and your website should reflect that. We create tailored solutions based on your business requirements, target audience, and industry trends. Our custom development approach ensures your website aligns perfectly with your brand identity and business objectives.
                 </p>
@@ -503,7 +505,7 @@ require_once 'includes/header.php';
                 <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5">
                     <i class="fas fa-users text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Professional Expertise</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">Professional Expertise</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
                     With years of experience in website design and development, Anprix Solutions has helped businesses across Ahmedabad and India achieve their digital goals. Our expertise allows us to deliver high-quality websites that combine functionality, performance, and aesthetics.
                 </p>
@@ -514,7 +516,7 @@ require_once 'includes/header.php';
                 <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
                     <i class="fas fa-mobile-alt text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Responsive Web Design</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">Responsive Web Design</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
                     Today, most users browse websites on mobile devices. We ensure every website is fully responsive and provides an excellent user experience across desktops, tablets, and smartphones.
                 </p>
@@ -525,7 +527,7 @@ require_once 'includes/header.php';
                 <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5">
                     <i class="fas fa-search text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">SEO-Friendly Development</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">SEO-Friendly Development</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
                     A beautiful website is ineffective if customers cannot find it online. Our website development services incorporate SEO best practices, including optimized site structure, fast loading speed, mobile responsiveness, and clean coding standards to improve search engine visibility.
                 </p>
@@ -536,7 +538,7 @@ require_once 'includes/header.php';
                 <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
                     <i class="fas fa-dollar-sign text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Affordable Pricing</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">Affordable Pricing</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
                     We believe professional website development should be accessible to businesses of all sizes. Our flexible pricing options allow startups, SMEs, and enterprises to benefit from high-quality web development services without exceeding their budget.
                 </p>
@@ -547,7 +549,7 @@ require_once 'includes/header.php';
                 <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5">
                     <i class="fas fa-bolt text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Fast Loading Websites</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">Fast Loading Websites</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
                     Website speed directly impacts user experience and search engine rankings. We develop high-performance websites optimized for speed, ensuring visitors enjoy a seamless browsing experience while improving your chances of ranking higher on search engines.
                 </p>
@@ -572,7 +574,7 @@ require_once 'includes/header.php';
                     OUR TECH STACK
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight mb-6 md:mb-8">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight mb-6 md:mb-8">
                     We Build With The
                     <span class="green-text block sm:inline">Best Technologies</span>
                 </h2>
@@ -648,7 +650,7 @@ require_once 'includes/header.php';
                     BUILD YOUR WEBSITE
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight mb-6 md:mb-8">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight mb-6 md:mb-8">
                     Ready To Build Your Website?
                 </h2>
 

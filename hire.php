@@ -1,8 +1,11 @@
 <?php
 require_once 'config/config.php';
-$page_title = "Hire Us";
-$page_description = "Hire Anprix for website development, SEO, Shopify, Google Ads, and digital marketing services. Fill out the form and our team will contact you within 24 hours.";
-$canonical_url = SITE_URL . '/hire';
+require_once 'config/seo_keyword.php';
+$page_key = 'hire';
+$seo_title = $seo_pages[$page_key]['title'];
+$page_description = $seo_pages[$page_key]['description'];
+$page_keywords = $seo_pages[$page_key]['keywords'];
+$canonical_url = $seo_pages[$page_key]['canonical'];
 require_once 'includes/header.php';
 ?>
 
@@ -27,7 +30,7 @@ require_once 'includes/header.php';
                     HIRE US
                 </p>
 
-                <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-[1.1] mb-6 sm:mb-8">
+                <h1 class="text-xl sm:text-4xl md:text-4xl lg:text-5xl font-black leading-[1.1] mb-6 sm:mb-8">
                     Let's Build Something
                     <span class="green-text block sm:inline">
                         Amazing Together
@@ -121,7 +124,7 @@ require_once 'includes/header.php';
                         </div>
                         <span class="text-xs text-gray-500 font-semibold uppercase tracking-wider">Get Started</span>
                     </div>
-                    <h2 class="text-2xl sm:text-3xl font-black mb-4">
+                    <h2 class="text-xl sm:text-2xl font-black mb-4">
                         Tell Us About Your Project
                     </h2>
                     <div class="w-16 h-0.5 bg-gradient-to-r from-[#00ffb3] to-[#00b7ff] rounded-full mb-6"></div>
@@ -296,7 +299,7 @@ require_once 'includes/header.php';
                             <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-[#00ffb3]/20 to-[#00b7ff]/10 flex items-center justify-center">
                                 <i class="fa-solid fa-address-card text-sm text-[#00ffb3]"></i>
                             </div>
-                            <h3 class="text-xl sm:text-2xl font-black">
+                            <h3 class="text-xl sm:text-xl font-black">
                                 Contact Information
                             </h3>
                         </div>
@@ -361,7 +364,7 @@ require_once 'includes/header.php';
                             <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-[#00b7ff]/20 to-[#00ffb3]/10 flex items-center justify-center">
                                 <i class="fa-solid fa-clock text-sm text-[#00b7ff]"></i>
                             </div>
-                            <h3 class="text-xl sm:text-2xl font-black">
+                            <h3 class="text-xl sm:text-xl font-black">
                                 Office Hours
                             </h3>
                         </div>
@@ -394,7 +397,7 @@ require_once 'includes/header.php';
                         <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-[#00ffb3]/20 to-[#00b7ff]/10 flex items-center justify-center">
                             <i class="fa-solid fa-share-nodes text-sm text-[#00ffb3]"></i>
                         </div>
-                        <h3 class="text-xl sm:text-2xl font-black">
+                        <h3 class="text-xl sm:text-xl font-black">
                             Connect With Us
                         </h3>
                     </div>
@@ -449,7 +452,7 @@ require_once 'includes/header.php';
                 FAQ
             </p>
 
-            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black mb-4 sm:mb-6">
+            <h2 class="text-xl sm:text-3xl lg:text-4xl font-black mb-4 sm:mb-6">
                 Frequently Asked Questions
             </h2>
 

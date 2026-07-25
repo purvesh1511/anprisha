@@ -1,9 +1,11 @@
 <?php
 require_once 'config/config.php';
-$page_title = "Home";
-$seo_title = "Website Development, SEO & Digital Marketing Company in Ahmedabad | Anprix";
-$page_description = "Anprix Solutions is a leading website development, SEO, and digital marketing company in Ahmedabad, India. We build high-performance websites, Shopify stores, run Google Ads, and grow your business online.";
-$canonical_url = SITE_URL;
+require_once 'config/seo_keyword.php';
+$page_key = 'index';
+$seo_title = $seo_pages[$page_key]['title'];
+$page_description = $seo_pages[$page_key]['description'];
+$page_keywords = $seo_pages[$page_key]['keywords'];
+$canonical_url = $seo_pages[$page_key]['canonical'];
 require_once 'includes/header.php';
 
 $testimonials = [
@@ -57,7 +59,7 @@ $testimonials = [
             </div>
 
             <!-- H1 -->
-            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-6 lg:mb-8">
+            <h1 class="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-black leading-tight mb-6 lg:mb-8">
                 Build Websites.
                 <span class="green-text">Rank on Google.</span>
                 <span class="blue-text">Generate More Leads.</span>
@@ -96,7 +98,7 @@ $testimonials = [
             <!-- Stats -->
             <!-- <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mt-12 mb-5 lg:mt-14 text-center lg:text-left">
                 <div>
-                    <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold green-text">
+                    <h3 class="text-xl sm:text-2xl lg:text-3xl font-bold green-text">
                         250+
                     </h3>
                     <p class="text-gray-500 mt-2 text-sm sm:text-base">
@@ -105,7 +107,7 @@ $testimonials = [
                 </div>
 
                 <div>
-                    <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold blue-text">
+                    <h3 class="text-xl sm:text-2xl lg:text-3xl font-bold blue-text">
                         150+
                     </h3>
                     <p class="text-gray-500 mt-2 text-sm sm:text-base">
@@ -114,7 +116,7 @@ $testimonials = [
                 </div>
 
                 <div>
-                    <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold green-text">
+                    <h3 class="text-xl sm:text-2xl lg:text-3xl font-bold green-text">
                         24/7
                     </h3>
                     <p class="text-gray-500 mt-2 text-sm sm:text-base">
@@ -187,38 +189,6 @@ $testimonials = [
 
 </section>
 
-<!-- TRUST BAR -->
-<section class="py-8 md:py-10 border-t border-white/5">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
-            <div class="text-center fade-in-up delay-100">
-                <div class="text-2xl sm:text-3xl font-black green-text counter" data-target="100">
-                    <span>100</span>+
-                </div>
-                <p class="text-gray-500 text-xs sm:text-sm mt-1">Websites Delivered</p>
-            </div>
-            <div class="text-center fade-in-up delay-200">
-                <div class="text-2xl sm:text-3xl font-black blue-text counter" data-target="50">
-                    <span>50</span>+
-                </div>
-                <p class="text-gray-500 text-xs sm:text-sm mt-1">Happy Clients</p>
-            </div>
-            <div class="text-center fade-in-up delay-300">
-                <div class="text-2xl sm:text-3xl font-black green-text counter" data-target="98">
-                    <span>98</span>%
-                </div>
-                <p class="text-gray-500 text-xs sm:text-sm mt-1">Client Satisfaction</p>
-            </div>
-            <div class="text-center fade-in-up delay-400">
-                <div class="text-2xl sm:text-3xl font-black blue-text counter" data-target="24">
-                    <span>24</span>/7
-                </div>
-                <p class="text-gray-500 text-xs sm:text-sm mt-1">Premium Support</p>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- CASE STUDIES / RESULTS SECTION -->
 <section class="py-16 md:py-24 section-border overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
@@ -227,7 +197,7 @@ $testimonials = [
             <p class="green-text font-semibold tracking-[0.25em] uppercase mb-4 text-sm">
                 RECENT RESULTS
             </p>
-            <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-6 leading-tight">
+            <h2 class="text-xl sm:text-3xl md:text-4xl font-black mb-6 leading-tight">
                 Real Projects, <span class="green-text">Real Growth</span>
             </h2>
             <p class="max-w-3xl mx-auto text-gray-400 text-base md:text-lg leading-8">
@@ -316,7 +286,7 @@ $testimonials = [
                 </div>
 
                 <!-- HEADING -->
-                <h2 class="text-4xl sm:text-5xl md:text-6xl font-black mb-6 leading-[1.1]">
+                <h2 class="text-xl sm:text-4xl md:text-5xl font-black mb-6 leading-[1.1]">
                     How We <span class="green-text">Deliver</span><br>
                     <span class="text-white/70">Results</span>
                 </h2>
@@ -405,7 +375,7 @@ $how_work_steps = [
                                     style="background: <?= $s['color'] ?>20; color: <?= $s['color'] ?>;">
                                     <i class="fas <?= $s['icon'] ?>"></i>
                                 </div>
-                                <h3 class="text-xl md:text-2xl font-bold">
+                                <h3 class="text-xl md:text-xl font-bold">
                                     <?= $s['title'] ?>
                                 </h3>
                             </div>
@@ -442,7 +412,7 @@ $how_work_steps = [
                 OUR SERVICES
             </p>
 
-            <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-6 leading-tight">
+            <h2 class="text-xl sm:text-3xl md:text-4xl font-black mb-6 leading-tight">
                 Premium Digital Solutions
             </h2>
 
@@ -464,7 +434,7 @@ $how_work_steps = [
                     <i class="fas fa-laptop-code"></i>
                 </div>
 
-                <h3 class="text-xl md:text-2xl font-bold mb-4">
+                <h3 class="text-xl md:text-xl font-bold mb-4">
                     Website Development
                 </h3>
 
@@ -482,7 +452,7 @@ $how_work_steps = [
                     <i class="fab fa-wordpress"></i>
                 </div>
 
-                <h3 class="text-xl md:text-2xl font-bold mb-4">
+                <h3 class="text-xl md:text-xl font-bold mb-4">
                     WordPress Development
                 </h3>
 
@@ -500,7 +470,7 @@ $how_work_steps = [
                     <i class="fas fa-shopping-cart"></i>
                 </div>
 
-                <h3 class="text-xl md:text-2xl font-bold mb-4">
+                <h3 class="text-xl md:text-xl font-bold mb-4">
                     eCommerce Development
                 </h3>
 
@@ -518,7 +488,7 @@ $how_work_steps = [
                     <i class="fas fa-paint-brush"></i>
                 </div>
 
-                <h3 class="text-xl md:text-2xl font-bold mb-4">
+                <h3 class="text-xl md:text-xl font-bold mb-4">
                     Website Redesign
                 </h3>
 
@@ -536,7 +506,7 @@ $how_work_steps = [
                     <i class="fas fa-cogs"></i>
                 </div>
 
-                <h3 class="text-xl md:text-2xl font-bold mb-4">
+                <h3 class="text-xl md:text-xl font-bold mb-4">
                     <a href="cms-development.php" class="hover:text-[#00ffb3] transition">CMS Development</a>
                 </h3>
 
@@ -554,7 +524,7 @@ $how_work_steps = [
                     <i class="fas fa-chart-line"></i>
                 </div>
 
-                <h3 class="text-xl md:text-2xl font-bold mb-4">
+                <h3 class="text-xl md:text-xl font-bold mb-4">
                     SEO Services
                 </h3>
 
@@ -572,7 +542,7 @@ $how_work_steps = [
                     <i class="fas fa-bullhorn"></i>
                 </div>
 
-                <h3 class="text-xl md:text-2xl font-bold mb-4">
+                <h3 class="text-xl md:text-xl font-bold mb-4">
                     Digital Marketing
                 </h3>
 
@@ -590,7 +560,7 @@ $how_work_steps = [
                     <i class="fas fa-ad"></i>
                 </div>
 
-                <h3 class="text-xl md:text-2xl font-bold mb-4">
+                <h3 class="text-xl md:text-xl font-bold mb-4">
                     Advertising
                 </h3>
 
@@ -608,7 +578,7 @@ $how_work_steps = [
                     <i class="fas fa-palette"></i>
                 </div>
 
-                <h3 class="text-xl md:text-2xl font-bold mb-4">
+                <h3 class="text-xl md:text-xl font-bold mb-4">
                     Branding & Creative
                 </h3>
 
@@ -624,63 +594,6 @@ $how_work_steps = [
 </section>
 
 <!-- CTA SECTION -->
-<section class="py-16 md:py-24 overflow-hidden">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6">
-
-        <div
-            class="relative overflow-hidden rounded-[28px] md:rounded-[40px] border border-white/10 bg-gradient-to-r from-[#00ffb3]/10 to-[#00b7ff]/10 px-6 sm:px-10 md:px-14 py-12 md:py-16 text-center fade-in-up">
-
-            <!-- BLUR BACKGROUND (FIXED: behind content) -->
-            <div class="absolute inset-0 -z-10 backdrop-blur-xl"></div>
-
-            <!-- SOFT GLOW EFFECTS -->
-            <div class="absolute top-0 left-0 w-72 h-72 bg-[#00ffb3]/10 blur-[120px] rounded-full"></div>
-            <div class="absolute bottom-0 right-0 w-72 h-72 bg-[#00b7ff]/10 blur-[120px] rounded-full"></div>
-
-            <!-- CONTENT -->
-            <div class="relative z-10">
-
-                <!-- HEADING -->
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight mb-6">
-                    Ready To Grow Online?
-                </h2>
-
-                <!-- DESCRIPTION -->
-                <p class="text-gray-300 text-base md:text-lg lg:text-xl leading-8 md:leading-9 max-w-3xl mx-auto mb-10">
-                    Launch your website, improve SEO rankings,
-                    run profitable ad campaigns, and scale your business
-                    with Anprix digital solutions.
-                </p>
-
-                <!-- BUTTONS -->
-                <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-4 sm:gap-5">
-
-                    <!-- PRIMARY BUTTON -->
-                    <a href="contact.php"
-                        class="btn-primary w-full sm:w-auto px-8 md:px-10 py-3.5 md:py-4 rounded-2xl text-base md:text-lg shadow-2xl inline-flex items-center justify-center transition-all hover:scale-[1.02]">
-
-                        <i class="fas fa-file-alt mr-2"></i>
-                        Request Proposal
-
-                    </a>
-
-                    <!-- SECONDARY BUTTON -->
-                    <a href="hire.php"
-                        class="w-full sm:w-auto border border-white/10 hover:border-[#00ffb3] hover:text-[#00ffb3] px-8 md:px-10 py-3.5 md:py-4 rounded-2xl text-base md:text-lg transition-all inline-flex items-center justify-center">
-
-                        <i class="fas fa-calendar-check mr-2"></i>
-                        Book Free Consultation
-
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-</section>
 
 <!-- TESTIMONIAL SECTION -->
 <section class="py-16 md:py-24 section-border bg-[#050505] overflow-hidden">
@@ -692,7 +605,7 @@ $how_work_steps = [
                 CLIENT TESTIMONIALS
             </p>
 
-            <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-6 leading-tight">
+            <h2 class="text-xl sm:text-3xl md:text-4xl font-black mb-6 leading-tight">
                 What Our Clients Say
             </h2>
 
@@ -702,61 +615,121 @@ $how_work_steps = [
             </p>
         </div>
 
-        <!-- TESTIMONIAL GRID -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <!-- TESTIMONIAL CAROUSEL -->
+        <div id="index-testimonial-carousel" class="relative max-w-5xl mx-auto">
 
-            <?php
-            $anim_delays = ['delay-100', 'delay-200', 'delay-300'];
-            $idx = 0;
-            foreach($testimonials as $testimonial):
-            $current_delay = $anim_delays[$idx % 3];
-            $idx++;
-            ?>
+            <!-- SLIDES CONTAINER -->
+            <div class="overflow-hidden">
 
-            <!-- CARD -->
-            <div
-                class="glass-card rounded-[24px] md:rounded-[30px] p-6 md:p-8 border border-white/10 hover:border-[<?php echo $testimonial['star_color']; ?>]/30 transition-all duration-300 hover:-translate-y-1 fade-in-up <?php echo $current_delay; ?>">
+                <?php foreach ($testimonials as $index => $t): ?>
+                <div class="testimonial-slide <?= $index === 0 ? 'block' : 'hidden' ?>" data-index="<?= $index ?>">
 
-                <!-- STARS -->
-                <div class="flex items-center gap-1 mb-5 md:mb-6 text-lg md:text-xl"
-                    style="color: <?php echo $testimonial['star_color']; ?>">
+                    <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
 
-                    <?php echo str_repeat('★ ', $testimonial['stars']); ?>
+                        <!-- LEFT: CLIENT AVATAR + EXPERIENCE -->
+                        <div class="shrink-0 flex flex-col items-center gap-4">
 
-                </div>
+                            <!-- Avatar -->
+                            <div class="relative">
+                                <div class="w-20 h-20 md:w-24 md:h-24 rounded-full flex items-center justify-center text-2xl md:text-3xl font-black bg-gradient-to-br <?= $t['color'] ?> text-black shadow-lg">
+                                    <?= $t['initials'] ?>
+                                </div>
+                                <!-- Online dot -->
+                                <div class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-[#00ffb3] border-4 border-[#0a0a0a] flex items-center justify-center">
+                                    <i class="fas fa-check text-[8px] text-black"></i>
+                                </div>
+                            </div>
 
-                <!-- MESSAGE -->
-                <p class="text-gray-400 leading-7 md:leading-8 mb-8 text-sm md:text-base">
-                    <?php echo $testimonial['message']; ?>
-                </p>
+                            <!-- Experience Badge -->
+                            <div class="glass-card rounded-2xl px-4 py-2.5 border border-[#00ffb3]/20 text-center">
+                                <p class="text-xl md:text-2xl font-black green-text leading-none">10+</p>
+                                <p class="text-[10px] text-gray-500 uppercase tracking-wider mt-1">Years Experience</p>
+                            </div>
 
-                <!-- CLIENT -->
-                <div class="flex items-center gap-4">
+                        </div>
 
-                    <!-- AVATAR -->
-                    <div
-                        class="min-w-[56px] w-14 h-14 rounded-full bg-gradient-to-r <?php echo $testimonial['color']; ?> flex items-center justify-center text-black font-bold text-lg">
+                        <!-- RIGHT: MESSAGE BUBBLE -->
+                        <div class="relative flex-1 max-w-2xl">
 
-                        <?php echo $testimonial['initials']; ?>
+                            <!-- Bubble -->
+                            <div class="relative glass-card rounded-[24px] md:rounded-[30px] p-6 sm:p-8 md:p-10 border border-white/10">
+
+                                <!-- Arrow (top-left pointing to avatar) -->
+                                <div class="hidden md:block absolute -left-3 top-8 w-0 h-0 border-t-[10px] border-t-transparent border-r-[12px] border-r-white/10 border-b-[10px] border-b-transparent"></div>
+                                <div class="md:hidden absolute -top-3 left-10 w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-b-[12px] border-b-white/10"></div>
+
+                                <!-- Quote icon -->
+                                <div class="flex items-center gap-3 mb-4 md:mb-5">
+                                    <div class="w-9 h-9 rounded-lg flex items-center justify-center"
+                                         style="background: <?= $t['star_color'] ?>15;">
+                                        <i class="fas fa-quote-left text-sm" style="color: <?= $t['star_color'] ?>;"></i>
+                                    </div>
+                                    <!-- Stars -->
+                                    <div class="flex gap-0.5" style="color: <?= $t['star_color'] ?>">
+                                        <?= str_repeat('<i class="fas fa-star text-xs"></i> ', $t['stars']); ?>
+                                    </div>
+                                </div>
+
+                                <!-- Message -->
+                                <p class="text-gray-300 text-sm sm:text-base md:text-lg leading-7 md:leading-8 mb-6">
+                                    <?= $t['message'] ?>
+                                </p>
+
+                                <!-- Client Row -->
+                                <div class="flex items-center justify-between pt-5 border-t border-white/5">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold bg-gradient-to-br <?= $t['color'] ?> text-black">
+                                            <?= $t['initials'] ?>
+                                        </div>
+                                        <div>
+                                            <p class="font-bold text-sm"><?= $t['name'] ?></p>
+                                            <p class="text-gray-500 text-xs"><?= $t['role'] ?></p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-1.5 text-[10px] text-gray-500">
+                                        <i class="fas fa-check-circle text-[#00ffb3]"></i>
+                                        Verified Client
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
 
                     </div>
 
-                    <!-- INFO -->
-                    <div>
-                        <h3 class="text-base md:text-lg font-bold">
-                            <?php echo $testimonial['name']; ?>
-                        </h4>
-
-                        <p class="text-gray-500 text-sm">
-                            <?php echo $testimonial['role']; ?>
-                        </p>
-                    </div>
-
                 </div>
+                <?php endforeach; ?>
 
             </div>
 
-            <?php endforeach; ?>
+            <!-- DOTS + NAV -->
+            <div class="flex items-center justify-center gap-4 mt-10 md:mt-12">
+
+                <!-- Prev -->
+                <button type="button" id="index-testimonial-prev"
+                        class="w-10 h-10 rounded-full glass-card border border-white/10 flex items-center justify-center text-white/60 hover:text-[#00ffb3] hover:border-[#00ffb3]/30">
+                    <i class="fas fa-chevron-left text-xs"></i>
+                </button>
+
+                <!-- Dots -->
+                <div class="flex items-center gap-2">
+                    <?php foreach ($testimonials as $index => $t): ?>
+                    <button type="button"
+                            class="index-testimonial-dot w-2.5 h-2.5 rounded-full transition-all duration-300 <?= $index === 0 ? 'w-7' : 'bg-white/20 hover:bg-white/40' ?>"
+                            data-index="<?= $index ?>"
+                            style="<?= $index === 0 ? 'background:' . $t['star_color'] : ''; ?>">
+                    </button>
+                    <?php endforeach; ?>
+                </div>
+
+                <!-- Next -->
+                <button type="button" id="index-testimonial-next"
+                        class="w-10 h-10 rounded-full glass-card border border-white/10 flex items-center justify-center text-white/60 hover:text-[#00ffb3] hover:border-[#00ffb3]/30">
+                    <i class="fas fa-chevron-right text-xs"></i>
+                </button>
+
+            </div>
 
         </div>
 
@@ -765,7 +738,7 @@ $how_work_steps = [
 
             <!-- STAT -->
             <div class="stat-card glass-card rounded-2xl md:rounded-3xl p-6 md:p-8 text-center border border-white/10 fade-in-up delay-100">
-                <h3 class="text-3xl sm:text-4xl md:text-5xl font-black green-text mb-3 counter" data-target="100">
+                <h3 class="text-xl sm:text-3xl md:text-4xl font-black green-text mb-3 counter" data-target="100">
                     <span>100</span>+
                 </h3>
                 <p class="text-gray-500 text-sm md:text-base leading-6">Completed Projects</p>
@@ -773,7 +746,7 @@ $how_work_steps = [
 
             <!-- STAT -->
             <div class="stat-card glass-card rounded-2xl md:rounded-3xl p-6 md:p-8 text-center border border-white/10 fade-in-up delay-200">
-                <h3 class="text-3xl sm:text-4xl md:text-5xl font-black blue-text mb-3 counter" data-target="50">
+                <h3 class="text-xl sm:text-3xl md:text-4xl font-black blue-text mb-3 counter" data-target="50">
                     <span>50</span>+
                 </h3>
                 <p class="text-gray-500 text-sm md:text-base leading-6">Happy Clients</p>
@@ -781,7 +754,7 @@ $how_work_steps = [
 
             <!-- STAT -->
             <div class="stat-card glass-card rounded-2xl md:rounded-3xl p-6 md:p-8 text-center border border-white/10 fade-in-up delay-300">
-                <h3 class="text-3xl sm:text-4xl md:text-5xl font-black green-text mb-3 counter" data-target="98">
+                <h3 class="text-xl sm:text-3xl md:text-4xl font-black green-text mb-3 counter" data-target="98">
                     <span>98</span>%
                 </h3>
                 <p class="text-gray-500 text-sm md:text-base leading-6">Client Satisfaction</p>
@@ -789,7 +762,7 @@ $how_work_steps = [
 
             <!-- STAT -->
             <div class="stat-card glass-card rounded-2xl md:rounded-3xl p-6 md:p-8 text-center border border-white/10 fade-in-up delay-400">
-                <h3 class="text-3xl sm:text-4xl md:text-5xl font-black blue-text mb-3 counter" data-target="24">
+                <h3 class="text-xl sm:text-3xl md:text-4xl font-black blue-text mb-3 counter" data-target="24">
                     <span>24</span>/7
                 </h3>
                 <p class="text-gray-500 text-sm md:text-base leading-6">Premium Support</p>
@@ -800,6 +773,47 @@ $how_work_steps = [
     </div>
 </section>
 
+<!-- Index Testimonial Carousel JS -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const slides = document.querySelectorAll('.testimonial-slide');
+    const dots   = document.querySelectorAll('.index-testimonial-dot');
+    const prev   = document.getElementById('index-testimonial-prev');
+    const next   = document.getElementById('index-testimonial-next');
+    let current  = 0;
+    let autoPlay;
+
+    function showSlide(index) {
+        slides.forEach(s => s.classList.add('hidden'));
+        dots.forEach(d => {
+            d.classList.remove('w-8');
+            d.classList.add('bg-white/20');
+            d.style.background = '';
+        });
+        slides[index].classList.remove('hidden');
+        dots[index].classList.remove('bg-white/20');
+        dots[index].classList.add('w-8');
+        const colors = ['#00ffb3','#00b7ff','#00b7ff'];
+        dots[index].style.background = colors[index] || '#00ffb3';
+        current = index;
+    }
+
+    function nextSlide() { showSlide((current + 1) % slides.length); }
+    function prevSlide() { showSlide((current - 1 + slides.length) % slides.length); }
+
+    if (next && prev) {
+        next.addEventListener('click', function() { nextSlide(); resetAuto(); });
+        prev.addEventListener('click', function() { prevSlide(); resetAuto(); });
+    }
+    dots.forEach(d => d.addEventListener('click', function() {
+        showSlide(parseInt(this.dataset.index)); resetAuto();
+    }));
+
+    function resetAuto() { clearInterval(autoPlay); autoPlay = setInterval(nextSlide, 5000); }
+    resetAuto();
+});
+</script>
+
 <!-- FAQ SECTION -->
 <section class="py-16 md:py-24 section-border overflow-hidden">
     <div class="max-w-4xl mx-auto px-4 sm:px-6">
@@ -808,7 +822,7 @@ $how_work_steps = [
             <p class="green-text font-semibold tracking-[0.25em] uppercase mb-4 text-sm">
                 FAQ
             </p>
-            <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-6 leading-tight">
+            <h2 class="text-xl sm:text-3xl md:text-4xl font-black mb-6 leading-tight">
                 Frequently Asked <span class="green-text">Questions</span>
             </h2>
             <p class="max-w-3xl mx-auto text-gray-400 text-base md:text-lg leading-8">
@@ -906,7 +920,7 @@ $how_work_steps = [
                     HIRE ANPRIX
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight mb-6 md:mb-8">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight mb-6 md:mb-8">
                     Let's Build Your
                     <span class="green-text block sm:inline">Next Digital Project</span>
                 </h2>
@@ -959,7 +973,7 @@ $how_work_steps = [
             <!-- RIGHT FORM -->
             <div class="glass-card rounded-[24px] md:rounded-[35px] p-6 sm:p-8 md:p-10 border border-white/10 fade-in-up delay-200">
 
-                <h3 class="text-2xl sm:text-3xl md:text-4xl font-black mb-6">
+                <h3 class="text-xl sm:text-2xl md:text-3xl font-black mb-6">
                     Hire Us
                 </h3>
 

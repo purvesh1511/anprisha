@@ -1,8 +1,11 @@
 <?php
 require_once 'config/config.php';
-$page_title = "Services";
-$page_description = "Anprix offers website development, SEO optimization, Shopify solutions, Google Ads, digital marketing, branding, and advertising services to help businesses grow online.";
-$canonical_url = SITE_URL . '/services';
+require_once 'config/seo_keyword.php';
+$page_key = 'services';
+$seo_title = $seo_pages[$page_key]['title'];
+$page_description = $seo_pages[$page_key]['description'];
+$page_keywords = $seo_pages[$page_key]['keywords'];
+$canonical_url = $seo_pages[$page_key]['canonical'];
 require_once 'includes/header.php';
 ?>
 
@@ -30,7 +33,7 @@ require_once 'includes/header.php';
             </p>
 
             <!-- TITLE -->
-            <h1 class="text-4xl sm:text-5xl lg:text-7xl font-black leading-tight lg:leading-[1.05] mb-8 md:mb-10">
+            <h1 class="text-xl sm:text-4xl lg:text-5xl font-black leading-tight lg:leading-[1.05] mb-8 md:mb-10">
 
                 We Build Modern
 
@@ -71,7 +74,7 @@ require_once 'includes/header.php';
                     Website Development
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
                     High Performance Business Websites
                 </h2>
 
@@ -150,7 +153,7 @@ require_once 'includes/header.php';
                     CMS Development
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
                     Powerful <span class="green-text">CMS Solutions</span>
                 </h2>
 
@@ -257,7 +260,7 @@ require_once 'includes/header.php';
                     WordPress Development
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black">
                     Professional <span class="green-text">WordPress Sites</span>
                 </h2>
 
@@ -283,7 +286,7 @@ require_once 'includes/header.php';
                     eCommerce Development
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black">
                     Sell More With <span class="green-text">eCommerce</span>
                 </h2>
 
@@ -366,7 +369,7 @@ require_once 'includes/header.php';
                     Website Redesign
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black">
                     Transform Your <span class="green-text">Website</span>
                 </h2>
 
@@ -421,7 +424,7 @@ require_once 'includes/header.php';
                     eCommerce Development
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black">
                     Sell More With <span class="green-text">eCommerce</span>
                 </h2>
 
@@ -477,7 +480,7 @@ require_once 'includes/header.php';
                     SEO Optimization
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black">
                     Rank Higher on <span class="green-text">Google</span>
                 </h2>
 
@@ -504,7 +507,7 @@ require_once 'includes/header.php';
                     Advertising Services
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black">
                     Data Driven <span class="green-text">Ads Campaigns</span>
                 </h2>
 
@@ -583,7 +586,7 @@ require_once 'includes/header.php';
                     Digital Marketing
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black">
                     Grow Your <span class="green-text">Brand</span>
                 </h2>
 
@@ -615,7 +618,7 @@ require_once 'includes/header.php';
                     Branding & Creative
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black">
                     Build an <span class="green-text">Unforgettable Brand</span>
                 </h2>
 
@@ -669,7 +672,7 @@ require_once 'includes/header.php';
                 OUR PROCESS
             </p>
 
-            <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-6 md:mb-8 leading-tight">
+            <h2 class="text-xl sm:text-3xl md:text-4xl font-black mb-6 md:mb-8 leading-tight">
                 How We Work
             </h2>
 
@@ -698,7 +701,7 @@ require_once 'includes/header.php';
 
                 </div>
 
-                <h3 class="text-xl md:text-2xl font-bold mb-3">
+                <h3 class="text-xl md:text-xl font-bold mb-3">
                     Discovery
                 </h3>
 
@@ -724,7 +727,7 @@ require_once 'includes/header.php';
 
                 </div>
 
-                <h3 class="text-xl md:text-2xl font-bold mb-3">
+                <h3 class="text-xl md:text-xl font-bold mb-3">
                     Strategy
                 </h3>
 
@@ -750,7 +753,7 @@ require_once 'includes/header.php';
 
                 </div>
 
-                <h3 class="text-xl md:text-2xl font-bold mb-3">
+                <h3 class="text-xl md:text-xl font-bold mb-3">
                     Development
                 </h3>
 
@@ -776,7 +779,7 @@ require_once 'includes/header.php';
 
                 </div>
 
-                <h3 class="text-xl md:text-2xl font-bold mb-3">
+                <h3 class="text-xl md:text-xl font-bold mb-3">
                     Growth
                 </h3>
 
@@ -818,7 +821,7 @@ require_once 'includes/header.php';
                 </p>
 
                 <!-- HEADING -->
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight mb-6 md:mb-8">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight mb-6 md:mb-8">
                     Ready To Build Your Next Project?
                 </h2>
 

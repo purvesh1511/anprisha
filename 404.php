@@ -16,7 +16,7 @@ require_once 'includes/header.php';
                 404
             </div>
 
-            <h1 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight mb-6">
+            <h1 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight mb-6">
                 Page Not Found
             </h1>
 

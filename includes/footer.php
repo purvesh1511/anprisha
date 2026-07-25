@@ -82,6 +82,12 @@
                         </a>
                     </li>
                     <li>
+                        <a href="social-media-marketing.php"
+                        class="hover:text-[#00ffb3] transition">
+                            Social Media Marketing
+                        </a>
+                    </li>
+                    <li>
                         <a href="advertising.php"
                         class="hover:text-[#00ffb3] transition">
                             Advertising
@@ -207,6 +213,33 @@
 
         document.querySelectorAll('.ring-fg').forEach(function(el) {
             ringObserver.observe(el);
+        });
+
+        // Counter Animation with IntersectionObserver
+        var counterObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting && !entry.target.dataset.animated) {
+                    entry.target.dataset.animated = 'true';
+                    var el = entry.target;
+                    var target = parseInt(el.dataset.target);
+                    var span = el.querySelector('span');
+                    var current = 0;
+                    var increment = target / 60;
+                    var timer = setInterval(function() {
+                        current += increment;
+                        if (current >= target) {
+                            span.textContent = target;
+                            clearInterval(timer);
+                        } else {
+                            span.textContent = Math.floor(current);
+                        }
+                    }, 20);
+                }
+            });
+        }, { threshold: 0.3 });
+
+        document.querySelectorAll('.counter').forEach(function(el) {
+            counterObserver.observe(el);
         });
     });
 </script>

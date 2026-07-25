@@ -1,8 +1,11 @@
 <?php
 require_once 'config/config.php';
-$page_title = "Branding & Creative Services";
-$page_description = "Anprix offers logo design, brand identity, visual storytelling, packaging design, and creative strategy services to build unforgettable brands.";
-$canonical_url = SITE_URL . '/branding-creative';
+require_once 'config/seo_keyword.php';
+$page_key = 'branding-creative';
+$seo_title = $seo_pages[$page_key]['title'];
+$page_description = $seo_pages[$page_key]['description'];
+$page_keywords = $seo_pages[$page_key]['keywords'];
+$canonical_url = $seo_pages[$page_key]['canonical'];
 require_once 'includes/header.php';
 ?>
 
@@ -23,7 +26,7 @@ require_once 'includes/header.php';
                 Branding & Creative
             </p>
 
-            <h1 class="text-4xl sm:text-5xl lg:text-7xl font-black leading-tight lg:leading-[1.05] mb-8 md:mb-10">
+            <h1 class="text-xl sm:text-4xl lg:text-5xl font-black leading-tight lg:leading-[1.05] mb-8 md:mb-10">
 
                 Build an
                 <span class="green-text block sm:inline">
@@ -51,7 +54,7 @@ require_once 'includes/header.php';
         <!-- ========================= -->
         <!-- BRAND SERVICE 1: Logo & Identity -->
         <!-- ========================= -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+        <div id="logo" class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
 
             <div class="glass-card rounded-3xl p-6 md:p-10 space-y-5 order-2 lg:order-1">
 
@@ -95,7 +98,7 @@ require_once 'includes/header.php';
                     Logo & Brand Identity
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
                     Your Brand <span class="green-text">Identity</span>
                 </h2>
 
@@ -126,7 +129,7 @@ require_once 'includes/header.php';
                     Visual Storytelling
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
                     Tell Your Story <span class="green-text">Visually</span>
                 </h2>
 
@@ -243,7 +246,7 @@ require_once 'includes/header.php';
                     Packaging & Print Design
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
                     Design That <span class="green-text">Stands Out</span>
                 </h2>
 
@@ -266,7 +269,7 @@ require_once 'includes/header.php';
         <!-- ========================= -->
         <!-- BRAND SERVICE 4: Creative Strategy -->
         <!-- ========================= -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+        <div id="strategy" class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
 
             <div class="space-y-6">
 
@@ -274,7 +277,7 @@ require_once 'includes/header.php';
                     Creative Strategy
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
                     Strategy-Driven <span class="green-text">Creativity</span>
                 </h2>
 
@@ -358,7 +361,7 @@ require_once 'includes/header.php';
                 WHY CHOOSE BRANDING
             </p>
 
-            <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-6 md:mb-8 leading-tight">
+            <h2 class="text-xl sm:text-3xl md:text-4xl font-black mb-6 md:mb-8 leading-tight">
                 Benefits of Strong Branding
             </h2>
 
@@ -376,7 +379,7 @@ require_once 'includes/header.php';
                         <div class="text-4xl font-black green-text">01</div>
                         <i class="fas fa-heart text-3xl text-[#00ffb3] icon-hover"></i>
                     </div>
-                    <h3 class="text-xl md:text-2xl font-bold mb-3">Brand Loyalty</h3>
+                    <h3 class="text-xl md:text-xl font-bold mb-3">Brand Loyalty</h3>
                     <p class="text-gray-500 leading-7 text-sm md:text-base">
                         Customers connect emotionally with strong brands.
                     </p>
@@ -400,7 +403,7 @@ require_once 'includes/header.php';
                         <div class="text-4xl font-black blue-text">02</div>
                         <i class="fas fa-star text-3xl text-[#00b7ff] icon-hover"></i>
                     </div>
-                    <h3 class="text-xl md:text-2xl font-bold mb-3">Stand Out</h3>
+                    <h3 class="text-xl md:text-xl font-bold mb-3">Stand Out</h3>
                     <p class="text-gray-500 leading-7 text-sm md:text-base">
                         Differentiate from competitors in your market.
                     </p>
@@ -424,7 +427,7 @@ require_once 'includes/header.php';
                         <div class="text-4xl font-black green-text">03</div>
                         <i class="fas fa-shield-alt text-3xl text-[#00ffb3] icon-hover"></i>
                     </div>
-                    <h3 class="text-xl md:text-2xl font-bold mb-3">Trust & Credibility</h3>
+                    <h3 class="text-xl md:text-xl font-bold mb-3">Trust & Credibility</h3>
                     <p class="text-gray-500 leading-7 text-sm md:text-base">
                         Professional branding builds instant trust.
                     </p>
@@ -448,7 +451,7 @@ require_once 'includes/header.php';
                         <div class="text-4xl font-black blue-text">04</div>
                         <i class="fas fa-chart-line text-3xl text-[#00b7ff] icon-hover"></i>
                     </div>
-                    <h3 class="text-xl md:text-2xl font-bold mb-3">Higher Value</h3>
+                    <h3 class="text-xl md:text-xl font-bold mb-3">Higher Value</h3>
                     <p class="text-gray-500 leading-7 text-sm md:text-base">
                         Strong brands command premium pricing.
                     </p>
@@ -480,7 +483,7 @@ require_once 'includes/header.php';
                     BUILD YOUR BRAND
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight mb-6 md:mb-8">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight mb-6 md:mb-8">
                     Ready To Build Your Brand?
                 </h2>
 

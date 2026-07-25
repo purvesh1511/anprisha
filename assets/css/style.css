@@ -708,71 +708,6 @@ header .group:hover .glass-card {
 
 /* ===== CONTACT PAGE ADVANCED ===== */
 
-/* Contact hero right side decoration */
-.contact-hero-decor {
-    position: relative;
-    width: 100%;
-    max-width: 480px;
-}
-
-.contact-hero-decor .decor-card {
-    background:
-        radial-gradient(ellipse at 30% 20%, rgba(0, 255, 179, 0.1), transparent 60%),
-        radial-gradient(ellipse at 70% 80%, rgba(0, 183, 255, 0.08), transparent 60%),
-        rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 28px;
-    padding: 32px;
-    position: relative;
-    overflow: hidden;
-}
-
-.contact-hero-decor .decor-card::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-    background-size: 20px 20px;
-    pointer-events: none;
-}
-
-.contact-hero-decor .decor-ring {
-    position: absolute;
-    border-radius: 50%;
-    border: 1px solid rgba(0, 255, 179, 0.1);
-    animation: decor-pulse 4s ease-in-out infinite;
-}
-
-.contact-hero-decor .decor-ring:nth-child(1) {
-    width: 220px;
-    height: 220px;
-    top: -50px;
-    right: -50px;
-}
-
-.contact-hero-decor .decor-ring:nth-child(2) {
-    width: 160px;
-    height: 160px;
-    bottom: -30px;
-    left: -30px;
-    animation-delay: 2s;
-    border-color: rgba(0, 183, 255, 0.1);
-}
-
-.contact-hero-decor .decor-ring:nth-child(3) {
-    width: 80px;
-    height: 80px;
-    top: 50%;
-    left: -30px;
-    animation-delay: 3s;
-    border-color: rgba(0, 255, 179, 0.06);
-}
-
-@keyframes decor-pulse {
-    0%, 100% { transform: scale(1); opacity: 0.4; }
-    50% { transform: scale(1.05); opacity: 0.8; }
-}
-
 @keyframes decor-float {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
@@ -931,21 +866,6 @@ header .group:hover .glass-card {
     animation-delay: 1.5s;
 }
 
-/* Decorative floating shapes */
-.contact-blob {
-    position: absolute;
-    border-radius: 50%;
-    pointer-events: none;
-}
-
-/* ===== NEW: Contact Section decorative elements ===== */
-.contact-section-glow {
-    position: absolute;
-    border-radius: 50%;
-    filter: blur(100px);
-    pointer-events: none;
-}
-
 /* Form card inner glow border */
 .form-glow-border {
     position: relative;
@@ -962,26 +882,6 @@ header .group:hover .glass-card {
     -webkit-mask-composite: xor;
     mask-composite: exclude;
     pointer-events: none;
-}
-
-/* Location showcase */
-.location-showcase {
-    background:
-        radial-gradient(ellipse at 20% 50%, rgba(0, 255, 179, 0.06), transparent 50%),
-        radial-gradient(ellipse at 80% 50%, rgba(0, 183, 255, 0.04), transparent 50%),
-        rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    border-radius: 32px;
-    position: relative;
-    overflow: hidden;
-}
-
-.location-showcase .dot-grid {
-    position: absolute;
-    inset: 0;
-    background-image:
-        radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.03) 1px, transparent 0);
-    background-size: 30px 30px;
 }
 
 /* Social proof bar */
@@ -1161,11 +1061,6 @@ header .group:hover .glass-card {
 /* Service tag icons float */
 .rounded-full.glass-card i[class*="fa-"] {
     animation: iconFloat 5s ease-in-out infinite;
-}
-
-/* Icon hover for hero floating decorative blobs */
-.contact-blob i[class*="fa-"] {
-    animation: iconSpin 12s linear infinite;
 }
 
 /* Portfolio card icon scale on hover */

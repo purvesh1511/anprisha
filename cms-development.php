@@ -1,8 +1,11 @@
 <?php
 require_once 'config/config.php';
-$page_title = "CMS & eCommerce Development";
-$page_description = "Anprix offers CMS development across WordPress, Shopify, and custom platforms plus eCommerce solutions including WooCommerce and Shopify stores.";
-$canonical_url = SITE_URL . '/cms-development';
+require_once 'config/seo_keyword.php';
+$page_key = 'cms-development';
+$seo_title = $seo_pages[$page_key]['title'];
+$page_description = $seo_pages[$page_key]['description'];
+$page_keywords = $seo_pages[$page_key]['keywords'];
+$canonical_url = $seo_pages[$page_key]['canonical'];
 require_once 'includes/header.php';
 ?>
 
@@ -25,7 +28,7 @@ require_once 'includes/header.php';
                     CMS & eCommerce
                 </p>
 
-                <h1 class="text-4xl sm:text-5xl lg:text-7xl font-black leading-tight lg:leading-[1.05] mb-8 md:mb-10">
+                <h1 class="text-xl sm:text-4xl lg:text-5xl font-black leading-tight lg:leading-[1.05] mb-8 md:mb-10">
 
                     <span class="green-text block sm:inline">
                         CMS & eCommerce
@@ -105,7 +108,7 @@ require_once 'includes/header.php';
                     WordPress Development
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
                     Custom WordPress <span class="green-text">Websites</span>
                 </h2>
 
@@ -217,7 +220,7 @@ require_once 'includes/header.php';
                     Shopify Development
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black">
                     Scale Your <span class="green-text">eCommerce</span> Store
                 </h2>
 
@@ -244,7 +247,7 @@ require_once 'includes/header.php';
                     eCommerce Development
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
                     Sell More With <span class="green-text">Online Stores</span>
                 </h2>
 
@@ -328,7 +331,7 @@ require_once 'includes/header.php';
                     Custom CMS Development
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black">
                     Built For Your <span class="green-text">Unique Needs</span>
                 </h2>
 
@@ -383,7 +386,7 @@ require_once 'includes/header.php';
                 WHY CHOOSE CMS & eCommerce
             </p>
 
-            <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-6 md:mb-8 leading-tight">
+            <h2 class="text-xl sm:text-3xl md:text-4xl font-black mb-6 md:mb-8 leading-tight">
                 Benefits of CMS & eCommerce
             </h2>
 
@@ -401,7 +404,7 @@ require_once 'includes/header.php';
                         <div class="text-4xl font-black green-text">01</div>
                         <i class="fas fa-pencil-alt text-3xl text-[#00ffb3] icon-hover"></i>
                     </div>
-                    <h3 class="text-xl md:text-2xl font-bold mb-3">Easy Content Management</h3>
+                    <h3 class="text-xl md:text-xl font-bold mb-3">Easy Content Management</h3>
                     <p class="text-gray-500 leading-7 text-sm md:text-base">
                         Update text, images, and pages without any coding knowledge.
                     </p>
@@ -425,7 +428,7 @@ require_once 'includes/header.php';
                         <div class="text-4xl font-black blue-text">02</div>
                         <i class="fas fa-search text-3xl text-[#00b7ff] icon-hover"></i>
                     </div>
-                    <h3 class="text-xl md:text-2xl font-bold mb-3">SEO Friendly</h3>
+                    <h3 class="text-xl md:text-xl font-bold mb-3">SEO Friendly</h3>
                     <p class="text-gray-500 leading-7 text-sm md:text-base">
                         Built-in SEO tools to help your content rank higher on Google.
                     </p>
@@ -449,7 +452,7 @@ require_once 'includes/header.php';
                         <div class="text-4xl font-black green-text">03</div>
                         <i class="fas fa-expand-arrows-alt text-3xl text-[#00ffb3] icon-hover"></i>
                     </div>
-                    <h3 class="text-xl md:text-2xl font-bold mb-3">Scalable & Flexible</h3>
+                    <h3 class="text-xl md:text-xl font-bold mb-3">Scalable & Flexible</h3>
                     <p class="text-gray-500 leading-7 text-sm md:text-base">
                         Start small and expand with plugins, features, and integrations.
                     </p>
@@ -473,7 +476,7 @@ require_once 'includes/header.php';
                         <div class="text-4xl font-black blue-text">04</div>
                         <i class="fas fa-shopping-cart text-3xl text-[#00b7ff] icon-hover"></i>
                     </div>
-                    <h3 class="text-xl md:text-2xl font-bold mb-3">eCommerce Ready</h3>
+                    <h3 class="text-xl md:text-xl font-bold mb-3">eCommerce Ready</h3>
                     <p class="text-gray-500 leading-7 text-sm md:text-base">
                         Built-in product management, payments, and inventory control.
                     </p>
@@ -499,7 +502,7 @@ require_once 'includes/header.php';
                     CMS & eCommerce PLATFORMS
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight mb-6 md:mb-8">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight mb-6 md:mb-8">
                     We Work With Leading
                     <span class="green-text block sm:inline">CMS & eCommerce Platforms</span>
                 </h2>
@@ -576,7 +579,7 @@ require_once 'includes/header.php';
                     LET'S BUILD YOUR CMS & eCommerce
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight mb-6 md:mb-8">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight mb-6 md:mb-8">
                     Ready To Build Your CMS or eCommerce Site?
                 </h2>
 

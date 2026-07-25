@@ -1,8 +1,11 @@
 <?php
 require_once 'config/config.php';
-$page_title = "Advertising Services";
-$page_description = "Anprix offers Google Ads, social media advertising, retargeting, display ads, and PPC campaign management to drive targeted traffic and maximize ROI.";
-$canonical_url = SITE_URL . '/advertising';
+require_once 'config/seo_keyword.php';
+$page_key = 'advertising';
+$seo_title = $seo_pages[$page_key]['title'];
+$page_description = $seo_pages[$page_key]['description'];
+$page_keywords = $seo_pages[$page_key]['keywords'];
+$canonical_url = $seo_pages[$page_key]['canonical'];
 require_once 'includes/header.php';
 ?>
 
@@ -23,7 +26,7 @@ require_once 'includes/header.php';
                 Advertising Services
             </p>
 
-            <h1 class="text-4xl sm:text-5xl lg:text-7xl font-black leading-tight lg:leading-[1.05] mb-8 md:mb-10">
+            <h1 class="text-xl sm:text-4xl lg:text-5xl font-black leading-tight lg:leading-[1.05] mb-8 md:mb-10">
 
                 Data-Driven
                 <span class="green-text block sm:inline">
@@ -96,7 +99,7 @@ require_once 'includes/header.php';
                     Google Ads
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
                     Dominate Search With <span class="green-text">Google Ads</span>
                 </h2>
 
@@ -127,7 +130,7 @@ require_once 'includes/header.php';
                     Social Media Ads
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
                     Reach Audiences On <span class="green-text">Social Platforms</span>
                 </h2>
 
@@ -248,7 +251,7 @@ require_once 'includes/header.php';
                     Retargeting
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
                     Convert Lost <span class="green-text">Visitors</span>
                 </h2>
 
@@ -279,7 +282,7 @@ require_once 'includes/header.php';
                     Analytics & Optimization
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
                     Measure & Improve <span class="green-text">Performance</span>
                 </h2>
 
@@ -363,7 +366,7 @@ require_once 'includes/header.php';
                 WHY CHOOSE PAID ADVERTISING
             </p>
 
-            <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-6 md:mb-8 leading-tight">
+            <h2 class="text-xl sm:text-3xl md:text-4xl font-black mb-6 md:mb-8 leading-tight">
                 Benefits of Paid Advertising
             </h2>
 
@@ -381,7 +384,7 @@ require_once 'includes/header.php';
                         <div class="text-4xl font-black green-text">01</div>
                         <i class="fas fa-rocket text-3xl text-[#00ffb3] icon-hover"></i>
                     </div>
-                    <h3 class="text-xl md:text-2xl font-bold mb-3">Instant Traffic</h3>
+                    <h3 class="text-xl md:text-xl font-bold mb-3">Instant Traffic</h3>
                     <p class="text-gray-500 leading-7 text-sm md:text-base">
                         Get visitors to your site the moment your campaign launches.
                     </p>
@@ -405,7 +408,7 @@ require_once 'includes/header.php';
                         <div class="text-4xl font-black blue-text">02</div>
                         <i class="fas fa-crosshairs text-3xl text-[#00b7ff] icon-hover"></i>
                     </div>
-                    <h3 class="text-xl md:text-2xl font-bold mb-3">Precision Targeting</h3>
+                    <h3 class="text-xl md:text-xl font-bold mb-3">Precision Targeting</h3>
                     <p class="text-gray-500 leading-7 text-sm md:text-base">
                         Reach the right audience by demographics, interests & behavior.
                     </p>
@@ -429,7 +432,7 @@ require_once 'includes/header.php';
                         <div class="text-4xl font-black green-text">03</div>
                         <i class="fas fa-coins text-3xl text-[#00ffb3] icon-hover"></i>
                     </div>
-                    <h3 class="text-xl md:text-2xl font-bold mb-3">Budget Control</h3>
+                    <h3 class="text-xl md:text-xl font-bold mb-3">Budget Control</h3>
                     <p class="text-gray-500 leading-7 text-sm md:text-base">
                         Set your budget and only pay when someone clicks or converts.
                     </p>
@@ -453,7 +456,7 @@ require_once 'includes/header.php';
                         <div class="text-4xl font-black blue-text">04</div>
                         <i class="fas fa-chart-bar text-3xl text-[#00b7ff] icon-hover"></i>
                     </div>
-                    <h3 class="text-xl md:text-2xl font-bold mb-3">Measurable ROI</h3>
+                    <h3 class="text-xl md:text-xl font-bold mb-3">Measurable ROI</h3>
                     <p class="text-gray-500 leading-7 text-sm md:text-base">
                         Track every dollar with detailed analytics and reporting.
                     </p>
@@ -479,7 +482,7 @@ require_once 'includes/header.php';
                     ADVERTISING PLATFORMS
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight mb-6 md:mb-8">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight mb-6 md:mb-8">
                     We Manage Ads On
                     <span class="green-text block sm:inline">Top Platforms</span>
                 </h2>
@@ -555,7 +558,7 @@ require_once 'includes/header.php';
                     LAUNCH YOUR CAMPAIGN
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight mb-6 md:mb-8">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight mb-6 md:mb-8">
                     Ready To Launch Your Ad Campaign?
                 </h2>
 

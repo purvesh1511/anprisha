@@ -7,12 +7,16 @@
     <?php
     $page_title_full = $seo_title ?? (isset($page_title) ? $page_title . ' | ' : '') . 'Best Digital Marketing Agency in Ahmedabad, India';
     $page_desc = $page_description ?? SITE_DESCRIPTION;
+    $page_kw = $page_keywords ?? '';
     $canonical_url = $canonical_url ?? SITE_URL;
     $og_image = SITE_OG_IMAGE;
     ?>
 
     <title><?= htmlspecialchars($page_title_full) ?></title>
     <meta name="description" content="<?= htmlspecialchars($page_desc) ?>">
+    <?php if (!empty($page_kw)): ?>
+    <meta name="keywords" content="<?= htmlspecialchars($page_kw) ?>">
+    <?php endif; ?>
     <meta name="robots" content="index, follow">
 
     <!-- Canonical -->
@@ -173,7 +177,7 @@
 <body>
 
 <?php
-$service_pages = ['services.php', 'website-development.php', 'wordpress-development.php', 'ecommerce-development.php', 'website-redesign.php', 'cms-development.php', 'seo.php', 'digital-marketing.php', 'advertising.php', 'branding-creative.php'];
+$service_pages = ['services.php', 'website-development.php', 'wordpress-development.php', 'ecommerce-development.php', 'website-redesign.php', 'cms-development.php', 'seo.php', 'digital-marketing.php', 'social-media-marketing.php', 'advertising.php', 'branding-creative.php'];
 $is_service_page = in_array(basename($_SERVER['PHP_SELF']), $service_pages);
 ?>
 
@@ -199,56 +203,15 @@ $is_service_page = in_array(basename($_SERVER['PHP_SELF']), $service_pages);
                 Home
             </a>
 
-            <!-- SERVICES DROPDOWN -->
-            <div class="relative group">
-                <a href="services.php"
+            <!-- SERVICES MEGA MENU TRIGGER -->
+            <div class="relative" id="servicesWrapper">
+                <a href="services.php" id="servicesTrigger"
                    class="flex items-center gap-1.5 hover:text-[#00ffb3] transition <?php echo $is_service_page ? 'text-[#00ffb3]' : ''; ?>">
                     Services
-                    <svg class="w-3.5 h-3.5 mt-0.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-3.5 h-3.5 mt-0.5 transition-transform duration-200" id="servicesArrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                     </svg>
                 </a>
-
-                <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                    <div class="glass-card rounded-2xl py-2 min-w-[220px] shadow-2xl border border-white/10" style="background: rgba(10,10,10,0.96); backdrop-filter: blur(20px);">
-                        <a href="website-development.php"
-                           class="block px-5 py-2.5 text-sm hover:text-[#00ffb3] hover:bg-white/10 rounded-lg mx-1 transition <?php echo basename($_SERVER['PHP_SELF']) == 'website-development.php' ? 'text-[#00ffb3]' : ''; ?>">
-                            Website Development
-                        </a>
-                        <a href="wordpress-development.php"
-                           class="block px-5 py-2.5 text-sm hover:text-[#00ffb3] hover:bg-white/10 rounded-lg mx-1 transition <?php echo basename($_SERVER['PHP_SELF']) == 'wordpress-development.php' ? 'text-[#00ffb3]' : ''; ?>">
-                            WordPress Development
-                        </a>
-                        <a href="ecommerce-development.php"
-                           class="block px-5 py-2.5 text-sm hover:text-[#00ffb3] hover:bg-white/10 rounded-lg mx-1 transition <?php echo basename($_SERVER['PHP_SELF']) == 'ecommerce-development.php' ? 'text-[#00ffb3]' : ''; ?>">
-                            eCommerce Development
-                        </a>
-                        <a href="website-redesign.php"
-                           class="block px-5 py-2.5 text-sm hover:text-[#00ffb3] hover:bg-white/10 rounded-lg mx-1 transition <?php echo basename($_SERVER['PHP_SELF']) == 'website-redesign.php' ? 'text-[#00ffb3]' : ''; ?>">
-                            Website Redesign
-                        </a>
-                        <a href="cms-development.php"
-                           class="block px-5 py-2.5 text-sm hover:text-[#00ffb3] hover:bg-white/10 rounded-lg mx-1 transition <?php echo basename($_SERVER['PHP_SELF']) == 'cms-development.php' ? 'text-[#00ffb3]' : ''; ?>">
-                            CMS Development
-                        </a>
-                        <a href="seo.php"
-                           class="block px-5 py-2.5 text-sm hover:text-[#00ffb3] hover:bg-white/10 rounded-lg mx-1 transition <?php echo basename($_SERVER['PHP_SELF']) == 'seo.php' ? 'text-[#00ffb3]' : ''; ?>">
-                            SEO Services
-                        </a>
-                        <a href="digital-marketing.php"
-                           class="block px-5 py-2.5 text-sm hover:text-[#00ffb3] hover:bg-white/10 rounded-lg mx-1 transition <?php echo basename($_SERVER['PHP_SELF']) == 'digital-marketing.php' ? 'text-[#00ffb3]' : ''; ?>">
-                            Digital Marketing
-                        </a>
-                        <a href="advertising.php"
-                           class="block px-5 py-2.5 text-sm hover:text-[#00ffb3] hover:bg-white/10 rounded-lg mx-1 transition <?php echo basename($_SERVER['PHP_SELF']) == 'advertising.php' ? 'text-[#00ffb3]' : ''; ?>">
-                            Advertising
-                        </a>
-                        <a href="branding-creative.php"
-                           class="block px-5 py-2.5 text-sm hover:text-[#00ffb3] hover:bg-white/10 rounded-lg mx-1 transition <?php echo basename($_SERVER['PHP_SELF']) == 'branding-creative.php' ? 'text-[#00ffb3]' : ''; ?>">
-                            Branding & Creative
-                        </a>
-                    </div>
-                </div>
             </div>
 
             <a href="portfolio.php"
@@ -279,83 +242,280 @@ $is_service_page = in_array(basename($_SERVER['PHP_SELF']), $service_pages);
 
             <!-- MOBILE MENU BUTTON -->
             <button id="mobileMenuBtn"
-                    class="md:hidden btn-primary p-3 rounded-xl flex items-center justify-center"
+                    class="md:hidden btn-primary p-3 rounded-xl flex items-center justify-center relative w-12 h-12"
                     aria-label="Toggle navigation menu">
-
-                <svg xmlns="http://www.w3.org/2000/svg"
-                     class="h-6 w-6"
-                     fill="none"
-                     viewBox="0 0 24 24"
-                     stroke="currentColor">
-
-                    <path stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h16M4 18h16" />
+                <svg id="menuIconHamburger" class="h-6 w-6 transition-all duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                 </svg>
-
+                <svg id="menuIconClose" class="h-6 w-6 transition-all duration-300 absolute inset-0 m-auto hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
             </button>
 
         </div>
 
     </div>
 
+    <!-- MEGA MENU PANEL (fixed full-width, JS controlled) -->
+    <div id="megaMenu" class="fixed left-0 w-full z-40 opacity-0 invisible pointer-events-none transition-all duration-300" style="top: 100%;">
+        <div class="border-t border-white/10" style="background: rgba(8,8,8,0.97); backdrop-filter: blur(24px); box-shadow: 0 20px 60px rgba(0,0,0,0.5);">
+            <div class="max-w-7xl mx-auto px-6 py-8">
+
+                <!-- 4-COLUMN GRID -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                    <!-- COL 1: Development -->
+                    <div class="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-5 hover:border-[#00ffb3]/30 transition-all duration-300 group/card">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 rounded-xl bg-[#00ffb3]/10 flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-code text-[#00ffb3] text-sm"></i>
+                            </div>
+                            <div>
+                                <p class="text-[#00ffb3] font-bold text-sm">Development</p>
+                                <p class="text-gray-600 text-[10px]">Web & CMS Solutions</p>
+                            </div>
+                        </div>
+                        <ul class="space-y-1">
+                            <li><a href="website-development.php" class="flex items-center gap-2 text-sm text-gray-400 hover:text-white py-1.5 px-2 rounded-lg hover:bg-white/5 transition <?php echo basename($_SERVER['PHP_SELF']) == 'website-development.php' ? 'text-white bg-white/5' : ''; ?>"><i class="fas fa-globe text-[10px] text-gray-600 w-3"></i> Website Development</a></li>
+                            <li><a href="wordpress-development.php" class="flex items-center gap-2 text-sm text-gray-400 hover:text-white py-1.5 px-2 rounded-lg hover:bg-white/5 transition <?php echo basename($_SERVER['PHP_SELF']) == 'wordpress-development.php' ? 'text-white bg-white/5' : ''; ?>"><i class="fab fa-wordpress text-[10px] text-gray-600 w-3"></i> WordPress Development</a></li>
+                            <li><a href="ecommerce-development.php" class="flex items-center gap-2 text-sm text-gray-400 hover:text-white py-1.5 px-2 rounded-lg hover:bg-white/5 transition <?php echo basename($_SERVER['PHP_SELF']) == 'ecommerce-development.php' ? 'text-white bg-white/5' : ''; ?>"><i class="fas fa-shopping-cart text-[10px] text-gray-600 w-3"></i> eCommerce Development</a></li>
+                            <li><a href="cms-development.php" class="flex items-center gap-2 text-sm text-gray-400 hover:text-white py-1.5 px-2 rounded-lg hover:bg-white/5 transition <?php echo basename($_SERVER['PHP_SELF']) == 'cms-development.php' ? 'text-white bg-white/5' : ''; ?>"><i class="fas fa-database text-[10px] text-gray-600 w-3"></i> CMS Development</a></li>
+                            <li><a href="website-redesign.php" class="flex items-center gap-2 text-sm text-gray-400 hover:text-white py-1.5 px-2 rounded-lg hover:bg-white/5 transition <?php echo basename($_SERVER['PHP_SELF']) == 'website-redesign.php' ? 'text-white bg-white/5' : ''; ?>"><i class="fas fa-palette text-[10px] text-gray-600 w-3"></i> Website Redesign</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- COL 2: SEO -->
+                    <div class="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-5 hover:border-[#00b7ff]/30 transition-all duration-300 group/card">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 rounded-xl bg-[#00b7ff]/10 flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-search text-[#00b7ff] text-sm"></i>
+                            </div>
+                            <div>
+                                <p class="text-[#00b7ff] font-bold text-sm">SEO</p>
+                                <p class="text-gray-600 text-[10px]">Search Engine Optimization</p>
+                            </div>
+                        </div>
+                        <ul class="space-y-1">
+                            <li><a href="seo.php" class="flex items-center gap-2 text-sm text-gray-400 hover:text-white py-1.5 px-2 rounded-lg hover:bg-white/5 transition <?php echo basename($_SERVER['PHP_SELF']) == 'seo.php' ? 'text-white bg-white/5' : ''; ?>"><i class="fas fa-chart-line text-[10px] text-gray-600 w-3"></i> SEO Services</a></li>
+                            <li><a href="seo.php#local" class="flex items-center gap-2 text-sm text-gray-400 hover:text-white py-1.5 px-2 rounded-lg hover:bg-white/5 transition"><i class="fas fa-map-marker-alt text-[10px] text-gray-600 w-3"></i> Local SEO</a></li>
+                            <li><a href="seo.php#onpage" class="flex items-center gap-2 text-sm text-gray-400 hover:text-white py-1.5 px-2 rounded-lg hover:bg-white/5 transition"><i class="fas fa-cogs text-[10px] text-gray-600 w-3"></i> Technical SEO</a></li>
+                            <li><a href="seo.php#onpage" class="flex items-center gap-2 text-sm text-gray-400 hover:text-white py-1.5 px-2 rounded-lg hover:bg-white/5 transition"><i class="fas fa-file-alt text-[10px] text-gray-600 w-3"></i> On-Page SEO</a></li>
+                            <li><a href="seo.php#linkbuilding" class="flex items-center gap-2 text-sm text-gray-400 hover:text-white py-1.5 px-2 rounded-lg hover:bg-white/5 transition"><i class="fas fa-link text-[10px] text-gray-600 w-3"></i> Link Building</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- COL 3: Marketing -->
+                    <div class="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-5 hover:border-[#00ffb3]/30 transition-all duration-300 group/card">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 rounded-xl bg-[#00ffb3]/10 flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-bullhorn text-[#00ffb3] text-sm"></i>
+                            </div>
+                            <div>
+                                <p class="text-[#00ffb3] font-bold text-sm">Marketing</p>
+                                <p class="text-gray-600 text-[10px]">Digital & Social Media</p>
+                            </div>
+                        </div>
+                        <ul class="space-y-1">
+                            <li><a href="digital-marketing.php" class="flex items-center gap-2 text-sm text-gray-400 hover:text-white py-1.5 px-2 rounded-lg hover:bg-white/5 transition <?php echo basename($_SERVER['PHP_SELF']) == 'digital-marketing.php' ? 'text-white bg-white/5' : ''; ?>"><i class="fas fa-rocket text-[10px] text-gray-600 w-3"></i> Digital Marketing</a></li>
+                            <li><a href="social-media-marketing.php" class="flex items-center gap-2 text-sm text-gray-400 hover:text-white py-1.5 px-2 rounded-lg hover:bg-white/5 transition <?php echo basename($_SERVER['PHP_SELF']) == 'social-media-marketing.php' ? 'text-white bg-white/5' : ''; ?>"><i class="fas fa-share-alt text-[10px] text-gray-600 w-3"></i> Social Media Marketing</a></li>
+                            <li><a href="advertising.php" class="flex items-center gap-2 text-sm text-gray-400 hover:text-white py-1.5 px-2 rounded-lg hover:bg-white/5 transition <?php echo basename($_SERVER['PHP_SELF']) == 'advertising.php' ? 'text-white bg-white/5' : ''; ?>"><i class="fab fa-google text-[10px] text-gray-600 w-3"></i> Google Ads & PPC</a></li>
+                            <li><a href="social-media-marketing.php#paid" class="flex items-center gap-2 text-sm text-gray-400 hover:text-white py-1.5 px-2 rounded-lg hover:bg-white/5 transition"><i class="fas fa-ad text-[10px] text-gray-600 w-3"></i> Paid Social Ads</a></li>
+                            <li><a href="digital-marketing.php#email" class="flex items-center gap-2 text-sm text-gray-400 hover:text-white py-1.5 px-2 rounded-lg hover:bg-white/5 transition"><i class="fas fa-envelope text-[10px] text-gray-600 w-3"></i> Email Marketing</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- COL 4: Branding -->
+                    <div class="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-5 hover:border-[#00b7ff]/30 transition-all duration-300 group/card">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 rounded-xl bg-[#00b7ff]/10 flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-paint-brush text-[#00b7ff] text-sm"></i>
+                            </div>
+                            <div>
+                                <p class="text-[#00b7ff] font-bold text-sm">Branding</p>
+                                <p class="text-gray-600 text-[10px]">Creative & Identity</p>
+                            </div>
+                        </div>
+                        <ul class="space-y-1">
+                            <li><a href="branding-creative.php" class="flex items-center gap-2 text-sm text-gray-400 hover:text-white py-1.5 px-2 rounded-lg hover:bg-white/5 transition <?php echo basename($_SERVER['PHP_SELF']) == 'branding-creative.php' ? 'text-white bg-white/5' : ''; ?>"><i class="fas fa-star text-[10px] text-gray-600 w-3"></i> Branding & Creative</a></li>
+                            <li><a href="branding-creative.php#logo" class="flex items-center gap-2 text-sm text-gray-400 hover:text-white py-1.5 px-2 rounded-lg hover:bg-white/5 transition"><i class="fas fa-bezier-curve text-[10px] text-gray-600 w-3"></i> Logo Design</a></li>
+                            <li><a href="branding-creative.php#logo" class="flex items-center gap-2 text-sm text-gray-400 hover:text-white py-1.5 px-2 rounded-lg hover:bg-white/5 transition"><i class="fas fa-id-badge text-[10px] text-gray-600 w-3"></i> Brand Identity</a></li>
+                            <li><a href="branding-creative.php#strategy" class="flex items-center gap-2 text-sm text-gray-400 hover:text-white py-1.5 px-2 rounded-lg hover:bg-white/5 transition"><i class="fas fa-lightbulb text-[10px] text-gray-600 w-3"></i> Creative Strategy</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- BOTTOM BAR -->
+                <div class="flex items-center justify-between mt-6 pt-5 border-t border-white/5">
+                    <p class="text-gray-600 text-xs">End-to-end digital solutions for your business</p>
+                    <a href="services.php" class="text-xs font-semibold text-[#00ffb3] hover:text-white flex items-center gap-1.5 transition">
+                        View All Services
+                        <i class="fas fa-arrow-right text-[10px]"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <!-- MOBILE MENU -->
     <div id="mobileMenu"
-         class="hidden md:hidden bg-black/95 border-t border-white/10 backdrop-blur-xl">
+         class="hidden md:hidden bg-black/95 border-t border-white/10 backdrop-blur-xl overflow-y-auto" style="max-height: calc(100vh - 76px);">
 
-        <div class="flex flex-col p-6 gap-5 text-gray-300 font-medium">
+        <div class="flex flex-col p-6 gap-4 text-gray-300 font-medium">
 
             <a href="index.php"
-               class="hover:text-[#00ffb3] transition <?php echo basename($_SERVER['PHP_SELF']) == 'index.php' ? 'text-[#00ffb3]' : ''; ?>">
+               class="py-2 hover:text-[#00ffb3] transition <?php echo basename($_SERVER['PHP_SELF']) == 'index.php' ? 'text-[#00ffb3]' : ''; ?>">
                 Home
             </a>
 
             <!-- MOBILE SERVICES ACCORDION -->
-            <div>
-                <button class="w-full flex items-center justify-between hover:text-[#00ffb3] transition <?php echo $is_service_page ? 'text-[#00ffb3]' : ''; ?>"
-                        onclick="$(this).next().slideToggle(300);$(this).find('.arrow').toggleClass('rotate-180')">
+            <div class="border-b border-white/5 pb-2">
+                <button id="mobileServicesBtn"
+                        class="w-full flex items-center justify-between py-2 hover:text-[#00ffb3] transition <?php echo $is_service_page ? 'text-[#00ffb3]' : ''; ?>">
                     <span>Services</span>
-                    <svg class="arrow w-4 h-4 transition-transform duration-200 <?php echo $is_service_page ? 'rotate-180' : ''; ?>" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="arrow w-4 h-4 transition-transform duration-300 <?php echo $is_service_page ? 'rotate-180' : ''; ?>" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                     </svg>
                 </button>
-                <div class="pl-4 mt-2 space-y-1 text-sm text-gray-300 border-l border-white/10 ml-1 <?php echo $is_service_page ? '' : 'hidden'; ?>">
-                    <a href="website-development.php" class="block py-2 px-3 rounded-lg hover:text-[#00ffb3] hover:bg-white/10 transition <?php echo basename($_SERVER['PHP_SELF']) == 'website-development.php' ? 'text-[#00ffb3] bg-white/5' : ''; ?>">Website Development</a>
-                    <a href="wordpress-development.php" class="block py-2 px-3 rounded-lg hover:text-[#00ffb3] hover:bg-white/10 transition <?php echo basename($_SERVER['PHP_SELF']) == 'wordpress-development.php' ? 'text-[#00ffb3] bg-white/5' : ''; ?>">WordPress Development</a>
-                    <a href="ecommerce-development.php" class="block py-2 px-3 rounded-lg hover:text-[#00ffb3] hover:bg-white/10 transition <?php echo basename($_SERVER['PHP_SELF']) == 'ecommerce-development.php' ? 'text-[#00ffb3] bg-white/5' : ''; ?>">eCommerce Development</a>
-                    <a href="website-redesign.php" class="block py-2 px-3 rounded-lg hover:text-[#00ffb3] hover:bg-white/10 transition <?php echo basename($_SERVER['PHP_SELF']) == 'website-redesign.php' ? 'text-[#00ffb3] bg-white/5' : ''; ?>">Website Redesign</a>
-                    <a href="cms-development.php" class="block py-2 px-3 rounded-lg hover:text-[#00ffb3] hover:bg-white/10 transition <?php echo basename($_SERVER['PHP_SELF']) == 'cms-development.php' ? 'text-[#00ffb3] bg-white/5' : ''; ?>">CMS Development</a>
-                    <a href="seo.php" class="block py-2 px-3 rounded-lg hover:text-[#00ffb3] hover:bg-white/10 transition <?php echo basename($_SERVER['PHP_SELF']) == 'seo.php' ? 'text-[#00ffb3] bg-white/5' : ''; ?>">SEO Services</a>
-                    <a href="digital-marketing.php" class="block py-2 px-3 rounded-lg hover:text-[#00ffb3] hover:bg-white/10 transition <?php echo basename($_SERVER['PHP_SELF']) == 'digital-marketing.php' ? 'text-[#00ffb3] bg-white/5' : ''; ?>">Digital Marketing</a>
-                    <a href="advertising.php" class="block py-2 px-3 rounded-lg hover:text-[#00ffb3] hover:bg-white/10 transition <?php echo basename($_SERVER['PHP_SELF']) == 'advertising.php' ? 'text-[#00ffb3] bg-white/5' : ''; ?>">Advertising</a>
-                    <a href="branding-creative.php" class="block py-2 px-3 rounded-lg hover:text-[#00ffb3] hover:bg-white/10 transition <?php echo basename($_SERVER['PHP_SELF']) == 'branding-creative.php' ? 'text-[#00ffb3] bg-white/5' : ''; ?>">Branding & Creative</a>
+                <div id="mobileServicesPanel" class="mt-2 space-y-1 text-sm text-gray-300 <?php echo $is_service_page ? '' : 'hidden'; ?>">
+
+                    <!-- Development Group -->
+                    <div class="bg-white/[0.03] rounded-xl p-3 mt-3">
+                        <p class="text-[#00ffb3] font-semibold text-xs uppercase tracking-wider pb-2"><i class="fas fa-code mr-1.5"></i>Development</p>
+                        <a href="website-development.php" class="block py-2 px-3 rounded-lg hover:text-[#00ffb3] hover:bg-white/10 transition <?php echo basename($_SERVER['PHP_SELF']) == 'website-development.php' ? 'text-[#00ffb3] bg-white/5' : ''; ?>">Website Development</a>
+                        <a href="wordpress-development.php" class="block py-2 px-3 rounded-lg hover:text-[#00ffb3] hover:bg-white/10 transition <?php echo basename($_SERVER['PHP_SELF']) == 'wordpress-development.php' ? 'text-[#00ffb3] bg-white/5' : ''; ?>">WordPress Development</a>
+                        <a href="ecommerce-development.php" class="block py-2 px-3 rounded-lg hover:text-[#00ffb3] hover:bg-white/10 transition <?php echo basename($_SERVER['PHP_SELF']) == 'ecommerce-development.php' ? 'text-[#00ffb3] bg-white/5' : ''; ?>">eCommerce Development</a>
+                        <a href="cms-development.php" class="block py-2 px-3 rounded-lg hover:text-[#00ffb3] hover:bg-white/10 transition <?php echo basename($_SERVER['PHP_SELF']) == 'cms-development.php' ? 'text-[#00ffb3] bg-white/5' : ''; ?>">CMS Development</a>
+                        <a href="website-redesign.php" class="block py-2 px-3 rounded-lg hover:text-[#00ffb3] hover:bg-white/10 transition <?php echo basename($_SERVER['PHP_SELF']) == 'website-redesign.php' ? 'text-[#00ffb3] bg-white/5' : ''; ?>">Website Redesign</a>
+                    </div>
+
+                    <!-- SEO Group -->
+                    <div class="bg-white/[0.03] rounded-xl p-3">
+                        <p class="text-[#00b7ff] font-semibold text-xs uppercase tracking-wider pb-2"><i class="fas fa-search mr-1.5"></i>SEO</p>
+                        <a href="seo.php" class="block py-2 px-3 rounded-lg hover:text-[#00ffb3] hover:bg-white/10 transition <?php echo basename($_SERVER['PHP_SELF']) == 'seo.php' ? 'text-[#00ffb3] bg-white/5' : ''; ?>">SEO Services</a>
+                        <a href="seo.php#local" class="block py-2 px-3 rounded-lg hover:text-[#00ffb3] hover:bg-white/10 transition">Local SEO</a>
+                        <a href="seo.php#onpage" class="block py-2 px-3 rounded-lg hover:text-[#00ffb3] hover:bg-white/10 transition">Technical SEO</a>
+                        <a href="seo.php#linkbuilding" class="block py-2 px-3 rounded-lg hover:text-[#00ffb3] hover:bg-white/10 transition">Link Building</a>
+                    </div>
+
+                    <!-- Marketing Group -->
+                    <div class="bg-white/[0.03] rounded-xl p-3">
+                        <p class="text-[#00ffb3] font-semibold text-xs uppercase tracking-wider pb-2"><i class="fas fa-bullhorn mr-1.5"></i>Marketing</p>
+                        <a href="digital-marketing.php" class="block py-2 px-3 rounded-lg hover:text-[#00ffb3] hover:bg-white/10 transition <?php echo basename($_SERVER['PHP_SELF']) == 'digital-marketing.php' ? 'text-[#00ffb3] bg-white/5' : ''; ?>">Digital Marketing</a>
+                        <a href="social-media-marketing.php" class="block py-2 px-3 rounded-lg hover:text-[#00ffb3] hover:bg-white/10 transition <?php echo basename($_SERVER['PHP_SELF']) == 'social-media-marketing.php' ? 'text-[#00ffb3] bg-white/5' : ''; ?>">Social Media Marketing</a>
+                        <a href="advertising.php" class="block py-2 px-3 rounded-lg hover:text-[#00ffb3] hover:bg-white/10 transition <?php echo basename($_SERVER['PHP_SELF']) == 'advertising.php' ? 'text-[#00ffb3] bg-white/5' : ''; ?>">Google Ads & PPC</a>
+                    </div>
+
+                    <!-- Branding Group -->
+                    <div class="bg-white/[0.03] rounded-xl p-3">
+                        <p class="text-[#00b7ff] font-semibold text-xs uppercase tracking-wider pb-2"><i class="fas fa-paint-brush mr-1.5"></i>Branding</p>
+                        <a href="branding-creative.php" class="block py-2 px-3 rounded-lg hover:text-[#00ffb3] hover:bg-white/10 transition <?php echo basename($_SERVER['PHP_SELF']) == 'branding-creative.php' ? 'text-[#00ffb3] bg-white/5' : ''; ?>">Branding & Creative</a>
+                        <a href="branding-creative.php#logo" class="block py-2 px-3 rounded-lg hover:text-[#00ffb3] hover:bg-white/10 transition">Logo Design</a>
+                        <a href="branding-creative.php#strategy" class="block py-2 px-3 rounded-lg hover:text-[#00ffb3] hover:bg-white/10 transition">Creative Strategy</a>
+                    </div>
+
                 </div>
             </div>
 
             <a href="portfolio.php"
-               class="hover:text-[#00ffb3] transition <?php echo basename($_SERVER['PHP_SELF']) == 'portfolio.php' ? 'text-[#00ffb3]' : ''; ?>">
+               class="py-2 hover:text-[#00ffb3] transition <?php echo basename($_SERVER['PHP_SELF']) == 'portfolio.php' ? 'text-[#00ffb3]' : ''; ?>">
                 Portfolio
             </a>
 
             <a href="team.php"
-               class="hover:text-[#00ffb3] transition <?php echo basename($_SERVER['PHP_SELF']) == 'team.php' ? 'text-[#00ffb3]' : ''; ?>">
+               class="py-2 hover:text-[#00ffb3] transition <?php echo basename($_SERVER['PHP_SELF']) == 'team.php' ? 'text-[#00ffb3]' : ''; ?>">
                 Team
             </a>
 
             <a href="contact.php"
-               class="hover:text-[#00ffb3] transition <?php echo basename($_SERVER['PHP_SELF']) == 'contact.php' ? 'text-[#00ffb3]' : ''; ?>">
+               class="py-2 hover:text-[#00ffb3] transition <?php echo basename($_SERVER['PHP_SELF']) == 'contact.php' ? 'text-[#00ffb3]' : ''; ?>">
                 Contact
             </a>
 
             <!-- MOBILE BUTTON -->
-            <button class="btn-primary px-6 py-3 rounded-xl mt-4"
-                    onclick="window.location.href='contact.php'">
+            <a href="hire.php" class="btn-primary px-6 py-3 rounded-xl mt-2 text-center">
                 Hire Us
-            </button>
+            </a>
 
         </div>
 
     </div>
 
 </header>
+
+<!-- MEGA MENU + MOBILE MENU SCRIPT -->
+<script>
+(function() {
+    var header = document.querySelector('header');
+    var megaMenu = document.getElementById('megaMenu');
+    var trigger = document.getElementById('servicesWrapper');
+    var arrow = document.getElementById('servicesArrow');
+    var hoverTimeout;
+
+    function getHeaderHeight() {
+        return header ? header.offsetHeight : 76;
+    }
+
+    function showMegaMenu() {
+        clearTimeout(hoverTimeout);
+        megaMenu.style.top = getHeaderHeight() + 'px';
+        megaMenu.style.opacity = '1';
+        megaMenu.style.visibility = 'visible';
+        megaMenu.style.pointerEvents = 'auto';
+        if (arrow) arrow.style.transform = 'rotate(180deg)';
+    }
+
+    function hideMegaMenu() {
+        hoverTimeout = setTimeout(function() {
+            megaMenu.style.opacity = '0';
+            megaMenu.style.visibility = 'hidden';
+            megaMenu.style.pointerEvents = 'none';
+            if (arrow) arrow.style.transform = '';
+        }, 120);
+    }
+
+    if (trigger && megaMenu) {
+        trigger.addEventListener('mouseenter', showMegaMenu);
+        trigger.addEventListener('mouseleave', hideMegaMenu);
+        megaMenu.addEventListener('mouseenter', showMegaMenu);
+        megaMenu.addEventListener('mouseleave', hideMegaMenu);
+    }
+
+    var megaMenuBtn = document.getElementById('mobileMenuBtn');
+    var mobileMenu = document.getElementById('mobileMenu');
+    var iconHamburger = document.getElementById('menuIconHamburger');
+    var iconClose = document.getElementById('menuIconClose');
+    var mobileOpen = false;
+
+    if (megaMenuBtn && mobileMenu) {
+        megaMenuBtn.addEventListener('click', function() {
+            mobileOpen = !mobileOpen;
+            if (mobileOpen) {
+                mobileMenu.classList.remove('hidden');
+                iconHamburger.classList.add('hidden');
+                iconClose.classList.remove('hidden');
+            } else {
+                mobileMenu.classList.add('hidden');
+                iconHamburger.classList.remove('hidden');
+                iconClose.classList.add('hidden');
+            }
+        });
+    }
+
+    var mobileServicesBtn = document.getElementById('mobileServicesBtn');
+    var mobileServicesPanel = document.getElementById('mobileServicesPanel');
+    if (mobileServicesBtn && mobileServicesPanel) {
+        mobileServicesBtn.addEventListener('click', function() {
+            var isHidden = mobileServicesPanel.classList.contains('hidden');
+            if (isHidden) {
+                mobileServicesPanel.classList.remove('hidden');
+            } else {
+                mobileServicesPanel.classList.add('hidden');
+            }
+            var svgArrow = mobileServicesBtn.querySelector('.arrow');
+            if (svgArrow) svgArrow.classList.toggle('rotate-180');
+        });
+    }
+})();
+</script>

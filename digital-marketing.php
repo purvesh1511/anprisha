@@ -26,7 +26,7 @@ require_once 'includes/header.php';
                     Digital Marketing Agency
                 </p>
 
-                <h1 class="text-4xl sm:text-5xl lg:text-7xl font-black leading-tight lg:leading-[1.05] mb-8 md:mb-10">
+                <h1 class="text-xl sm:text-4xl lg:text-5xl font-black leading-tight lg:leading-[1.05] mb-8 md:mb-10">
 
                     Digital Marketing Agency
                     <span class="green-text block sm:inline">
@@ -53,7 +53,7 @@ require_once 'includes/header.php';
 
                 <div class="relative w-full max-w-full lg:max-w-2xl mx-auto">
                     <div class="glass-card rounded-[22px] sm:rounded-[30px] p-1 sm:p-2 hero-image-glow pulse-ring text-center">
-                        <img src="assets/images/digital-marketing.webp"
+                        <img src="assets/images/digital.png"
                              alt="Anprix Solutions - Digital Marketing Services"
                              width="680" height="500" fetchpriority="high"
                              class="w-full max-w-[85%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-[85%] xl:max-w-[680px] mx-auto animate-float">
@@ -151,7 +151,7 @@ require_once 'includes/header.php';
                     SEO Services
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
                     Rank Higher On <span class="green-text">Google</span>
                 </h2>
 
@@ -182,7 +182,7 @@ require_once 'includes/header.php';
                     Social Media Marketing
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
                     Build Your <span class="green-text">Community</span>
                 </h2>
 
@@ -313,7 +313,7 @@ require_once 'includes/header.php';
                     Content Marketing
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
                     Content That <span class="green-text">Converts</span>
                 </h2>
 
@@ -344,7 +344,7 @@ require_once 'includes/header.php';
                     Google Ads Management
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
                     Data-Driven <span class="green-text">Google Ads Campaigns</span>
                 </h2>
 
@@ -442,7 +442,7 @@ require_once 'includes/header.php';
         <!-- ========================= -->
         <!-- DM SERVICE 5: Email Marketing -->
         <!-- ========================= -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+        <div id="email" class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
 
             <div class="glass-card rounded-3xl p-6 md:p-10 space-y-5 order-2 lg:order-1">
 
@@ -486,7 +486,7 @@ require_once 'includes/header.php';
                     Email Marketing
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
                     Nurture Leads With <span class="green-text">Email</span>
                 </h2>
 
@@ -520,7 +520,7 @@ require_once 'includes/header.php';
                 WHY CHOOSE ANPRIX SOLUTIONS
             </p>
 
-            <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-6 md:mb-8 leading-tight">
+            <h2 class="text-xl sm:text-3xl md:text-4xl font-black mb-6 md:mb-8 leading-tight">
                 Your Trusted Digital Marketing Agency
             </h2>
 
@@ -537,7 +537,7 @@ require_once 'includes/header.php';
                 <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
                     <i class="fas fa-users text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Experienced Digital Marketing Experts</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">Experienced Digital Marketing Experts</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
                     Our team has extensive experience managing successful campaigns across multiple industries. We stay updated with the latest digital marketing trends, platform updates, and best practices to ensure your campaigns remain competitive.
                 </p>
@@ -548,7 +548,7 @@ require_once 'includes/header.php';
                 <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5">
                     <i class="fas fa-bullseye text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Result-Oriented Strategies</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">Result-Oriented Strategies</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
                     We focus on outcomes that matter. Whether your goal is lead generation, increased website traffic, higher sales, or improved brand visibility, our strategies are designed to deliver measurable results.
                 </p>
@@ -559,7 +559,7 @@ require_once 'includes/header.php';
                 <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
                     <i class="fas fa-cogs text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Customized Marketing Solutions</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">Customized Marketing Solutions</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
                     Every business has different challenges and objectives. We create personalized marketing plans that align with your business goals and maximize return on investment.
                 </p>
@@ -570,7 +570,7 @@ require_once 'includes/header.php';
                 <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5">
                     <i class="fas fa-dollar-sign text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Affordable Pricing</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">Affordable Pricing</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
                     We offer flexible and cost-effective digital marketing packages suitable for startups, SMEs, and established businesses. Our solutions are designed to provide value without compromising quality.
                 </p>
@@ -581,7 +581,7 @@ require_once 'includes/header.php';
                 <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
                     <i class="fas fa-chart-bar text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Transparent Reporting</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">Transparent Reporting</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
                     Transparency is at the core of our approach. We provide regular performance reports, campaign insights, and actionable recommendations so you always know how your marketing investment is performing.
                 </p>
@@ -592,7 +592,7 @@ require_once 'includes/header.php';
                 <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5">
                     <i class="fas fa-user-tie text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Dedicated Account Management</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">Dedicated Account Management</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
                     Every client receives dedicated support from experienced professionals who monitor campaigns, provide updates, and ensure smooth communication throughout the project.
                 </p>
@@ -603,7 +603,7 @@ require_once 'includes/header.php';
                 <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
                     <i class="fas fa-database text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Data-Driven Campaign Optimization</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">Data-Driven Campaign Optimization</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
                     Our decisions are backed by data. We continuously analyze campaign performance, audience behavior, and conversion metrics to improve results and maximize efficiency.
                 </p>
@@ -614,7 +614,7 @@ require_once 'includes/header.php';
                 <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5">
                     <i class="fas fa-rocket text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Long-Term Growth Focus</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">Long-Term Growth Focus</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
                     We don't believe in short-term wins alone. Our goal is to build sustainable digital growth strategies that help your business succeed over the long term.
                 </p>
@@ -639,7 +639,7 @@ require_once 'includes/header.php';
                     TOOLS & PLATFORMS
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight mb-6 md:mb-8">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight mb-6 md:mb-8">
                     We Use The Best
                     <span class="green-text block sm:inline">Marketing Tools</span>
                 </h2>
@@ -715,7 +715,7 @@ require_once 'includes/header.php';
                     GROW YOUR BUSINESS
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight mb-6 md:mb-8">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight mb-6 md:mb-8">
                     Ready To Grow Your Online Presence?
                 </h2>
 

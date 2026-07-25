@@ -40,12 +40,7 @@ window.showToast = function (message, type = "success") {
   }, 4000);
 };
 
-const mobileMenuBtn = document.getElementById("mobileMenuBtn");
-const mobileMenu = document.getElementById("mobileMenu");
-
-mobileMenuBtn.addEventListener("click", () => {
-  mobileMenu.classList.toggle("hidden");
-});
+// Mobile menu toggle handled in header.php inline script
 
 // ============================================
 // EMAIL VALIDATION
@@ -151,46 +146,6 @@ $(document).ready(function () {
   }
 
   initProjectVisibility();
-
-  // ============================================
-  // COUNTER ANIMATION
-  // ============================================
-  let countersAnimated = false;
-
-  function animateCounter($element) {
-    const target = parseInt($element.data("target"));
-    let current = 0;
-
-    const increment = target / 50;
-
-    const timer = setInterval(function () {
-      current += increment;
-
-      if (current >= target) {
-        $element.find("span").text(target);
-        clearInterval(timer);
-      } else {
-        $element.find("span").text(Math.floor(current));
-      }
-    }, 20);
-  }
-
-  $(window).on("scroll load", function () {
-    $(".counter").each(function () {
-      const $this = $(this);
-
-      // prevent multiple runs per element
-      if ($this.data("animated")) return;
-
-      const elementTop = $this.offset().top;
-      const viewportBottom = $(window).scrollTop() + $(window).height();
-
-      if (elementTop < viewportBottom - 100) {
-        animateCounter($this);
-        $this.data("animated", true);
-      }
-    });
-  });
 
   // ============================================
   // PORTFOLIO HOVER

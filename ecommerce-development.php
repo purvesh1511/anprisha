@@ -1,9 +1,11 @@
 <?php
 require_once 'config/config.php';
-$page_title = "eCommerce Website Development Company in Ahmedabad, India";
-$seo_title = "eCommerce Website Development Company in Ahmedabad | Anprix Solutions";
-$page_description = "Anprix Solutions is a leading eCommerce website development company in Ahmedabad, Gujarat, India. We build powerful online stores on Shopify, WooCommerce, Magento, and custom platforms.";
-$canonical_url = SITE_URL . '/ecommerce-development';
+require_once 'config/seo_keyword.php';
+$page_key = 'ecommerce-development';
+$seo_title = $seo_pages[$page_key]['title'];
+$page_description = $seo_pages[$page_key]['description'];
+$page_keywords = $seo_pages[$page_key]['keywords'];
+$canonical_url = $seo_pages[$page_key]['canonical'];
 require_once 'includes/header.php';
 ?>
 
@@ -26,7 +28,7 @@ require_once 'includes/header.php';
                     eCommerce Development
                 </p>
 
-                <h1 class="text-4xl sm:text-5xl lg:text-7xl font-black leading-tight lg:leading-[1.05] mb-8 md:mb-10">
+                <h1 class="text-xl sm:text-4xl lg:text-5xl font-black leading-tight lg:leading-[1.05] mb-8 md:mb-10">
 
                     eCommerce Website Development
                     <span class="green-text block sm:inline">
@@ -101,7 +103,7 @@ require_once 'includes/header.php';
                 WHY CHOOSE ANPRIX SOLUTIONS
             </p>
 
-            <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-6 md:mb-8 leading-tight">
+            <h2 class="text-xl sm:text-3xl md:text-4xl font-black mb-6 md:mb-8 leading-tight">
                 Your Trusted eCommerce Development Partner
             </h2>
 
@@ -118,7 +120,7 @@ require_once 'includes/header.php';
                 <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
                     <i class="fas fa-users text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Experienced eCommerce Developers</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">Experienced eCommerce Developers</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
                     Our experienced developers understand the complexities of building successful online stores. We use industry-leading technologies and proven development methodologies to create high-performing eCommerce websites that support long-term business growth.
                 </p>
@@ -129,7 +131,7 @@ require_once 'includes/header.php';
                 <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5">
                     <i class="fas fa-code text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Custom eCommerce Solutions</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">Custom eCommerce Solutions</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
                     Every business has unique requirements. We create custom solutions tailored to your products, target audience, and business model. Whether you need a simple online store or a complex multi-vendor marketplace, we deliver a solution that aligns with your goals.
                 </p>
@@ -140,7 +142,7 @@ require_once 'includes/header.php';
                 <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
                     <i class="fas fa-search text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">SEO-Friendly eCommerce Websites</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">SEO-Friendly eCommerce Websites</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
                     Visibility is crucial for online success. Our eCommerce website development services include SEO-friendly architecture, optimized URLs, mobile responsiveness, schema implementation, and fast-loading pages to improve search engine rankings and attract qualified traffic.
                 </p>
@@ -151,7 +153,7 @@ require_once 'includes/header.php';
                 <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5">
                     <i class="fas fa-mobile-alt text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Mobile Responsive Development</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">Mobile Responsive Development</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
                     A majority of online purchases now occur through mobile devices. Our eCommerce web development services ensure your online store provides a seamless shopping experience across smartphones, tablets, and desktops.
                 </p>
@@ -162,7 +164,7 @@ require_once 'includes/header.php';
                 <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
                     <i class="fas fa-shield-alt text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Secure Online Stores</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">Secure Online Stores</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
                     Security is one of the most important aspects of any eCommerce platform. We implement secure payment gateways, SSL certificates, user authentication systems, and advanced security practices to protect customer data and transactions.
                 </p>
@@ -173,7 +175,7 @@ require_once 'includes/header.php';
                 <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5">
                     <i class="fas fa-bolt text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Fast Loading Performance</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">Fast Loading Performance</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
                     Website speed directly impacts conversions and user satisfaction. We optimize every aspect of your online store to ensure faster page loading, reduced bounce rates, and improved shopping experiences.
                 </p>
@@ -184,7 +186,7 @@ require_once 'includes/header.php';
                 <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
                     <i class="fas fa-bullseye text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Conversion-Focused Design</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">Conversion-Focused Design</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
                     We focus on creating intuitive user journeys that encourage visitors to browse products, add items to their cart, and complete purchases with confidence.
                 </p>
@@ -208,7 +210,7 @@ require_once 'includes/header.php';
                     Custom eCommerce Website Development
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
                     Tailored Online <span class="green-text">Stores</span>
                 </h2>
 
@@ -317,7 +319,7 @@ require_once 'includes/header.php';
                     Multi-Vendor Marketplace Development
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
                     Build Your <span class="green-text">Marketplace</span>
                 </h2>
 
@@ -345,7 +347,7 @@ require_once 'includes/header.php';
                     B2B eCommerce Development
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
                     Powerful <span class="green-text">B2B Solutions</span>
                 </h2>
 
@@ -462,7 +464,7 @@ require_once 'includes/header.php';
                     Platform-Specific Development
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
                     Choose Your <span class="green-text">Platform</span>
                 </h2>
 
@@ -504,7 +506,7 @@ require_once 'includes/header.php';
                     START YOUR ECOMMERCE JOURNEY
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight mb-6 md:mb-8">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight mb-6 md:mb-8">
                     Ready To Build Your Online Store?
                 </h2>
 

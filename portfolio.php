@@ -1,8 +1,11 @@
 <?php
 require_once 'config/config.php';
-$page_title = "Portfolio";
-$page_description = "Explore our portfolio of website development, Shopify stores, SEO optimization, branding, and digital marketing projects delivered for modern businesses.";
-$canonical_url = SITE_URL . '/portfolio';
+require_once 'config/seo_keyword.php';
+$page_key = 'portfolio';
+$seo_title = $seo_pages[$page_key]['title'];
+$page_description = $seo_pages[$page_key]['description'];
+$page_keywords = $seo_pages[$page_key]['keywords'];
+$canonical_url = $seo_pages[$page_key]['canonical'];
 require_once 'includes/header.php';
 ?>
 <?php
@@ -150,7 +153,7 @@ $portfolio_items = [
             </p>
 
             <!-- TITLE -->
-            <h1 class="text-4xl sm:text-5xl lg:text-7xl font-black leading-tight lg:leading-[1.1] mb-8 md:mb-10">
+            <h1 class="text-xl sm:text-4xl lg:text-5xl font-black leading-tight lg:leading-[1.1] mb-8 md:mb-10">
 
                 Creative
 
@@ -278,7 +281,7 @@ $portfolio_items = [
                     </p>
 
                     <h3
-                        class="text-xl sm:text-2xl md:text-3xl font-black mb-3 md:mb-4 transition-colors duration-300 group-hover:text-[#00ffb3]">
+                        class="text-xl sm:text-xl md:text-2xl font-black mb-3 md:mb-4 transition-colors duration-300 group-hover:text-[#00ffb3]">
 
                         <?php echo $item['title']; ?>
 
@@ -436,7 +439,7 @@ $portfolio_items = [
                 </p>
 
                 <!-- TITLE -->
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight mb-6 md:mb-8">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight mb-6 md:mb-8">
                     Ready To Build Your Next Digital Project?
                 </h2>
 

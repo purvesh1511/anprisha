@@ -1,9 +1,11 @@
 <?php
 require_once 'config/config.php';
-$page_title = "WordPress Website Development Company in Ahmedabad, India";
-$seo_title = "WordPress Website Development Company in Ahmedabad | Anprix Solutions";
-$page_description = "Anprix Solutions is a leading WordPress website development company in Ahmedabad, Gujarat, India. We deliver innovative, result-driven WordPress websites tailored to your business goals.";
-$canonical_url = SITE_URL . '/wordpress-development';
+require_once 'config/seo_keyword.php';
+$page_key = 'wordpress-development';
+$seo_title = $seo_pages[$page_key]['title'];
+$page_description = $seo_pages[$page_key]['description'];
+$page_keywords = $seo_pages[$page_key]['keywords'];
+$canonical_url = $seo_pages[$page_key]['canonical'];
 require_once 'includes/header.php';
 ?>
 
@@ -26,7 +28,7 @@ require_once 'includes/header.php';
                     WordPress Development
                 </p>
 
-                <h1 class="text-4xl sm:text-5xl lg:text-7xl font-black leading-tight lg:leading-[1.05] mb-8 md:mb-10">
+                <h1 class="text-xl sm:text-4xl lg:text-5xl font-black leading-tight lg:leading-[1.05] mb-8 md:mb-10">
 
                     WordPress Website Development
                     <span class="green-text block sm:inline">
@@ -101,7 +103,7 @@ require_once 'includes/header.php';
                 WHY CHOOSE ANPRIX SOLUTIONS
             </p>
 
-            <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-6 md:mb-8 leading-tight">
+            <h2 class="text-xl sm:text-3xl md:text-4xl font-black mb-6 md:mb-8 leading-tight">
                 WordPress Website Development Company
             </h2>
 
@@ -118,7 +120,7 @@ require_once 'includes/header.php';
                 <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
                     <i class="fas fa-users text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Experienced WordPress Developers</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">Experienced WordPress Developers</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
                     Our team of experienced developers has extensive expertise in WordPress web development and understands the latest technologies, design trends, and industry standards. We create websites that are visually appealing, technically sound, and optimized for business growth.
                 </p>
@@ -129,7 +131,7 @@ require_once 'includes/header.php';
                 <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5">
                     <i class="fas fa-code text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Custom WordPress Solutions</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">Custom WordPress Solutions</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
                     Every business has unique requirements. We offer customized solutions that align with your brand identity and business objectives. Whether you need a corporate website, service-based website, or custom functionality, we deliver a tailored solution.
                 </p>
@@ -140,7 +142,7 @@ require_once 'includes/header.php';
                 <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
                     <i class="fas fa-search text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">SEO-Friendly Development</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">SEO-Friendly Development</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
                     A website should not only look good but also perform well in search engines. Our WordPress development services include SEO-friendly coding, optimized website structure, mobile responsiveness, and fast-loading pages to help improve your visibility on Google.
                 </p>
@@ -151,7 +153,7 @@ require_once 'includes/header.php';
                 <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5">
                     <i class="fas fa-mobile-alt text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Mobile Responsive Websites</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">Mobile Responsive Websites</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
                     Most internet users access websites through mobile devices. We ensure that every website developed by Anprix Solutions provides a seamless user experience across smartphones, tablets, and desktops.
                 </p>
@@ -162,7 +164,7 @@ require_once 'includes/header.php';
                 <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
                     <i class="fas fa-bolt text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Fast Loading Performance</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">Fast Loading Performance</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
                     Website speed directly affects user experience and search engine rankings. Our WordPress web development process focuses on performance optimization, ensuring faster loading times and improved visitor engagement.
                 </p>
@@ -173,7 +175,7 @@ require_once 'includes/header.php';
                 <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5">
                     <i class="fas fa-shield-alt text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Secure WordPress Websites</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">Secure WordPress Websites</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
                     Security is a critical aspect of developing a WordPress site. We implement industry-standard security measures, secure coding practices, regular updates, and advanced protection features to safeguard your website.
                 </p>
@@ -197,7 +199,7 @@ require_once 'includes/header.php';
                     Custom WordPress Website Development
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
                     Tailored WordPress <span class="green-text">Websites</span>
                 </h2>
 
@@ -306,7 +308,7 @@ require_once 'includes/header.php';
                     Business & Corporate Website Development
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
                     Professional <span class="green-text">Business Websites</span>
                 </h2>
 
@@ -334,7 +336,7 @@ require_once 'includes/header.php';
                     WordPress CMS Development
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
                     Easy <span class="green-text">Content Management</span>
                 </h2>
 
@@ -443,7 +445,7 @@ require_once 'includes/header.php';
                     WordPress Website Redesign Services
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
                     Modernize Your <span class="green-text">WordPress Site</span>
                 </h2>
 
@@ -471,7 +473,7 @@ require_once 'includes/header.php';
                     Landing Page Development
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
                     High-Converting <span class="green-text">Landing Pages</span>
                 </h2>
 
@@ -557,7 +559,7 @@ require_once 'includes/header.php';
                 BENEFITS OF WORDPRESS
             </p>
 
-            <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-6 md:mb-8 leading-tight">
+            <h2 class="text-xl sm:text-3xl md:text-4xl font-black mb-6 md:mb-8 leading-tight">
                 Why Choose WordPress
             </h2>
 
@@ -648,7 +650,7 @@ require_once 'includes/header.php';
             WHY BUSINESSES TRUST ANPRIX
         </p>
 
-        <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-6 md:mb-8 leading-tight">
+        <h2 class="text-xl sm:text-3xl md:text-4xl font-black mb-6 md:mb-8 leading-tight">
             Your Trusted WordPress Partner
         </h2>
 
@@ -683,7 +685,7 @@ require_once 'includes/header.php';
                     GET STARTED WITH ANPRIX
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight mb-6 md:mb-8">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight mb-6 md:mb-8">
                     Ready To Build Your WordPress Website?
                 </h2>
 

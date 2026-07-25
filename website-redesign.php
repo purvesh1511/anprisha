@@ -1,9 +1,11 @@
 <?php
 require_once 'config/config.php';
-$page_title = "Website Redesign Services Company in Ahmedabad, India";
-$seo_title = "Website Redesign Services Company in Ahmedabad | Anprix Solutions";
-$page_description = "Anprix Solutions is a leading website redesign agency in Ahmedabad, Gujarat, India. We transform outdated websites into modern, high-performing digital assets with improved UX, speed, and SEO.";
-$canonical_url = SITE_URL . '/website-redesign';
+require_once 'config/seo_keyword.php';
+$page_key = 'website-redesign';
+$seo_title = $seo_pages[$page_key]['title'];
+$page_description = $seo_pages[$page_key]['description'];
+$page_keywords = $seo_pages[$page_key]['keywords'];
+$canonical_url = $seo_pages[$page_key]['canonical'];
 require_once 'includes/header.php';
 ?>
 
@@ -26,7 +28,7 @@ require_once 'includes/header.php';
                     Website Redesign Services
                 </p>
 
-                <h1 class="text-4xl sm:text-5xl lg:text-7xl font-black leading-tight lg:leading-[1.05] mb-8 md:mb-10">
+                <h1 class="text-xl sm:text-4xl lg:text-5xl font-black leading-tight lg:leading-[1.05] mb-8 md:mb-10">
 
                     Website Redesign Services
                     <span class="green-text block sm:inline">
@@ -101,7 +103,7 @@ require_once 'includes/header.php';
                 WHY YOUR BUSINESS NEEDS REDESIGN
             </p>
 
-            <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-6 md:mb-8 leading-tight">
+            <h2 class="text-xl sm:text-3xl md:text-4xl font-black mb-6 md:mb-8 leading-tight">
                 Signs You Need a Website Redesign
             </h2>
 
@@ -118,7 +120,7 @@ require_once 'includes/header.php';
                 <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
                     <i class="fas fa-paint-brush text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Outdated Website Design</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">Outdated Website Design</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
                     A website designed several years ago may no longer reflect modern design standards or customer expectations. A refreshed design can improve credibility and create a stronger first impression.
                 </p>
@@ -129,7 +131,7 @@ require_once 'includes/header.php';
                 <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5">
                     <i class="fas fa-mouse-pointer text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Poor User Experience</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">Poor User Experience</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
                     Complicated navigation, cluttered layouts, and confusing user journeys often result in high bounce rates. Professional website redesign services improve usability and help visitors find information quickly.
                 </p>
@@ -140,7 +142,7 @@ require_once 'includes/header.php';
                 <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
                     <i class="fas fa-chart-line text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Low Conversion Rates</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">Low Conversion Rates</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
                     If your website receives traffic but fails to generate inquiries or sales, it may require a redesign focused on user engagement and conversion optimization.
                 </p>
@@ -151,7 +153,7 @@ require_once 'includes/header.php';
                 <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5">
                     <i class="fas fa-bolt text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Slow Website Speed</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">Slow Website Speed</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
                     Slow-loading websites negatively impact both user experience and search engine rankings. Our redesign process includes performance optimization to ensure faster loading times.
                 </p>
@@ -162,7 +164,7 @@ require_once 'includes/header.php';
                 <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
                     <i class="fas fa-mobile-alt text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Mobile Responsiveness Issues</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">Mobile Responsiveness Issues</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
                     With most users browsing on smartphones, mobile responsiveness is essential. Our website redesign experts create responsive websites that perform seamlessly across all devices.
                 </p>
@@ -173,7 +175,7 @@ require_once 'includes/header.php';
                 <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5">
                     <i class="fas fa-search text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">SEO Performance Problems</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">SEO Performance Problems</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
                     A poorly structured website can limit search engine visibility. We implement SEO-friendly redesign strategies that improve crawlability, page structure, content organization, and user engagement.
                 </p>
@@ -196,7 +198,7 @@ require_once 'includes/header.php';
                 WHY CHOOSE ANPRIX SOLUTIONS
             </p>
 
-            <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-6 md:mb-8 leading-tight">
+            <h2 class="text-xl sm:text-3xl md:text-4xl font-black mb-6 md:mb-8 leading-tight">
                 Your Trusted Website Redesign Agency
             </h2>
 
@@ -213,7 +215,7 @@ require_once 'includes/header.php';
                 <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
                     <i class="fas fa-users text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Experienced Redesign Experts</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">Experienced Redesign Experts</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
                     Our team has extensive experience redesigning websites across multiple industries. We combine creativity, strategy, and technology to deliver measurable business results.
                 </p>
@@ -224,7 +226,7 @@ require_once 'includes/header.php';
                 <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5">
                     <i class="fas fa-code text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Custom Redesign Solutions</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">Custom Redesign Solutions</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
                     Every business has different goals. We create customized redesign strategies based on your industry, audience, and business objectives.
                 </p>
@@ -235,7 +237,7 @@ require_once 'includes/header.php';
                 <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
                     <i class="fas fa-dollar-sign text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Affordable Pricing</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">Affordable Pricing</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
                     We offer flexible pricing packages suitable for startups, SMEs, and enterprise organizations seeking professional website redesign services.
                 </p>
@@ -246,7 +248,7 @@ require_once 'includes/header.php';
                 <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5">
                     <i class="fas fa-search text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">SEO-Friendly Redesign</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">SEO-Friendly Redesign</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
                     Every redesign project includes SEO best practices to help improve rankings, organic visibility, and online discoverability.
                 </p>
@@ -257,7 +259,7 @@ require_once 'includes/header.php';
                 <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
                     <i class="fas fa-mobile-alt text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Mobile-First Approach</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">Mobile-First Approach</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
                     Our mobile-first design strategy ensures an exceptional user experience across smartphones, tablets, and desktops.
                 </p>
@@ -268,7 +270,7 @@ require_once 'includes/header.php';
                 <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5">
                     <i class="fas fa-bolt text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Fast Loading Websites</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">Fast Loading Websites</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
                     Performance optimization is integrated into every project, helping improve page speed, user satisfaction, and search rankings.
                 </p>
@@ -279,7 +281,7 @@ require_once 'includes/header.php';
                 <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
                     <i class="fas fa-palette text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Modern UI/UX Design</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">Modern UI/UX Design</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
                     We create visually appealing interfaces with intuitive navigation and user-focused experiences that encourage engagement and conversions.
                 </p>
@@ -290,7 +292,7 @@ require_once 'includes/header.php';
                 <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5">
                     <i class="fas fa-headset text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Dedicated Support & Consultation</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">Dedicated Support & Consultation</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
                     From planning to launch and beyond, our team provides ongoing support and expert guidance throughout the redesign process.
                 </p>
@@ -321,7 +323,7 @@ require_once 'includes/header.php';
                     TRANSFORM YOUR WEBSITE
                 </p>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight mb-6 md:mb-8">
+                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight mb-6 md:mb-8">
                     Ready To Redesign Your Website?
                 </h2>
 

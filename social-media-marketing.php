@@ -1,7 +1,7 @@
 <?php
 require_once 'config/config.php';
 require_once 'config/seo_keyword.php';
-$page_key = 'seo';
+$page_key = 'social-media-marketing';
 $seo_title = $seo_pages[$page_key]['title'];
 $page_description = $seo_pages[$page_key]['description'];
 $page_keywords = $seo_pages[$page_key]['keywords'];
@@ -25,21 +25,23 @@ require_once 'includes/header.php';
             <div>
 
                 <p class="uppercase tracking-[4px] md:tracking-[5px] text-[#00ffb3] font-semibold mb-5 md:mb-6 text-xs sm:text-sm">
-                    SEO Services in Ahmedabad
+                    Social Media Marketing Agency
                 </p>
 
                 <h1 class="text-xl sm:text-4xl lg:text-5xl font-black leading-tight lg:leading-[1.05] mb-8 md:mb-10">
 
-                    Best SEO Company in
+                    Best Social Media Marketing Agency in
                     <span class="green-text block sm:inline">
                         Ahmedabad
                     </span>
+
+                    Grow Your Brand
 
                 </h1>
 
                 <p class="text-base sm:text-lg md:text-xl text-gray-400 leading-8 md:leading-10">
 
-                    Welcome to the leading SEO company in Ahmedabad, dedicated to turning organic search traffic into sustained business growth. Whether you are a local startup or an expanding enterprise, standing out online requires more than standard digital marketing—it takes a specialized SEO agency in Ahmedabad that understands market intent, search algorithms, and customer behavior.
+                    In today's hyper-connected digital landscape, having a strong online presence is essential for sustainable business growth. As a premier social media marketing agency in Ahmedabad, we help local businesses, ambitious startups, and established enterprises build influence, engage high-intent audiences, and convert followers into loyal customers.
 
                 </p>
 
@@ -53,8 +55,8 @@ require_once 'includes/header.php';
 
                 <div class="relative w-full max-w-full lg:max-w-2xl mx-auto">
                     <div class="glass-card rounded-[22px] sm:rounded-[30px] p-1 sm:p-2 hero-image-glow pulse-ring text-center">
-                        <img src="assets/images/seo.webp"
-                             alt="Best SEO Company in Ahmedabad - Anprix Solutions"
+                        <img src="assets/images/social.png"
+                             alt="Best Social Media Marketing Agency in Ahmedabad - Anprix Solutions"
                              width="680" height="500" fetchpriority="high"
                              class="w-full max-w-[85%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-[85%] xl:max-w-[680px] mx-auto animate-float">
                     </div>
@@ -62,11 +64,11 @@ require_once 'includes/header.php';
                     <div class="floating-badge absolute -top-3 right-1 sm:-top-6 sm:-right-4 rounded-2xl px-3 py-2 sm:px-4 sm:py-3 animate-float">
                         <div class="flex items-center gap-2.5">
                             <div class="w-9 h-9 rounded-xl bg-[#00ffb3]/20 flex items-center justify-center text-[#00ffb3]">
-                                <i class="fas fa-search text-sm icon-float"></i>
+                                <i class="fas fa-share-alt text-sm icon-float"></i>
                             </div>
                             <div class="text-left">
                                 <p class="text-[10px] text-gray-500 uppercase tracking-wide">Expert In</p>
-                                <p class="text-sm font-semibold">SEO Services</p>
+                                <p class="text-sm font-semibold">Social Media</p>
                             </div>
                         </div>
                     </div>
@@ -78,7 +80,7 @@ require_once 'includes/header.php';
                             </div>
                             <div class="text-left">
                                 <p class="text-[10px] text-gray-500 uppercase tracking-wide">Results</p>
-                                <p class="text-sm font-semibold">Higher Rankings</p>
+                                <p class="text-sm font-semibold">Brand Growth</p>
                             </div>
                         </div>
                     </div>
@@ -97,86 +99,86 @@ require_once 'includes/header.php';
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
             <div class="text-center fade-in-up delay-100">
-                <div class="text-2xl sm:text-3xl font-black green-text counter" data-target="10">
-                    <span>10</span>+
-                </div>
-                <p class="text-gray-500 text-xs sm:text-sm mt-1">Years of SEO Experience</p>
-            </div>
-            <div class="text-center fade-in-up delay-200">
-                <div class="text-2xl sm:text-3xl font-black blue-text counter" data-target="200">
+                <div class="text-2xl sm:text-3xl font-black green-text counter" data-target="200">
                     <span>200</span>+
                 </div>
-                <p class="text-gray-500 text-xs sm:text-sm mt-1">Clients Ranked on Google</p>
+                <p class="text-gray-500 text-xs sm:text-sm mt-1">Brands Served</p>
+            </div>
+            <div class="text-center fade-in-up delay-200">
+                <div class="text-2xl sm:text-3xl font-black blue-text counter" data-target="500">
+                    <span>500</span>+
+                </div>
+                <p class="text-gray-500 text-xs sm:text-sm mt-1">Campaigns Delivered</p>
             </div>
             <div class="text-center fade-in-up delay-300">
-                <div class="text-2xl sm:text-3xl font-black green-text counter" data-target="300">
-                    <span>300</span>%
+                <div class="text-2xl sm:text-3xl font-black green-text counter" data-target="10">
+                    <span>10</span>M+
                 </div>
-                <p class="text-gray-500 text-xs sm:text-sm mt-1">Average Traffic Increase</p>
+                <p class="text-gray-500 text-xs sm:text-sm mt-1">Audience Reached</p>
             </div>
             <div class="text-center fade-in-up delay-400">
-                <div class="text-2xl sm:text-3xl font-black blue-text">
-                    Top 10
+                <div class="text-2xl sm:text-3xl font-black blue-text counter" data-target="5">
+                    <span>5</span>x
                 </div>
-                <p class="text-gray-500 text-xs sm:text-sm mt-1">Google Rankings Achieved</p>
+                <p class="text-gray-500 text-xs sm:text-sm mt-1">Average Engagement Growth</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- RESULTS-DRIVEN SEO SERVICES -->
+<!-- DATA-DRIVEN SOCIAL MEDIA SERVICES -->
 <section class="py-16 md:py-24 section-border overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 space-y-20 md:space-y-32">
 
         <!-- INTRO HEADING -->
         <div class="text-center fade-in-up">
             <p class="green-text font-semibold tracking-[0.25em] uppercase mb-4 text-sm">
-                OUR SEO SERVICES
+                OUR SOCIAL MEDIA SERVICES
             </p>
             <h2 class="text-xl sm:text-3xl md:text-4xl font-black mb-6 leading-tight">
-                Results-Driven <span class="green-text">SEO Services</span><br class="hidden sm:block"> in Ahmedabad
+                Data-Driven Social Media Marketing<br class="hidden sm:block"> Services in Ahmedabad
             </h2>
             <p class="max-w-3xl mx-auto text-gray-400 text-base md:text-lg leading-8">
-                At our top SEO company in Ahmedabad, we deliver tailor-made growth strategies designed for your specific industry. As a full-service search engine optimization company in Ahmedabad, our solutions focus on long-term SERP visibility and measurable ROI.
+                Navigating the changing algorithms across Instagram, Meta, LinkedIn, and YouTube requires expertise and real-time strategy. As a full-service social media company in Ahmedabad, our focus goes beyond likes and vanity metrics to deliver real business impact and measurable ROI.
             </p>
         </div>
 
         <!-- ========================= -->
-        <!-- SEO SERVICE 1: Local SEO -->
+        <!-- SERVICE 1: Strategy & Planning -->
         <!-- ========================= -->
-        <div id="local" class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
 
             <div class="glass-card rounded-3xl p-6 md:p-10 space-y-5 order-2 lg:order-1">
 
                 <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fas fa-map-marker-alt text-[#00ffb3] text-2xl"></i>
+                    <i class="fas fa-chess text-[#00ffb3] text-2xl"></i>
                     <div>
-                        <h3 class="font-bold text-lg">Google Business Profile</h3>
-                        <p class="text-gray-500 text-sm">Optimization & verification</p>
+                        <h3 class="font-bold text-lg">Audience Persona Research</h3>
+                        <p class="text-gray-500 text-sm">Deep-dive into your ideal customer profiles</p>
                     </div>
                 </div>
 
                 <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fas fa-map-pin text-[#00b7ff] text-2xl"></i>
+                    <i class="fas fa-map text-[#00b7ff] text-2xl"></i>
                     <div>
-                        <h3 class="font-bold text-lg">Local Map Pack Domination</h3>
-                        <p class="text-gray-500 text-sm">Regional search visibility</p>
+                        <h3 class="font-bold text-lg">Local Market Dynamics</h3>
+                        <p class="text-gray-500 text-sm">Ahmedabad & Gujarat market insights</p>
                     </div>
                 </div>
 
                 <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fas fa-list text-[#00ffb3] text-2xl"></i>
+                    <i class="fas fa-bullseye text-[#00ffb3] text-2xl"></i>
                     <div>
-                        <h3 class="font-bold text-lg">Citation Building</h3>
-                        <p class="text-gray-500 text-sm">NAP consistency across directories</p>
+                        <h3 class="font-bold text-lg">Revenue-Focused Roadmaps</h3>
+                        <p class="text-gray-500 text-sm">Custom strategies tied to business goals</p>
                     </div>
                 </div>
 
                 <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fas fa-location-arrow text-[#00b7ff] text-2xl"></i>
+                    <i class="fas fa-calendar-check text-[#00b7ff] text-2xl"></i>
                     <div>
-                        <h3 class="font-bold text-lg">Geotagged Content</h3>
-                        <p class="text-gray-500 text-sm">Targeted local content strategy</p>
+                        <h3 class="font-bold text-lg">Content Calendar</h3>
+                        <p class="text-gray-500 text-sm">Planned posting schedules & campaign timelines</p>
                     </div>
                 </div>
 
@@ -185,21 +187,21 @@ require_once 'includes/header.php';
             <div class="space-y-6 order-1 lg:order-2">
 
                 <p class="green-text uppercase tracking-[4px] font-semibold text-sm">
-                    Local SEO Services
+                    Strategy & Planning
                 </p>
 
                 <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
-                    Dominate Local <span class="green-text">Search Results</span>
+                    Custom <span class="green-text">Social Media Strategy</span><br> & Planning
                 </h2>
 
                 <p class="text-gray-400 text-base md:text-lg leading-8 md:leading-9">
-                    Dominating local map packs and regional searches with optimized Google Business Profiles, local citation building, and targeted geotagged content. Help local customers find your business when it matters most.
+                    Social Media Strategy & Planning: Custom roadmaps tailored to your target audience persona, local market dynamics, and revenue objectives. We create data-backed strategies that align your social presence with real business outcomes.
                 </p>
 
                 <div class="flex flex-wrap gap-4">
 
                     <a href="hire.php" class="btn-primary px-6 py-4 rounded-2xl text-center">
-                        Boost Local SEO
+                        Build Your Strategy
                     </a>
 
                 </div>
@@ -209,53 +211,63 @@ require_once 'includes/header.php';
         </div>
 
         <!-- ========================= -->
-        <!-- SEO SERVICE 2: On-Page & Technical -->
+        <!-- SERVICE 2: Content Creation -->
         <!-- ========================= -->
-        <div id="onpage" class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
 
             <div class="space-y-6">
 
                 <p class="green-text uppercase tracking-[4px] font-semibold text-sm">
-                    On-Page & Technical SEO
+                    Content Creation
                 </p>
 
                 <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
-                    Optimize Every <span class="green-text">Page & Element</span>
+                    Content Creation & <span class="green-text">Video Production</span>
                 </h2>
 
                 <p class="text-gray-400 text-base md:text-lg leading-8 md:leading-9">
-                    Fine-tuning page speed, Core Web Vitals, site architecture, and meta elements so search engines crawl and rank your pages effortlessly. We ensure your website meets every technical standard Google demands.
+                    High-converting Reels, carousel posts, brand storytelling, and engaging visual graphics produced in-house. Our creative team crafts scroll-stopping content that resonates with your audience and drives engagement.
                 </p>
 
                 <div class="space-y-5">
 
                     <div class="flex gap-4">
                         <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3]">
-                            <i class="fas fa-tachometer-alt"></i>
+                            <i class="fas fa-film"></i>
                         </div>
                         <div>
-                            <h3 class="font-bold text-lg">Core Web Vitals</h3>
-                            <p class="text-gray-500 text-sm">Page speed & performance optimization</p>
+                            <h3 class="font-bold text-lg">Reels & Short-Form Video</h3>
+                            <p class="text-gray-500 text-sm">Trending, high-engagement video content</p>
                         </div>
                     </div>
 
                     <div class="flex gap-4">
                         <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff]">
-                            <i class="fas fa-sitemap"></i>
+                            <i class="fas fa-images"></i>
                         </div>
                         <div>
-                            <h3 class="font-bold text-lg">Site Architecture</h3>
-                            <p class="text-gray-500 text-sm">Crawl optimization & internal linking</p>
+                            <h3 class="font-bold text-lg">Carousel Posts & Infographics</h3>
+                            <p class="text-gray-500 text-sm">Educational & visually compelling designs</p>
                         </div>
                     </div>
 
                     <div class="flex gap-4">
                         <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3]">
-                            <i class="fas fa-tags"></i>
+                            <i class="fas fa-palette"></i>
                         </div>
                         <div>
-                            <h3 class="font-bold text-lg">Meta Elements</h3>
-                            <p class="text-gray-500 text-sm">Title tags, descriptions & header optimization</p>
+                            <h3 class="font-bold text-lg">Brand Storytelling</h3>
+                            <p class="text-gray-500 text-sm">Authentic narratives that build connection</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff]">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">Visual Graphics</h3>
+                            <p class="text-gray-500 text-sm">Professional designs aligned with brand identity</p>
                         </div>
                     </div>
 
@@ -266,27 +278,27 @@ require_once 'includes/header.php';
             <div class="glass-card rounded-3xl p-6 md:p-10 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
 
                 <div class="bg-black/40 rounded-2xl p-6 md:p-8">
-                    <i class="fas fa-tachometer-alt text-3xl mb-4 text-[#00ffb3]"></i>
-                    <h3 class="font-bold text-lg">Speed</h3>
-                    <p class="text-gray-500 text-sm">Lightning fast load times</p>
+                    <i class="fas fa-film text-3xl mb-4 text-[#00ffb3]"></i>
+                    <h3 class="font-bold text-lg">Reels</h3>
+                    <p class="text-gray-500 text-sm">Short-form viral videos</p>
+                </div>
+
+                <div class="bg-black/4xl rounded-2xl p-6 md:p-8">
+                    <i class="fas fa-images text-3xl mb-4 text-[#00b7ff]"></i>
+                    <h3 class="font-bold text-lg">Carousels</h3>
+                    <p class="text-gray-500 text-sm">Swipe-worthy content</p>
                 </div>
 
                 <div class="bg-black/40 rounded-2xl p-6 md:p-8">
-                    <i class="fas fa-mobile-alt text-3xl mb-4 text-[#00b7ff]"></i>
-                    <h3 class="font-bold text-lg">Mobile-First</h3>
-                    <p class="text-gray-500 text-sm">Mobile indexing ready</p>
+                    <i class="fas fa-video text-3xl mb-4 text-[#00ffb3]"></i>
+                    <h3 class="font-bold text-lg">Video Production</h3>
+                    <p class="text-gray-500 text-sm">Professional brand videos</p>
                 </div>
 
                 <div class="bg-black/40 rounded-2xl p-6 md:p-8">
-                    <i class="fas fa-code text-3xl mb-4 text-[#00ffb3]"></i>
-                    <h3 class="font-bold text-lg">Schema Markup</h3>
-                    <p class="text-gray-500 text-sm">Structured data for rich snippets</p>
-                </div>
-
-                <div class="bg-black/40 rounded-2xl p-6 md:p-8">
-                    <i class="fas fa-shield-alt text-3xl mb-4 text-[#00b7ff]"></i>
-                    <h3 class="font-bold text-lg">SSL Security</h3>
-                    <p class="text-gray-500 text-sm">HTTPS enforced</p>
+                    <i class="fas fa-paint-brush text-3xl mb-4 text-[#00b7ff]"></i>
+                    <h3 class="font-bold text-lg">Graphics</h3>
+                    <p class="text-gray-500 text-sm">Scroll-stopping visuals</p>
                 </div>
 
             </div>
@@ -294,41 +306,41 @@ require_once 'includes/header.php';
         </div>
 
         <!-- ========================= -->
-        <!-- SEO SERVICE 3: Link Building -->
+        <!-- SERVICE 3: Paid Social Advertising -->
         <!-- ========================= -->
-        <div id="linkbuilding" class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+        <div id="paid" class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
 
             <div class="glass-card rounded-3xl p-6 md:p-10 space-y-5 order-2 lg:order-1">
 
                 <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fas fa-pen-fancy text-[#00ffb3] text-2xl"></i>
+                    <i class="fab fa-facebook text-[#00ffb3] text-2xl"></i>
                     <div>
-                        <h3 class="font-bold text-lg">Guest Blogging</h3>
-                        <p class="text-gray-500 text-sm">High-quality content on relevant sites</p>
+                        <h3 class="font-bold text-lg">Meta Ads (Facebook & Instagram)</h3>
+                        <p class="text-gray-500 text-sm">Precision-targeted social ad campaigns</p>
                     </div>
                 </div>
 
                 <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fas fa-handshake text-[#00b7ff] text-2xl"></i>
+                    <i class="fab fa-linkedin text-[#00b7ff] text-2xl"></i>
                     <div>
-                        <h3 class="font-bold text-lg">Outreach Campaigns</h3>
-                        <p class="text-gray-500 text-sm">Strategic partnership building</p>
+                        <h3 class="font-bold text-lg">LinkedIn Advertising</h3>
+                        <p class="text-gray-500 text-sm">B2B lead generation & thought leadership</p>
                     </div>
                 </div>
 
                 <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fas fa-external-link-alt text-[#00ffb3] text-2xl"></i>
+                    <i class="fab fa-youtube text-[#00ffb3] text-2xl"></i>
                     <div>
-                        <h3 class="font-bold text-lg">High DA Backlinks</h3>
-                        <p class="text-gray-500 text-sm">Authority from reputable domains</p>
+                        <h3 class="font-bold text-lg">YouTube Ads</h3>
+                        <p class="text-gray-500 text-sm">Video-first campaigns for maximum reach</p>
                     </div>
                 </div>
 
                 <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fas fa-shield-alt text-[#00b7ff] text-2xl"></i>
+                    <i class="fas fa-redo text-[#00b7ff] text-2xl"></i>
                     <div>
-                        <h3 class="font-bold text-lg">White-Hat Only</h3>
-                        <p class="text-gray-500 text-sm">100% safe & Google-compliant</p>
+                        <h3 class="font-bold text-lg">Retargeting Campaigns</h3>
+                        <p class="text-gray-500 text-sm">Re-engage warm audiences for conversions</p>
                     </div>
                 </div>
 
@@ -337,21 +349,21 @@ require_once 'includes/header.php';
             <div class="space-y-6 order-1 lg:order-2">
 
                 <p class="green-text uppercase tracking-[4px] font-semibold text-sm">
-                    Authority Link Building
+                    Paid Social Advertising
                 </p>
 
                 <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
-                    Strengthen Your <span class="green-text">Online Authority</span>
+                    Targeted Paid <span class="green-text">Social Advertising</span>
                 </h2>
 
                 <p class="text-gray-400 text-base md:text-lg leading-8 md:leading-9">
-                    Strengthening your online authority through high-quality, white-hat backlink acquisition strategies. Earn links from reputable websites in your industry to boost domain authority, referral traffic, and search engine rankings.
+                    Laser-focused ad campaigns on Meta, LinkedIn, and YouTube engineered to capture leads and drive online sales. We optimize every rupee of your ad spend to deliver maximum conversions and measurable ROI.
                 </p>
 
                 <div class="flex flex-wrap gap-4">
 
                     <a href="hire.php" class="btn-primary px-6 py-4 rounded-2xl text-center">
-                        Start Link Building
+                        Launch Ad Campaigns
                     </a>
 
                 </div>
@@ -361,53 +373,63 @@ require_once 'includes/header.php';
         </div>
 
         <!-- ========================= -->
-        <!-- SEO SERVICE 4: Content & Marketing -->
+        <!-- SERVICE 4: Community Management -->
         <!-- ========================= -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
 
             <div class="space-y-6">
 
                 <p class="green-text uppercase tracking-[4px] font-semibold text-sm">
-                    Strategic SEO Marketing
+                    Community Management
                 </p>
 
                 <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
-                    Capture Buyer <span class="green-text">Intent With Content</span>
+                    Build Authentic <span class="green-text">Community Trust</span>
                 </h2>
 
                 <p class="text-gray-400 text-base md:text-lg leading-8 md:leading-9">
-                    Capturing buyer intent with engaging content marketing, keyword mapping, and conversion-optimized landing pages. We create content that ranks, engages, and converts visitors into paying clients.
+                    Proactive engagement, DM responses, and comment management to foster authentic trust with your audience. We turn followers into brand advocates through genuine, timely interactions.
                 </p>
 
                 <div class="space-y-5">
 
                     <div class="flex gap-4">
                         <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3]">
-                            <i class="fas fa-key"></i>
+                            <i class="fas fa-comments"></i>
                         </div>
                         <div>
-                            <h3 class="font-bold text-lg">Keyword Mapping</h3>
-                            <p class="text-gray-500 text-sm">Strategic keyword targeting & clustering</p>
+                            <h3 class="font-bold text-lg">Comment Management</h3>
+                            <p class="text-gray-500 text-sm">Timely, brand-aligned responses</p>
                         </div>
                     </div>
 
                     <div class="flex gap-4">
                         <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff]">
-                            <i class="fas fa-file-alt"></i>
+                            <i class="fas fa-envelope-open-text"></i>
                         </div>
                         <div>
-                            <h3 class="font-bold text-lg">Content Marketing</h3>
-                            <p class="text-gray-500 text-sm">Blogs, guides & landing pages</p>
+                            <h3 class="font-bold text-lg">DM Responses</h3>
+                            <p class="text-gray-500 text-sm">Direct message engagement & support</p>
                         </div>
                     </div>
 
                     <div class="flex gap-4">
                         <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3]">
-                            <i class="fas fa-bullseye"></i>
+                            <i class="fas fa-users"></i>
                         </div>
                         <div>
-                            <h3 class="font-bold text-lg">Conversion Optimization</h3>
-                            <p class="text-gray-500 text-sm">Turn visitors into leads & sales</p>
+                            <h3 class="font-bold text-lg">Audience Engagement</h3>
+                            <p class="text-gray-500 text-sm">Active participation in conversations</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff]">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">Brand Advocacy</h3>
+                            <p class="text-gray-500 text-sm">Turning followers into loyal advocates</p>
                         </div>
                     </div>
 
@@ -418,23 +440,23 @@ require_once 'includes/header.php';
             <div class="glass-card rounded-3xl p-6 md:p-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
 
                 <div class="bg-black/40 p-6 rounded-2xl text-center">
-                    <i class="fas fa-key text-3xl mb-3 text-[#00ffb3]"></i>
-                    <p>Keyword Research</p>
+                    <i class="fas fa-comments text-3xl mb-3 text-[#00ffb3]"></i>
+                    <p>Comment Management</p>
                 </div>
 
                 <div class="bg-black/40 p-6 rounded-2xl text-center">
-                    <i class="fas fa-pen-fancy text-3xl mb-3 text-[#00b7ff]"></i>
-                    <p>Blog Writing</p>
+                    <i class="fas fa-envelope-open-text text-3xl mb-3 text-[#00b7ff]"></i>
+                    <p>DM Engagement</p>
                 </div>
 
                 <div class="bg-black/40 p-6 rounded-2xl text-center">
-                    <i class="fas fa-robot text-3xl mb-3 text-[#00ffb3]"></i>
-                    <p>Topic Clusters</p>
+                    <i class="fas fa-users text-3xl mb-3 text-[#00ffb3]"></i>
+                    <p>Audience Growth</p>
                 </div>
 
                 <div class="bg-black/40 p-6 rounded-2xl text-center">
-                    <i class="fas fa-bullseye text-3xl mb-3 text-[#00b7ff]"></i>
-                    <p>Landing Pages</p>
+                    <i class="fas fa-heart text-3xl mb-3 text-[#00b7ff]"></i>
+                    <p>Brand Loyalty</p>
                 </div>
 
             </div>
@@ -456,80 +478,80 @@ require_once 'includes/header.php';
             </p>
 
             <h2 class="text-xl sm:text-3xl md:text-4xl font-black mb-6 md:mb-8 leading-tight">
-                Why Partner with the Best<br class="hidden sm:block"> SEO Agency in Ahmedabad?
+                Why Partner with a Leading<br class="hidden sm:block"> Social Media Agency in Ahmedabad?
             </h2>
 
             <p class="text-gray-400 text-base md:text-lg max-w-3xl mx-auto leading-8 md:leading-9">
-                Choosing the best SEO agency in Ahmedabad means partnering with dedicated specialists who prioritize revenue and lead quality over vanity metrics. Digital search is changing rapidly—with AI search overviews and mobile-first indexing redefining how customers find local solutions.
+                Choosing the best social media marketing agency in Ahmedabad means working with creative specialists who understand Gujarat's fast-moving business ecosystem. Among the top-rated social media marketing companies in Ahmedabad, our team blends data-led performance marketing with viral, trend-driven creative concepts.
             </p>
 
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
 
-            <!-- 10+ Years Experience -->
+            <!-- Data-Led Performance -->
             <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1 fade-in-up delay-100">
                 <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
-                    <i class="fas fa-award text-2xl"></i>
+                    <i class="fas fa-chart-line text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-xl font-bold mb-3">10+ Years of SEO Expertise</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">Data-Led Performance Marketing</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
-                    With over a decade of hands-on experience in search engine optimization, our team has navigated every Google algorithm update and mastered the art of sustainable ranking strategies for businesses across Ahmedabad and India.
+                    Every campaign is backed by analytics. We track engagement, reach, conversions, and ROI to ensure your social media investment delivers measurable business results.
                 </p>
             </div>
 
-            <!-- Deep Market Analysis -->
+            <!-- Trend-Driven Creative -->
             <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 hover:-translate-y-1 fade-in-up delay-200">
                 <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5">
-                    <i class="fas fa-brain text-2xl"></i>
+                    <i class="fas fa-fire text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-xl font-bold mb-3">Deep Market Analysis</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">Trend-Driven Creative Concepts</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
-                    As a trusted SEO agency Ahmedabad businesses count on, we merge deep market analysis with continuous technical refinement. We ensure your business ranks high for competitive keywords while turning site visitors into loyal, paying clients.
+                    Our creative team stays ahead of viral trends, platform updates, and content formats to keep your brand relevant, engaging, and always in the conversation.
                 </p>
             </div>
 
-            <!-- AI-Ready SEO -->
+            <!-- Gujarat Market Expertise -->
             <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1 fade-in-up delay-300">
                 <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
-                    <i class="fas fa-robot text-2xl"></i>
+                    <i class="fas fa-map-marked-alt text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-xl font-bold mb-3">AI-Ready SEO Strategies</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">Gujarat Market Expertise</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
-                    Digital search is changing rapidly with AI search overviews redefining how customers find solutions. We stay ahead of the curve with forward-thinking SEO strategies optimized for both traditional search and AI-powered search experiences.
+                    Deep understanding of Gujarat's fast-moving business ecosystem. We craft campaigns that resonate with local audiences while maintaining global standards of quality.
                 </p>
             </div>
 
-            <!-- Revenue-Focused -->
+            <!-- Multi-Platform Mastery -->
             <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 hover:-translate-y-1 fade-in-up delay-100">
                 <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5">
-                    <i class="fas fa-dollar-sign text-2xl"></i>
+                    <i class="fas fa-layer-group text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-xl font-bold mb-3">Revenue Over Vanity Metrics</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">Multi-Platform Mastery</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
-                    We don't just chase traffic numbers. Our SEO strategies are designed to deliver measurable ROI—more qualified leads, higher conversion rates, and sustainable revenue growth for your business.
+                    From Instagram and Facebook to LinkedIn and YouTube, we manage and optimize your presence across all major platforms for maximum impact and reach.
                 </p>
             </div>
 
-            <!-- Transparent Reporting -->
+            <!-- Full-Service Capability -->
             <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1 fade-in-up delay-200">
                 <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
-                    <i class="fas fa-chart-pie text-2xl"></i>
+                    <i class="fas fa-cogs text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-xl font-bold mb-3">Transparent Reporting</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">Full-Service Capability</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
-                    Best SEO company ahmedabad brands trust for transparent reporting. Get clear, jargon-free monthly reports showing keyword rankings, traffic growth, conversions, and the real impact of our SEO efforts on your bottom line.
+                    Whether you need end-to-end management from a full-scale social media marketing company in Ahmedabad or specialized campaigns for brand awareness, we deliver.
                 </p>
             </div>
 
-            <!-- Mobile-First Indexing -->
+            <!-- Competitive Edge -->
             <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 hover:-translate-y-1 fade-in-up delay-300">
                 <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5">
-                    <i class="fas fa-mobile-alt text-2xl"></i>
+                    <i class="fas fa-trophy text-2xl"></i>
                 </div>
-                <h3 class="text-xl md:text-xl font-bold mb-3">Mobile-First Indexing</h3>
+                <h3 class="text-xl md:text-xl font-bold mb-3">Distinct Competitive Edge</h3>
                 <p class="text-gray-400 leading-7 text-sm md:text-base">
-                    With mobile-first indexing redefining search rankings, we ensure your website is fully optimized for mobile devices—fast loading, responsive design, and seamless user experience across every screen size.
+                    Our social media marketing in Ahmedabad solutions give your business a distinct competitive edge—standing out in crowded feeds with compelling, conversion-focused content.
                 </p>
             </div>
 
@@ -539,76 +561,7 @@ require_once 'includes/header.php';
 
 </section>
 
-<!-- SEO RESULTS STATS -->
-<section class="py-16 md:py-24 section-border overflow-hidden">
-
-    <div class="max-w-7xl mx-auto px-4 sm:px-6">
-
-        <div class="text-center mb-14 md:mb-20 fade-in-up">
-            <p class="green-text font-semibold tracking-[0.25em] uppercase mb-4 text-sm">
-                PROVEN SEO RESULTS
-            </p>
-            <h2 class="text-xl sm:text-3xl md:text-4xl font-black mb-6 leading-tight">
-                Measurable <span class="green-text">SEO Growth</span> We Deliver
-            </h2>
-            <p class="max-w-3xl mx-auto text-gray-400 text-base md:text-lg leading-8">
-                Our data-driven SEO strategies consistently deliver measurable results for businesses across industries.
-            </p>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
-
-            <div class="glass-card rounded-[24px] p-6 md:p-8 border border-white/10 text-center fade-in-up delay-100 hover:-translate-y-1 transition-all duration-300">
-                <div class="text-4xl md:text-5xl font-black green-text mb-2 counter" data-target="300">
-                    <span>300</span>%
-                </div>
-                <p class="text-gray-400 text-sm mb-3">Avg. Traffic Increase</p>
-                <div class="w-full h-1.5 rounded-full bg-white/5 overflow-hidden">
-                    <div class="h-full rounded-full bg-gradient-to-r from-[#00ffb3] to-[#00b7ff]" style="width: 90%"></div>
-                </div>
-                <p class="text-gray-500 text-xs mt-3">Within 6 months</p>
-            </div>
-
-            <div class="glass-card rounded-[24px] p-6 md:p-8 border border-white/10 text-center fade-in-up delay-200 hover:-translate-y-1 transition-all duration-300">
-                <div class="text-4xl md:text-5xl font-black blue-text mb-2 counter" data-target="150">
-                    <span>150</span>+
-                </div>
-                <p class="text-gray-400 text-sm mb-3">Keywords in Top 10</p>
-                <div class="w-full h-1.5 rounded-full bg-white/5 overflow-hidden">
-                    <div class="h-full rounded-full bg-gradient-to-r from-[#00b7ff] to-[#00ffb3]" style="width: 85%"></div>
-                </div>
-                <p class="text-gray-500 text-xs mt-3">Google first page</p>
-            </div>
-
-            <div class="glass-card rounded-[24px] p-6 md:p-8 border border-white/10 text-center fade-in-up delay-300 hover:-translate-y-1 transition-all duration-300">
-                <div class="text-4xl md:text-5xl font-black green-text mb-2 counter" data-target="95">
-                    <span>95</span>
-                </div>
-                <p class="text-gray-400 text-sm mb-3">PageSpeed Score</p>
-                <div class="w-full h-1.5 rounded-full bg-white/5 overflow-hidden">
-                    <div class="h-full rounded-full bg-gradient-to-r from-[#00ffb3] to-[#00b7ff]" style="width: 95%"></div>
-                </div>
-                <p class="text-gray-500 text-xs mt-3">Technical SEO optimization</p>
-            </div>
-
-            <div class="glass-card rounded-[24px] p-6 md:p-8 border border-white/10 text-center fade-in-up delay-400 hover:-translate-y-1 transition-all duration-300">
-                <div class="text-4xl md:text-5xl font-black blue-text mb-2 counter" data-target="3">
-                    <span>3</span>x
-                </div>
-                <p class="text-gray-400 text-sm mb-3">Lead Generation</p>
-                <div class="w-full h-1.5 rounded-full bg-white/5 overflow-hidden">
-                    <div class="h-full rounded-full bg-gradient-to-r from-[#00b7ff] to-[#00ffb3]" style="width: 88%"></div>
-                </div>
-                <p class="text-gray-500 text-xs mt-3">Average client growth</p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- SEO TOOLS -->
+<!-- SOCIAL MEDIA PLATFORMS -->
 <section class="py-16 md:py-24 section-border overflow-hidden">
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
@@ -618,16 +571,16 @@ require_once 'includes/header.php';
             <div class="fade-in-up">
 
                 <p class="green-text uppercase tracking-[4px] font-semibold mb-4 text-xs sm:text-sm">
-                    SEO TOOLS
+                    PLATFORMS WE MANAGE
                 </p>
 
                 <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight mb-6 md:mb-8">
-                    We Use Industry-Leading
-                    <span class="green-text block sm:inline">SEO Tools</span>
+                    We Master Every
+                    <span class="green-text block sm:inline">Social Platform</span>
                 </h2>
 
                 <p class="text-gray-400 text-base md:text-lg leading-8 md:leading-9 mb-8 md:mb-10">
-                    From keyword research and rank tracking to site audits and competitor analysis, we leverage the best SEO tools to deliver measurable results for your business.
+                    From algorithm-friendly Instagram Reels to LinkedIn thought leadership and YouTube video strategies, we optimize your brand's presence where your audience spends their time.
                 </p>
 
             </div>
@@ -635,39 +588,39 @@ require_once 'includes/header.php';
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
 
                 <div class="glass-card rounded-2xl p-6 md:p-8 text-center hover:-translate-y-1 transition">
-                    <i class="fas fa-chart-bar text-5xl mb-4 text-[#00ffb3]"></i>
-                    <h3 class="text-xl font-bold">SEMrush</h3>
-                    <p class="text-gray-500 text-sm mt-2">Research & audits</p>
+                    <i class="fab fa-instagram text-5xl mb-4 text-[#00ffb3]"></i>
+                    <h3 class="text-xl font-bold">Instagram</h3>
+                    <p class="text-gray-500 text-sm mt-2">Reels & growth</p>
                 </div>
 
                 <div class="glass-card rounded-2xl p-6 md:p-8 text-center hover:-translate-y-1 transition">
-                    <i class="fab fa-google text-5xl mb-4 text-[#00b7ff]"></i>
-                    <h3 class="text-xl font-bold">Search Console</h3>
-                    <p class="text-gray-500 text-sm mt-2">Monitoring & insights</p>
+                    <i class="fab fa-facebook text-5xl mb-4 text-[#00b7ff]"></i>
+                    <h3 class="text-xl font-bold">Facebook</h3>
+                    <p class="text-gray-500 text-sm mt-2">Ads & community</p>
                 </div>
 
                 <div class="glass-card rounded-2xl p-6 md:p-8 text-center hover:-translate-y-1 transition">
-                    <i class="fab fa-google text-5xl mb-4 text-[#00ffb3]"></i>
-                    <h3 class="text-xl font-bold">Analytics</h3>
-                    <p class="text-gray-500 text-sm mt-2">Traffic analysis</p>
+                    <i class="fab fa-linkedin-in text-5xl mb-4 text-[#00ffb3]"></i>
+                    <h3 class="text-xl font-bold">LinkedIn</h3>
+                    <p class="text-gray-500 text-sm mt-2">B2B networking</p>
                 </div>
 
                 <div class="glass-card rounded-2xl p-6 md:p-8 text-center hover:-translate-y-1 transition">
-                    <i class="fas fa-link text-5xl mb-4 text-[#00b7ff]"></i>
-                    <h3 class="text-xl font-bold">Ahrefs</h3>
-                    <p class="text-gray-500 text-sm mt-2">Backlink analysis</p>
+                    <i class="fab fa-youtube text-5xl mb-4 text-[#00b7ff]"></i>
+                    <h3 class="text-xl font-bold">YouTube</h3>
+                    <p class="text-gray-500 text-sm mt-2">Video marketing</p>
                 </div>
 
                 <div class="glass-card rounded-2xl p-6 md:p-8 text-center hover:-translate-y-1 transition">
-                    <i class="fas fa-tachometer-alt text-5xl mb-4 text-[#00ffb3]"></i>
-                    <h3 class="text-xl font-bold">GTmetrix</h3>
-                    <p class="text-gray-500 text-sm mt-2">Speed optimization</p>
+                    <i class="fab fa-twitter text-5xl mb-4 text-[#00ffb3]"></i>
+                    <h3 class="text-xl font-bold">X (Twitter)</h3>
+                    <p class="text-gray-500 text-sm mt-2">Real-time engagement</p>
                 </div>
 
                 <div class="glass-card rounded-2xl p-6 md:p-8 text-center hover:-translate-y-1 transition">
-                    <i class="fas fa-key text-5xl mb-4 text-[#00b7ff]"></i>
-                    <h3 class="text-xl font-bold">Moz</h3>
-                    <p class="text-gray-500 text-sm mt-2">Domain authority</p>
+                    <i class="fab fa-pinterest text-5xl mb-4 text-[#00b7ff]"></i>
+                    <h3 class="text-xl font-bold">Pinterest</h3>
+                    <p class="text-gray-500 text-sm mt-2">Visual discovery</p>
                 </div>
 
             </div>
@@ -694,15 +647,15 @@ require_once 'includes/header.php';
             <div class="relative z-10">
 
                 <p class="green-text uppercase tracking-[4px] font-semibold mb-5 text-sm">
-                    SCALE YOUR ORGANIC TRAFFIC TODAY
+                    SCALE YOUR DIGITAL IMPACT TODAY
                 </p>
 
                 <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight mb-6 md:mb-8">
-                    Ready To Rank Higher on Google?
+                    Ready to Transform Your Brand's Digital Reach?
                 </h2>
 
                 <p class="text-gray-400 text-base sm:text-lg md:text-xl leading-8 md:leading-9 max-w-3xl mx-auto mb-10">
-                    If you are ready to invest in the best SEO services in Ahmedabad to outrank competitors and capture high-intent leads, our team is equipped to deliver. Partner with the best SEO company ahmedabad brands trust for transparent reporting and sustainable growth.
+                    Partner with a trusted social media agency in Ahmedabad dedicated to turning social channels into consistent revenue drivers. Contact the best social media marketing agency in Ahmedabad today for a complimentary social audit!
                 </p>
 
                 <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-4 sm:gap-5">
@@ -710,13 +663,13 @@ require_once 'includes/header.php';
                     <a href="hire.php"
                         class="btn-primary px-8 md:px-10 py-3.5 md:py-4 rounded-2xl text-base md:text-lg inline-flex items-center justify-center transition-transform hover:scale-105">
                         <i class="fas fa-rocket mr-2"></i>
-                        Start Your SEO Journey
+                        Get Free Social Audit
                     </a>
 
                     <a href="contact.php"
                         class="border border-white/10 hover:border-[#00ffb3] hover:text-[#00ffb3] px-8 md:px-10 py-3.5 md:py-4 rounded-2xl text-base md:text-lg inline-flex items-center justify-center transition">
-                        <i class="fas fa-file-alt mr-2"></i>
-                        Get Free SEO Audit
+                        <i class="fas fa-envelope mr-2"></i>
+                        Contact Us
                     </a>
 
                 </div>
