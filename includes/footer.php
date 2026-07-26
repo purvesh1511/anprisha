@@ -241,6 +241,128 @@
         document.querySelectorAll('.counter').forEach(function(el) {
             counterObserver.observe(el);
         });
+
+        // ===== Services V2: Magnetic Tilt + Mouse Glow =====
+        var serviceCards = document.querySelectorAll('.services-magnetic-card');
+        if (serviceCards.length) {
+            serviceCards.forEach(function(card) {
+                var glowSpot = card.querySelector('.card-glow-spot');
+                var maxTilt = 8;
+                var maxShift = 12;
+
+                card.addEventListener('mousemove', function(e) {
+                    var rect = card.getBoundingClientRect();
+                    var x = e.clientX - rect.left;
+                    var y = e.clientY - rect.top;
+                    var centerX = rect.width / 2;
+                    var centerY = rect.height / 2;
+
+                    var tiltX = ((y - centerY) / centerY) * -maxTilt;
+                    var tiltY = ((x - centerX) / centerX) * maxTilt;
+
+                    var shiftX = ((x - centerX) / centerX) * maxShift;
+                    var shiftY = ((y - centerY) / centerY) * maxShift;
+
+                    card.style.transform = 'perspective(800px) rotateX(' + tiltX + 'deg) rotateY(' + tiltY + 'deg) scale3d(1.02, 1.02, 1.02)';
+
+                    if (glowSpot) {
+                        glowSpot.style.left = x + 'px';
+                        glowSpot.style.top = y + 'px';
+                    }
+                });
+
+                card.addEventListener('mouseleave', function() {
+                    card.style.transform = 'perspective(800px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
+                });
+            });
+        }
+
+        // ===== Services V2: Scroll Reveal =====
+        var serviceRevealObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+        document.querySelectorAll('.service-reveal').forEach(function(el) {
+            serviceRevealObserver.observe(el);
+        });
+
+        // ===== Text Split Animation =====
+        function splitTextToChars(el) {
+            var text = el.textContent;
+            el.innerHTML = '';
+            for (var i = 0; i < text.length; i++) {
+                var span = document.createElement('span');
+                span.className = 'char';
+                span.textContent = text[i] === ' ' ? '\u00A0' : text[i];
+                el.appendChild(span);
+            }
+        }
+
+        function splitTextToWords(el) {
+            var text = el.textContent.trim();
+            var words = text.split(/\s+/);
+            el.innerHTML = '';
+            for (var i = 0; i < words.length; i++) {
+                var span = document.createElement('span');
+                span.className = 'word';
+                span.textContent = words[i];
+                el.appendChild(span);
+                if (i < words.length - 1) {
+                    el.appendChild(document.createTextNode(' '));
+                }
+            }
+        }
+
+        var splitTargets = document.querySelectorAll('.txt-split');
+        splitTargets.forEach(function(el) { splitTextToChars(el); });
+
+        var wordTargets = document.querySelectorAll('.word-reveal');
+        wordTargets.forEach(function(el) { splitTextToWords(el); });
+
+        var textAnimObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    var chars = entry.target.querySelectorAll('.char');
+                    chars.forEach(function(ch, i) {
+                        setTimeout(function() { ch.classList.add('char-visible'); }, i * 45);
+                    });
+
+                    var words = entry.target.querySelectorAll('.word');
+                    words.forEach(function(w, i) {
+                        setTimeout(function() { w.classList.add('word-visible'); }, 300 + i * 60);
+                    });
+
+                    textAnimObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.3 });
+
+        splitTargets.forEach(function(el) { textAnimObserver.observe(el); });
+        wordTargets.forEach(function(el) { textAnimObserver.observe(el); });
+
+        // ===== Benefit Cards: Spring Bounce Scroll Reveal =====
+        var benefitObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    var cards = entry.target.querySelectorAll('.benefit-card');
+                    cards.forEach(function(card, i) {
+                        setTimeout(function() {
+                            card.classList.add('benefit-visible');
+                        }, i * 80);
+                    });
+                    benefitObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+
+        var benefitsGrid = document.getElementById('benefits-grid');
+        if (benefitsGrid) {
+            benefitObserver.observe(benefitsGrid);
+        }
     });
 </script>
 

@@ -401,190 +401,303 @@ $how_work_steps = [
 
     </div>
 </section>
-<!-- WHY CHOOSE - REMOVED --><!-- SERVICES SECTION -->
-<section class="py-16 md:py-24 section-border overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+<!-- SERVICES SECTION V2 -->
+<section class="py-20 md:py-32 section-border overflow-hidden relative">
+
+    <!-- Background decoration -->
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#00ffb3]/5 blur-[200px] rounded-full pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
 
         <!-- HEADING -->
-        <div class="text-center mb-14 md:mb-20 fade-in-up">
+        <div class="text-center mb-16 md:mb-24 service-reveal">
 
-            <p class="green-text font-semibold tracking-[0.25em] uppercase mb-4 text-sm">
-                OUR SERVICES
-            </p>
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/[0.02] mb-6 md:mb-8">
+                <span class="w-2 h-2 rounded-full bg-[#00ffb3] animate-pulse"></span>
+                <span class="text-xs sm:text-sm font-medium text-gray-400 tracking-wider uppercase">What We Offer</span>
+            </div>
 
-            <h2 class="text-xl sm:text-3xl md:text-4xl font-black mb-6 leading-tight">
-                Premium Digital Solutions
+            <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-6 md:mb-8 leading-[1.1]">
+                <span class="txt-split">OUR SERVICES</span>
             </h2>
 
-            <p class="max-w-3xl mx-auto text-gray-400 text-base md:text-lg leading-8">
-                We help startups, brands, and businesses grow with high-performance websites,
-                SEO optimization, paid advertising, and full-stack digital marketing solutions.
+            <p class="max-w-2xl mx-auto text-gray-400 text-base md:text-lg leading-relaxed word-reveal" id="services-desc">
+                We help startups, brands, and businesses grow with high-performance
+                websites, SEO, paid ads, and full-stack digital marketing solutions.
             </p>
 
         </div>
 
-        <!-- SERVICES GRID -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 md:gap-8">
+        <!-- SERVICES GRID V2 -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6" id="services-grid-v2">
 
-            <!-- WEBSITE DEVELOPMENT -->
+            <!-- 01 WEBSITE DEVELOPMENT -->
             <a href="website-development.php"
-                class="service-card glass-card rounded-[24px] md:rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 hover:-translate-y-1 block fade-in-up delay-100">
+                class="services-magnetic-card glass-card rounded-[24px] md:rounded-[28px] p-7 md:p-8 border border-white/[0.06] service-reveal block group"
+                style="--accent: #00b7ff; transition-delay: 0.05s;">
 
-                <div class="text-4xl md:text-5xl mb-5 md:mb-6 text-[#00b7ff]">
-                    <i class="fas fa-laptop-code"></i>
+                <div class="card-border-glow rounded-[24px] md:rounded-[28px]"></div>
+                <div class="card-glow-spot bg-[#00b7ff]/8 blur-[80px] rounded-full"></div>
+                <div class="services-card-glow-line"></div>
+
+                <span class="services-card-number">01</span>
+
+                <div class="services-icon-wrap bg-[#00b7ff]/10 mb-6" style="--accent: #00b7ff;">
+                    <i class="fas fa-laptop-code text-[#00b7ff] text-xl"></i>
                 </div>
 
-                <h3 class="text-xl md:text-xl font-bold mb-4">
-                    Website Development
-                </h3>
-
-                <p class="text-gray-400 leading-7 md:leading-8 text-sm md:text-base">
-                    Laravel, WordPress, Shopify, and custom web applications built for performance.
-                </p>
+                <div class="services-card-content">
+                    <h3 class="text-lg md:text-xl font-bold mb-3 group-hover:text-[#00b7ff] transition-colors">
+                        Website Development
+                    </h3>
+                    <p class="text-gray-400 text-sm md:text-[15px] leading-7 mb-5">
+                        Laravel, WordPress, Shopify, and custom web applications built for performance.
+                    </p>
+                    <div class="flex items-center gap-2 text-sm font-medium text-[#00b7ff]">
+                        <span>Learn More</span>
+                        <span class="services-card-arrow"><i class="fas fa-arrow-right text-xs"></i></span>
+                    </div>
+                </div>
 
             </a>
 
-            <!-- WORDPRESS DEVELOPMENT -->
+            <!-- 02 WORDPRESS DEVELOPMENT -->
             <a href="wordpress-development.php"
-                class="service-card glass-card rounded-[24px] md:rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 hover:-translate-y-1 block fade-in-up delay-200">
+                class="services-magnetic-card glass-card rounded-[24px] md:rounded-[28px] p-7 md:p-8 border border-white/[0.06] service-reveal block group"
+                style="--accent: #00ffb3; transition-delay: 0.1s;">
 
-                <div class="text-4xl md:text-5xl mb-5 md:mb-6 text-[#00ffb3]">
-                    <i class="fab fa-wordpress"></i>
+                <div class="card-border-glow rounded-[24px] md:rounded-[28px]"></div>
+                <div class="card-glow-spot bg-[#00ffb3]/8 blur-[80px] rounded-full"></div>
+                <div class="services-card-glow-line"></div>
+
+                <span class="services-card-number">02</span>
+
+                <div class="services-icon-wrap bg-[#00ffb3]/10 mb-6" style="--accent: #00ffb3;">
+                    <i class="fab fa-wordpress text-[#00ffb3] text-xl"></i>
                 </div>
 
-                <h3 class="text-xl md:text-xl font-bold mb-4">
-                    WordPress Development
-                </h3>
-
-                <p class="text-gray-400 leading-7 md:leading-8 text-sm md:text-base">
-                    Custom themes, plugins, WooCommerce stores, and CMS solutions built on WordPress.
-                </p>
+                <div class="services-card-content">
+                    <h3 class="text-lg md:text-xl font-bold mb-3 group-hover:text-[#00ffb3] transition-colors">
+                        WordPress Development
+                    </h3>
+                    <p class="text-gray-400 text-sm md:text-[15px] leading-7 mb-5">
+                        Custom themes, plugins, WooCommerce stores, and CMS solutions built on WordPress.
+                    </p>
+                    <div class="flex items-center gap-2 text-sm font-medium text-[#00ffb3]">
+                        <span>Learn More</span>
+                        <span class="services-card-arrow"><i class="fas fa-arrow-right text-xs"></i></span>
+                    </div>
+                </div>
 
             </a>
 
-            <!-- ECOMMERCE DEVELOPMENT -->
+            <!-- 03 ECOMMERCE DEVELOPMENT -->
             <a href="ecommerce-development.php"
-                class="service-card glass-card rounded-[24px] md:rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 hover:-translate-y-1 block fade-in-up delay-300">
+                class="services-magnetic-card glass-card rounded-[24px] md:rounded-[28px] p-7 md:p-8 border border-white/[0.06] service-reveal block group"
+                style="--accent: #00b7ff; transition-delay: 0.15s;">
 
-                <div class="text-4xl md:text-5xl mb-5 md:mb-6 text-[#00b7ff]">
-                    <i class="fas fa-shopping-cart"></i>
+                <div class="card-border-glow rounded-[24px] md:rounded-[28px]"></div>
+                <div class="card-glow-spot bg-[#00b7ff]/8 blur-[80px] rounded-full"></div>
+                <div class="services-card-glow-line"></div>
+
+                <span class="services-card-number">03</span>
+
+                <div class="services-icon-wrap bg-[#00b7ff]/10 mb-6" style="--accent: #00b7ff;">
+                    <i class="fas fa-shopping-cart text-[#00b7ff] text-xl"></i>
                 </div>
 
-                <h3 class="text-xl md:text-xl font-bold mb-4">
-                    eCommerce Development
-                </h3>
-
-                <p class="text-gray-400 leading-7 md:leading-8 text-sm md:text-base">
-                    High-converting online stores on Shopify, WooCommerce, Magento, and custom platforms.
-                </p>
+                <div class="services-card-content">
+                    <h3 class="text-lg md:text-xl font-bold mb-3 group-hover:text-[#00b7ff] transition-colors">
+                        eCommerce Development
+                    </h3>
+                    <p class="text-gray-400 text-sm md:text-[15px] leading-7 mb-5">
+                        High-converting online stores on Shopify, WooCommerce, Magento, and custom platforms.
+                    </p>
+                    <div class="flex items-center gap-2 text-sm font-medium text-[#00b7ff]">
+                        <span>Learn More</span>
+                        <span class="services-card-arrow"><i class="fas fa-arrow-right text-xs"></i></span>
+                    </div>
+                </div>
 
             </a>
 
-            <!-- WEBSITE REDESIGN -->
+            <!-- 04 WEBSITE REDESIGN -->
             <a href="website-redesign.php"
-                class="service-card glass-card rounded-[24px] md:rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1 block fade-in-up delay-100">
+                class="services-magnetic-card glass-card rounded-[24px] md:rounded-[28px] p-7 md:p-8 border border-white/[0.06] service-reveal block group"
+                style="--accent: #00ffb3; transition-delay: 0.2s;">
 
-                <div class="text-4xl md:text-5xl mb-5 md:mb-6 text-[#00ffb3]">
-                    <i class="fas fa-paint-brush"></i>
+                <div class="card-border-glow rounded-[24px] md:rounded-[28px]"></div>
+                <div class="card-glow-spot bg-[#00ffb3]/8 blur-[80px] rounded-full"></div>
+                <div class="services-card-glow-line"></div>
+
+                <span class="services-card-number">04</span>
+
+                <div class="services-icon-wrap bg-[#00ffb3]/10 mb-6" style="--accent: #00ffb3;">
+                    <i class="fas fa-paint-brush text-[#00ffb3] text-xl"></i>
                 </div>
 
-                <h3 class="text-xl md:text-xl font-bold mb-4">
-                    Website Redesign
-                </h3>
-
-                <p class="text-gray-400 leading-7 md:leading-8 text-sm md:text-base">
-                    Transform outdated websites into modern, high-performing digital assets with improved UX and speed.
-                </p>
+                <div class="services-card-content">
+                    <h3 class="text-lg md:text-xl font-bold mb-3 group-hover:text-[#00ffb3] transition-colors">
+                        Website Redesign
+                    </h3>
+                    <p class="text-gray-400 text-sm md:text-[15px] leading-7 mb-5">
+                        Transform outdated websites into modern, high-performing digital assets with improved UX and speed.
+                    </p>
+                    <div class="flex items-center gap-2 text-sm font-medium text-[#00ffb3]">
+                        <span>Learn More</span>
+                        <span class="services-card-arrow"><i class="fas fa-arrow-right text-xs"></i></span>
+                    </div>
+                </div>
 
             </a>
 
-            <!-- CMS DEVELOPMENT -->
-            <div
-                class="service-card glass-card rounded-[24px] md:rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1 fade-in-up delay-200">
+            <!-- 05 CMS DEVELOPMENT -->
+            <a href="cms-development.php"
+                class="services-magnetic-card glass-card rounded-[24px] md:rounded-[28px] p-7 md:p-8 border border-white/[0.06] service-reveal block group"
+                style="--accent: #00ffb3; transition-delay: 0.25s;">
 
-                <div class="text-4xl md:text-5xl mb-5 md:mb-6 text-[#00ffb3]">
-                    <i class="fas fa-cogs"></i>
+                <div class="card-border-glow rounded-[24px] md:rounded-[28px]"></div>
+                <div class="card-glow-spot bg-[#00ffb3]/8 blur-[80px] rounded-full"></div>
+                <div class="services-card-glow-line"></div>
+
+                <span class="services-card-number">05</span>
+
+                <div class="services-icon-wrap bg-[#00ffb3]/10 mb-6" style="--accent: #00ffb3;">
+                    <i class="fas fa-cogs text-[#00ffb3] text-xl"></i>
                 </div>
 
-                <h3 class="text-xl md:text-xl font-bold mb-4">
-                    <a href="cms-development.php" class="hover:text-[#00ffb3] transition">CMS Development</a>
-                </h3>
+                <div class="services-card-content">
+                    <h3 class="text-lg md:text-xl font-bold mb-3 group-hover:text-[#00ffb3] transition-colors">
+                        CMS Development
+                    </h3>
+                    <p class="text-gray-400 text-sm md:text-[15px] leading-7 mb-5">
+                        Custom CMS platforms, headless CMS, and content management solutions for easy growth.
+                    </p>
+                    <div class="flex items-center gap-2 text-sm font-medium text-[#00ffb3]">
+                        <span>Learn More</span>
+                        <span class="services-card-arrow"><i class="fas fa-arrow-right text-xs"></i></span>
+                    </div>
+                </div>
 
-                <p class="text-gray-400 leading-7 md:leading-8 text-sm md:text-base">
-                    Custom CMS platforms, headless CMS, and content management solutions for easy growth.
-                </p>
+            </a>
 
-            </div>
-
-            <!-- SEO SERVICES -->
+            <!-- 06 SEO SERVICES -->
             <a href="seo.php"
-                class="service-card glass-card rounded-[24px] md:rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1 block fade-in-up delay-300">
+                class="services-magnetic-card glass-card rounded-[24px] md:rounded-[28px] p-7 md:p-8 border border-white/[0.06] service-reveal block group"
+                style="--accent: #00ffb3; transition-delay: 0.3s;">
 
-                <div class="text-4xl md:text-5xl mb-5 md:mb-6 text-[#00ffb3]">
-                    <i class="fas fa-chart-line"></i>
+                <div class="card-border-glow rounded-[24px] md:rounded-[28px]"></div>
+                <div class="card-glow-spot bg-[#00ffb3]/8 blur-[80px] rounded-full"></div>
+                <div class="services-card-glow-line"></div>
+
+                <span class="services-card-number">06</span>
+
+                <div class="services-icon-wrap bg-[#00ffb3]/10 mb-6" style="--accent: #00ffb3;">
+                    <i class="fas fa-chart-line text-[#00ffb3] text-xl"></i>
                 </div>
 
-                <h3 class="text-xl md:text-xl font-bold mb-4">
-                    SEO Services
-                </h3>
-
-                <p class="text-gray-400 leading-7 md:leading-8 text-sm md:text-base">
-                    Technical SEO, keyword ranking, backlinks, and local search optimization.
-                </p>
+                <div class="services-card-content">
+                    <h3 class="text-lg md:text-xl font-bold mb-3 group-hover:text-[#00ffb3] transition-colors">
+                        SEO Services
+                    </h3>
+                    <p class="text-gray-400 text-sm md:text-[15px] leading-7 mb-5">
+                        Technical SEO, keyword ranking, backlinks, and local search optimization.
+                    </p>
+                    <div class="flex items-center gap-2 text-sm font-medium text-[#00ffb3]">
+                        <span>Learn More</span>
+                        <span class="services-card-arrow"><i class="fas fa-arrow-right text-xs"></i></span>
+                    </div>
+                </div>
 
             </a>
 
-            <!-- DIGITAL MARKETING -->
+            <!-- 07 DIGITAL MARKETING -->
             <a href="digital-marketing.php"
-                class="service-card glass-card rounded-[24px] md:rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 hover:-translate-y-1 block fade-in-up delay-100">
+                class="services-magnetic-card glass-card rounded-[24px] md:rounded-[28px] p-7 md:p-8 border border-white/[0.06] service-reveal block group"
+                style="--accent: #00b7ff; transition-delay: 0.35s;">
 
-                <div class="text-4xl md:text-5xl mb-5 md:mb-6 text-[#00b7ff]">
-                    <i class="fas fa-bullhorn"></i>
+                <div class="card-border-glow rounded-[24px] md:rounded-[28px]"></div>
+                <div class="card-glow-spot bg-[#00b7ff]/8 blur-[80px] rounded-full"></div>
+                <div class="services-card-glow-line"></div>
+
+                <span class="services-card-number">07</span>
+
+                <div class="services-icon-wrap bg-[#00b7ff]/10 mb-6" style="--accent: #00b7ff;">
+                    <i class="fas fa-bullhorn text-[#00b7ff] text-xl"></i>
                 </div>
 
-                <h3 class="text-xl md:text-xl font-bold mb-4">
-                    Digital Marketing
-                </h3>
-
-                <p class="text-gray-400 leading-7 md:leading-8 text-sm md:text-base">
-                    Social media growth, branding, funnels, and online marketing strategies.
-                </p>
+                <div class="services-card-content">
+                    <h3 class="text-lg md:text-xl font-bold mb-3 group-hover:text-[#00b7ff] transition-colors">
+                        Digital Marketing
+                    </h3>
+                    <p class="text-gray-400 text-sm md:text-[15px] leading-7 mb-5">
+                        Social media growth, branding, funnels, and online marketing strategies.
+                    </p>
+                    <div class="flex items-center gap-2 text-sm font-medium text-[#00b7ff]">
+                        <span>Learn More</span>
+                        <span class="services-card-arrow"><i class="fas fa-arrow-right text-xs"></i></span>
+                    </div>
+                </div>
 
             </a>
 
-            <!-- ADVERTISING -->
+            <!-- 08 ADVERTISING -->
             <a href="advertising.php"
-                class="service-card glass-card rounded-[24px] md:rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1 block fade-in-up delay-200">
+                class="services-magnetic-card glass-card rounded-[24px] md:rounded-[28px] p-7 md:p-8 border border-white/[0.06] service-reveal block group"
+                style="--accent: #00b7ff; transition-delay: 0.4s;">
 
-                <div class="text-4xl md:text-5xl mb-5 md:mb-6 text-[#00b7ff]">
-                    <i class="fas fa-ad"></i>
+                <div class="card-border-glow rounded-[24px] md:rounded-[28px]"></div>
+                <div class="card-glow-spot bg-[#00b7ff]/8 blur-[80px] rounded-full"></div>
+                <div class="services-card-glow-line"></div>
+
+                <span class="services-card-number">08</span>
+
+                <div class="services-icon-wrap bg-[#00b7ff]/10 mb-6" style="--accent: #00b7ff;">
+                    <i class="fas fa-ad text-[#00b7ff] text-xl"></i>
                 </div>
 
-                <h3 class="text-xl md:text-xl font-bold mb-4">
-                    Advertising
-                </h3>
-
-                <p class="text-gray-400 leading-7 md:leading-8 text-sm md:text-base">
-                    Google Ads, social media ads, retargeting, and data-driven ad campaigns.
-                </p>
+                <div class="services-card-content">
+                    <h3 class="text-lg md:text-xl font-bold mb-3 group-hover:text-[#00b7ff] transition-colors">
+                        Advertising
+                    </h3>
+                    <p class="text-gray-400 text-sm md:text-[15px] leading-7 mb-5">
+                        Google Ads, social media ads, retargeting, and data-driven ad campaigns.
+                    </p>
+                    <div class="flex items-center gap-2 text-sm font-medium text-[#00b7ff]">
+                        <span>Learn More</span>
+                        <span class="services-card-arrow"><i class="fas fa-arrow-right text-xs"></i></span>
+                    </div>
+                </div>
 
             </a>
 
-            <!-- BRANDING & CREATIVE -->
+            <!-- 09 BRANDING & CREATIVE -->
             <a href="branding-creative.php"
-                class="service-card glass-card rounded-[24px] md:rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1 block fade-in-up delay-300">
+                class="services-magnetic-card glass-card rounded-[24px] md:rounded-[28px] p-7 md:p-8 border border-white/[0.06] service-reveal block group"
+                style="--accent: #00ffb3; transition-delay: 0.45s;">
 
-                <div class="text-4xl md:text-5xl mb-5 md:mb-6 text-[#00ffb3]">
-                    <i class="fas fa-palette"></i>
+                <div class="card-border-glow rounded-[24px] md:rounded-[28px]"></div>
+                <div class="card-glow-spot bg-[#00ffb3]/8 blur-[80px] rounded-full"></div>
+                <div class="services-card-glow-line"></div>
+
+                <span class="services-card-number">09</span>
+
+                <div class="services-icon-wrap bg-[#00ffb3]/10 mb-6" style="--accent: #00ffb3;">
+                    <i class="fas fa-palette text-[#00ffb3] text-xl"></i>
                 </div>
 
-                <h3 class="text-xl md:text-xl font-bold mb-4">
-                    Branding & Creative
-                </h3>
-
-                <p class="text-gray-400 leading-7 md:leading-8 text-sm md:text-base">
-                    Logo design, brand identity, visual storytelling, and creative strategy.
-                </p>
+                <div class="services-card-content">
+                    <h3 class="text-lg md:text-xl font-bold mb-3 group-hover:text-[#00ffb3] transition-colors">
+                        Branding & Creative
+                    </h3>
+                    <p class="text-gray-400 text-sm md:text-[15px] leading-7 mb-5">
+                        Logo design, brand identity, visual storytelling, and creative strategy.
+                    </p>
+                    <div class="flex items-center gap-2 text-sm font-medium text-[#00ffb3]">
+                        <span>Learn More</span>
+                        <span class="services-card-arrow"><i class="fas fa-arrow-right text-xs"></i></span>
+                    </div>
+                </div>
 
             </a>
 

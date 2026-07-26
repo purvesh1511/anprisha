@@ -29,18 +29,13 @@ require_once 'includes/header.php';
                 </p>
 
                 <h1 class="text-xl sm:text-4xl lg:text-5xl font-black leading-tight lg:leading-[1.05] mb-8 md:mb-10">
-
-                    Best SEO Company in
-                    <span class="green-text block sm:inline">
-                        Ahmedabad
-                    </span>
-
+                    <span class="txt-split">Best SEO Company </span>
+                    <span class="services-heading-gradient">in Ahmedabad</span>
+                    <span class="txt-split block" style="font-size:0.65em; opacity:0.85;">| Drive Organic Growth & Top Rankings</span>
                 </h1>
 
-                <p class="text-base sm:text-lg md:text-xl text-gray-400 leading-8 md:leading-10">
-
-                    Welcome to the leading SEO company in Ahmedabad, dedicated to turning organic search traffic into sustained business growth. Whether you are a local startup or an expanding enterprise, standing out online requires more than standard digital marketing—it takes a specialized SEO agency in Ahmedabad that understands market intent, search algorithms, and customer behavior.
-
+                <p class="text-base sm:text-lg md:text-xl text-gray-400 leading-8 md:leading-10 word-reveal">
+                    Welcome to the leading SEO company in Ahmedabad, dedicated to turning organic search traffic into sustained business growth. Whether you are a local startup or an expanding enterprise, standing out online requires a specialized SEO agency that understands market intent, search algorithms, and customer behavior.
                 </p>
 
             </div>
@@ -53,7 +48,7 @@ require_once 'includes/header.php';
 
                 <div class="relative w-full max-w-full lg:max-w-2xl mx-auto">
                     <div class="glass-card rounded-[22px] sm:rounded-[30px] p-1 sm:p-2 hero-image-glow pulse-ring text-center">
-                        <img src="assets/images/seo.webp"
+                        <img src="assets/images/seos.png"
                              alt="Best SEO Company in Ahmedabad - Anprix Solutions"
                              width="680" height="500" fetchpriority="high"
                              class="w-full max-w-[85%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-[85%] xl:max-w-[680px] mx-auto animate-float">
@@ -96,25 +91,25 @@ require_once 'includes/header.php';
 <section class="py-8 md:py-10 border-t border-white/5">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
-            <div class="text-center fade-in-up delay-100">
+            <div class="text-center service-reveal" style="transition-delay: 0.05s;">
                 <div class="text-2xl sm:text-3xl font-black green-text counter" data-target="10">
                     <span>10</span>+
                 </div>
                 <p class="text-gray-500 text-xs sm:text-sm mt-1">Years of SEO Experience</p>
             </div>
-            <div class="text-center fade-in-up delay-200">
+            <div class="text-center service-reveal" style="transition-delay: 0.1s;">
                 <div class="text-2xl sm:text-3xl font-black blue-text counter" data-target="200">
                     <span>200</span>+
                 </div>
                 <p class="text-gray-500 text-xs sm:text-sm mt-1">Clients Ranked on Google</p>
             </div>
-            <div class="text-center fade-in-up delay-300">
+            <div class="text-center service-reveal" style="transition-delay: 0.15s;">
                 <div class="text-2xl sm:text-3xl font-black green-text counter" data-target="300">
                     <span>300</span>%
                 </div>
                 <p class="text-gray-500 text-xs sm:text-sm mt-1">Average Traffic Increase</p>
             </div>
-            <div class="text-center fade-in-up delay-400">
+            <div class="text-center service-reveal" style="transition-delay: 0.2s;">
                 <div class="text-2xl sm:text-3xl font-black blue-text">
                     Top 10
                 </div>
@@ -125,318 +120,122 @@ require_once 'includes/header.php';
 </section>
 
 <!-- RESULTS-DRIVEN SEO SERVICES -->
-<section class="py-16 md:py-24 section-border overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 space-y-20 md:space-y-32">
+<section class="py-20 md:py-32 section-border overflow-hidden relative">
 
-        <!-- INTRO HEADING -->
-        <div class="text-center fade-in-up">
-            <p class="green-text font-semibold tracking-[0.25em] uppercase mb-4 text-sm">
-                OUR SEO SERVICES
-            </p>
-            <h2 class="text-xl sm:text-3xl md:text-4xl font-black mb-6 leading-tight">
-                Results-Driven <span class="green-text">SEO Services</span><br class="hidden sm:block"> in Ahmedabad
+    <div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-[#00ffb3]/5 blur-[200px] rounded-full pointer-events-none"></div>
+    <div class="absolute top-0 left-0 w-[400px] h-[400px] bg-[#00b7ff]/5 blur-[200px] rounded-full pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+
+        <!-- HEADING -->
+        <div class="text-center mb-16 md:mb-24 service-reveal">
+
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/[0.02] mb-6 md:mb-8">
+                <span class="w-2 h-2 rounded-full bg-[#00ffb3] animate-pulse"></span>
+                <span class="text-xs sm:text-sm font-medium text-gray-400 tracking-wider uppercase">Our SEO Services</span>
+            </div>
+
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-black mb-6 md:mb-8 leading-[1.1]">
+                <span class="txt-split">Results-Driven </span>
+                <span class="services-heading-gradient">SEO Services</span>
+                <span class="txt-split"> in Ahmedabad</span>
             </h2>
-            <p class="max-w-3xl mx-auto text-gray-400 text-base md:text-lg leading-8">
-                At our top SEO company in Ahmedabad, we deliver tailor-made growth strategies designed for your specific industry. As a full-service search engine optimization company in Ahmedabad, our solutions focus on long-term SERP visibility and measurable ROI.
+
+            <p class="max-w-3xl mx-auto text-gray-400 text-base md:text-lg leading-relaxed word-reveal">
+                At our top SEO company in Ahmedabad, we deliver tailor-made growth strategies designed for your specific industry. Our solutions focus on long-term SERP visibility and measurable ROI.
             </p>
-        </div>
-
-        <!-- ========================= -->
-        <!-- SEO SERVICE 1: Local SEO -->
-        <!-- ========================= -->
-        <div id="local" class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
-
-            <div class="glass-card rounded-3xl p-6 md:p-10 space-y-5 order-2 lg:order-1">
-
-                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fas fa-map-marker-alt text-[#00ffb3] text-2xl"></i>
-                    <div>
-                        <h3 class="font-bold text-lg">Google Business Profile</h3>
-                        <p class="text-gray-500 text-sm">Optimization & verification</p>
-                    </div>
-                </div>
-
-                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fas fa-map-pin text-[#00b7ff] text-2xl"></i>
-                    <div>
-                        <h3 class="font-bold text-lg">Local Map Pack Domination</h3>
-                        <p class="text-gray-500 text-sm">Regional search visibility</p>
-                    </div>
-                </div>
-
-                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fas fa-list text-[#00ffb3] text-2xl"></i>
-                    <div>
-                        <h3 class="font-bold text-lg">Citation Building</h3>
-                        <p class="text-gray-500 text-sm">NAP consistency across directories</p>
-                    </div>
-                </div>
-
-                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fas fa-location-arrow text-[#00b7ff] text-2xl"></i>
-                    <div>
-                        <h3 class="font-bold text-lg">Geotagged Content</h3>
-                        <p class="text-gray-500 text-sm">Targeted local content strategy</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="space-y-6 order-1 lg:order-2">
-
-                <p class="green-text uppercase tracking-[4px] font-semibold text-sm">
-                    Local SEO Services
-                </p>
-
-                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
-                    Dominate Local <span class="green-text">Search Results</span>
-                </h2>
-
-                <p class="text-gray-400 text-base md:text-lg leading-8 md:leading-9">
-                    Dominating local map packs and regional searches with optimized Google Business Profiles, local citation building, and targeted geotagged content. Help local customers find your business when it matters most.
-                </p>
-
-                <div class="flex flex-wrap gap-4">
-
-                    <a href="hire.php" class="btn-primary px-6 py-4 rounded-2xl text-center">
-                        Boost Local SEO
-                    </a>
-
-                </div>
-
-            </div>
 
         </div>
 
-        <!-- ========================= -->
-        <!-- SEO SERVICE 2: On-Page & Technical -->
-        <!-- ========================= -->
-        <div id="onpage" class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+        <!-- 4 SERVICE CARDS - HORIZONTAL -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6" id="seo-services-grid">
 
-            <div class="space-y-6">
+            <!-- Local SEO -->
+            <div class="services-magnetic-card glass-card rounded-[20px] md:rounded-[24px] p-7 md:p-8 border border-white/[0.06] service-reveal group"
+                 style="--accent: #00ffb3; transition-delay: 0.05s;">
+                <div class="card-border-glow rounded-[20px] md:rounded-[24px]"></div>
+                <div class="card-glow-spot bg-[#00ffb3]/8 blur-[80px] rounded-full"></div>
+                <div class="services-card-glow-line"></div>
 
-                <p class="green-text uppercase tracking-[4px] font-semibold text-sm">
-                    On-Page & Technical SEO
-                </p>
-
-                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
-                    Optimize Every <span class="green-text">Page & Element</span>
-                </h2>
-
-                <p class="text-gray-400 text-base md:text-lg leading-8 md:leading-9">
-                    Fine-tuning page speed, Core Web Vitals, site architecture, and meta elements so search engines crawl and rank your pages effortlessly. We ensure your website meets every technical standard Google demands.
-                </p>
-
-                <div class="space-y-5">
-
-                    <div class="flex gap-4">
-                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3]">
-                            <i class="fas fa-tachometer-alt"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-lg">Core Web Vitals</h3>
-                            <p class="text-gray-500 text-sm">Page speed & performance optimization</p>
-                        </div>
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="w-14 h-14 rounded-xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] shrink-0">
+                        <i class="fas fa-map-marker-alt text-xl"></i>
                     </div>
-
-                    <div class="flex gap-4">
-                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff]">
-                            <i class="fas fa-sitemap"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-lg">Site Architecture</h3>
-                            <p class="text-gray-500 text-sm">Crawl optimization & internal linking</p>
-                        </div>
-                    </div>
-
-                    <div class="flex gap-4">
-                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3]">
-                            <i class="fas fa-tags"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-lg">Meta Elements</h3>
-                            <p class="text-gray-500 text-sm">Title tags, descriptions & header optimization</p>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="glass-card rounded-3xl p-6 md:p-10 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
-
-                <div class="bg-black/40 rounded-2xl p-6 md:p-8">
-                    <i class="fas fa-tachometer-alt text-3xl mb-4 text-[#00ffb3]"></i>
-                    <h3 class="font-bold text-lg">Speed</h3>
-                    <p class="text-gray-500 text-sm">Lightning fast load times</p>
-                </div>
-
-                <div class="bg-black/40 rounded-2xl p-6 md:p-8">
-                    <i class="fas fa-mobile-alt text-3xl mb-4 text-[#00b7ff]"></i>
-                    <h3 class="font-bold text-lg">Mobile-First</h3>
-                    <p class="text-gray-500 text-sm">Mobile indexing ready</p>
-                </div>
-
-                <div class="bg-black/40 rounded-2xl p-6 md:p-8">
-                    <i class="fas fa-code text-3xl mb-4 text-[#00ffb3]"></i>
-                    <h3 class="font-bold text-lg">Schema Markup</h3>
-                    <p class="text-gray-500 text-sm">Structured data for rich snippets</p>
-                </div>
-
-                <div class="bg-black/40 rounded-2xl p-6 md:p-8">
-                    <i class="fas fa-shield-alt text-3xl mb-4 text-[#00b7ff]"></i>
-                    <h3 class="font-bold text-lg">SSL Security</h3>
-                    <p class="text-gray-500 text-sm">HTTPS enforced</p>
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- ========================= -->
-        <!-- SEO SERVICE 3: Link Building -->
-        <!-- ========================= -->
-        <div id="linkbuilding" class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
-
-            <div class="glass-card rounded-3xl p-6 md:p-10 space-y-5 order-2 lg:order-1">
-
-                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fas fa-pen-fancy text-[#00ffb3] text-2xl"></i>
                     <div>
-                        <h3 class="font-bold text-lg">Guest Blogging</h3>
-                        <p class="text-gray-500 text-sm">High-quality content on relevant sites</p>
+                        <h3 class="text-lg md:text-xl font-bold group-hover:text-[#00ffb3] transition-colors">Local SEO Services</h3>
+                        <p class="text-gray-500 text-sm">Google Business & Maps ranking</p>
                     </div>
                 </div>
 
-                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fas fa-handshake text-[#00b7ff] text-2xl"></i>
-                    <div>
-                        <h3 class="font-bold text-lg">Outreach Campaigns</h3>
-                        <p class="text-gray-500 text-sm">Strategic partnership building</p>
-                    </div>
-                </div>
-
-                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fas fa-external-link-alt text-[#00ffb3] text-2xl"></i>
-                    <div>
-                        <h3 class="font-bold text-lg">High DA Backlinks</h3>
-                        <p class="text-gray-500 text-sm">Authority from reputable domains</p>
-                    </div>
-                </div>
-
-                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fas fa-shield-alt text-[#00b7ff] text-2xl"></i>
-                    <div>
-                        <h3 class="font-bold text-lg">White-Hat Only</h3>
-                        <p class="text-gray-500 text-sm">100% safe & Google-compliant</p>
-                    </div>
-                </div>
-
+                <p class="text-gray-400 text-sm md:text-[15px] leading-7">
+                    Dominating local map packs and regional searches with optimized Google Business Profiles, local citation building, and targeted geotagged content.
+                </p>
             </div>
 
-            <div class="space-y-6 order-1 lg:order-2">
+            <!-- On-Page & Technical -->
+            <div class="services-magnetic-card glass-card rounded-[20px] md:rounded-[24px] p-7 md:p-8 border border-white/[0.06] service-reveal group"
+                 style="--accent: #00b7ff; transition-delay: 0.1s;">
+                <div class="card-border-glow rounded-[20px] md:rounded-[24px]"></div>
+                <div class="card-glow-spot bg-[#00b7ff]/8 blur-[80px] rounded-full"></div>
+                <div class="services-card-glow-line"></div>
 
-                <p class="green-text uppercase tracking-[4px] font-semibold text-sm">
-                    Authority Link Building
-                </p>
-
-                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
-                    Strengthen Your <span class="green-text">Online Authority</span>
-                </h2>
-
-                <p class="text-gray-400 text-base md:text-lg leading-8 md:leading-9">
-                    Strengthening your online authority through high-quality, white-hat backlink acquisition strategies. Earn links from reputable websites in your industry to boost domain authority, referral traffic, and search engine rankings.
-                </p>
-
-                <div class="flex flex-wrap gap-4">
-
-                    <a href="hire.php" class="btn-primary px-6 py-4 rounded-2xl text-center">
-                        Start Link Building
-                    </a>
-
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="w-14 h-14 rounded-xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] shrink-0">
+                        <i class="fas fa-cog text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg md:text-xl font-bold group-hover:text-[#00b7ff] transition-colors">On-Page & Technical Optimization</h3>
+                        <p class="text-gray-500 text-sm">Speed, structure & crawl optimization</p>
+                    </div>
                 </div>
 
+                <p class="text-gray-400 text-sm md:text-[15px] leading-7">
+                    Fine-tuning page speed, Core Web Vitals, site architecture, and meta elements so search engines crawl and rank your pages effortlessly.
+                </p>
             </div>
 
-        </div>
+            <!-- Link Building -->
+            <div class="services-magnetic-card glass-card rounded-[20px] md:rounded-[24px] p-7 md:p-8 border border-white/[0.06] service-reveal group"
+                 style="--accent: #00b7ff; transition-delay: 0.15s;">
+                <div class="card-border-glow rounded-[20px] md:rounded-[24px]"></div>
+                <div class="card-glow-spot bg-[#00b7ff]/8 blur-[80px] rounded-full"></div>
+                <div class="services-card-glow-line"></div>
 
-        <!-- ========================= -->
-        <!-- SEO SERVICE 4: Content & Marketing -->
-        <!-- ========================= -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
-
-            <div class="space-y-6">
-
-                <p class="green-text uppercase tracking-[4px] font-semibold text-sm">
-                    Strategic SEO Marketing
-                </p>
-
-                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
-                    Capture Buyer <span class="green-text">Intent With Content</span>
-                </h2>
-
-                <p class="text-gray-400 text-base md:text-lg leading-8 md:leading-9">
-                    Capturing buyer intent with engaging content marketing, keyword mapping, and conversion-optimized landing pages. We create content that ranks, engages, and converts visitors into paying clients.
-                </p>
-
-                <div class="space-y-5">
-
-                    <div class="flex gap-4">
-                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3]">
-                            <i class="fas fa-key"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-lg">Keyword Mapping</h3>
-                            <p class="text-gray-500 text-sm">Strategic keyword targeting & clustering</p>
-                        </div>
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="w-14 h-14 rounded-xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] shrink-0">
+                        <i class="fas fa-link text-xl"></i>
                     </div>
-
-                    <div class="flex gap-4">
-                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff]">
-                            <i class="fas fa-file-alt"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-lg">Content Marketing</h3>
-                            <p class="text-gray-500 text-sm">Blogs, guides & landing pages</p>
-                        </div>
+                    <div>
+                        <h3 class="text-lg md:text-xl font-bold group-hover:text-[#00b7ff] transition-colors">Authority Link Building</h3>
+                        <p class="text-gray-500 text-sm">High-quality white-hat backlinks</p>
                     </div>
-
-                    <div class="flex gap-4">
-                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3]">
-                            <i class="fas fa-bullseye"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-lg">Conversion Optimization</h3>
-                            <p class="text-gray-500 text-sm">Turn visitors into leads & sales</p>
-                        </div>
-                    </div>
-
                 </div>
 
+                <p class="text-gray-400 text-sm md:text-[15px] leading-7">
+                    Strengthening your online authority through high-quality, white-hat backlink acquisition strategies that boost domain authority and referral traffic.
+                </p>
             </div>
 
-            <div class="glass-card rounded-3xl p-6 md:p-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <!-- Strategic SEO Marketing -->
+            <div class="services-magnetic-card glass-card rounded-[20px] md:rounded-[24px] p-7 md:p-8 border border-white/[0.06] service-reveal group"
+                 style="--accent: #00ffb3; transition-delay: 0.2s;">
+                <div class="card-border-glow rounded-[20px] md:rounded-[24px]"></div>
+                <div class="card-glow-spot bg-[#00ffb3]/8 blur-[80px] rounded-full"></div>
+                <div class="services-card-glow-line"></div>
 
-                <div class="bg-black/40 p-6 rounded-2xl text-center">
-                    <i class="fas fa-key text-3xl mb-3 text-[#00ffb3]"></i>
-                    <p>Keyword Research</p>
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="w-14 h-14 rounded-xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] shrink-0">
+                        <i class="fas fa-bullseye text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg md:text-xl font-bold group-hover:text-[#00ffb3] transition-colors">Strategic SEO Marketing</h3>
+                        <p class="text-gray-500 text-sm">Buyer intent & conversion optimization</p>
+                    </div>
                 </div>
 
-                <div class="bg-black/40 p-6 rounded-2xl text-center">
-                    <i class="fas fa-pen-fancy text-3xl mb-3 text-[#00b7ff]"></i>
-                    <p>Blog Writing</p>
-                </div>
-
-                <div class="bg-black/40 p-6 rounded-2xl text-center">
-                    <i class="fas fa-robot text-3xl mb-3 text-[#00ffb3]"></i>
-                    <p>Topic Clusters</p>
-                </div>
-
-                <div class="bg-black/40 p-6 rounded-2xl text-center">
-                    <i class="fas fa-bullseye text-3xl mb-3 text-[#00b7ff]"></i>
-                    <p>Landing Pages</p>
-                </div>
-
+                <p class="text-gray-400 text-sm md:text-[15px] leading-7">
+                    Capturing buyer intent with engaging content marketing, keyword mapping, and conversion-optimized landing pages that turn visitors into paying clients.
+                </p>
             </div>
 
         </div>
@@ -444,121 +243,168 @@ require_once 'includes/header.php';
     </div>
 </section>
 
-<!-- WHY CHOOSE ANPRIX -->
-<section class="py-16 md:py-24 section-border overflow-hidden">
+<!-- WHY PARTNER - SPLIT LAYOUT -->
+<section class="py-20 md:py-32 section-border overflow-hidden relative">
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
 
-        <div class="text-center mb-14 md:mb-20 fade-in-up">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
-            <p class="green-text uppercase tracking-[4px] font-semibold mb-5 text-sm">
-                WHY CHOOSE ANPRIX SOLUTIONS
-            </p>
+            <!-- LEFT: FEATURE CARDS -->
+            <div class="grid grid-cols-2 gap-4 md:gap-5 service-reveal">
 
-            <h2 class="text-xl sm:text-3xl md:text-4xl font-black mb-6 md:mb-8 leading-tight">
-                Why Partner with the Best<br class="hidden sm:block"> SEO Agency in Ahmedabad?
-            </h2>
-
-            <p class="text-gray-400 text-base md:text-lg max-w-3xl mx-auto leading-8 md:leading-9">
-                Choosing the best SEO agency in Ahmedabad means partnering with dedicated specialists who prioritize revenue and lead quality over vanity metrics. Digital search is changing rapidly—with AI search overviews and mobile-first indexing redefining how customers find local solutions.
-            </p>
-
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-
-            <!-- 10+ Years Experience -->
-            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1 fade-in-up delay-100">
-                <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
-                    <i class="fas fa-award text-2xl"></i>
+                <div class="services-magnetic-card glass-card rounded-[20px] md:rounded-[24px] p-5 md:p-6 border border-white/[0.06] group text-center"
+                     style="--accent: #00ffb3; transition-delay: 0.05s;">
+                    <div class="card-border-glow rounded-[20px] md:rounded-[24px]"></div>
+                    <div class="card-glow-spot bg-[#00ffb3]/8 blur-[80px] rounded-full"></div>
+                    <div class="services-card-glow-line"></div>
+                    <div class="w-12 h-12 rounded-xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mx-auto mb-3">
+                        <i class="fas fa-award text-lg"></i>
+                    </div>
+                    <h4 class="text-sm font-bold mb-1 group-hover:text-[#00ffb3] transition-colors">10+ Years Expertise</h4>
+                    <p class="text-gray-500 text-xs leading-5">Navigating every Google update</p>
                 </div>
-                <h3 class="text-xl md:text-xl font-bold mb-3">10+ Years of SEO Expertise</h3>
-                <p class="text-gray-400 leading-7 text-sm md:text-base">
-                    With over a decade of hands-on experience in search engine optimization, our team has navigated every Google algorithm update and mastered the art of sustainable ranking strategies for businesses across Ahmedabad and India.
-                </p>
+
+                <div class="services-magnetic-card glass-card rounded-[20px] md:rounded-[24px] p-5 md:p-6 border border-white/[0.06] group text-center"
+                     style="--accent: #00b7ff; transition-delay: 0.1s;">
+                    <div class="card-border-glow rounded-[20px] md:rounded-[24px]"></div>
+                    <div class="card-glow-spot bg-[#00b7ff]/8 blur-[80px] rounded-full"></div>
+                    <div class="services-card-glow-line"></div>
+                    <div class="w-12 h-12 rounded-xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mx-auto mb-3">
+                        <i class="fas fa-brain text-lg"></i>
+                    </div>
+                    <h4 class="text-sm font-bold mb-1 group-hover:text-[#00b7ff] transition-colors">Deep Market Analysis</h4>
+                    <p class="text-gray-500 text-xs leading-5">Competitive keyword strategy</p>
+                </div>
+
+                <div class="services-magnetic-card glass-card rounded-[20px] md:rounded-[24px] p-5 md:p-6 border border-white/[0.06] group text-center"
+                     style="--accent: #00b7ff; transition-delay: 0.15s;">
+                    <div class="card-border-glow rounded-[20px] md:rounded-[24px]"></div>
+                    <div class="card-glow-spot bg-[#00b7ff]/8 blur-[80px] rounded-full"></div>
+                    <div class="services-card-glow-line"></div>
+                    <div class="w-12 h-12 rounded-xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mx-auto mb-3">
+                        <i class="fas fa-robot text-lg"></i>
+                    </div>
+                    <h4 class="text-sm font-bold mb-1 group-hover:text-[#00b7ff] transition-colors">AI-Ready SEO</h4>
+                    <p class="text-gray-500 text-xs leading-5">Optimized for AI search overviews</p>
+                </div>
+
+                <div class="services-magnetic-card glass-card rounded-[20px] md:rounded-[24px] p-5 md:p-6 border border-white/[0.06] group text-center"
+                     style="--accent: #00ffb3; transition-delay: 0.2s;">
+                    <div class="card-border-glow rounded-[20px] md:rounded-[24px]"></div>
+                    <div class="card-glow-spot bg-[#00ffb3]/8 blur-[80px] rounded-full"></div>
+                    <div class="services-card-glow-line"></div>
+                    <div class="w-12 h-12 rounded-xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mx-auto mb-3">
+                        <i class="fas fa-dollar-sign text-lg"></i>
+                    </div>
+                    <h4 class="text-sm font-bold mb-1 group-hover:text-[#00ffb3] transition-colors">Revenue Over Vanity</h4>
+                    <p class="text-gray-500 text-xs leading-5">ROI-focused strategies</p>
+                </div>
+
+                <div class="services-magnetic-card glass-card rounded-[20px] md:rounded-[24px] p-5 md:p-6 border border-white/[0.06] group text-center sm:col-span-2"
+                     style="--accent: #00b7ff; transition-delay: 0.25s;">
+                    <div class="card-border-glow rounded-[20px] md:rounded-[24px]"></div>
+                    <div class="card-glow-spot bg-[#00b7ff]/8 blur-[80px] rounded-full"></div>
+                    <div class="services-card-glow-line"></div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 rounded-xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] shrink-0">
+                            <i class="fas fa-chart-pie text-lg"></i>
+                        </div>
+                        <div class="text-left">
+                            <h4 class="text-sm font-bold group-hover:text-[#00b7ff] transition-colors">Transparent Reporting</h4>
+                            <p class="text-gray-500 text-xs leading-5">Clear, jargon-free monthly reports</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services-magnetic-card glass-card rounded-[20px] md:rounded-[24px] p-5 md:p-6 border border-white/[0.06] group text-center sm:col-span-2"
+                     style="--accent: #00ffb3; transition-delay: 0.3s;">
+                    <div class="card-border-glow rounded-[20px] md:rounded-[24px]"></div>
+                    <div class="card-glow-spot bg-[#00ffb3]/8 blur-[80px] rounded-full"></div>
+                    <div class="services-card-glow-line"></div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 rounded-xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] shrink-0">
+                            <i class="fas fa-mobile-alt text-lg"></i>
+                        </div>
+                        <div class="text-left">
+                            <h4 class="text-sm font-bold group-hover:text-[#00ffb3] transition-colors">Mobile-First Indexing</h4>
+                            <p class="text-gray-500 text-xs leading-5">Optimized for every screen size</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
-            <!-- Deep Market Analysis -->
-            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 hover:-translate-y-1 fade-in-up delay-200">
-                <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5">
-                    <i class="fas fa-brain text-2xl"></i>
+            <!-- RIGHT: TEXT -->
+            <div class="service-reveal" style="transition-delay: 0.1s;">
+
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/[0.02] mb-6 md:mb-8">
+                    <span class="w-2 h-2 rounded-full bg-[#00b7ff] animate-pulse"></span>
+                    <span class="text-xs sm:text-sm font-medium text-gray-400 tracking-wider uppercase">Why Partner With Us</span>
                 </div>
-                <h3 class="text-xl md:text-xl font-bold mb-3">Deep Market Analysis</h3>
-                <p class="text-gray-400 leading-7 text-sm md:text-base">
+
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-black leading-tight mb-6 md:mb-8">
+                    Why Partner with the Best
+                    <span class="services-heading-gradient block sm:inline"> SEO Agency in Ahmedabad?</span>
+                </h2>
+
+                <p class="text-gray-400 text-base md:text-lg leading-8 md:leading-9 mb-6">
+                    Choosing the best SEO agency in Ahmedabad means partnering with dedicated specialists who prioritize revenue and lead quality over vanity metrics. Digital search is changing rapidly—with AI search overviews and mobile-first indexing redefining how customers find local solutions.
+                </p>
+
+                <p class="text-gray-400 text-base md:text-lg leading-8 md:leading-9 mb-10">
                     As a trusted SEO agency Ahmedabad businesses count on, we merge deep market analysis with continuous technical refinement. We ensure your business ranks high for competitive keywords while turning site visitors into loyal, paying clients.
                 </p>
-            </div>
 
-            <!-- AI-Ready SEO -->
-            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1 fade-in-up delay-300">
-                <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
-                    <i class="fas fa-robot text-2xl"></i>
-                </div>
-                <h3 class="text-xl md:text-xl font-bold mb-3">AI-Ready SEO Strategies</h3>
-                <p class="text-gray-400 leading-7 text-sm md:text-base">
-                    Digital search is changing rapidly with AI search overviews redefining how customers find solutions. We stay ahead of the curve with forward-thinking SEO strategies optimized for both traditional search and AI-powered search experiences.
-                </p>
-            </div>
+                <a href="contact.php"
+                   class="btn-primary px-8 md:px-10 py-3.5 md:py-4 rounded-2xl text-base md:text-lg inline-flex items-center gap-2 transition hover:scale-105">
+                    <i class="fas fa-rocket"></i>
+                    Scale Your Organic Traffic
+                </a>
 
-            <!-- Revenue-Focused -->
-            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 hover:-translate-y-1 fade-in-up delay-100">
-                <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5">
-                    <i class="fas fa-dollar-sign text-2xl"></i>
-                </div>
-                <h3 class="text-xl md:text-xl font-bold mb-3">Revenue Over Vanity Metrics</h3>
-                <p class="text-gray-400 leading-7 text-sm md:text-base">
-                    We don't just chase traffic numbers. Our SEO strategies are designed to deliver measurable ROI—more qualified leads, higher conversion rates, and sustainable revenue growth for your business.
-                </p>
-            </div>
-
-            <!-- Transparent Reporting -->
-            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1 fade-in-up delay-200">
-                <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
-                    <i class="fas fa-chart-pie text-2xl"></i>
-                </div>
-                <h3 class="text-xl md:text-xl font-bold mb-3">Transparent Reporting</h3>
-                <p class="text-gray-400 leading-7 text-sm md:text-base">
-                    Best SEO company ahmedabad brands trust for transparent reporting. Get clear, jargon-free monthly reports showing keyword rankings, traffic growth, conversions, and the real impact of our SEO efforts on your bottom line.
-                </p>
-            </div>
-
-            <!-- Mobile-First Indexing -->
-            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 hover:-translate-y-1 fade-in-up delay-300">
-                <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5">
-                    <i class="fas fa-mobile-alt text-2xl"></i>
-                </div>
-                <h3 class="text-xl md:text-xl font-bold mb-3">Mobile-First Indexing</h3>
-                <p class="text-gray-400 leading-7 text-sm md:text-base">
-                    With mobile-first indexing redefining search rankings, we ensure your website is fully optimized for mobile devices—fast loading, responsive design, and seamless user experience across every screen size.
-                </p>
             </div>
 
         </div>
 
     </div>
-
 </section>
 
-<!-- SEO RESULTS STATS -->
-<section class="py-16 md:py-24 section-border overflow-hidden">
+<!-- PROVEN SEO RESULTS -->
+<section class="py-20 md:py-32 section-border overflow-hidden relative">
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-[#00ffb3]/5 blur-[200px] rounded-full pointer-events-none"></div>
 
-        <div class="text-center mb-14 md:mb-20 fade-in-up">
-            <p class="green-text font-semibold tracking-[0.25em] uppercase mb-4 text-sm">
-                PROVEN SEO RESULTS
-            </p>
-            <h2 class="text-xl sm:text-3xl md:text-4xl font-black mb-6 leading-tight">
-                Measurable <span class="green-text">SEO Growth</span> We Deliver
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+
+        <!-- HEADING -->
+        <div class="text-center mb-16 md:mb-24 service-reveal">
+
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/[0.02] mb-6 md:mb-8">
+                <span class="w-2 h-2 rounded-full bg-[#00ffb3] animate-pulse"></span>
+                <span class="text-xs sm:text-sm font-medium text-gray-400 tracking-wider uppercase">Proven Results</span>
+            </div>
+
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-black mb-6 md:mb-8 leading-[1.1]">
+                <span class="txt-split">Measurable </span>
+                <span class="services-heading-gradient">SEO Growth</span>
+                <span class="txt-split"> We Deliver</span>
             </h2>
-            <p class="max-w-3xl mx-auto text-gray-400 text-base md:text-lg leading-8">
+
+            <p class="max-w-3xl mx-auto text-gray-400 text-base md:text-lg leading-relaxed word-reveal">
                 Our data-driven SEO strategies consistently deliver measurable results for businesses across industries.
             </p>
+
         </div>
 
+        <!-- STATS GRID -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
 
-            <div class="glass-card rounded-[24px] p-6 md:p-8 border border-white/10 text-center fade-in-up delay-100 hover:-translate-y-1 transition-all duration-300">
+            <div class="services-magnetic-card glass-card rounded-[24px] p-6 md:p-8 border border-white/[0.06] text-center service-reveal group"
+                 style="--accent: #00ffb3; transition-delay: 0.05s;">
+                <div class="card-border-glow rounded-[24px]"></div>
+                <div class="card-glow-spot bg-[#00ffb3]/8 blur-[80px] rounded-full"></div>
+                <div class="services-card-glow-line"></div>
+
                 <div class="text-4xl md:text-5xl font-black green-text mb-2 counter" data-target="300">
                     <span>300</span>%
                 </div>
@@ -569,7 +415,12 @@ require_once 'includes/header.php';
                 <p class="text-gray-500 text-xs mt-3">Within 6 months</p>
             </div>
 
-            <div class="glass-card rounded-[24px] p-6 md:p-8 border border-white/10 text-center fade-in-up delay-200 hover:-translate-y-1 transition-all duration-300">
+            <div class="services-magnetic-card glass-card rounded-[24px] p-6 md:p-8 border border-white/[0.06] text-center service-reveal group"
+                 style="--accent: #00b7ff; transition-delay: 0.1s;">
+                <div class="card-border-glow rounded-[24px]"></div>
+                <div class="card-glow-spot bg-[#00b7ff]/8 blur-[80px] rounded-full"></div>
+                <div class="services-card-glow-line"></div>
+
                 <div class="text-4xl md:text-5xl font-black blue-text mb-2 counter" data-target="150">
                     <span>150</span>+
                 </div>
@@ -580,7 +431,12 @@ require_once 'includes/header.php';
                 <p class="text-gray-500 text-xs mt-3">Google first page</p>
             </div>
 
-            <div class="glass-card rounded-[24px] p-6 md:p-8 border border-white/10 text-center fade-in-up delay-300 hover:-translate-y-1 transition-all duration-300">
+            <div class="services-magnetic-card glass-card rounded-[24px] p-6 md:p-8 border border-white/[0.06] text-center service-reveal group"
+                 style="--accent: #00ffb3; transition-delay: 0.15s;">
+                <div class="card-border-glow rounded-[24px]"></div>
+                <div class="card-glow-spot bg-[#00ffb3]/8 blur-[80px] rounded-full"></div>
+                <div class="services-card-glow-line"></div>
+
                 <div class="text-4xl md:text-5xl font-black green-text mb-2 counter" data-target="95">
                     <span>95</span>
                 </div>
@@ -591,7 +447,12 @@ require_once 'includes/header.php';
                 <p class="text-gray-500 text-xs mt-3">Technical SEO optimization</p>
             </div>
 
-            <div class="glass-card rounded-[24px] p-6 md:p-8 border border-white/10 text-center fade-in-up delay-400 hover:-translate-y-1 transition-all duration-300">
+            <div class="services-magnetic-card glass-card rounded-[24px] p-6 md:p-8 border border-white/[0.06] text-center service-reveal group"
+                 style="--accent: #00b7ff; transition-delay: 0.2s;">
+                <div class="card-border-glow rounded-[24px]"></div>
+                <div class="card-glow-spot bg-[#00b7ff]/8 blur-[80px] rounded-full"></div>
+                <div class="services-card-glow-line"></div>
+
                 <div class="text-4xl md:text-5xl font-black blue-text mb-2 counter" data-target="3">
                     <span>3</span>x
                 </div>
@@ -609,65 +470,109 @@ require_once 'includes/header.php';
 </section>
 
 <!-- SEO TOOLS -->
-<section class="py-16 md:py-24 section-border overflow-hidden">
+<section class="py-20 md:py-32 section-border overflow-hidden relative">
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 lg:gap-20 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
-            <div class="fade-in-up">
+            <!-- LEFT: TEXT -->
+            <div class="service-reveal">
 
-                <p class="green-text uppercase tracking-[4px] font-semibold mb-4 text-xs sm:text-sm">
-                    SEO TOOLS
+                <p class="green-text uppercase tracking-[4px] font-semibold mb-5 text-sm">
+                    SEO Tools
                 </p>
 
-                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight mb-6 md:mb-8">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-black leading-tight mb-6 md:mb-8">
                     We Use Industry-Leading
-                    <span class="green-text block sm:inline">SEO Tools</span>
+                    <span class="services-heading-gradient block sm:inline"> SEO Tools</span>
                 </h2>
 
-                <p class="text-gray-400 text-base md:text-lg leading-8 md:leading-9 mb-8 md:mb-10">
+                <p class="text-gray-400 text-base md:text-lg leading-8 md:leading-9 mb-10">
                     From keyword research and rank tracking to site audits and competitor analysis, we leverage the best SEO tools to deliver measurable results for your business.
                 </p>
 
+                <a href="hire.php"
+                   class="btn-primary px-8 md:px-10 py-3.5 md:py-4 rounded-2xl text-base md:text-lg inline-flex items-center gap-2 transition hover:scale-105">
+                    <i class="fas fa-rocket"></i>
+                    Start Your SEO Journey
+                </a>
+
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+            <!-- RIGHT: TOOL CARDS -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 md:gap-5">
 
-                <div class="glass-card rounded-2xl p-6 md:p-8 text-center hover:-translate-y-1 transition">
-                    <i class="fas fa-chart-bar text-5xl mb-4 text-[#00ffb3]"></i>
-                    <h3 class="text-xl font-bold">SEMrush</h3>
-                    <p class="text-gray-500 text-sm mt-2">Research & audits</p>
+                <div class="services-magnetic-card glass-card rounded-[20px] md:rounded-[24px] p-5 md:p-6 border border-white/[0.06] group text-center"
+                     style="--accent: #00ffb3; transition-delay: 0.05s;">
+                    <div class="card-border-glow rounded-[20px] md:rounded-[24px]"></div>
+                    <div class="card-glow-spot bg-[#00ffb3]/8 blur-[80px] rounded-full"></div>
+                    <div class="services-card-glow-line"></div>
+                    <div class="w-12 h-12 rounded-xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mx-auto mb-3">
+                        <i class="fas fa-chart-bar text-xl"></i>
+                    </div>
+                    <h4 class="text-sm font-bold mb-1 group-hover:text-[#00ffb3] transition-colors">SEMrush</h4>
+                    <p class="text-gray-500 text-xs leading-5">Research & audits</p>
                 </div>
 
-                <div class="glass-card rounded-2xl p-6 md:p-8 text-center hover:-translate-y-1 transition">
-                    <i class="fab fa-google text-5xl mb-4 text-[#00b7ff]"></i>
-                    <h3 class="text-xl font-bold">Search Console</h3>
-                    <p class="text-gray-500 text-sm mt-2">Monitoring & insights</p>
+                <div class="services-magnetic-card glass-card rounded-[20px] md:rounded-[24px] p-5 md:p-6 border border-white/[0.06] group text-center"
+                     style="--accent: #00b7ff; transition-delay: 0.1s;">
+                    <div class="card-border-glow rounded-[20px] md:rounded-[24px]"></div>
+                    <div class="card-glow-spot bg-[#00b7ff]/8 blur-[80px] rounded-full"></div>
+                    <div class="services-card-glow-line"></div>
+                    <div class="w-12 h-12 rounded-xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mx-auto mb-3">
+                        <i class="fab fa-google text-xl"></i>
+                    </div>
+                    <h4 class="text-sm font-bold mb-1 group-hover:text-[#00b7ff] transition-colors">Search Console</h4>
+                    <p class="text-gray-500 text-xs leading-5">Monitoring & insights</p>
                 </div>
 
-                <div class="glass-card rounded-2xl p-6 md:p-8 text-center hover:-translate-y-1 transition">
-                    <i class="fab fa-google text-5xl mb-4 text-[#00ffb3]"></i>
-                    <h3 class="text-xl font-bold">Analytics</h3>
-                    <p class="text-gray-500 text-sm mt-2">Traffic analysis</p>
+                <div class="services-magnetic-card glass-card rounded-[20px] md:rounded-[24px] p-5 md:p-6 border border-white/[0.06] group text-center"
+                     style="--accent: #00ffb3; transition-delay: 0.15s;">
+                    <div class="card-border-glow rounded-[20px] md:rounded-[24px]"></div>
+                    <div class="card-glow-spot bg-[#00ffb3]/8 blur-[80px] rounded-full"></div>
+                    <div class="services-card-glow-line"></div>
+                    <div class="w-12 h-12 rounded-xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mx-auto mb-3">
+                        <i class="fab fa-google text-xl"></i>
+                    </div>
+                    <h4 class="text-sm font-bold mb-1 group-hover:text-[#00ffb3] transition-colors">Analytics</h4>
+                    <p class="text-gray-500 text-xs leading-5">Traffic analysis</p>
                 </div>
 
-                <div class="glass-card rounded-2xl p-6 md:p-8 text-center hover:-translate-y-1 transition">
-                    <i class="fas fa-link text-5xl mb-4 text-[#00b7ff]"></i>
-                    <h3 class="text-xl font-bold">Ahrefs</h3>
-                    <p class="text-gray-500 text-sm mt-2">Backlink analysis</p>
+                <div class="services-magnetic-card glass-card rounded-[20px] md:rounded-[24px] p-5 md:p-6 border border-white/[0.06] group text-center"
+                     style="--accent: #00b7ff; transition-delay: 0.2s;">
+                    <div class="card-border-glow rounded-[20px] md:rounded-[24px]"></div>
+                    <div class="card-glow-spot bg-[#00b7ff]/8 blur-[80px] rounded-full"></div>
+                    <div class="services-card-glow-line"></div>
+                    <div class="w-12 h-12 rounded-xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mx-auto mb-3">
+                        <i class="fas fa-link text-xl"></i>
+                    </div>
+                    <h4 class="text-sm font-bold mb-1 group-hover:text-[#00b7ff] transition-colors">Ahrefs</h4>
+                    <p class="text-gray-500 text-xs leading-5">Backlink analysis</p>
                 </div>
 
-                <div class="glass-card rounded-2xl p-6 md:p-8 text-center hover:-translate-y-1 transition">
-                    <i class="fas fa-tachometer-alt text-5xl mb-4 text-[#00ffb3]"></i>
-                    <h3 class="text-xl font-bold">GTmetrix</h3>
-                    <p class="text-gray-500 text-sm mt-2">Speed optimization</p>
+                <div class="services-magnetic-card glass-card rounded-[20px] md:rounded-[24px] p-5 md:p-6 border border-white/[0.06] group text-center"
+                     style="--accent: #00ffb3; transition-delay: 0.25s;">
+                    <div class="card-border-glow rounded-[20px] md:rounded-[24px]"></div>
+                    <div class="card-glow-spot bg-[#00ffb3]/8 blur-[80px] rounded-full"></div>
+                    <div class="services-card-glow-line"></div>
+                    <div class="w-12 h-12 rounded-xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mx-auto mb-3">
+                        <i class="fas fa-tachometer-alt text-xl"></i>
+                    </div>
+                    <h4 class="text-sm font-bold mb-1 group-hover:text-[#00ffb3] transition-colors">GTmetrix</h4>
+                    <p class="text-gray-500 text-xs leading-5">Speed optimization</p>
                 </div>
 
-                <div class="glass-card rounded-2xl p-6 md:p-8 text-center hover:-translate-y-1 transition">
-                    <i class="fas fa-key text-5xl mb-4 text-[#00b7ff]"></i>
-                    <h3 class="text-xl font-bold">Moz</h3>
-                    <p class="text-gray-500 text-sm mt-2">Domain authority</p>
+                <div class="services-magnetic-card glass-card rounded-[20px] md:rounded-[24px] p-5 md:p-6 border border-white/[0.06] group text-center"
+                     style="--accent: #00b7ff; transition-delay: 0.3s;">
+                    <div class="card-border-glow rounded-[20px] md:rounded-[24px]"></div>
+                    <div class="card-glow-spot bg-[#00b7ff]/8 blur-[80px] rounded-full"></div>
+                    <div class="services-card-glow-line"></div>
+                    <div class="w-12 h-12 rounded-xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mx-auto mb-3">
+                        <i class="fas fa-key text-xl"></i>
+                    </div>
+                    <h4 class="text-sm font-bold mb-1 group-hover:text-[#00b7ff] transition-colors">Moz</h4>
+                    <p class="text-gray-500 text-xs leading-5">Domain authority</p>
                 </div>
 
             </div>
@@ -679,11 +584,11 @@ require_once 'includes/header.php';
 </section>
 
 <!-- CTA SECTION -->
-<section class="py-16 md:py-24 section-border overflow-hidden">
+<section class="py-20 md:py-32 section-border overflow-hidden relative">
 
     <div class="max-w-5xl mx-auto px-4 sm:px-6">
 
-        <div class="glass-card rounded-[28px] md:rounded-[50px] p-8 sm:p-12 md:p-16 text-center relative overflow-hidden fade-in-up">
+        <div class="glass-card rounded-[28px] md:rounded-[50px] p-8 sm:p-12 md:p-16 text-center relative overflow-hidden service-reveal">
 
             <div class="absolute top-[-80px] left-[-80px] w-56 sm:w-64 md:w-72 h-56 sm:h-64 md:h-72 bg-[#00ffb3]/10 blur-[120px] rounded-full">
             </div>
@@ -697,26 +602,26 @@ require_once 'includes/header.php';
                     SCALE YOUR ORGANIC TRAFFIC TODAY
                 </p>
 
-                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight mb-6 md:mb-8">
-                    Ready To Rank Higher on Google?
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-black leading-tight mb-6 md:mb-8">
+                    Ready To Outrank Your<br class="hidden sm:block"> Competitors?
                 </h2>
 
                 <p class="text-gray-400 text-base sm:text-lg md:text-xl leading-8 md:leading-9 max-w-3xl mx-auto mb-10">
-                    If you are ready to invest in the best SEO services in Ahmedabad to outrank competitors and capture high-intent leads, our team is equipped to deliver. Partner with the best SEO company ahmedabad brands trust for transparent reporting and sustainable growth.
+                    If you are ready to invest in the best SEO services in Ahmedabad to outrank competitors and capture high-intent leads, our team is equipped to deliver. Partner with the best SEO company Ahmedabad brands trust for transparent reporting and sustainable growth.
                 </p>
 
                 <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-4 sm:gap-5">
 
-                    <a href="hire.php"
-                        class="btn-primary px-8 md:px-10 py-3.5 md:py-4 rounded-2xl text-base md:text-lg inline-flex items-center justify-center transition-transform hover:scale-105">
-                        <i class="fas fa-rocket mr-2"></i>
-                        Start Your SEO Journey
+                    <a href="contact.php"
+                       class="btn-primary px-8 md:px-10 py-3.5 md:py-4 rounded-2xl text-base md:text-lg inline-flex items-center justify-center gap-2 transition hover:scale-105">
+                        <i class="fas fa-phone"></i>
+                        Complimentary Website Audit
                     </a>
 
-                    <a href="contact.php"
-                        class="border border-white/10 hover:border-[#00ffb3] hover:text-[#00ffb3] px-8 md:px-10 py-3.5 md:py-4 rounded-2xl text-base md:text-lg inline-flex items-center justify-center transition">
-                        <i class="fas fa-file-alt mr-2"></i>
-                        Get Free SEO Audit
+                    <a href="hire.php"
+                       class="border border-white/10 hover:border-[#00ffb3] hover:text-[#00ffb3] px-8 md:px-10 py-3.5 md:py-4 rounded-2xl text-base md:text-lg inline-flex items-center justify-center gap-2 transition">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                        Start Your SEO Journey
                     </a>
 
                 </div>

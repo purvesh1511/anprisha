@@ -130,52 +130,88 @@ $portfolio_items = [
 ];
 ?>
 <!-- HERO -->
-<section class="pt-28 sm:pt-32 md:pt-40 pb-20 sm:pb-24 md:pb-32 relative overflow-hidden">
+<section class="py-24 sm:py-28 lg:py-32 relative overflow-hidden">
 
-    <!-- BACKGROUND BLURS -->
-    <div
-        class="absolute top-0 left-[-100px] md:left-0 w-72 sm:w-80 md:w-96 h-72 sm:h-80 md:h-96 bg-[#00ffb3]/10 blur-[120px] md:blur-[150px] rounded-full">
+    <div class="absolute top-[-80px] sm:top-0 left-[-120px] w-72 sm:w-80 md:w-96 h-72 sm:h-80 md:h-96 bg-[#00ffb3]/10 blur-[120px] md:blur-[150px] rounded-full">
     </div>
 
-    <div
-        class="absolute bottom-0 right-[-100px] md:right-0 w-72 sm:w-80 md:w-96 h-72 sm:h-80 md:h-96 bg-[#00b7ff]/10 blur-[120px] md:blur-[150px] rounded-full">
+    <div class="absolute bottom-[-80px] sm:bottom-0 right-[-120px] w-72 sm:w-80 md:w-96 h-72 sm:h-80 md:h-96 bg-[#00b7ff]/10 blur-[120px] md:blur-[150px] rounded-full">
     </div>
 
-    <!-- CONTENT -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
-        <div class="max-w-4xl">
+            <!-- LEFT CONTENT -->
+            <div>
 
-            <!-- LABEL -->
-            <p
-                class="uppercase tracking-[4px] md:tracking-[5px] text-[#00ffb3] font-semibold mb-5 md:mb-6 text-xs sm:text-sm">
-                OUR PORTFOLIO
-            </p>
+                <p class="uppercase tracking-[4px] md:tracking-[5px] text-[#00ffb3] font-semibold mb-5 md:mb-6 text-xs sm:text-sm">
+                    OUR PORTFOLIO
+                </p>
 
-            <!-- TITLE -->
-            <h1 class="text-xl sm:text-4xl lg:text-5xl font-black leading-tight lg:leading-[1.1] mb-8 md:mb-10">
+                <h1 class="text-xl sm:text-4xl lg:text-5xl font-black leading-tight lg:leading-[1.05] mb-8 md:mb-10">
 
-                Creative
+                    Creative
+                    <span class="green-text block sm:inline">
+                        Digital Projects
+                    </span>
 
-                <span class="green-text block sm:inline">
-                    Digital Projects
-                </span>
+                    We Have Delivered
 
-                We Have Delivered
+                </h1>
 
-            </h1>
+                <p class="text-base sm:text-lg md:text-xl text-gray-400 leading-8 md:leading-10">
 
-            <!-- DESCRIPTION -->
-            <p class="text-base sm:text-lg md:text-xl text-gray-400 leading-8 md:leading-10 max-w-3xl">
+                    Explore our portfolio of website development, Shopify stores,
+                    SEO optimization, branding, and digital marketing projects
+                    created for modern businesses.
 
-                Explore our portfolio of website development, Shopify stores,
-                SEO optimization, branding, and digital marketing projects
-                created for modern businesses.
+                </p>
 
-            </p>
+            </div>
+
+            <!-- RIGHT IMAGE -->
+            <div class="relative flex items-center justify-center">
+
+                <div class="absolute -top-10 -left-10 w-48 sm:w-72 h-48 sm:h-72 bg-[#00ffb3]/10 blur-[100px] rounded-full"></div>
+                <div class="absolute bottom-0 right-0 w-48 sm:w-72 h-48 sm:h-72 bg-[#00b7ff]/10 blur-[100px] rounded-full"></div>
+
+                <div class="relative w-full max-w-full lg:max-w-2xl mx-auto">
+                    <div class="glass-card rounded-[22px] sm:rounded-[30px] p-1 sm:p-2 hero-image-glow pulse-ring text-center">
+                        <img src="assets/images/portfolio.png"
+                             alt="Anprix Solutions - Our Portfolio"
+                             width="680" height="500" fetchpriority="high"
+                             class="w-full max-w-[85%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-[85%] xl:max-w-[680px] mx-auto animate-float">
+                    </div>
+
+                    <div class="floating-badge absolute -top-3 right-1 sm:-top-6 sm:-right-4 rounded-2xl px-3 py-2 sm:px-4 sm:py-3 animate-float">
+                        <div class="flex items-center gap-2.5">
+                            <div class="w-9 h-9 rounded-xl bg-[#00ffb3]/20 flex items-center justify-center text-[#00ffb3]">
+                                <i class="fas fa-laptop-code text-sm icon-float"></i>
+                            </div>
+                            <div class="text-left">
+                                <p class="text-[10px] text-gray-500 uppercase tracking-wide">Expert In</p>
+                                <p class="text-sm font-semibold">Web Design</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="floating-badge absolute -bottom-2 left-1 sm:-bottom-5 sm:-left-5 rounded-2xl px-3 py-2 sm:px-4 sm:py-3 animate-float-delayed">
+                        <div class="flex items-center gap-2.5">
+                            <div class="w-9 h-9 rounded-xl bg-[#00b7ff]/20 flex items-center justify-center text-[#00b7ff]">
+                                <i class="fas fa-chart-line text-sm icon-float"></i>
+                            </div>
+                            <div class="text-left">
+                                <p class="text-[10px] text-gray-500 uppercase tracking-wide">Results</p>
+                                <p class="text-sm font-semibold">100+ Projects</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
-
     </div>
 
 </section>

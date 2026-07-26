@@ -29,18 +29,13 @@ require_once 'includes/header.php';
                 </p>
 
                 <h1 class="text-xl sm:text-4xl lg:text-5xl font-black leading-tight lg:leading-[1.05] mb-8 md:mb-10">
-
-                    Website Development Company
-                    <span class="green-text block sm:inline">
-                        in Ahmedabad, India
-                    </span>
-
+                    <span class="txt-split">Leading Website Development Company </span>
+                    <span class="txt-split green-text" style="display:block;">in Ahmedabad</span>
+                    <span class="txt-split block sm:inline" style="font-size:0.65em; opacity:0.85;">| Custom Web Solutions</span>
                 </h1>
 
-                <p class="text-base sm:text-lg md:text-xl text-gray-400 leading-8 md:leading-10">
-
-                    Anprix Solutions is a leading web development company in Ahmedabad, India, dedicated to helping businesses establish a powerful online presence through innovative and result-driven website solutions. We specialize in creating visually appealing, user-friendly, responsive, and SEO-friendly websites that help businesses stand out in a competitive market.
-
+                <p class="text-base sm:text-lg md:text-xl text-gray-400 leading-8 md:leading-10 word-reveal">
+                    In today's digital-first economy, your website serves as the primary digital storefront for your business. As a premier website development company in Ahmedabad, we build fast, responsive, and conversion-focused websites that turn casual visitors into loyal customers.
                 </p>
 
             </div>
@@ -53,7 +48,7 @@ require_once 'includes/header.php';
 
                 <div class="relative w-full max-w-full lg:max-w-2xl mx-auto">
                     <div class="glass-card rounded-[22px] sm:rounded-[30px] p-1 sm:p-2 hero-image-glow pulse-ring text-center">
-                        <img src="assets/images/web-development.png"
+                        <img src="assets/images/web-developments.png"
                              alt="Anprix Solutions - Website Development Company"
                              width="680" height="500" fetchpriority="high"
                              class="w-full max-w-[85%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-[85%] xl:max-w-[680px] mx-auto animate-float">
@@ -92,371 +87,148 @@ require_once 'includes/header.php';
 
 </section>
 
-<!-- SERVICES DETAIL -->
-<section class="py-16 md:py-24 section-border overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 space-y-20 md:space-y-32">
+<!-- COMPREHENSIVE SERVICES -->
+<section class="py-20 md:py-32 section-border overflow-hidden relative">
 
-        <!-- ========================= -->
-        <!-- WD SERVICE 1: Custom Website Design -->
-        <!-- ========================= -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#00b7ff]/5 blur-[200px] rounded-full pointer-events-none"></div>
 
-            <div class="glass-card rounded-3xl p-6 md:p-10 space-y-5 order-2 lg:order-1">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
 
-                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fas fa-palette text-[#00ffb3] text-2xl"></i>
-                    <div>
-                        <h3 class="font-bold text-lg">UI/UX Design</h3>
-                        <p class="text-gray-500 text-sm">Modern, user-centered layouts</p>
-                    </div>
-                </div>
+        <!-- HEADING -->
+        <div class="text-center mb-16 md:mb-24 service-reveal">
 
-                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fas fa-code text-[#00b7ff] text-2xl"></i>
-                    <div>
-                        <h3 class="font-bold text-lg">Frontend Development</h3>
-                        <p class="text-gray-500 text-sm">HTML, CSS, JavaScript, React</p>
-                    </div>
-                </div>
-
-                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fas fa-mobile-alt text-[#00ffb3] text-2xl"></i>
-                    <div>
-                        <h3 class="font-bold text-lg">Responsive Design</h3>
-                        <p class="text-gray-500 text-sm">Perfect on every device</p>
-                    </div>
-                </div>
-
-                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fas fa-paint-brush text-[#00b7ff] text-2xl"></i>
-                    <div>
-                        <h3 class="font-bold text-lg">Brand-First Approach</h3>
-                        <p class="text-gray-500 text-sm">Design aligned with your identity</p>
-                    </div>
-                </div>
-
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/[0.02] mb-6 md:mb-8">
+                <span class="w-2 h-2 rounded-full bg-[#00ffb3] animate-pulse"></span>
+                <span class="text-xs sm:text-sm font-medium text-gray-400 tracking-wider uppercase">What We Build</span>
             </div>
 
-            <div class="space-y-6 order-1 lg:order-2">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-black mb-6 md:mb-8 leading-[1.1]">
+                <span class="txt-split">Comprehensive </span>
+                <span class="services-heading-gradient block sm:inline"> Website Development</span>
+                <span class="txt-split block sm:inline"> Services</span>
+            </h2>
 
-                <p class="green-text uppercase tracking-[4px] font-semibold text-sm">
-                    Custom Website Design
-                </p>
-
-                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
-                    Websites That <span class="green-text">Convert</span>
-                </h2>
-
-                <p class="text-gray-400 text-base md:text-lg leading-8 md:leading-9">
-                    We design and develop custom websites that reflect your brand, engage your audience, and drive measurable results — from simple landing pages to complex web applications.
-                </p>
-
-                <div class="flex flex-wrap gap-4">
-
-                    <a href="hire.php" class="btn-primary px-6 py-4 rounded-2xl text-center">
-                        Start Your Website
-                    </a>
-
-                </div>
-
-            </div>
+            <p class="max-w-3xl mx-auto text-gray-400 text-base md:text-lg leading-relaxed word-reveal">
+                Building a high-performing web application requires both technical precision and visual elegance. As a trusted web developer company in Ahmedabad, we deliver end-to-end solutions engineered to support your unique business goals.
+            </p>
 
         </div>
 
-        <!-- ========================= -->
-        <!-- WD SERVICE 2: Laravel Development -->
-        <!-- ========================= -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+        <!-- SERVICES GRID -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 md:gap-6" id="wd-services-grid">
 
-            <div class="space-y-6">
+            <!-- Custom Web Engineering -->
+            <div class="services-magnetic-card glass-card rounded-[24px] md:rounded-[28px] p-7 md:p-8 border border-white/[0.06] service-reveal group"
+                 style="--accent: #00ffb3; transition-delay: 0.05s;">
 
-                <p class="green-text uppercase tracking-[4px] font-semibold text-sm">
-                    Laravel Development
-                </p>
+                <div class="card-border-glow rounded-[24px] md:rounded-[28px]"></div>
+                <div class="card-glow-spot bg-[#00ffb3]/8 blur-[80px] rounded-full"></div>
+                <div class="services-card-glow-line"></div>
 
-                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
-                    Powerful Backend <span class="green-text">Applications</span>
-                </h2>
+                <span class="services-card-number">01</span>
 
-                <p class="text-gray-400 text-base md:text-lg leading-8 md:leading-9">
-                    We build robust, scalable backend systems and custom web applications using Laravel — the most popular PHP framework for modern web development.
-                </p>
-
-                <div class="space-y-5">
-
-                    <div class="flex gap-4">
-                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3]">
-                            <i class="fas fa-cogs"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-lg">Custom Web Apps</h3>
-                            <p class="text-gray-500 text-sm">Tailored solutions for complex requirements</p>
-                        </div>
-                    </div>
-
-                    <div class="flex gap-4">
-                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff]">
-                            <i class="fas fa-database"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-lg">Database Architecture</h3>
-                            <p class="text-gray-500 text-sm">Optimized MySQL & PostgreSQL schemas</p>
-                        </div>
-                    </div>
-
-                    <div class="flex gap-4">
-                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3]">
-                            <i class="fas fa-cloud"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-lg">API Development</h3>
-                            <p class="text-gray-500 text-sm">RESTful & GraphQL APIs</p>
-                        </div>
-                    </div>
-
+                <div class="services-icon-wrap bg-[#00ffb3]/10 mb-6" style="--accent: #00ffb3;">
+                    <i class="fas fa-code text-[#00ffb3] text-xl"></i>
                 </div>
 
-            </div>
-
-            <div class="glass-card rounded-3xl p-6 md:p-10 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
-
-                <div class="bg-black/40 rounded-2xl p-6 md:p-8">
-                    <i class="fab fa-laravel text-3xl mb-4 text-[#00ffb3]"></i>
-                    <h3 class="font-bold text-lg">Laravel</h3>
-                    <p class="text-gray-500 text-sm">Modern PHP framework</p>
-                </div>
-
-                <div class="bg-black/40 rounded-2xl p-6 md:p-8">
-                    <i class="fas fa-database text-3xl mb-4 text-[#00b7ff]"></i>
-                    <h3 class="font-bold text-lg">Eloquent ORM</h3>
-                    <p class="text-gray-500 text-sm">Database management</p>
-                </div>
-
-                <div class="bg-black/40 rounded-2xl p-6 md:p-8">
-                    <i class="fas fa-shield-alt text-3xl mb-4 text-[#00ffb3]"></i>
-                    <h3 class="font-bold text-lg">Security</h3>
-                    <p class="text-gray-500 text-sm">Built-in protection</p>
-                </div>
-
-                <div class="bg-black/40 rounded-2xl p-6 md:p-8">
-                    <i class="fas fa-rocket text-3xl mb-4 text-[#00b7ff]"></i>
-                    <h3 class="font-bold text-lg">Scalable</h3>
-                    <p class="text-gray-500 text-sm">Grows with your business</p>
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- ========================= -->
-        <!-- WD SERVICE 3: Frontend Development -->
-        <!-- ========================= -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
-
-            <div class="glass-card rounded-3xl p-6 md:p-10 space-y-5 order-2 lg:order-1">
-
-                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fab fa-react text-[#00ffb3] text-2xl"></i>
-                    <div>
-                        <h3 class="font-bold text-lg">React & Vue.js</h3>
-                        <p class="text-gray-500 text-sm">Modern frontend frameworks</p>
-                    </div>
-                </div>
-
-                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fab fa-js text-[#00b7ff] text-2xl"></i>
-                    <div>
-                        <h3 class="font-bold text-lg">JavaScript & TypeScript</h3>
-                        <p class="text-gray-500 text-sm">Interactive user experiences</p>
-                    </div>
-                </div>
-
-                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fas fa-bolt text-[#00ffb3] text-2xl"></i>
-                    <div>
-                        <h3 class="font-bold text-lg">Tailwind CSS</h3>
-                        <p class="text-gray-500 text-sm">Utility-first styling</p>
-                    </div>
-                </div>
-
-                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fas fa-tachometer-alt text-[#00b7ff] text-2xl"></i>
-                    <div>
-                        <h3 class="font-bold text-lg">Performance Focused</h3>
-                        <p class="text-gray-500 text-sm">Optimized for speed</p>
+                <div class="services-card-content">
+                    <h3 class="text-lg md:text-xl font-bold mb-3 group-hover:text-[#00ffb3] transition-colors">
+                        Custom Web Engineering
+                    </h3>
+                    <p class="text-gray-400 text-sm md:text-[15px] leading-7 mb-5">
+                        Tailor-made web platforms crafted for speed, scalable architecture, and ironclad security. From complex SaaS dashboards to enterprise portals, we engineer solutions that grow with your business.
+                    </p>
+                    <div class="flex items-center gap-2 text-sm font-medium text-[#00ffb3]">
+                        <span>Explore Solutions</span>
+                        <span class="services-card-arrow"><i class="fas fa-arrow-right text-xs"></i></span>
                     </div>
                 </div>
 
             </div>
 
-            <div class="space-y-6 order-1 lg:order-2">
+            <!-- E-Commerce Platforms -->
+            <div class="services-magnetic-card glass-card rounded-[24px] md:rounded-[28px] p-7 md:p-8 border border-white/[0.06] service-reveal group"
+                 style="--accent: #00b7ff; transition-delay: 0.1s;">
 
-                <p class="green-text uppercase tracking-[4px] font-semibold text-sm">
-                    Frontend Development
-                </p>
+                <div class="card-border-glow rounded-[24px] md:rounded-[28px]"></div>
+                <div class="card-glow-spot bg-[#00b7ff]/8 blur-[80px] rounded-full"></div>
+                <div class="services-card-glow-line"></div>
 
-                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
-                    Modern, Fast <span class="green-text">Interfaces</span>
-                </h2>
+                <span class="services-card-number">02</span>
 
-                <p class="text-gray-400 text-base md:text-lg leading-8 md:leading-9">
-                    We craft pixel-perfect, responsive frontends using React, Vue.js, and Tailwind CSS to deliver exceptional user experiences across all devices.
-                </p>
-
-                <div class="flex flex-wrap gap-4">
-
-                    <a href="hire.php" class="btn-primary px-6 py-4 rounded-2xl text-center">
-                        Build Your Frontend
-                    </a>
-
+                <div class="services-icon-wrap bg-[#00b7ff]/10 mb-6" style="--accent: #00b7ff;">
+                    <i class="fas fa-shopping-cart text-[#00b7ff] text-xl"></i>
                 </div>
 
-            </div>
-
-        </div>
-
-        <!-- ========================= -->
-        <!-- WD SERVICE 4: Shopify Development -->
-        <!-- ========================= -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
-
-            <div class="space-y-6">
-
-                <p class="green-text uppercase tracking-[4px] font-semibold text-sm">
-                    Shopify Development
-                </p>
-
-                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
-                    Launch Your <span class="green-text">Online Store</span>
-                </h2>
-
-                <p class="text-gray-400 text-base md:text-lg leading-8 md:leading-9">
-                    We build high-converting Shopify stores with custom themes, app integrations, and optimized checkout flows to help you sell more online.
-                </p>
-
-                <div class="space-y-5">
-
-                    <div class="flex gap-4">
-                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3]">
-                            <i class="fab fa-shopify"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-lg">Custom Themes</h3>
-                            <p class="text-gray-500 text-sm">Tailored to your brand identity</p>
-                        </div>
-                    </div>
-
-                    <div class="flex gap-4">
-                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff]">
-                            <i class="fas fa-puzzle-piece"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-lg">App Integrations</h3>
-                            <p class="text-gray-500 text-sm">Extend functionality with plugins</p>
-                        </div>
-                    </div>
-
-                    <div class="flex gap-4">
-                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3]">
-                            <i class="fas fa-credit-card"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-lg">Checkout Optimization</h3>
-                            <p class="text-gray-500 text-sm">Reduce cart abandonment</p>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="glass-card rounded-3xl p-6 md:p-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
-
-                <div class="bg-black/40 p-6 rounded-2xl text-center">
-                    <i class="fab fa-shopify text-3xl mb-3 text-[#00ffb3]"></i>
-                    <p>Theme Dev</p>
-                </div>
-
-                <div class="bg-black/40 p-6 rounded-2xl text-center">
-                    <i class="fas fa-cogs text-3xl mb-3 text-[#00b7ff]"></i>
-                    <p>Custom Apps</p>
-                </div>
-
-                <div class="bg-black/40 p-6 rounded-2xl text-center">
-                    <i class="fas fa-chart-line text-3xl mb-3 text-[#00ffb3]"></i>
-                    <p>SEO Optimized</p>
-                </div>
-
-                <div class="bg-black/40 p-6 rounded-2xl text-center">
-                    <i class="fas fa-sync-alt text-3xl mb-3 text-[#00b7ff]"></i>
-                    <p>Migration</p>
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- ========================= -->
-        <!-- WD SERVICE 5: WordPress Development -->
-        <!-- ========================= -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
-
-            <div class="glass-card rounded-3xl p-6 md:p-10 space-y-5 order-2 lg:order-1">
-
-                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fab fa-wordpress text-[#00ffb3] text-2xl"></i>
-                    <div>
-                        <h3 class="font-bold text-lg">Custom Theme Development</h3>
-                        <p class="text-gray-500 text-sm">Unique designs built from scratch</p>
-                    </div>
-                </div>
-
-                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fas fa-plug text-[#00b7ff] text-2xl"></i>
-                    <div>
-                        <h3 class="font-bold text-lg">Plugin Development</h3>
-                        <p class="text-gray-500 text-sm">Custom functionality & integrations</p>
-                    </div>
-                </div>
-
-                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fas fa-shopping-cart text-[#00ffb3] text-2xl"></i>
-                    <div>
-                        <h3 class="font-bold text-lg">WooCommerce</h3>
-                        <p class="text-gray-500 text-sm">WordPress-powered online stores</p>
-                    </div>
-                </div>
-
-                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fas fa-tachometer-alt text-[#00b7ff] text-2xl"></i>
-                    <div>
-                        <h3 class="font-bold text-lg">Performance Tuning</h3>
-                        <p class="text-gray-500 text-sm">Speed & caching optimization</p>
+                <div class="services-card-content">
+                    <h3 class="text-lg md:text-xl font-bold mb-3 group-hover:text-[#00b7ff] transition-colors">
+                        E-Commerce Platforms
+                    </h3>
+                    <p class="text-gray-400 text-sm md:text-[15px] leading-7 mb-5">
+                        Feature-rich online stores built on modern technologies like Shopify, WooCommerce, and custom frameworks. Optimized checkout flows, inventory management, and payment gateway integration.
+                    </p>
+                    <div class="flex items-center gap-2 text-sm font-medium text-[#00b7ff]">
+                        <span>Explore Solutions</span>
+                        <span class="services-card-arrow"><i class="fas fa-arrow-right text-xs"></i></span>
                     </div>
                 </div>
 
             </div>
 
-            <div class="space-y-6 order-1 lg:order-2">
+            <!-- Responsive UI/UX Layouts -->
+            <div class="services-magnetic-card glass-card rounded-[24px] md:rounded-[28px] p-7 md:p-8 border border-white/[0.06] service-reveal group"
+                 style="--accent: #00b7ff; transition-delay: 0.15s;">
 
-                <p class="green-text uppercase tracking-[4px] font-semibold text-sm">
-                    WordPress Development
-                </p>
+                <div class="card-border-glow rounded-[24px] md:rounded-[28px]"></div>
+                <div class="card-glow-spot bg-[#00b7ff]/8 blur-[80px] rounded-full"></div>
+                <div class="services-card-glow-line"></div>
 
-                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
-                    Flexible, Powerful <span class="green-text">WordPress Sites</span>
-                </h2>
+                <span class="services-card-number">03</span>
 
-                <p class="text-gray-400 text-base md:text-lg leading-8 md:leading-9">
-                    From custom themes and plugins to WooCommerce stores, we build WordPress solutions that are fast, secure, and easy to manage.
-                </p>
+                <div class="services-icon-wrap bg-[#00b7ff]/10 mb-6" style="--accent: #00b7ff;">
+                    <i class="fas fa-mobile-alt text-[#00b7ff] text-xl"></i>
+                </div>
 
-                <div class="flex flex-wrap gap-4">
+                <div class="services-card-content">
+                    <h3 class="text-lg md:text-xl font-bold mb-3 group-hover:text-[#00b7ff] transition-colors">
+                        Responsive UI/UX Layouts
+                    </h3>
+                    <p class="text-gray-400 text-sm md:text-[15px] leading-7 mb-5">
+                        Mobile-first designs crafted by skilled website designers in Ahmedabad to optimize engagement across every screen size. Pixel-perfect interfaces that convert visitors into customers.
+                    </p>
+                    <div class="flex items-center gap-2 text-sm font-medium text-[#00b7ff]">
+                        <span>Explore Solutions</span>
+                        <span class="services-card-arrow"><i class="fas fa-arrow-right text-xs"></i></span>
+                    </div>
+                </div>
 
-                    <a href="hire.php" class="btn-primary px-6 py-4 rounded-2xl text-center">
-                        Start WordPress Site
-                    </a>
+            </div>
 
+            <!-- CMS & Business Portals -->
+            <div class="services-magnetic-card glass-card rounded-[24px] md:rounded-[28px] p-7 md:p-8 border border-white/[0.06] service-reveal group"
+                 style="--accent: #00ffb3; transition-delay: 0.2s;">
+
+                <div class="card-border-glow rounded-[24px] md:rounded-[28px]"></div>
+                <div class="card-glow-spot bg-[#00ffb3]/8 blur-[80px] rounded-full"></div>
+                <div class="services-card-glow-line"></div>
+
+                <span class="services-card-number">04</span>
+
+                <div class="services-icon-wrap bg-[#00ffb3]/10 mb-6" style="--accent: #00ffb3;">
+                    <i class="fas fa-cogs text-[#00ffb3] text-xl"></i>
+                </div>
+
+                <div class="services-card-content">
+                    <h3 class="text-lg md:text-xl font-bold mb-3 group-hover:text-[#00ffb3] transition-colors">
+                        CMS & Business Portals
+                    </h3>
+                    <p class="text-gray-400 text-sm md:text-[15px] leading-7 mb-5">
+                        Intuitive content management systems built with clean, search-engine-friendly code from day one. Easy to update, easy to scale, and built to perform.
+                    </p>
+                    <div class="flex items-center gap-2 text-sm font-medium text-[#00ffb3]">
+                        <span>Explore Solutions</span>
+                        <span class="services-card-arrow"><i class="fas fa-arrow-right text-xs"></i></span>
+                    </div>
                 </div>
 
             </div>
@@ -466,117 +238,146 @@ require_once 'includes/header.php';
     </div>
 </section>
 
-<!-- WHY CHOOSE ANPRIX -->
-<section class="py-16 md:py-24 section-border overflow-hidden">
+<!-- WHY CHOOSE SECTION -->
+<section class="py-20 md:py-32 section-border overflow-hidden relative">
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
 
-        <div class="text-center mb-14 md:mb-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
-            <p class="green-text uppercase tracking-[4px] font-semibold mb-5 text-sm">
-                WHY CHOOSE ANPRIX SOLUTIONS
-            </p>
+            <!-- LEFT: TEXT -->
+            <div class="service-reveal">
 
-            <h2 class="text-xl sm:text-3xl md:text-4xl font-black mb-6 md:mb-8 leading-tight">
-                Your Trusted Web Development Company
-            </h2>
-
-            <p class="text-gray-400 text-base md:text-lg max-w-3xl mx-auto leading-8 md:leading-9">
-                Our team combines creativity, technology, and industry expertise to deliver customized website solutions tailored to your business goals.
-            </p>
-
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-
-            <!-- Custom Website Solutions -->
-            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1">
-                <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
-                    <i class="fas fa-laptop-code text-2xl"></i>
-                </div>
-                <h3 class="text-xl md:text-xl font-bold mb-3">Custom Website Solutions</h3>
-                <p class="text-gray-400 leading-7 text-sm md:text-base">
-                    Every business is unique, and your website should reflect that. We create tailored solutions based on your business requirements, target audience, and industry trends. Our custom development approach ensures your website aligns perfectly with your brand identity and business objectives.
+                <p class="green-text uppercase tracking-[4px] font-semibold mb-5 text-sm">
+                    Why Choose Anprix
                 </p>
+
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-black leading-tight mb-6 md:mb-8">
+                    Your Trusted
+                    <span class="services-heading-gradient block sm:inline"> Website Design Company</span>
+                    <span class="block sm:inline"> Ahmedabad Team</span>
+                </h2>
+
+                <p class="text-gray-400 text-base md:text-lg leading-8 md:leading-9 mb-8">
+                    Partnering with the right agency means collaborating with specialists who prioritize speed, performance, and lead generation. As a full-service website design company Ahmedabad brands rely on, we focus heavily on Core Web Vitals, intuitive site architecture, and seamless conversion paths.
+                </p>
+
+                <p class="text-gray-400 text-base md:text-lg leading-8 md:leading-9 mb-10">
+                    Our custom website development services in Ahmedabad ensure your online portal loads quickly, ranks well on search engines, and converts traffic into measurable revenue. From initial wireframing to launch and ongoing maintenance, we handle every detail.
+                </p>
+
+                <a href="hire.php"
+                   class="btn-primary px-8 md:px-10 py-3.5 md:py-4 rounded-2xl text-base md:text-lg inline-flex items-center gap-2 transition hover:scale-105">
+                    <i class="fas fa-rocket"></i>
+                    Start Your Website
+                </a>
+
             </div>
 
-            <!-- Professional Expertise -->
-            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 hover:-translate-y-1">
-                <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5">
-                    <i class="fas fa-users text-2xl"></i>
-                </div>
-                <h3 class="text-xl md:text-xl font-bold mb-3">Professional Expertise</h3>
-                <p class="text-gray-400 leading-7 text-sm md:text-base">
-                    With years of experience in website design and development, Anprix Solutions has helped businesses across Ahmedabad and India achieve their digital goals. Our expertise allows us to deliver high-quality websites that combine functionality, performance, and aesthetics.
-                </p>
-            </div>
+            <!-- RIGHT: FEATURE CARDS -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-5">
 
-            <!-- Responsive Web Design -->
-            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1">
-                <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
-                    <i class="fas fa-mobile-alt text-2xl"></i>
+                <!-- Speed -->
+                <div class="services-magnetic-card glass-card rounded-[20px] md:rounded-[24px] p-6 border border-white/[0.06] service-reveal group"
+                     style="--accent: #00ffb3; transition-delay: 0.05s;">
+                    <div class="card-border-glow rounded-[20px] md:rounded-[24px]"></div>
+                    <div class="card-glow-spot bg-[#00ffb3]/8 blur-[80px] rounded-full"></div>
+                    <div class="services-card-glow-line"></div>
+                    <div class="services-icon-wrap bg-[#00ffb3]/10 mb-4 w-12 h-12 min-w-[48px] rounded-xl" style="--accent: #00ffb3;">
+                        <i class="fas fa-bolt text-[#00ffb3] text-base"></i>
+                    </div>
+                    <h3 class="text-base font-bold mb-2 group-hover:text-[#00ffb3] transition-colors">Lightning Fast</h3>
+                    <p class="text-gray-500 text-sm leading-6">Optimized for Core Web Vitals and sub-second load times.</p>
                 </div>
-                <h3 class="text-xl md:text-xl font-bold mb-3">Responsive Web Design</h3>
-                <p class="text-gray-400 leading-7 text-sm md:text-base">
-                    Today, most users browse websites on mobile devices. We ensure every website is fully responsive and provides an excellent user experience across desktops, tablets, and smartphones.
-                </p>
-            </div>
 
-            <!-- SEO-Friendly Development -->
-            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 hover:-translate-y-1">
-                <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5">
-                    <i class="fas fa-search text-2xl"></i>
+                <!-- SEO -->
+                <div class="services-magnetic-card glass-card rounded-[20px] md:rounded-[24px] p-6 border border-white/[0.06] service-reveal group"
+                     style="--accent: #00b7ff; transition-delay: 0.1s;">
+                    <div class="card-border-glow rounded-[20px] md:rounded-[24px]"></div>
+                    <div class="card-glow-spot bg-[#00b7ff]/8 blur-[80px] rounded-full"></div>
+                    <div class="services-card-glow-line"></div>
+                    <div class="services-icon-wrap bg-[#00b7ff]/10 mb-4 w-12 h-12 min-w-[48px] rounded-xl" style="--accent: #00b7ff;">
+                        <i class="fas fa-search text-[#00b7ff] text-base"></i>
+                    </div>
+                    <h3 class="text-base font-bold mb-2 group-hover:text-[#00b7ff] transition-colors">SEO-First Code</h3>
+                    <p class="text-gray-500 text-sm leading-6">Clean, semantic markup that search engines love to index.</p>
                 </div>
-                <h3 class="text-xl md:text-xl font-bold mb-3">SEO-Friendly Development</h3>
-                <p class="text-gray-400 leading-7 text-sm md:text-base">
-                    A beautiful website is ineffective if customers cannot find it online. Our website development services incorporate SEO best practices, including optimized site structure, fast loading speed, mobile responsiveness, and clean coding standards to improve search engine visibility.
-                </p>
-            </div>
 
-            <!-- Affordable Pricing -->
-            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1">
-                <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
-                    <i class="fas fa-dollar-sign text-2xl"></i>
+                <!-- Responsive -->
+                <div class="services-magnetic-card glass-card rounded-[20px] md:rounded-[24px] p-6 border border-white/[0.06] service-reveal group"
+                     style="--accent: #00b7ff; transition-delay: 0.15s;">
+                    <div class="card-border-glow rounded-[20px] md:rounded-[24px]"></div>
+                    <div class="card-glow-spot bg-[#00b7ff]/8 blur-[80px] rounded-full"></div>
+                    <div class="services-card-glow-line"></div>
+                    <div class="services-icon-wrap bg-[#00b7ff]/10 mb-4 w-12 h-12 min-w-[48px] rounded-xl" style="--accent: #00b7ff;">
+                        <i class="fas fa-mobile-alt text-[#00b7ff] text-base"></i>
+                    </div>
+                    <h3 class="text-base font-bold mb-2 group-hover:text-[#00b7ff] transition-colors">Fully Responsive</h3>
+                    <p class="text-gray-500 text-sm leading-6">Pixel-perfect on mobile, tablet, and desktop screens.</p>
                 </div>
-                <h3 class="text-xl md:text-xl font-bold mb-3">Affordable Pricing</h3>
-                <p class="text-gray-400 leading-7 text-sm md:text-base">
-                    We believe professional website development should be accessible to businesses of all sizes. Our flexible pricing options allow startups, SMEs, and enterprises to benefit from high-quality web development services without exceeding their budget.
-                </p>
-            </div>
 
-            <!-- Fast Loading Websites -->
-            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 hover:-translate-y-1">
-                <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5">
-                    <i class="fas fa-bolt text-2xl"></i>
+                <!-- Conversion -->
+                <div class="services-magnetic-card glass-card rounded-[20px] md:rounded-[24px] p-6 border border-white/[0.06] service-reveal group"
+                     style="--accent: #00ffb3; transition-delay: 0.2s;">
+                    <div class="card-border-glow rounded-[20px] md:rounded-[24px]"></div>
+                    <div class="card-glow-spot bg-[#00ffb3]/8 blur-[80px] rounded-full"></div>
+                    <div class="services-card-glow-line"></div>
+                    <div class="services-icon-wrap bg-[#00ffb3]/10 mb-4 w-12 h-12 min-w-[48px] rounded-xl" style="--accent: #00ffb3;">
+                        <i class="fas fa-chart-line text-[#00ffb3] text-base"></i>
+                    </div>
+                    <h3 class="text-base font-bold mb-2 group-hover:text-[#00ffb3] transition-colors">Conversion Focused</h3>
+                    <p class="text-gray-500 text-sm leading-6">Strategic CTAs and user flows designed to generate leads.</p>
                 </div>
-                <h3 class="text-xl md:text-xl font-bold mb-3">Fast Loading Websites</h3>
-                <p class="text-gray-400 leading-7 text-sm md:text-base">
-                    Website speed directly impacts user experience and search engine rankings. We develop high-performance websites optimized for speed, ensuring visitors enjoy a seamless browsing experience while improving your chances of ranking higher on search engines.
-                </p>
+
+                <!-- Scalable -->
+                <div class="services-magnetic-card glass-card rounded-[20px] md:rounded-[24px] p-6 border border-white/[0.06] service-reveal group"
+                     style="--accent: #00ffb3; transition-delay: 0.25s;">
+                    <div class="card-border-glow rounded-[20px] md:rounded-[24px]"></div>
+                    <div class="card-glow-spot bg-[#00ffb3]/8 blur-[80px] rounded-full"></div>
+                    <div class="services-card-glow-line"></div>
+                    <div class="services-icon-wrap bg-[#00ffb3]/10 mb-4 w-12 h-12 min-w-[48px] rounded-xl" style="--accent: #00ffb3;">
+                        <i class="fas fa-expand-arrows-alt text-[#00ffb3] text-base"></i>
+                    </div>
+                    <h3 class="text-base font-bold mb-2 group-hover:text-[#00ffb3] transition-colors">Scalable Architecture</h3>
+                    <p class="text-gray-500 text-sm leading-6">Built to handle growth from startup to enterprise level.</p>
+                </div>
+
+                <!-- Support -->
+                <div class="services-magnetic-card glass-card rounded-[20px] md:rounded-[24px] p-6 border border-white/[0.06] service-reveal group"
+                     style="--accent: #00b7ff; transition-delay: 0.3s;">
+                    <div class="card-border-glow rounded-[20px] md:rounded-[24px]"></div>
+                    <div class="card-glow-spot bg-[#00b7ff]/8 blur-[80px] rounded-full"></div>
+                    <div class="services-card-glow-line"></div>
+                    <div class="services-icon-wrap bg-[#00b7ff]/10 mb-4 w-12 h-12 min-w-[48px] rounded-xl" style="--accent: #00b7ff;">
+                        <i class="fas fa-headset text-[#00b7ff] text-base"></i>
+                    </div>
+                    <h3 class="text-base font-bold mb-2 group-hover:text-[#00b7ff] transition-colors">Ongoing Support</h3>
+                    <p class="text-gray-500 text-sm leading-6">Launch to maintenance, we handle every detail for you.</p>
+                </div>
+
             </div>
 
         </div>
 
     </div>
-
 </section>
 
 <!-- TECH STACK -->
-<section class="py-16 md:py-24 section-border overflow-hidden">
+<section class="py-20 md:py-32 section-border overflow-hidden relative">
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 lg:gap-20 items-center">
 
-            <div>
+            <div class="service-reveal">
 
                 <p class="green-text uppercase tracking-[4px] font-semibold mb-4 text-xs sm:text-sm">
                     OUR TECH STACK
                 </p>
 
-                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight mb-6 md:mb-8">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-black leading-tight mb-6 md:mb-8">
                     We Build With The
-                    <span class="green-text block sm:inline">Best Technologies</span>
+                    <span class="services-heading-gradient block sm:inline"> Best Technologies</span>
                 </h2>
 
                 <p class="text-gray-400 text-base md:text-lg leading-8 md:leading-9 mb-8 md:mb-10">
@@ -585,42 +386,60 @@ require_once 'includes/header.php';
 
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 md:gap-5">
 
-                <div class="glass-card rounded-2xl p-6 md:p-8 text-center hover:-translate-y-1 transition">
-                    <i class="fab fa-laravel text-5xl mb-4 text-[#00ffb3]"></i>
-                    <h3 class="text-xl font-bold">Laravel</h3>
-                    <p class="text-gray-500 text-sm mt-2">PHP backend framework</p>
+                <div class="services-magnetic-card glass-card rounded-[18px] md:rounded-[22px] p-5 md:p-6 text-center service-reveal group"
+                     style="--accent: #00ffb3; transition-delay: 0.05s;">
+                    <div class="card-border-glow rounded-[18px] md:rounded-[22px]"></div>
+                    <div class="card-glow-spot bg-[#00ffb3]/8 blur-[80px] rounded-full"></div>
+                    <i class="fab fa-laravel text-3xl md:text-4xl mb-3 text-[#00ffb3]"></i>
+                    <h3 class="text-sm md:text-base font-bold group-hover:text-[#00ffb3] transition-colors">Laravel</h3>
+                    <p class="text-gray-500 text-xs mt-1">PHP framework</p>
                 </div>
 
-                <div class="glass-card rounded-2xl p-6 md:p-8 text-center hover:-translate-y-1 transition">
-                    <i class="fab fa-wordpress text-5xl mb-4 text-[#00b7ff]"></i>
-                    <h3 class="text-xl font-bold">WordPress</h3>
-                    <p class="text-gray-500 text-sm mt-2">CMS & blogs</p>
+                <div class="services-magnetic-card glass-card rounded-[18px] md:rounded-[22px] p-5 md:p-6 text-center service-reveal group"
+                     style="--accent: #00b7ff; transition-delay: 0.1s;">
+                    <div class="card-border-glow rounded-[18px] md:rounded-[22px]"></div>
+                    <div class="card-glow-spot bg-[#00b7ff]/8 blur-[80px] rounded-full"></div>
+                    <i class="fab fa-wordpress text-3xl md:text-4xl mb-3 text-[#00b7ff]"></i>
+                    <h3 class="text-sm md:text-base font-bold group-hover:text-[#00b7ff] transition-colors">WordPress</h3>
+                    <p class="text-gray-500 text-xs mt-1">CMS & blogs</p>
                 </div>
 
-                <div class="glass-card rounded-2xl p-6 md:p-8 text-center hover:-translate-y-1 transition">
-                    <i class="fab fa-shopify text-5xl mb-4 text-[#00ffb3]"></i>
-                    <h3 class="text-xl font-bold">Shopify</h3>
-                    <p class="text-gray-500 text-sm mt-2">eCommerce platform</p>
+                <div class="services-magnetic-card glass-card rounded-[18px] md:rounded-[22px] p-5 md:p-6 text-center service-reveal group"
+                     style="--accent: #00ffb3; transition-delay: 0.15s;">
+                    <div class="card-border-glow rounded-[18px] md:rounded-[22px]"></div>
+                    <div class="card-glow-spot bg-[#00ffb3]/8 blur-[80px] rounded-full"></div>
+                    <i class="fab fa-shopify text-3xl md:text-4xl mb-3 text-[#00ffb3]"></i>
+                    <h3 class="text-sm md:text-base font-bold group-hover:text-[#00ffb3] transition-colors">Shopify</h3>
+                    <p class="text-gray-500 text-xs mt-1">eCommerce</p>
                 </div>
 
-                <div class="glass-card rounded-2xl p-6 md:p-8 text-center hover:-translate-y-1 transition">
-                    <i class="fab fa-react text-5xl mb-4 text-[#00b7ff]"></i>
-                    <h3 class="text-xl font-bold">React</h3>
-                    <p class="text-gray-500 text-sm mt-2">Frontend library</p>
+                <div class="services-magnetic-card glass-card rounded-[18px] md:rounded-[22px] p-5 md:p-6 text-center service-reveal group"
+                     style="--accent: #00b7ff; transition-delay: 0.2s;">
+                    <div class="card-border-glow rounded-[18px] md:rounded-[22px]"></div>
+                    <div class="card-glow-spot bg-[#00b7ff]/8 blur-[80px] rounded-full"></div>
+                    <i class="fab fa-react text-3xl md:text-4xl mb-3 text-[#00b7ff]"></i>
+                    <h3 class="text-sm md:text-base font-bold group-hover:text-[#00b7ff] transition-colors">React</h3>
+                    <p class="text-gray-500 text-xs mt-1">Frontend</p>
                 </div>
 
-                <div class="glass-card rounded-2xl p-6 md:p-8 text-center hover:-translate-y-1 transition">
-                    <i class="fab fa-js text-5xl mb-4 text-[#00ffb3]"></i>
-                    <h3 class="text-xl font-bold">JavaScript</h3>
-                    <p class="text-gray-500 text-sm mt-2">Interactive UIs</p>
+                <div class="services-magnetic-card glass-card rounded-[18px] md:rounded-[22px] p-5 md:p-6 text-center service-reveal group"
+                     style="--accent: #00ffb3; transition-delay: 0.25s;">
+                    <div class="card-border-glow rounded-[18px] md:rounded-[22px]"></div>
+                    <div class="card-glow-spot bg-[#00ffb3]/8 blur-[80px] rounded-full"></div>
+                    <i class="fab fa-js text-3xl md:text-4xl mb-3 text-[#00ffb3]"></i>
+                    <h3 class="text-sm md:text-base font-bold group-hover:text-[#00ffb3] transition-colors">JavaScript</h3>
+                    <p class="text-gray-500 text-xs mt-1">Interactive UIs</p>
                 </div>
 
-                <div class="glass-card rounded-2xl p-6 md:p-8 text-center hover:-translate-y-1 transition">
-                    <i class="fas fa-paint-brush text-5xl mb-4 text-[#00b7ff]"></i>
-                    <h3 class="text-xl font-bold">Tailwind CSS</h3>
-                    <p class="text-gray-500 text-sm mt-2">Utility-first CSS</p>
+                <div class="services-magnetic-card glass-card rounded-[18px] md:rounded-[22px] p-5 md:p-6 text-center service-reveal group"
+                     style="--accent: #00b7ff; transition-delay: 0.3s;">
+                    <div class="card-border-glow rounded-[18px] md:rounded-[22px]"></div>
+                    <div class="card-glow-spot bg-[#00b7ff]/8 blur-[80px] rounded-full"></div>
+                    <i class="fas fa-wind text-3xl md:text-4xl mb-3 text-[#00b7ff]"></i>
+                    <h3 class="text-sm md:text-base font-bold group-hover:text-[#00b7ff] transition-colors">Tailwind CSS</h3>
+                    <p class="text-gray-500 text-xs mt-1">Utility-first</p>
                 </div>
 
             </div>
@@ -628,15 +447,14 @@ require_once 'includes/header.php';
         </div>
 
     </div>
-
 </section>
 
 <!-- CTA SECTION -->
-<section class="py-16 md:py-24 section-border overflow-hidden">
+<section class="py-20 md:py-32 section-border overflow-hidden relative">
 
     <div class="max-w-5xl mx-auto px-4 sm:px-6">
 
-        <div class="glass-card rounded-[28px] md:rounded-[50px] p-8 sm:p-12 md:p-16 text-center relative overflow-hidden">
+        <div class="glass-card rounded-[28px] md:rounded-[50px] p-8 sm:p-12 md:p-16 text-center relative overflow-hidden service-reveal">
 
             <div class="absolute top-[-80px] left-[-80px] w-56 sm:w-64 md:w-72 h-56 sm:h-64 md:h-72 bg-[#00ffb3]/10 blur-[120px] rounded-full">
             </div>
@@ -650,26 +468,26 @@ require_once 'includes/header.php';
                     BUILD YOUR WEBSITE
                 </p>
 
-                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight mb-6 md:mb-8">
-                    Ready To Build Your Website?
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-black leading-tight mb-6 md:mb-8">
+                    Ready To Transform<br class="hidden sm:block"> Your Online Presence?
                 </h2>
 
                 <p class="text-gray-400 text-base sm:text-lg md:text-xl leading-8 md:leading-9 max-w-3xl mx-auto mb-10">
-                    From corporate websites and business websites to eCommerce stores and custom web applications, we provide comprehensive web development services designed to enhance user experience and drive measurable results.
+                    Outshine your competition with a sleek, high-performing website built to scale. Contact our development team today to schedule a free discovery call and request a custom quote!
                 </p>
 
                 <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-4 sm:gap-5">
 
-                    <a href="hire.php"
-                        class="btn-primary px-8 md:px-10 py-3.5 md:py-4 rounded-2xl text-base md:text-lg inline-flex items-center justify-center transition-transform hover:scale-105">
-                        <i class="fas fa-rocket mr-2"></i>
-                        Start Your Website
+                    <a href="contact.php"
+                       class="btn-primary px-8 md:px-10 py-3.5 md:py-4 rounded-2xl text-base md:text-lg inline-flex items-center justify-center gap-2 transition hover:scale-105">
+                        <i class="fas fa-phone"></i>
+                        Schedule Free Discovery Call
                     </a>
 
-                    <a href="contact.php"
-                        class="border border-white/10 hover:border-[#00ffb3] hover:text-[#00ffb3] px-8 md:px-10 py-3.5 md:py-4 rounded-2xl text-base md:text-lg inline-flex items-center justify-center transition">
-                        <i class="fas fa-envelope mr-2"></i>
-                        Contact Us
+                    <a href="hire.php"
+                       class="border border-white/10 hover:border-[#00ffb3] hover:text-[#00ffb3] px-8 md:px-10 py-3.5 md:py-4 rounded-2xl text-base md:text-lg inline-flex items-center justify-center gap-2 transition">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                        Request Custom Quote
                     </a>
 
                 </div>

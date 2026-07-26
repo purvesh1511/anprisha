@@ -55,7 +55,7 @@ require_once 'includes/header.php';
 
                 <div class="relative w-full max-w-full lg:max-w-2xl mx-auto">
                     <div class="glass-card rounded-[22px] sm:rounded-[30px] p-1 sm:p-2 hero-image-glow pulse-ring text-center">
-                        <img src="assets/images/cms-development.webp"
+                        <img src="assets/images/cms.png"
                              alt="Anprix Solutions - CMS & eCommerce Development"
                              width="680" height="500" fetchpriority="high"
                              class="w-full max-w-[85%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-[85%] xl:max-w-[680px] mx-auto animate-float">
@@ -95,7 +95,7 @@ require_once 'includes/header.php';
 </section>
 
 <!-- SERVICES DETAIL -->
-<section class="py-16 md:py-24 section-border overflow-hidden">
+<section class="py-16 md:py-24 section-border overflow-hidden service-reveal">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 space-y-20 md:space-y-32">
 
         <!-- ========================= -->
@@ -490,7 +490,7 @@ require_once 'includes/header.php';
 </section>
 
 <!-- CMS PLATFORMS -->
-<section class="py-16 md:py-24 section-border overflow-hidden">
+<section class="py-16 md:py-24 section-border overflow-hidden service-reveal">
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
 

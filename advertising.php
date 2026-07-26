@@ -49,7 +49,7 @@ require_once 'includes/header.php';
 </section>
 
 <!-- SERVICES DETAIL -->
-<section class="py-16 md:py-24 section-border overflow-hidden">
+<section class="py-16 md:py-24 section-border overflow-hidden service-reveal">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 space-y-20 md:space-y-32">
 
         <!-- ========================= -->

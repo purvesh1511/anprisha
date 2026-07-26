@@ -25,22 +25,18 @@ require_once 'includes/header.php';
             <div>
 
                 <p class="uppercase tracking-[4px] md:tracking-[5px] text-[#00ffb3] font-semibold mb-5 md:mb-6 text-xs sm:text-sm">
-                    eCommerce Development
+                    eCommerce Development Agency
                 </p>
 
                 <h1 class="text-xl sm:text-4xl lg:text-5xl font-black leading-tight lg:leading-[1.05] mb-8 md:mb-10">
-
-                    eCommerce Website Development
-                    <span class="green-text block sm:inline">
-                        Company in Ahmedabad
-                    </span>
-
+                    <span class="txt-split">Premier </span>
+                    <span class="services-heading-gradient">E-Commerce Website Development</span>
+                    <span class="txt-split block sm:inline"> Company</span>
+                    <span class="txt-split block sm:inline" style="font-size:0.65em; opacity:0.85;">| Drive Revenue</span>
                 </h1>
 
-                <p class="text-base sm:text-lg md:text-xl text-gray-400 leading-8 md:leading-10">
-
-                    Anprix Solutions is a leading eCommerce website development company in Ahmedabad, Gujarat, India, helping businesses build powerful online stores that drive growth, improve customer experience, and increase revenue. We provide customized eCommerce development services tailored to your business objectives.
-
+                <p class="text-base sm:text-lg md:text-xl text-gray-400 leading-8 md:leading-10 word-reveal">
+                    In today's competitive online marketplace, a fast, secure, and intuitive digital storefront is essential for driving conversions and growing brand loyalty. We build high-performing digital shopping platforms engineered to scale.
                 </p>
 
             </div>
@@ -54,7 +50,7 @@ require_once 'includes/header.php';
                 <div class="relative w-full max-w-full lg:max-w-2xl mx-auto">
                     <div class="glass-card rounded-[22px] sm:rounded-[30px] p-1 sm:p-2 hero-image-glow pulse-ring text-center">
                         <img src="assets/images/heroright1.webp"
-                             alt="Anprix Solutions - eCommerce Website Development Company"
+                             alt="Anprix Solutions - E-Commerce Website Development Company"
                              width="680" height="500" fetchpriority="high"
                              class="w-full max-w-[85%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-[85%] xl:max-w-[680px] mx-auto animate-float">
                     </div>
@@ -92,393 +88,235 @@ require_once 'includes/header.php';
 
 </section>
 
-<!-- WHY CHOOSE ANPRIX FOR ECOMMERCE -->
-<section class="py-16 md:py-24 section-border overflow-hidden">
+<!-- SERVICES - BENTO GRID LAYOUT -->
+<section class="py-20 md:py-32 section-border overflow-hidden relative">
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-[#00ffb3]/5 blur-[200px] rounded-full pointer-events-none"></div>
+    <div class="absolute top-0 left-0 w-[400px] h-[400px] bg-[#00b7ff]/5 blur-[200px] rounded-full pointer-events-none"></div>
 
-        <div class="text-center mb-14 md:mb-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
 
-            <p class="green-text uppercase tracking-[4px] font-semibold mb-5 text-sm">
-                WHY CHOOSE ANPRIX SOLUTIONS
-            </p>
+        <!-- HEADING -->
+        <div class="text-center mb-16 md:mb-24 service-reveal">
 
-            <h2 class="text-xl sm:text-3xl md:text-4xl font-black mb-6 md:mb-8 leading-tight">
-                Your Trusted eCommerce Development Partner
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/[0.02] mb-6 md:mb-8">
+                <span class="w-2 h-2 rounded-full bg-[#00ffb3] animate-pulse"></span>
+                <span class="text-xs sm:text-sm font-medium text-gray-400 tracking-wider uppercase">What We Build</span>
+            </div>
+
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-black mb-6 md:mb-8 leading-[1.1]">
+                <span class="txt-split">Comprehensive </span>
+                <span class="services-heading-gradient">E-Commerce</span>
+                <span class="txt-split"> Website Development Services</span>
             </h2>
 
-            <p class="text-gray-400 text-base md:text-lg max-w-3xl mx-auto leading-8 md:leading-9">
-                As a trusted eCommerce web development company, we focus on creating scalable, secure, and user-friendly online stores that deliver exceptional shopping experiences.
+            <p class="max-w-3xl mx-auto text-gray-400 text-base md:text-lg leading-relaxed word-reveal">
+                Building a successful online brand requires a seamless user experience, bulletproof transaction security, and scalable infrastructure. We provide custom solutions tailored to your unique sales goals.
             </p>
 
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <!-- BENTO GRID -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6" id="ecom-bento-grid">
 
-            <!-- Experienced eCommerce Developers -->
-            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1">
-                <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
-                    <i class="fas fa-users text-2xl"></i>
+            <!-- Custom Web Storefronts - LARGE -->
+            <div class="services-magnetic-card glass-card rounded-[20px] md:rounded-[24px] p-7 md:p-8 border border-white/[0.06] service-reveal group sm:col-span-2"
+                 style="--accent: #00ffb3; transition-delay: 0.05s;">
+                <div class="card-border-glow rounded-[20px] md:rounded-[24px]"></div>
+                <div class="card-glow-spot bg-[#00ffb3]/8 blur-[80px] rounded-full"></div>
+                <div class="services-card-glow-line"></div>
+
+                <div class="flex items-center gap-4 mb-5">
+                    <div class="services-icon-wrap bg-[#00ffb3]/10 w-14 h-14" style="--accent: #00ffb3;">
+                        <i class="fas fa-store text-[#00ffb3] text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg md:text-xl font-bold group-hover:text-[#00ffb3] transition-colors">Custom Web Storefronts</h3>
+                        <p class="text-gray-500 text-sm">Shopify, WooCommerce, Magento, Headless</p>
+                    </div>
                 </div>
-                <h3 class="text-xl md:text-xl font-bold mb-3">Experienced eCommerce Developers</h3>
-                <p class="text-gray-400 leading-7 text-sm md:text-base">
-                    Our experienced developers understand the complexities of building successful online stores. We use industry-leading technologies and proven development methodologies to create high-performing eCommerce websites that support long-term business growth.
+
+                <p class="text-gray-400 text-sm md:text-[15px] leading-7 mb-5">
+                    Purpose-built shopping experiences delivered through flexible eCommerce website development services using Shopify, WooCommerce, Magento, or custom headless stacks. Every storefront is crafted for your brand and optimized for conversions.
+                </p>
+
+                <div class="flex flex-wrap gap-3">
+                    <span class="px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs text-gray-400">Shopify</span>
+                    <span class="px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs text-gray-400">WooCommerce</span>
+                    <span class="px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs text-gray-400">Magento</span>
+                    <span class="px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs text-gray-400">Headless</span>
+                </div>
+            </div>
+
+            <!-- Native & Cross-Platform Mobile Apps -->
+            <div class="services-magnetic-card glass-card rounded-[20px] md:rounded-[24px] p-7 md:p-8 border border-white/[0.06] service-reveal group"
+                 style="--accent: #00b7ff; transition-delay: 0.1s;">
+                <div class="card-border-glow rounded-[20px] md:rounded-[24px]"></div>
+                <div class="card-glow-spot bg-[#00b7ff]/8 blur-[80px] rounded-full"></div>
+                <div class="services-card-glow-line"></div>
+
+                <div class="services-icon-wrap bg-[#00b7ff]/10 mb-5" style="--accent: #00b7ff;">
+                    <i class="fas fa-mobile-alt text-[#00b7ff] text-xl"></i>
+                </div>
+
+                <h3 class="text-lg md:text-xl font-bold mb-3 group-hover:text-[#00b7ff] transition-colors">Mobile Commerce Apps</h3>
+                <p class="text-gray-400 text-sm md:text-[15px] leading-7">
+                    Native & cross-platform mobile apps for iOS and Android. Tap into mobile commerce growth with tailored solutions from our eCommerce app development team.
                 </p>
             </div>
 
-            <!-- Custom eCommerce Solutions -->
-            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 hover:-translate-y-1">
-                <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5">
-                    <i class="fas fa-code text-2xl"></i>
+            <!-- Conversion-Driven UI/UX -->
+            <div class="services-magnetic-card glass-card rounded-[20px] md:rounded-[24px] p-7 md:p-8 border border-white/[0.06] service-reveal group"
+                 style="--accent: #00ffb3; transition-delay: 0.15s;">
+                <div class="card-border-glow rounded-[20px] md:rounded-[24px]"></div>
+                <div class="card-glow-spot bg-[#00ffb3]/8 blur-[80px] rounded-full"></div>
+                <div class="services-card-glow-line"></div>
+
+                <div class="services-icon-wrap bg-[#00ffb3]/10 mb-5" style="--accent: #00ffb3;">
+                    <i class="fas fa-bullseye text-[#00ffb3] text-xl"></i>
                 </div>
-                <h3 class="text-xl md:text-xl font-bold mb-3">Custom eCommerce Solutions</h3>
-                <p class="text-gray-400 leading-7 text-sm md:text-base">
-                    Every business has unique requirements. We create custom solutions tailored to your products, target audience, and business model. Whether you need a simple online store or a complex multi-vendor marketplace, we deliver a solution that aligns with your goals.
+
+                <h3 class="text-lg md:text-xl font-bold mb-3 group-hover:text-[#00ffb3] transition-colors">Conversion-Driven UI/UX</h3>
+                <p class="text-gray-400 text-sm md:text-[15px] leading-7">
+                    Mobile-first design layouts crafted to simplify checkout, reduce cart abandonment, and increase average order value.
                 </p>
             </div>
 
-            <!-- SEO-Friendly -->
-            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1">
-                <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
-                    <i class="fas fa-search text-2xl"></i>
-                </div>
-                <h3 class="text-xl md:text-xl font-bold mb-3">SEO-Friendly eCommerce Websites</h3>
-                <p class="text-gray-400 leading-7 text-sm md:text-base">
-                    Visibility is crucial for online success. Our eCommerce website development services include SEO-friendly architecture, optimized URLs, mobile responsiveness, schema implementation, and fast-loading pages to improve search engine rankings and attract qualified traffic.
-                </p>
-            </div>
+            <!-- Seamless Integrations - LARGE -->
+            <div class="services-magnetic-card glass-card rounded-[20px] md:rounded-[24px] p-7 md:p-8 border border-white/[0.06] service-reveal group sm:col-span-2"
+                 style="--accent: #00b7ff; transition-delay: 0.2s;">
+                <div class="card-border-glow rounded-[20px] md:rounded-[24px]"></div>
+                <div class="card-glow-spot bg-[#00b7ff]/8 blur-[80px] rounded-full"></div>
+                <div class="services-card-glow-line"></div>
 
-            <!-- Mobile Responsive -->
-            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 hover:-translate-y-1">
-                <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5">
-                    <i class="fas fa-mobile-alt text-2xl"></i>
+                <div class="flex items-center gap-4 mb-5">
+                    <div class="services-icon-wrap bg-[#00b7ff]/10 w-14 h-14" style="--accent: #00b7ff;">
+                        <i class="fas fa-plug text-[#00b7ff] text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg md:text-xl font-bold group-hover:text-[#00b7ff] transition-colors">Seamless Third-Party Integrations</h3>
+                        <p class="text-gray-500 text-sm">Payment Gateways, ERPs, CRMs & More</p>
+                    </div>
                 </div>
-                <h3 class="text-xl md:text-xl font-bold mb-3">Mobile Responsive Development</h3>
-                <p class="text-gray-400 leading-7 text-sm md:text-base">
-                    A majority of online purchases now occur through mobile devices. Our eCommerce web development services ensure your online store provides a seamless shopping experience across smartphones, tablets, and desktops.
-                </p>
-            </div>
 
-            <!-- Secure -->
-            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1">
-                <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
-                    <i class="fas fa-shield-alt text-2xl"></i>
-                </div>
-                <h3 class="text-xl md:text-xl font-bold mb-3">Secure Online Stores</h3>
-                <p class="text-gray-400 leading-7 text-sm md:text-base">
-                    Security is one of the most important aspects of any eCommerce platform. We implement secure payment gateways, SSL certificates, user authentication systems, and advanced security practices to protect customer data and transactions.
+                <p class="text-gray-400 text-sm md:text-[15px] leading-7 mb-5">
+                    Robust connections with global payment gateways, ERPs, CRMs, real-time inventory management systems, and fulfillment providers. Your store becomes the central hub of your business operations.
                 </p>
-            </div>
 
-            <!-- Fast Loading -->
-            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 hover:-translate-y-1">
-                <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5">
-                    <i class="fas fa-bolt text-2xl"></i>
+                <div class="flex flex-wrap gap-3">
+                    <span class="px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs text-gray-400">Payment Gateways</span>
+                    <span class="px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs text-gray-400">ERP Systems</span>
+                    <span class="px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs text-gray-400">CRM Tools</span>
+                    <span class="px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs text-gray-400">Inventory</span>
                 </div>
-                <h3 class="text-xl md:text-xl font-bold mb-3">Fast Loading Performance</h3>
-                <p class="text-gray-400 leading-7 text-sm md:text-base">
-                    Website speed directly impacts conversions and user satisfaction. We optimize every aspect of your online store to ensure faster page loading, reduced bounce rates, and improved shopping experiences.
-                </p>
-            </div>
-
-            <!-- Conversion-Focused -->
-            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1 sm:col-span-2 lg:col-span-1">
-                <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
-                    <i class="fas fa-bullseye text-2xl"></i>
-                </div>
-                <h3 class="text-xl md:text-xl font-bold mb-3">Conversion-Focused Design</h3>
-                <p class="text-gray-400 leading-7 text-sm md:text-base">
-                    We focus on creating intuitive user journeys that encourage visitors to browse products, add items to their cart, and complete purchases with confidence.
-                </p>
             </div>
 
         </div>
 
     </div>
-
 </section>
 
-<!-- ECOMMERCE SERVICES -->
-<section class="py-16 md:py-24 section-border overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 space-y-20 md:space-y-32">
+<!-- WHY PARTNER - TWO COLUMN LAYOUT -->
+<section class="py-20 md:py-32 section-border overflow-hidden relative">
 
-        <!-- SERVICE 1: Custom eCommerce Website Development -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
 
-            <div class="space-y-6">
-                <p class="green-text uppercase tracking-[4px] font-semibold text-sm">
-                    Custom eCommerce Website Development
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+            <!-- LEFT: FEATURE GRID -->
+            <div class="grid grid-cols-2 gap-4 md:gap-5 service-reveal">
+
+                <div class="services-magnetic-card glass-card rounded-[20px] md:rounded-[24px] p-5 md:p-6 border border-white/[0.06] group"
+                     style="--accent: #00ffb3; transition-delay: 0.05s;">
+                    <div class="card-border-glow rounded-[20px] md:rounded-[24px]"></div>
+                    <div class="card-glow-spot bg-[#00ffb3]/8 blur-[80px] rounded-full"></div>
+                    <div class="services-card-glow-line"></div>
+                    <div class="w-10 h-10 rounded-xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-3">
+                        <i class="fas fa-bolt text-sm"></i>
+                    </div>
+                    <h4 class="text-sm font-bold mb-1 group-hover:text-[#00ffb3] transition-colors">Lightning Fast</h4>
+                    <p class="text-gray-500 text-xs leading-5">Core Web Vitals optimized</p>
+                </div>
+
+                <div class="services-magnetic-card glass-card rounded-[20px] md:rounded-[24px] p-5 md:p-6 border border-white/[0.06] group"
+                     style="--accent: #00b7ff; transition-delay: 0.1s;">
+                    <div class="card-border-glow rounded-[20px] md:rounded-[24px]"></div>
+                    <div class="card-glow-spot bg-[#00b7ff]/8 blur-[80px] rounded-full"></div>
+                    <div class="services-card-glow-line"></div>
+                    <div class="w-10 h-10 rounded-xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-3">
+                        <i class="fas fa-shield-alt text-sm"></i>
+                    </div>
+                    <h4 class="text-sm font-bold mb-1 group-hover:text-[#00b7ff] transition-colors">Enterprise Security</h4>
+                    <p class="text-gray-500 text-xs leading-5">Grade-A protection protocols</p>
+                </div>
+
+                <div class="services-magnetic-card glass-card rounded-[20px] md:rounded-[24px] p-5 md:p-6 border border-white/[0.06] group"
+                     style="--accent: #00b7ff; transition-delay: 0.15s;">
+                    <div class="card-border-glow rounded-[20px] md:rounded-[24px]"></div>
+                    <div class="card-glow-spot bg-[#00b7ff]/8 blur-[80px] rounded-full"></div>
+                    <div class="services-card-glow-line"></div>
+                    <div class="w-10 h-10 rounded-xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-3">
+                        <i class="fas fa-credit-card text-sm"></i>
+                    </div>
+                    <h4 class="text-sm font-bold mb-1 group-hover:text-[#00b7ff] transition-colors">Frictionless Checkout</h4>
+                    <p class="text-gray-500 text-xs leading-5">Zero-hassle payment flows</p>
+                </div>
+
+                <div class="services-magnetic-card glass-card rounded-[20px] md:rounded-[24px] p-5 md:p-6 border border-white/[0.06] group"
+                     style="--accent: #00ffb3; transition-delay: 0.2s;">
+                    <div class="card-border-glow rounded-[20px] md:rounded-[24px]"></div>
+                    <div class="card-glow-spot bg-[#00ffb3]/8 blur-[80px] rounded-full"></div>
+                    <div class="services-card-glow-line"></div>
+                    <div class="w-10 h-10 rounded-xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-3">
+                        <i class="fas fa-expand-arrows-alt text-sm"></i>
+                    </div>
+                    <h4 class="text-sm font-bold mb-1 group-hover:text-[#00ffb3] transition-colors">High-Volume Ready</h4>
+                    <p class="text-gray-500 text-xs leading-5">Handles traffic spikes</p>
+                </div>
+
+                <div class="services-magnetic-card glass-card rounded-[20px] md:rounded-[24px] p-5 md:p-6 border border-white/[0.06] group sm:col-span-2"
+                     style="--accent: #00b7ff; transition-delay: 0.25s;">
+                    <div class="card-border-glow rounded-[20px] md:rounded-[24px]"></div>
+                    <div class="card-glow-spot bg-[#00b7ff]/8 blur-[80px] rounded-full"></div>
+                    <div class="services-card-glow-line"></div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff]">
+                            <i class="fas fa-plug text-sm"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold group-hover:text-[#00b7ff] transition-colors">Seamless Integrations</h4>
+                            <p class="text-gray-500 text-xs leading-5">Payment, ERP, CRM & inventory systems</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- RIGHT: TEXT -->
+            <div class="service-reveal" style="transition-delay: 0.1s;">
+
+                <p class="green-text uppercase tracking-[4px] font-semibold mb-5 text-sm">
+                    Why Partner With Us
                 </p>
 
-                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
-                    Tailored Online <span class="green-text">Stores</span>
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-black leading-tight mb-6 md:mb-8">
+                    Choosing the right
+                    <span class="services-heading-gradient block sm:inline"> eCommerce Web Development Firm</span>
                 </h2>
 
-                <p class="text-gray-400 text-base md:text-lg leading-8 md:leading-9">
-                    Our custom eCommerce website development services are designed to provide flexibility and scalability. We create online stores that reflect your brand identity while delivering an outstanding user experience.
+                <p class="text-gray-400 text-base md:text-lg leading-8 md:leading-9 mb-6">
+                    Choosing the right eCommerce web development firm means collaborating with engineering specialists who prioritize technical performance, speed, and measurable sales impact.
                 </p>
 
-                <div class="space-y-5">
-
-                    <div class="flex gap-4">
-                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3]">
-                            <i class="fas fa-palette"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-lg">Custom Store Design</h3>
-                            <p class="text-gray-500 text-sm">Unique brand-aligned layouts</p>
-                        </div>
-                    </div>
-
-                    <div class="flex gap-4">
-                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff]">
-                            <i class="fas fa-credit-card"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-lg">Payment Integration</h3>
-                            <p class="text-gray-500 text-sm">Multiple secure gateways</p>
-                        </div>
-                    </div>
-
-                    <div class="flex gap-4">
-                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3]">
-                            <i class="fas fa-truck"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-lg">Shipping Solutions</h3>
-                            <p class="text-gray-500 text-sm">Automated shipping & taxes</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="glass-card rounded-3xl p-6 md:p-10 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
-
-                <div class="bg-black/40 rounded-2xl p-6 md:p-8">
-                    <i class="fas fa-shopping-cart text-3xl mb-4 text-[#00ffb3]"></i>
-                    <h3 class="font-bold text-lg">Custom Stores</h3>
-                    <p class="text-gray-500 text-sm">Built for your brand</p>
-                </div>
-
-                <div class="bg-black/40 rounded-2xl p-6 md:p-8">
-                    <i class="fas fa-credit-card text-3xl mb-4 text-[#00b7ff]"></i>
-                    <h3 class="font-bold text-lg">Payments</h3>
-                    <p class="text-gray-500 text-sm">Secure checkout</p>
-                </div>
-
-                <div class="bg-black/40 rounded-2xl p-6 md:p-8">
-                    <i class="fas fa-box text-3xl mb-4 text-[#00ffb3]"></i>
-                    <h3 class="font-bold text-lg">Inventory</h3>
-                    <p class="text-gray-500 text-sm">Stock management</p>
-                </div>
-
-                <div class="bg-black/40 rounded-2xl p-6 md:p-8">
-                    <i class="fas fa-mobile-alt text-3xl mb-4 text-[#00b7ff]"></i>
-                    <h3 class="font-bold text-lg">Mobile Ready</h3>
-                    <p class="text-gray-500 text-sm">Shop on any device</p>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- SERVICE 2: Multi-Vendor Marketplace Development -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
-
-            <div class="glass-card rounded-3xl p-6 md:p-10 space-y-5 order-2 lg:order-1">
-
-                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fas fa-store text-[#00ffb3] text-2xl"></i>
-                    <div>
-                        <h3 class="font-bold text-lg">Vendor Management</h3>
-                        <p class="text-gray-500 text-sm">Multi-seller platform</p>
-                    </div>
-                </div>
-
-                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fas fa-percentage text-[#00b7ff] text-2xl"></i>
-                    <div>
-                        <h3 class="font-bold text-lg">Commission Systems</h3>
-                        <p class="text-gray-500 text-sm">Flexible revenue models</p>
-                    </div>
-                </div>
-
-                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fas fa-chart-bar text-[#00ffb3] text-2xl"></i>
-                    <div>
-                        <h3 class="font-bold text-lg">Advanced Reporting</h3>
-                        <p class="text-gray-500 text-sm">Sales & analytics dashboards</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="space-y-6 order-1 lg:order-2">
-
-                <p class="green-text uppercase tracking-[4px] font-semibold text-sm">
-                    Multi-Vendor Marketplace Development
+                <p class="text-gray-400 text-base md:text-lg leading-8 md:leading-9 mb-10">
+                    Our team focuses on lightning-fast page loading, Core Web Vitals optimization, enterprise-grade security protocols, and frictionless checkout flows. We deliver future-proof web and mobile applications engineered to handle high-volume traffic without compromising performance or reliability.
                 </p>
 
-                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
-                    Build Your <span class="green-text">Marketplace</span>
-                </h2>
-
-                <p class="text-gray-400 text-base md:text-lg leading-8 md:leading-9">
-                    Want to build a marketplace like Amazon, Flipkart, or Etsy? Our eCommerce web development firm can develop robust multi-vendor platforms with vendor management, product listings, commission systems, and advanced reporting features.
-                </p>
-
-                <div class="flex flex-wrap gap-4">
-
-                    <a href="hire.php" class="btn-primary px-6 py-4 rounded-2xl text-center">
-                        Build Marketplace
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- SERVICE 3: B2B eCommerce Development -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
-
-            <div class="space-y-6">
-                <p class="green-text uppercase tracking-[4px] font-semibold text-sm">
-                    B2B eCommerce Development
-                </p>
-
-                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
-                    Powerful <span class="green-text">B2B Solutions</span>
-                </h2>
-
-                <p class="text-gray-400 text-base md:text-lg leading-8 md:leading-9">
-                    We create powerful B2B eCommerce solutions that simplify wholesale ordering, pricing management, customer segmentation, and bulk purchasing processes.
-                </p>
-
-                <div class="space-y-5">
-
-                    <div class="flex gap-4">
-                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3]">
-                            <i class="fas fa-building"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-lg">Wholesale Ordering</h3>
-                            <p class="text-gray-500 text-sm">Bulk purchase workflows</p>
-                        </div>
-                    </div>
-
-                    <div class="flex gap-4">
-                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff]">
-                            <i class="fas fa-tags"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-lg">Pricing Management</h3>
-                            <p class="text-gray-500 text-sm">Tiered & custom pricing</p>
-                        </div>
-                    </div>
-
-                    <div class="flex gap-4">
-                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3]">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-lg">Customer Segmentation</h3>
-                            <p class="text-gray-500 text-sm">Role-based access & pricing</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="glass-card rounded-3xl p-6 md:p-10 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
-
-                <div class="bg-black/40 rounded-2xl p-6 md:p-8">
-                    <i class="fas fa-building text-3xl mb-4 text-[#00ffb3]"></i>
-                    <h3 class="font-bold text-lg">B2B Portals</h3>
-                    <p class="text-gray-500 text-sm">Enterprise solutions</p>
-                </div>
-
-                <div class="bg-black/40 rounded-2xl p-6 md:p-8">
-                    <i class="fas fa-file-invoice text-3xl mb-4 text-[#00b7ff]"></i>
-                    <h3 class="font-bold text-lg">Quote System</h3>
-                    <p class="text-gray-500 text-sm">Request for quotes</p>
-                </div>
-
-                <div class="bg-black/40 rounded-2xl p-6 md:p-8">
-                    <i class="fas fa-database text-3xl mb-4 text-[#00ffb3]"></i>
-                    <h3 class="font-bold text-lg">ERP Integration</h3>
-                    <p class="text-gray-500 text-sm">System connectivity</p>
-                </div>
-
-                <div class="bg-black/40 rounded-2xl p-6 md:p-8">
-                    <i class="fas fa-truck text-3xl mb-4 text-[#00b7ff]"></i>
-                    <h3 class="font-bold text-lg">Logistics</h3>
-                    <p class="text-gray-500 text-sm">Shipping automation</p>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- SERVICE 4: Platform-Specific Development -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
-
-            <div class="glass-card rounded-3xl p-6 md:p-10 space-y-5 order-2 lg:order-1">
-
-                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fab fa-shopify text-[#00ffb3] text-2xl"></i>
-                    <div>
-                        <h3 class="font-bold text-lg">Shopify Store Development</h3>
-                        <p class="text-gray-500 text-sm">Attractive, responsive, conversion-focused stores</p>
-                    </div>
-                </div>
-
-                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fas fa-shopping-cart text-[#00b7ff] text-2xl"></i>
-                    <div>
-                        <h3 class="font-bold text-lg">WooCommerce Development</h3>
-                        <p class="text-gray-500 text-sm">Feature-rich WordPress eCommerce stores</p>
-                    </div>
-                </div>
-
-                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fas fa-cogs text-[#00ffb3] text-2xl"></i>
-                    <div>
-                        <h3 class="font-bold text-lg">Magento Development</h3>
-                        <p class="text-gray-500 text-sm">Enterprise-level scalable stores</p>
-                    </div>
-                </div>
-
-                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fas fa-bolt text-[#00b7ff] text-2xl"></i>
-                    <div>
-                        <h3 class="font-bold text-lg">OpenCart Development</h3>
-                        <p class="text-gray-500 text-sm">Lightweight & efficient stores</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="space-y-6 order-1 lg:order-2">
-
-                <p class="green-text uppercase tracking-[4px] font-semibold text-sm">
-                    Platform-Specific Development
-                </p>
-
-                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
-                    Choose Your <span class="green-text">Platform</span>
-                </h2>
-
-                <p class="text-gray-400 text-base md:text-lg leading-8 md:leading-9">
-                    Whether you prefer Shopify, WooCommerce, Magento, or OpenCart, we have expertise across all major eCommerce platforms to build a store that fits your business needs and budget.
-                </p>
-
-                <div class="flex flex-wrap gap-4">
-
-                    <a href="hire.php" class="btn-primary px-6 py-4 rounded-2xl text-center">
-                        Choose Your Platform
-                    </a>
-
-                </div>
+                <a href="hire.php"
+                   class="btn-primary px-8 md:px-10 py-3.5 md:py-4 rounded-2xl text-base md:text-lg inline-flex items-center gap-2 transition hover:scale-105">
+                    <i class="fas fa-rocket"></i>
+                    Scale Your Store
+                </a>
 
             </div>
 
@@ -488,11 +326,11 @@ require_once 'includes/header.php';
 </section>
 
 <!-- CTA SECTION -->
-<section class="py-16 md:py-24 section-border overflow-hidden">
+<section class="py-20 md:py-32 section-border overflow-hidden relative">
 
     <div class="max-w-5xl mx-auto px-4 sm:px-6">
 
-        <div class="glass-card rounded-[28px] md:rounded-[50px] p-8 sm:p-12 md:p-16 text-center relative overflow-hidden">
+        <div class="glass-card rounded-[28px] md:rounded-[50px] p-8 sm:p-12 md:p-16 text-center relative overflow-hidden service-reveal">
 
             <div class="absolute top-[-80px] left-[-80px] w-56 sm:w-64 md:w-72 h-56 sm:h-64 md:h-72 bg-[#00ffb3]/10 blur-[120px] rounded-full">
             </div>
@@ -503,29 +341,29 @@ require_once 'includes/header.php';
             <div class="relative z-10">
 
                 <p class="green-text uppercase tracking-[4px] font-semibold mb-5 text-sm">
-                    START YOUR ECOMMERCE JOURNEY
+                    SCALE YOUR ONLINE STORE TODAY
                 </p>
 
-                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight mb-6 md:mb-8">
-                    Ready To Build Your Online Store?
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-black leading-tight mb-6 md:mb-8">
+                    Ready To Maximize<br class="hidden sm:block"> Your Conversion Rate?
                 </h2>
 
                 <p class="text-gray-400 text-base sm:text-lg md:text-xl leading-8 md:leading-9 max-w-3xl mx-auto mb-10">
-                    Partner with Anprix and get a custom-built eCommerce store designed for performance, conversions, and growth — on time and on budget.
+                    Elevate your brand with custom web and mobile platforms designed to maximize conversion rates and digital growth. Contact our eCommerce website design and development company today for a complimentary project consultation and free audit!
                 </p>
 
                 <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-4 sm:gap-5">
 
-                    <a href="hire.php"
-                        class="btn-primary px-8 md:px-10 py-3.5 md:py-4 rounded-2xl text-base md:text-lg inline-flex items-center justify-center transition-transform hover:scale-105">
-                        <i class="fas fa-rocket mr-2"></i>
-                        Start Your Store
+                    <a href="contact.php"
+                       class="btn-primary px-8 md:px-10 py-3.5 md:py-4 rounded-2xl text-base md:text-lg inline-flex items-center justify-center gap-2 transition hover:scale-105">
+                        <i class="fas fa-phone"></i>
+                        Free Project Consultation
                     </a>
 
-                    <a href="contact.php"
-                        class="border border-white/10 hover:border-[#00ffb3] hover:text-[#00ffb3] px-8 md:px-10 py-3.5 md:py-4 rounded-2xl text-base md:text-lg inline-flex items-center justify-center transition">
-                        <i class="fas fa-envelope mr-2"></i>
-                        Contact Us
+                    <a href="hire.php"
+                       class="border border-white/10 hover:border-[#00ffb3] hover:text-[#00ffb3] px-8 md:px-10 py-3.5 md:py-4 rounded-2xl text-base md:text-lg inline-flex items-center justify-center gap-2 transition">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                        Free Store Audit
                     </a>
 
                 </div>

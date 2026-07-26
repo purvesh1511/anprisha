@@ -25,22 +25,18 @@ require_once 'includes/header.php';
             <div>
 
                 <p class="uppercase tracking-[4px] md:tracking-[5px] text-[#00ffb3] font-semibold mb-5 md:mb-6 text-xs sm:text-sm">
-                    WordPress Development
+                    WordPress Development Agency
                 </p>
 
                 <h1 class="text-xl sm:text-4xl lg:text-5xl font-black leading-tight lg:leading-[1.05] mb-8 md:mb-10">
-
-                    WordPress Website Development
-                    <span class="green-text block sm:inline">
-                        Company in Ahmedabad
-                    </span>
-
+                    <span class="txt-split">Leading </span>
+                    <span class="services-heading-gradient">WordPress Website Development</span>
+                    <span class="txt-split block sm:inline"> Company</span>
+                    <span class="txt-split block" style="font-size:0.65em; opacity:0.85;">| Modern Web Solutions</span>
                 </h1>
 
-                <p class="text-base sm:text-lg md:text-xl text-gray-400 leading-8 md:leading-10">
-
-                    Anprix Solutions is a leading WordPress website development company in Ahmedabad, Gujarat, India, dedicated to delivering innovative and result-driven web solutions. We specialize in WordPress website development, custom WordPress solutions, and business-focused websites that help brands stand out in today's competitive marketplace.
-
+                <p class="text-base sm:text-lg md:text-xl text-gray-400 leading-8 md:leading-10 word-reveal">
+                    In today's fast-moving digital economy, your website serves as the backbone of your digital marketing strategy. As a premier WordPress website development company, we create fast, secure, and fully customized websites tailored to your unique business goals.
                 </p>
 
             </div>
@@ -53,7 +49,7 @@ require_once 'includes/header.php';
 
                 <div class="relative w-full max-w-full lg:max-w-2xl mx-auto">
                     <div class="glass-card rounded-[22px] sm:rounded-[30px] p-1 sm:p-2 hero-image-glow pulse-ring text-center">
-                        <img src="assets/images/cms-development.webp"
+                        <img src="assets/images/cms.png"
                              alt="Anprix Solutions - WordPress Website Development Company"
                              width="680" height="500" fetchpriority="high"
                              class="w-full max-w-[85%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-[85%] xl:max-w-[680px] mx-auto animate-float">
@@ -92,586 +88,465 @@ require_once 'includes/header.php';
 
 </section>
 
-<!-- WHY CHOOSE ANPRIX FOR WORDPRESS -->
-<section class="py-16 md:py-24 section-border overflow-hidden">
+<!-- FULL-STACK SERVICES - VERTICAL TIMELINE LAYOUT -->
+<section class="py-20 md:py-32 section-border overflow-hidden relative">
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="absolute top-1/4 right-0 w-[400px] h-[400px] bg-[#00b7ff]/5 blur-[200px] rounded-full pointer-events-none"></div>
+    <div class="absolute bottom-1/4 left-0 w-[400px] h-[400px] bg-[#00ffb3]/5 blur-[200px] rounded-full pointer-events-none"></div>
 
-        <div class="text-center mb-14 md:mb-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
 
-            <p class="green-text uppercase tracking-[4px] font-semibold mb-5 text-sm">
-                WHY CHOOSE ANPRIX SOLUTIONS
-            </p>
+        <!-- HEADING -->
+        <div class="text-center mb-16 md:mb-24 service-reveal">
 
-            <h2 class="text-xl sm:text-3xl md:text-4xl font-black mb-6 md:mb-8 leading-tight">
-                WordPress Website Development Company
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/[0.02] mb-6 md:mb-8">
+                <span class="w-2 h-2 rounded-full bg-[#00b7ff] animate-pulse"></span>
+                <span class="text-xs sm:text-sm font-medium text-gray-400 tracking-wider uppercase">What We Offer</span>
+            </div>
+
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-black mb-6 md:mb-8 leading-[1.1]">
+                <span class="txt-split">Full-Spectrum </span>
+                <span class="services-heading-gradient">WordPress</span>
+                <span class="txt-split"> Website Development Services</span>
             </h2>
 
-            <p class="text-gray-400 text-base md:text-lg max-w-3xl mx-auto leading-8 md:leading-9">
-                WordPress powers millions of websites worldwide due to its flexibility, scalability, and user-friendly content management capabilities.
+            <p class="max-w-3xl mx-auto text-gray-400 text-base md:text-lg leading-relaxed word-reveal">
+                Building a high-converting web platform demands technical precision, intuitive design, and clean architecture. Our custom WordPress website development services are engineered to deliver superior speed, security, and search engine visibility.
             </p>
 
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <!-- TIMELINE SERVICES -->
+        <div class="relative">
 
-            <!-- Experienced WordPress Developers -->
-            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1">
-                <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
-                    <i class="fas fa-users text-2xl"></i>
-                </div>
-                <h3 class="text-xl md:text-xl font-bold mb-3">Experienced WordPress Developers</h3>
-                <p class="text-gray-400 leading-7 text-sm md:text-base">
-                    Our team of experienced developers has extensive expertise in WordPress web development and understands the latest technologies, design trends, and industry standards. We create websites that are visually appealing, technically sound, and optimized for business growth.
-                </p>
-            </div>
+            <!-- Vertical line -->
+            <div class="hidden lg:block absolute left-[52px] top-0 bottom-0 w-[2px] bg-gradient-to-b from-[#00ffb3]/20 via-[#00b7ff]/20 to-[#00ffb3]/20"></div>
 
-            <!-- Custom WordPress Solutions -->
-            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 hover:-translate-y-1">
-                <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5">
-                    <i class="fas fa-code text-2xl"></i>
-                </div>
-                <h3 class="text-xl md:text-xl font-bold mb-3">Custom WordPress Solutions</h3>
-                <p class="text-gray-400 leading-7 text-sm md:text-base">
-                    Every business has unique requirements. We offer customized solutions that align with your brand identity and business objectives. Whether you need a corporate website, service-based website, or custom functionality, we deliver a tailored solution.
-                </p>
-            </div>
+            <div class="space-y-6 lg:space-y-8">
 
-            <!-- SEO-Friendly Development -->
-            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1">
-                <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
-                    <i class="fas fa-search text-2xl"></i>
-                </div>
-                <h3 class="text-xl md:text-xl font-bold mb-3">SEO-Friendly Development</h3>
-                <p class="text-gray-400 leading-7 text-sm md:text-base">
-                    A website should not only look good but also perform well in search engines. Our WordPress development services include SEO-friendly coding, optimized website structure, mobile responsiveness, and fast-loading pages to help improve your visibility on Google.
-                </p>
-            </div>
+                <!-- 01 Custom Theme & Plugin Development -->
+                <div class="wp-service-item flex gap-5 lg:gap-8 items-start service-reveal" style="transition-delay: 0.05s;">
 
-            <!-- Mobile Responsive -->
-            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 hover:-translate-y-1">
-                <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5">
-                    <i class="fas fa-mobile-alt text-2xl"></i>
-                </div>
-                <h3 class="text-xl md:text-xl font-bold mb-3">Mobile Responsive Websites</h3>
-                <p class="text-gray-400 leading-7 text-sm md:text-base">
-                    Most internet users access websites through mobile devices. We ensure that every website developed by Anprix Solutions provides a seamless user experience across smartphones, tablets, and desktops.
-                </p>
-            </div>
+                    <div class="hidden lg:flex flex-shrink-0 w-[104px] h-[104px] rounded-[28px] bg-[#00ffb3]/10 border border-[#00ffb3]/20 items-center justify-center relative">
+                        <span class="text-3xl font-black text-[#00ffb3]">01</span>
+                        <div class="absolute inset-0 rounded-[28px] bg-[#00ffb3]/5 animate-pulse"></div>
+                    </div>
 
-            <!-- Fast Loading -->
-            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1">
-                <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5">
-                    <i class="fas fa-bolt text-2xl"></i>
-                </div>
-                <h3 class="text-xl md:text-xl font-bold mb-3">Fast Loading Performance</h3>
-                <p class="text-gray-400 leading-7 text-sm md:text-base">
-                    Website speed directly affects user experience and search engine rankings. Our WordPress web development process focuses on performance optimization, ensuring faster loading times and improved visitor engagement.
-                </p>
-            </div>
+                    <div class="services-magnetic-card glass-card rounded-[20px] md:rounded-[24px] p-6 md:p-8 border border-white/[0.06] flex-1 group"
+                         style="--accent: #00ffb3;">
+                        <div class="card-border-glow rounded-[20px] md:rounded-[24px]"></div>
+                        <div class="card-glow-spot bg-[#00ffb3]/8 blur-[80px] rounded-full"></div>
+                        <div class="services-card-glow-line"></div>
 
-            <!-- Secure -->
-            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 hover:-translate-y-1">
-                <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5">
-                    <i class="fas fa-shield-alt text-2xl"></i>
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="lg:hidden w-10 h-10 rounded-xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] text-sm font-bold">01</div>
+                            <i class="fab fa-wordpress text-[#00ffb3] text-xl"></i>
+                            <h3 class="text-lg md:text-xl font-bold group-hover:text-[#00ffb3] transition-colors">Custom Theme & Plugin Development</h3>
+                        </div>
+                        <p class="text-gray-400 text-sm md:text-[15px] leading-7">
+                            Unique, brand-aligned themes and custom-coded plugins built without unnecessary code bloat. Every component is handcrafted for your specific business needs, ensuring peak performance and maintainability.
+                        </p>
+                    </div>
+
                 </div>
-                <h3 class="text-xl md:text-xl font-bold mb-3">Secure WordPress Websites</h3>
-                <p class="text-gray-400 leading-7 text-sm md:text-base">
-                    Security is a critical aspect of developing a WordPress site. We implement industry-standard security measures, secure coding practices, regular updates, and advanced protection features to safeguard your website.
-                </p>
+
+                <!-- 02 E-Commerce & WooCommerce -->
+                <div class="wp-service-item flex gap-5 lg:gap-8 items-start service-reveal" style="transition-delay: 0.1s;">
+
+                    <div class="hidden lg:flex flex-shrink-0 w-[104px] h-[104px] rounded-[28px] bg-[#00b7ff]/10 border border-[#00b7ff]/20 items-center justify-center relative">
+                        <span class="text-3xl font-black text-[#00b7ff]">02</span>
+                        <div class="absolute inset-0 rounded-[28px] bg-[#00b7ff]/5 animate-pulse"></div>
+                    </div>
+
+                    <div class="services-magnetic-card glass-card rounded-[20px] md:rounded-[24px] p-6 md:p-8 border border-white/[0.06] flex-1 group"
+                         style="--accent: #00b7ff;">
+                        <div class="card-border-glow rounded-[20px] md:rounded-[24px]"></div>
+                        <div class="card-glow-spot bg-[#00b7ff]/8 blur-[80px] rounded-full"></div>
+                        <div class="services-card-glow-line"></div>
+
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="lg:hidden w-10 h-10 rounded-xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] text-sm font-bold">02</div>
+                            <i class="fas fa-shopping-cart text-[#00b7ff] text-xl"></i>
+                            <h3 class="text-lg md:text-xl font-bold group-hover:text-[#00b7ff] transition-colors">E-Commerce & WooCommerce</h3>
+                        </div>
+                        <p class="text-gray-400 text-sm md:text-[15px] leading-7">
+                            Scalable digital storefronts designed to streamline shopping experiences and boost conversion rates. From product catalogs to payment gateways, we build stores that sell.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- 03 Headless WordPress Solutions -->
+                <div class="wp-service-item flex gap-5 lg:gap-8 items-start service-reveal" style="transition-delay: 0.15s;">
+
+                    <div class="hidden lg:flex flex-shrink-0 w-[104px] h-[104px] rounded-[28px] bg-[#00b7ff]/10 border border-[#00b7ff]/20 items-center justify-center relative">
+                        <span class="text-3xl font-black text-[#00b7ff]">03</span>
+                        <div class="absolute inset-0 rounded-[28px] bg-[#00b7ff]/5 animate-pulse"></div>
+                    </div>
+
+                    <div class="services-magnetic-card glass-card rounded-[20px] md:rounded-[24px] p-6 md:p-8 border border-white/[0.06] flex-1 group"
+                         style="--accent: #00b7ff;">
+                        <div class="card-border-glow rounded-[20px] md:rounded-[24px]"></div>
+                        <div class="card-glow-spot bg-[#00b7ff]/8 blur-[80px] rounded-full"></div>
+                        <div class="services-card-glow-line"></div>
+
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="lg:hidden w-10 h-10 rounded-xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] text-sm font-bold">03</div>
+                            <i class="fas fa-layer-group text-[#00b7ff] text-xl"></i>
+                            <h3 class="text-lg md:text-xl font-bold group-hover:text-[#00b7ff] transition-colors">Headless WordPress Solutions</h3>
+                        </div>
+                        <p class="text-gray-400 text-sm md:text-[15px] leading-7">
+                            Decoupled frontend setups leveraging modern frameworks for ultrafast performance and security. The future of WordPress — delivering content at the speed of light.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- 04 Core Web Vitals & Speed -->
+                <div class="wp-service-item flex gap-5 lg:gap-8 items-start service-reveal" style="transition-delay: 0.2s;">
+
+                    <div class="hidden lg:flex flex-shrink-0 w-[104px] h-[104px] rounded-[28px] bg-[#00ffb3]/10 border border-[#00ffb3]/20 items-center justify-center relative">
+                        <span class="text-3xl font-black text-[#00ffb3]">04</span>
+                        <div class="absolute inset-0 rounded-[28px] bg-[#00ffb3]/5 animate-pulse"></div>
+                    </div>
+
+                    <div class="services-magnetic-card glass-card rounded-[20px] md:rounded-[24px] p-6 md:p-8 border border-white/[0.06] flex-1 group"
+                         style="--accent: #00ffb3;">
+                        <div class="card-border-glow rounded-[20px] md:rounded-[24px]"></div>
+                        <div class="card-glow-spot bg-[#00ffb3]/8 blur-[80px] rounded-full"></div>
+                        <div class="services-card-glow-line"></div>
+
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="lg:hidden w-10 h-10 rounded-xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] text-sm font-bold">04</div>
+                            <i class="fas fa-bolt text-[#00ffb3] text-xl"></i>
+                            <h3 class="text-lg md:text-xl font-bold group-hover:text-[#00ffb3] transition-colors">Core Web Vitals & Speed Optimization</h3>
+                        </div>
+                        <p class="text-gray-400 text-sm md:text-[15px] leading-7">
+                            Performance-focused code, server caching, and image compression to maximize search rankings. We ensure your site passes every Google speed test with flying colors.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- 05 Third-Party API Integrations -->
+                <div class="wp-service-item flex gap-5 lg:gap-8 items-start service-reveal" style="transition-delay: 0.25s;">
+
+                    <div class="hidden lg:flex flex-shrink-0 w-[104px] h-[104px] rounded-[28px] bg-[#00b7ff]/10 border border-[#00b7ff]/20 items-center justify-center relative">
+                        <span class="text-3xl font-black text-[#00b7ff]">05</span>
+                        <div class="absolute inset-0 rounded-[28px] bg-[#00b7ff]/5 animate-pulse"></div>
+                    </div>
+
+                    <div class="services-magnetic-card glass-card rounded-[20px] md:rounded-[24px] p-6 md:p-8 border border-white/[0.06] flex-1 group"
+                         style="--accent: #00b7ff;">
+                        <div class="card-border-glow rounded-[20px] md:rounded-[24px]"></div>
+                        <div class="card-glow-spot bg-[#00b7ff]/8 blur-[80px] rounded-full"></div>
+                        <div class="services-card-glow-line"></div>
+
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="lg:hidden w-10 h-10 rounded-xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] text-sm font-bold">05</div>
+                            <i class="fas fa-plug text-[#00b7ff] text-xl"></i>
+                            <h3 class="text-lg md:text-xl font-bold group-hover:text-[#00b7ff] transition-colors">Third-Party API Integrations</h3>
+                        </div>
+                        <p class="text-gray-400 text-sm md:text-[15px] leading-7">
+                            Connecting your WordPress CMS seamlessly with CRMs, payment gateways, and automation tools. Your website becomes the central hub of your business operations.
+                        </p>
+                    </div>
+
+                </div>
+
             </div>
 
         </div>
 
     </div>
-
 </section>
 
-<!-- WORDPRESS SERVICES -->
-<section class="py-16 md:py-24 section-border overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 space-y-20 md:space-y-32">
+<!-- WHY PARTNER - TWO COLUMN LAYOUT -->
+<section class="py-20 md:py-32 section-border overflow-hidden relative">
 
-        <!-- SERVICE 1: Custom WordPress Website Development -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
 
-            <div class="space-y-6">
-                <p class="green-text uppercase tracking-[4px] font-semibold text-sm">
-                    Custom WordPress Website Development
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+            <!-- LEFT: FEATURE GRID -->
+            <div class="grid grid-cols-2 gap-4 md:gap-5 service-reveal">
+
+                <div class="services-magnetic-card glass-card rounded-[20px] md:rounded-[24px] p-5 md:p-6 border border-white/[0.06] group"
+                     style="--accent: #00ffb3; transition-delay: 0.05s;">
+                    <div class="card-border-glow rounded-[20px] md:rounded-[24px]"></div>
+                    <div class="card-glow-spot bg-[#00ffb3]/8 blur-[80px] rounded-full"></div>
+                    <div class="services-card-glow-line"></div>
+                    <div class="w-10 h-10 rounded-xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-3">
+                        <i class="fas fa-expand-arrows-alt text-sm"></i>
+                    </div>
+                    <h4 class="text-sm font-bold mb-1 group-hover:text-[#00ffb3] transition-colors">Scalable</h4>
+                    <p class="text-gray-500 text-xs leading-5">Grows with your business needs</p>
+                </div>
+
+                <div class="services-magnetic-card glass-card rounded-[20px] md:rounded-[24px] p-5 md:p-6 border border-white/[0.06] group"
+                     style="--accent: #00b7ff; transition-delay: 0.1s;">
+                    <div class="card-border-glow rounded-[20px] md:rounded-[24px]"></div>
+                    <div class="card-glow-spot bg-[#00b7ff]/8 blur-[80px] rounded-full"></div>
+                    <div class="services-card-glow-line"></div>
+                    <div class="w-10 h-10 rounded-xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-3">
+                        <i class="fas fa-mobile-alt text-sm"></i>
+                    </div>
+                    <h4 class="text-sm font-bold mb-1 group-hover:text-[#00b7ff] transition-colors">Responsive</h4>
+                    <p class="text-gray-500 text-xs leading-5">Mobile-first design approach</p>
+                </div>
+
+                <div class="services-magnetic-card glass-card rounded-[20px] md:rounded-[24px] p-5 md:p-6 border border-white/[0.06] group"
+                     style="--accent: #00b7ff; transition-delay: 0.15s;">
+                    <div class="card-border-glow rounded-[20px] md:rounded-[24px]"></div>
+                    <div class="card-glow-spot bg-[#00b7ff]/8 blur-[80px] rounded-full"></div>
+                    <div class="services-card-glow-line"></div>
+                    <div class="w-10 h-10 rounded-xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-3">
+                        <i class="fas fa-search text-sm"></i>
+                    </div>
+                    <h4 class="text-sm font-bold mb-1 group-hover:text-[#00b7ff] transition-colors">SEO-Ready</h4>
+                    <p class="text-gray-500 text-xs leading-5">Clean code & best practices</p>
+                </div>
+
+                <div class="services-magnetic-card glass-card rounded-[20px] md:rounded-[24px] p-5 md:p-6 border border-white/[0.06] group"
+                     style="--accent: #00ffb3; transition-delay: 0.2s;">
+                    <div class="card-border-glow rounded-[20px] md:rounded-[24px]"></div>
+                    <div class="card-glow-spot bg-[#00ffb3]/8 blur-[80px] rounded-full"></div>
+                    <div class="services-card-glow-line"></div>
+                    <div class="w-10 h-10 rounded-xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-3">
+                        <i class="fas fa-shield-alt text-sm"></i>
+                    </div>
+                    <h4 class="text-sm font-bold mb-1 group-hover:text-[#00ffb3] transition-colors">Secure</h4>
+                    <p class="text-gray-500 text-xs leading-5">Hardened & protected</p>
+                </div>
+
+                <div class="services-magnetic-card glass-card rounded-[20px] md:rounded-[24px] p-5 md:p-6 border border-white/[0.06] group sm:col-span-2"
+                     style="--accent: #00ffb3; transition-delay: 0.25s;">
+                    <div class="card-border-glow rounded-[20px] md:rounded-[24px]"></div>
+                    <div class="card-glow-spot bg-[#00ffb3]/8 blur-[80px] rounded-full"></div>
+                    <div class="services-card-glow-line"></div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3]">
+                            <i class="fas fa-bolt text-sm"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold group-hover:text-[#00ffb3] transition-colors">Future-Proof Architecture</h4>
+                            <p class="text-gray-500 text-xs leading-5">Built to evolve with emerging technologies</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- RIGHT: TEXT -->
+            <div class="service-reveal" style="transition-delay: 0.1s;">
+
+                <p class="green-text uppercase tracking-[4px] font-semibold mb-5 text-sm">
+                    Why Partner With Us
                 </p>
 
-                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
-                    Tailored WordPress <span class="green-text">Websites</span>
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-black leading-tight mb-6 md:mb-8">
+                    Selecting an experienced
+                    <span class="services-heading-gradient block sm:inline"> WordPress Website Development</span>
+                    <span class="block sm:inline"> Company</span>
                 </h2>
 
-                <p class="text-gray-400 text-base md:text-lg leading-8 md:leading-9">
-                    We build custom websites that reflect your brand and meet your business objectives. Our WordPress website development services are designed to provide flexibility, scalability, and excellent user experience.
+                <p class="text-gray-400 text-base md:text-lg leading-8 md:leading-9 mb-6">
+                    Selecting an experienced WordPress website development company ensures your site is built to scale smoothly as your business grows. When you choose our WordPress website development services, you receive a future-proof, mobile-responsive, and accessible web solution built around clean code and best SEO practices.
                 </p>
 
-                <div class="space-y-5">
-
-                    <div class="flex gap-4">
-                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3]">
-                            <i class="fab fa-wordpress"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-lg">Custom Theme Development</h3>
-                            <p class="text-gray-500 text-sm">Unique designs built from scratch</p>
-                        </div>
-                    </div>
-
-                    <div class="flex gap-4">
-                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff]">
-                            <i class="fas fa-plug"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-lg">Plugin Development</h3>
-                            <p class="text-gray-500 text-sm">Custom functionality & integrations</p>
-                        </div>
-                    </div>
-
-                    <div class="flex gap-4">
-                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3]">
-                            <i class="fas fa-tachometer-alt"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-lg">Performance Optimization</h3>
-                            <p class="text-gray-500 text-sm">Speed & caching optimization</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="glass-card rounded-3xl p-6 md:p-10 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
-
-                <div class="bg-black/40 rounded-2xl p-6 md:p-8">
-                    <i class="fab fa-wordpress text-3xl mb-4 text-[#00ffb3]"></i>
-                    <h3 class="font-bold text-lg">WordPress</h3>
-                    <p class="text-gray-500 text-sm">Custom themes & plugins</p>
-                </div>
-
-                <div class="bg-black/40 rounded-2xl p-6 md:p-8">
-                    <i class="fas fa-shopping-cart text-3xl mb-4 text-[#00b7ff]"></i>
-                    <h3 class="font-bold text-lg">WooCommerce</h3>
-                    <p class="text-gray-500 text-sm">eCommerce stores</p>
-                </div>
-
-                <div class="bg-black/40 rounded-2xl p-6 md:p-8">
-                    <i class="fas fa-bolt text-3xl mb-4 text-[#00ffb3]"></i>
-                    <h3 class="font-bold text-lg">Performance</h3>
-                    <p class="text-gray-500 text-sm">Fast loading speed</p>
-                </div>
-
-                <div class="bg-black/40 rounded-2xl p-6 md:p-8">
-                    <i class="fas fa-shield-alt text-3xl mb-4 text-[#00b7ff]"></i>
-                    <h3 class="font-bold text-lg">Security</h3>
-                    <p class="text-gray-500 text-sm">Hardened & protected</p>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- SERVICE 2: Business & Corporate Website Development -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
-
-            <div class="glass-card rounded-3xl p-6 md:p-10 space-y-5 order-2 lg:order-1">
-
-                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fas fa-building text-[#00ffb3] text-2xl"></i>
-                    <div>
-                        <h3 class="font-bold text-lg">Corporate Websites</h3>
-                        <p class="text-gray-500 text-sm">Professional business presence</p>
-                    </div>
-                </div>
-
-                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fas fa-handshake text-[#00b7ff] text-2xl"></i>
-                    <div>
-                        <h3 class="font-bold text-lg">Lead Generation</h3>
-                        <p class="text-gray-500 text-sm">Convert visitors into customers</p>
-                    </div>
-                </div>
-
-                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fas fa-chart-line text-[#00ffb3] text-2xl"></i>
-                    <div>
-                        <h3 class="font-bold text-lg">Online Presence</h3>
-                        <p class="text-gray-500 text-sm">Strong digital footprint</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="space-y-6 order-1 lg:order-2">
-
-                <p class="green-text uppercase tracking-[4px] font-semibold text-sm">
-                    Business & Corporate Website Development
+                <p class="text-gray-400 text-base md:text-lg leading-8 md:leading-9 mb-10">
+                    Powering over 40% of all websites globally, WordPress offers unparalleled flexibility, scalability, and content management tools for businesses of all sizes.
                 </p>
 
-                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
-                    Professional <span class="green-text">Business Websites</span>
-                </h2>
-
-                <p class="text-gray-400 text-base md:text-lg leading-8 md:leading-9">
-                    As a trusted WordPress website development company, we create professional business websites that help companies establish a strong online presence and generate qualified leads.
-                </p>
-
-                <div class="flex flex-wrap gap-4">
-
-                    <a href="hire.php" class="btn-primary px-6 py-4 rounded-2xl text-center">
-                        Start Business Website
-                    </a>
-
-                </div>
+                <a href="hire.php"
+                   class="btn-primary px-8 md:px-10 py-3.5 md:py-4 rounded-2xl text-base md:text-lg inline-flex items-center gap-2 transition hover:scale-105">
+                    <i class="fas fa-rocket"></i>
+                    Start Your WordPress Project
+                </a>
 
             </div>
 
-        </div>
-
-        <!-- SERVICE 3: WordPress CMS Development -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
-
-            <div class="space-y-6">
-                <p class="green-text uppercase tracking-[4px] font-semibold text-sm">
-                    WordPress CMS Development
-                </p>
-
-                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
-                    Easy <span class="green-text">Content Management</span>
-                </h2>
-
-                <p class="text-gray-400 text-base md:text-lg leading-8 md:leading-9">
-                    Manage your website content with ease through our advanced WordPress CMS solutions. Our websites are designed to allow easy updates without requiring technical expertise.
-                </p>
-
-                <div class="space-y-5">
-
-                    <div class="flex gap-4">
-                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3]">
-                            <i class="fas fa-edit"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-lg">Easy Content Updates</h3>
-                            <p class="text-gray-500 text-sm">No coding knowledge required</p>
-                        </div>
-                    </div>
-
-                    <div class="flex gap-4">
-                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff]">
-                            <i class="fas fa-images"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-lg">Media Management</h3>
-                            <p class="text-gray-500 text-sm">Images, videos & documents</p>
-                        </div>
-                    </div>
-
-                    <div class="flex gap-4">
-                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3]">
-                            <i class="fas fa-users-cog"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-lg">Multi-User Access</h3>
-                            <p class="text-gray-500 text-sm">Role-based permissions</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="glass-card rounded-3xl p-6 md:p-10 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
-
-                <div class="bg-black/40 rounded-2xl p-6 md:p-8">
-                    <i class="fas fa-edit text-3xl mb-4 text-[#00ffb3]"></i>
-                    <h3 class="font-bold text-lg">CMS Dashboard</h3>
-                    <p class="text-gray-500 text-sm">Intuitive admin panel</p>
-                </div>
-
-                <div class="bg-black/40 rounded-2xl p-6 md:p-8">
-                    <i class="fas fa-palette text-3xl mb-4 text-[#00b7ff]"></i>
-                    <h3 class="font-bold text-lg">Visual Builder</h3>
-                    <p class="text-gray-500 text-sm">Drag & drop editing</p>
-                </div>
-
-                <div class="bg-black/40 rounded-2xl p-6 md:p-8">
-                    <i class="fas fa-language text-3xl mb-4 text-[#00ffb3]"></i>
-                    <h3 class="font-bold text-lg">Multi-Language</h3>
-                    <p class="text-gray-500 text-sm">WPML & Polylang support</p>
-                </div>
-
-                <div class="bg-black/40 rounded-2xl p-6 md:p-8">
-                    <i class="fas fa-history text-3xl mb-4 text-[#00b7ff]"></i>
-                    <h3 class="font-bold text-lg">Version Control</h3>
-                    <p class="text-gray-500 text-sm">Revision history & backups</p>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- SERVICE 4: WordPress Website Redesign Services -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
-
-            <div class="glass-card rounded-3xl p-6 md:p-10 space-y-5 order-2 lg:order-1">
-
-                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fas fa-paint-brush text-[#00ffb3] text-2xl"></i>
-                    <div>
-                        <h3 class="font-bold text-lg">Modern UI/UX</h3>
-                        <p class="text-gray-500 text-sm">Fresh, contemporary design</p>
-                    </div>
-                </div>
-
-                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fas fa-tachometer-alt text-[#00b7ff] text-2xl"></i>
-                    <div>
-                        <h3 class="font-bold text-lg">Performance Boost</h3>
-                        <p class="text-gray-500 text-sm">Faster loading times</p>
-                    </div>
-                </div>
-
-                <div class="bg-black/40 p-6 rounded-2xl flex gap-4 items-center">
-                    <i class="fas fa-search text-[#00ffb3] text-2xl"></i>
-                    <div>
-                        <h3 class="font-bold text-lg">SEO Preservation</h3>
-                        <p class="text-gray-500 text-sm">Maintain search rankings</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="space-y-6 order-1 lg:order-2">
-
-                <p class="green-text uppercase tracking-[4px] font-semibold text-sm">
-                    WordPress Website Redesign Services
-                </p>
-
-                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
-                    Modernize Your <span class="green-text">WordPress Site</span>
-                </h2>
-
-                <p class="text-gray-400 text-base md:text-lg leading-8 md:leading-9">
-                    Already have a website? Our redesign services can modernize your existing website, improve performance, and enhance user engagement while maintaining your brand identity.
-                </p>
-
-                <div class="flex flex-wrap gap-4">
-
-                    <a href="hire.php" class="btn-primary px-6 py-4 rounded-2xl text-center">
-                        Redesign Your Site
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- SERVICE 5: Landing Page Development -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
-
-            <div class="space-y-6">
-                <p class="green-text uppercase tracking-[4px] font-semibold text-sm">
-                    Landing Page Development
-                </p>
-
-                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight">
-                    High-Converting <span class="green-text">Landing Pages</span>
-                </h2>
-
-                <p class="text-gray-400 text-base md:text-lg leading-8 md:leading-9">
-                    We create high-converting landing pages designed to generate leads, increase inquiries, and support digital marketing campaigns.
-                </p>
-
-                <div class="space-y-5">
-
-                    <div class="flex gap-4">
-                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3]">
-                            <i class="fas fa-bullseye"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-lg">Conversion Focused</h3>
-                            <p class="text-gray-500 text-sm">Designed to capture leads</p>
-                        </div>
-                    </div>
-
-                    <div class="flex gap-4">
-                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff]">
-                            <i class="fas fa-rocket"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-lg">Fast Deployment</h3>
-                            <p class="text-gray-500 text-sm">Launch in days, not weeks</p>
-                        </div>
-                    </div>
-
-                    <div class="flex gap-4">
-                        <div class="w-12 h-12 min-w-[48px] rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3]">
-                            <i class="fas fa-chart-bar"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-lg">A/B Testing Ready</h3>
-                            <p class="text-gray-500 text-sm">Optimize for best results</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="glass-card rounded-3xl p-6 md:p-10 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
-
-                <div class="bg-black/40 rounded-2xl p-6 md:p-8">
-                    <i class="fas fa-bullseye text-3xl mb-4 text-[#00ffb3]"></i>
-                    <h3 class="font-bold text-lg">Lead Capture</h3>
-                    <p class="text-gray-500 text-sm">Forms & CTAs</p>
-                </div>
-
-                <div class="bg-black/40 rounded-2xl p-6 md:p-8">
-                    <i class="fas fa-ad text-3xl mb-4 text-[#00b7ff]"></i>
-                    <h3 class="font-bold text-lg">Ad Campaigns</h3>
-                    <p class="text-gray-500 text-sm">PPC ready pages</p>
-                </div>
-
-                <div class="bg-black/40 rounded-2xl p-6 md:p-8">
-                    <i class="fas fa-mobile-alt text-3xl mb-4 text-[#00ffb3]"></i>
-                    <h3 class="font-bold text-lg">Mobile Optimized</h3>
-                    <p class="text-gray-500 text-sm">Perfect on all devices</p>
-                </div>
-
-                <div class="bg-black/40 rounded-2xl p-6 md:p-8">
-                    <i class="fas fa-chart-line text-3xl mb-4 text-[#00b7ff]"></i>
-                    <h3 class="font-bold text-lg">Analytics</h3>
-                    <p class="text-gray-500 text-sm">Track performance</p>
-                </div>
-
-            </div>
         </div>
 
     </div>
 </section>
 
 <!-- BENEFITS OF WORDPRESS -->
-<section class="py-16 md:py-24 section-border overflow-hidden">
+<section class="py-20 md:py-32 section-border overflow-hidden relative">
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-[#00ffb3]/5 blur-[200px] rounded-full pointer-events-none"></div>
 
-        <div class="text-center mb-14 md:mb-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
 
-            <p class="green-text uppercase tracking-[4px] font-semibold mb-5 text-sm">
-                BENEFITS OF WORDPRESS
-            </p>
+        <!-- HEADING -->
+        <div class="text-center mb-16 md:mb-24 service-reveal">
 
-            <h2 class="text-xl sm:text-3xl md:text-4xl font-black mb-6 md:mb-8 leading-tight">
-                Why Choose WordPress
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/[0.02] mb-6 md:mb-8">
+                <span class="w-2 h-2 rounded-full bg-[#00ffb3] animate-pulse"></span>
+                <span class="text-xs sm:text-sm font-medium text-gray-400 tracking-wider uppercase">Why WordPress</span>
+            </div>
+
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-black mb-6 md:mb-8 leading-[1.1]">
+                <span class="txt-split">BENEFITS OF </span>
+                <span class="services-heading-gradient">WordPress</span>
             </h2>
 
-            <p class="text-gray-400 text-base md:text-lg max-w-3xl mx-auto leading-8 md:leading-9">
+            <p class="max-w-2xl mx-auto text-gray-400 text-base md:text-lg leading-relaxed word-reveal">
                 These advantages make WordPress one of the most popular platforms for businesses across Ahmedabad and India.
             </p>
 
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+        <!-- BENEFITS GRID - 4 COLUMN -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6" id="benefits-grid">
 
-            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1 text-center">
-                <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5 mx-auto">
-                    <i class="fas fa-edit text-2xl"></i>
+            <!-- 01 Easy Content Management -->
+            <div class="benefit-card glass-card rounded-[20px] md:rounded-[24px] p-6 md:p-7 border border-white/[0.06] group text-center"
+                 style="--accent: #00ffb3;">
+                <div class="benefit-ring rounded-[20px] md:rounded-[24px]"></div>
+                <div class="benefit-accent-line"></div>
+                <span class="benefit-number">01</span>
+
+                <div class="benefit-icon-wrap bg-[#00ffb3]/10" style="--accent: #00ffb3;">
+                    <i class="fas fa-edit text-[#00ffb3] text-xl"></i>
                 </div>
-                <h3 class="text-lg font-bold mb-2">Easy Content Management</h3>
-                <p class="text-gray-500 text-sm">Update your website without coding</p>
+
+                <div class="benefit-content">
+                    <h3 class="text-base font-bold mb-2 group-hover:text-[#00ffb3] transition-colors">Easy Content Management</h3>
+                    <p class="text-gray-500 text-sm leading-6">Update your website without coding knowledge required</p>
+                </div>
             </div>
 
-            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 hover:-translate-y-1 text-center">
-                <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5 mx-auto">
-                    <i class="fas fa-search text-2xl"></i>
+            <!-- 02 SEO-Friendly Structure -->
+            <div class="benefit-card glass-card rounded-[20px] md:rounded-[24px] p-6 md:p-7 border border-white/[0.06] group text-center"
+                 style="--accent: #00b7ff;">
+                <div class="benefit-ring rounded-[20px] md:rounded-[24px]"></div>
+                <div class="benefit-accent-line"></div>
+                <span class="benefit-number">02</span>
+
+                <div class="benefit-icon-wrap bg-[#00b7ff]/10" style="--accent: #00b7ff;">
+                    <i class="fas fa-search text-[#00b7ff] text-xl"></i>
                 </div>
-                <h3 class="text-lg font-bold mb-2">SEO-Friendly Structure</h3>
-                <p class="text-gray-500 text-sm">Built for search engine visibility</p>
+
+                <div class="benefit-content">
+                    <h3 class="text-base font-bold mb-2 group-hover:text-[#00b7ff] transition-colors">SEO-Friendly Structure</h3>
+                    <p class="text-gray-500 text-sm leading-6">Built for search engine visibility and higher rankings</p>
+                </div>
             </div>
 
-            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1 text-center">
-                <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5 mx-auto">
-                    <i class="fas fa-mobile-alt text-2xl"></i>
+            <!-- 03 Mobile Responsiveness -->
+            <div class="benefit-card glass-card rounded-[20px] md:rounded-[24px] p-6 md:p-7 border border-white/[0.06] group text-center"
+                 style="--accent: #00b7ff;">
+                <div class="benefit-ring rounded-[20px] md:rounded-[24px]"></div>
+                <div class="benefit-accent-line"></div>
+                <span class="benefit-number">03</span>
+
+                <div class="benefit-icon-wrap bg-[#00b7ff]/10" style="--accent: #00b7ff;">
+                    <i class="fas fa-mobile-alt text-[#00b7ff] text-xl"></i>
                 </div>
-                <h3 class="text-lg font-bold mb-2">Mobile Responsiveness</h3>
-                <p class="text-gray-500 text-sm">Perfect on every device</p>
+
+                <div class="benefit-content">
+                    <h3 class="text-base font-bold mb-2 group-hover:text-[#00b7ff] transition-colors">Mobile Responsiveness</h3>
+                    <p class="text-gray-500 text-sm leading-6">Perfect experience on every device and screen size</p>
+                </div>
             </div>
 
-            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 hover:-translate-y-1 text-center">
-                <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5 mx-auto">
-                    <i class="fas fa-expand-arrows-alt text-2xl"></i>
+            <!-- 04 High Scalability -->
+            <div class="benefit-card glass-card rounded-[20px] md:rounded-[24px] p-6 md:p-7 border border-white/[0.06] group text-center"
+                 style="--accent: #00ffb3;">
+                <div class="benefit-ring rounded-[20px] md:rounded-[24px]"></div>
+                <div class="benefit-accent-line"></div>
+                <span class="benefit-number">04</span>
+
+                <div class="benefit-icon-wrap bg-[#00ffb3]/10" style="--accent: #00ffb3;">
+                    <i class="fas fa-expand-arrows-alt text-[#00ffb3] text-xl"></i>
                 </div>
-                <h3 class="text-lg font-bold mb-2">High Scalability</h3>
-                <p class="text-gray-500 text-sm">Grows with your business</p>
+
+                <div class="benefit-content">
+                    <h3 class="text-base font-bold mb-2 group-hover:text-[#00ffb3] transition-colors">High Scalability</h3>
+                    <p class="text-gray-500 text-sm leading-6">Grows seamlessly as your business expands</p>
+                </div>
             </div>
 
-            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1 text-center">
-                <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5 mx-auto">
-                    <i class="fas fa-shield-alt text-2xl"></i>
+            <!-- 05 Strong Security -->
+            <div class="benefit-card glass-card rounded-[20px] md:rounded-[24px] p-6 md:p-7 border border-white/[0.06] group text-center"
+                 style="--accent: #00b7ff;">
+                <div class="benefit-ring rounded-[20px] md:rounded-[24px]"></div>
+                <div class="benefit-accent-line"></div>
+                <span class="benefit-number">05</span>
+
+                <div class="benefit-icon-wrap bg-[#00b7ff]/10" style="--accent: #00b7ff;">
+                    <i class="fas fa-shield-alt text-[#00b7ff] text-xl"></i>
                 </div>
-                <h3 class="text-lg font-bold mb-2">Strong Security</h3>
-                <p class="text-gray-500 text-sm">Industry-standard protection</p>
+
+                <div class="benefit-content">
+                    <h3 class="text-base font-bold mb-2 group-hover:text-[#00b7ff] transition-colors">Strong Security</h3>
+                    <p class="text-gray-500 text-sm leading-6">Industry-standard protection for your website</p>
+                </div>
             </div>
 
-            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 hover:-translate-y-1 text-center">
-                <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5 mx-auto">
-                    <i class="fas fa-bolt text-2xl"></i>
+            <!-- 06 Faster Performance -->
+            <div class="benefit-card glass-card rounded-[20px] md:rounded-[24px] p-6 md:p-7 border border-white/[0.06] group text-center"
+                 style="--accent: #00ffb3;">
+                <div class="benefit-ring rounded-[20px] md:rounded-[24px]"></div>
+                <div class="benefit-accent-line"></div>
+                <span class="benefit-number">06</span>
+
+                <div class="benefit-icon-wrap bg-[#00ffb3]/10" style="--accent: #00ffb3;">
+                    <i class="fas fa-bolt text-[#00ffb3] text-xl"></i>
                 </div>
-                <h3 class="text-lg font-bold mb-2">Faster Performance</h3>
-                <p class="text-gray-500 text-sm">Optimized loading speed</p>
+
+                <div class="benefit-content">
+                    <h3 class="text-base font-bold mb-2 group-hover:text-[#00ffb3] transition-colors">Faster Performance</h3>
+                    <p class="text-gray-500 text-sm leading-6">Optimized loading speed for better user experience</p>
+                </div>
             </div>
 
-            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00ffb3]/30 transition-all duration-300 hover:-translate-y-1 text-center">
-                <div class="w-14 h-14 rounded-2xl bg-[#00ffb3]/10 flex items-center justify-center text-[#00ffb3] mb-5 mx-auto">
-                    <i class="fas fa-smile text-2xl"></i>
+            <!-- 07 Better User Experience -->
+            <div class="benefit-card glass-card rounded-[20px] md:rounded-[24px] p-6 md:p-7 border border-white/[0.06] group text-center"
+                 style="--accent: #00b7ff;">
+                <div class="benefit-ring rounded-[20px] md:rounded-[24px]"></div>
+                <div class="benefit-accent-line"></div>
+                <span class="benefit-number">07</span>
+
+                <div class="benefit-icon-wrap bg-[#00b7ff]/10" style="--accent: #00b7ff;">
+                    <i class="fas fa-smile text-[#00b7ff] text-xl"></i>
                 </div>
-                <h3 class="text-lg font-bold mb-2">Better User Experience</h3>
-                <p class="text-gray-500 text-sm">Engaging & intuitive design</p>
+
+                <div class="benefit-content">
+                    <h3 class="text-base font-bold mb-2 group-hover:text-[#00b7ff] transition-colors">Better User Experience</h3>
+                    <p class="text-gray-500 text-sm leading-6">Engaging and intuitive design for visitors</p>
+                </div>
             </div>
 
-            <div class="glass-card rounded-3xl p-6 md:p-8 border border-white/10 hover:border-[#00b7ff]/30 transition-all duration-300 hover:-translate-y-1 text-center">
-                <div class="w-14 h-14 rounded-2xl bg-[#00b7ff]/10 flex items-center justify-center text-[#00b7ff] mb-5 mx-auto">
-                    <i class="fas fa-dollar-sign text-2xl"></i>
+            <!-- 08 Cost-Effective -->
+            <div class="benefit-card glass-card rounded-[20px] md:rounded-[24px] p-6 md:p-7 border border-white/[0.06] group text-center"
+                 style="--accent: #00ffb3;">
+                <div class="benefit-ring rounded-[20px] md:rounded-[24px]"></div>
+                <div class="benefit-accent-line"></div>
+                <span class="benefit-number">08</span>
+
+                <div class="benefit-icon-wrap bg-[#00ffb3]/10" style="--accent: #00ffb3;">
+                    <i class="fas fa-dollar-sign text-[#00ffb3] text-xl"></i>
                 </div>
-                <h3 class="text-lg font-bold mb-2">Cost-Effective</h3>
-                <p class="text-gray-500 text-sm">Affordable management</p>
+
+                <div class="benefit-content">
+                    <h3 class="text-base font-bold mb-2 group-hover:text-[#00ffb3] transition-colors">Cost-Effective</h3>
+                    <p class="text-gray-500 text-sm leading-6">Affordable management and maintenance</p>
+                </div>
             </div>
 
         </div>
 
     </div>
-
-</section>
-
-<!-- WHY BUSINESSES TRUST ANPRIX -->
-<section class="py-16 md:py-24 section-border overflow-hidden">
-
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center">
-
-        <p class="green-text uppercase tracking-[4px] font-semibold mb-5 text-sm">
-            WHY BUSINESSES TRUST ANPRIX
-        </p>
-
-        <h2 class="text-xl sm:text-3xl md:text-4xl font-black mb-6 md:mb-8 leading-tight">
-            Your Trusted WordPress Partner
-        </h2>
-
-        <p class="text-gray-400 text-base md:text-lg leading-8 md:leading-9 mb-10 max-w-3xl mx-auto">
-            Businesses choose Anprix Solutions because of our commitment to quality, transparent communication, timely project delivery, and long-term support. Our deep understanding of the local Ahmedabad market enables us to develop websites that effectively connect with your target audience.
-        </p>
-
-        <p class="text-gray-400 text-base md:text-lg leading-8 md:leading-9 mb-10 max-w-3xl mx-auto">
-            Whether you are a startup looking for your first website or an established company seeking advanced WordPress development services, our team is ready to help you achieve your digital goals.
-        </p>
-
-    </div>
-
 </section>
 
 <!-- CTA SECTION -->
-<section class="py-16 md:py-24 section-border overflow-hidden">
+<section class="py-20 md:py-32 section-border overflow-hidden relative">
 
     <div class="max-w-5xl mx-auto px-4 sm:px-6">
 
-        <div class="glass-card rounded-[28px] md:rounded-[50px] p-8 sm:p-12 md:p-16 text-center relative overflow-hidden">
+        <div class="glass-card rounded-[28px] md:rounded-[50px] p-8 sm:p-12 md:p-16 text-center relative overflow-hidden service-reveal">
 
             <div class="absolute top-[-80px] left-[-80px] w-56 sm:w-64 md:w-72 h-56 sm:h-64 md:h-72 bg-[#00ffb3]/10 blur-[120px] rounded-full">
             </div>
@@ -682,29 +557,29 @@ require_once 'includes/header.php';
             <div class="relative z-10">
 
                 <p class="green-text uppercase tracking-[4px] font-semibold mb-5 text-sm">
-                    GET STARTED WITH ANPRIX
+                    BUILD A SCALABLE WEB PRESENCE
                 </p>
 
-                <h2 class="text-xl sm:text-3xl md:text-4xl font-black leading-tight mb-6 md:mb-8">
-                    Ready To Build Your WordPress Website?
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-black leading-tight mb-6 md:mb-8">
+                    Ready To Transform<br class="hidden sm:block"> Your Digital Strategy?
                 </h2>
 
                 <p class="text-gray-400 text-base sm:text-lg md:text-xl leading-8 md:leading-9 max-w-3xl mx-auto mb-10">
-                    If you are looking for a reliable WordPress web development company in Ahmedabad, Gujarat, India, Anprix Solutions is your trusted technology partner. We combine creativity, technology, and business strategy to deliver websites that drive growth and success.
+                    Ready to transform your digital strategy with a tailored WordPress platform? Contact our expert team today to discuss your project requirements and receive a free quote!
                 </p>
 
                 <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-4 sm:gap-5">
 
-                    <a href="hire.php"
-                        class="btn-primary px-8 md:px-10 py-3.5 md:py-4 rounded-2xl text-base md:text-lg inline-flex items-center justify-center transition-transform hover:scale-105">
-                        <i class="fas fa-rocket mr-2"></i>
-                        Start WordPress Project
+                    <a href="contact.php"
+                       class="btn-primary px-8 md:px-10 py-3.5 md:py-4 rounded-2xl text-base md:text-lg inline-flex items-center justify-center gap-2 transition hover:scale-105">
+                        <i class="fas fa-phone"></i>
+                        Discuss Your Project
                     </a>
 
-                    <a href="contact.php"
-                        class="border border-white/10 hover:border-[#00ffb3] hover:text-[#00ffb3] px-8 md:px-10 py-3.5 md:py-4 rounded-2xl text-base md:text-lg inline-flex items-center justify-center transition">
-                        <i class="fas fa-envelope mr-2"></i>
-                        Contact Us
+                    <a href="hire.php"
+                       class="border border-white/10 hover:border-[#00ffb3] hover:text-[#00ffb3] px-8 md:px-10 py-3.5 md:py-4 rounded-2xl text-base md:text-lg inline-flex items-center justify-center gap-2 transition">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                        Get Free Quote
                     </a>
 
                 </div>

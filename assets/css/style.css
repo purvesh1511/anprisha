@@ -1092,6 +1092,418 @@ footer a:hover i[class*="fa-"] {
     transform: scale(1.2);
 }
 
+/* ===== SERVICES SECTION V2 - FRamer Style ===== */
+
+/* Card container with 3D perspective */
+.services-magnetic-card {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.4s ease;
+    will-change: transform;
+}
+
+.services-magnetic-card:hover {
+    z-index: 10;
+}
+
+/* Animated gradient border on hover */
+.services-magnetic-card .card-border-glow {
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, rgba(0, 255, 179, 0.3), rgba(0, 183, 255, 0.1), transparent, rgba(0, 255, 179, 0.1));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}
+
+.services-magnetic-card:hover .card-border-glow {
+    opacity: 1;
+}
+
+/* Mouse-follow glow effect */
+.services-magnetic-card .card-glow-spot {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.services-magnetic-card:hover .card-glow-spot {
+    opacity: 1;
+}
+
+/* Large decorative number */
+.services-card-number {
+    font-size: clamp(4rem, 8vw, 7rem);
+    font-weight: 900;
+    line-height: 1;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    user-select: none;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    z-index: 0;
+}
+
+.services-magnetic-card:hover .services-card-number {
+    background: linear-gradient(135deg, rgba(0, 255, 179, 0.08), rgba(0, 183, 255, 0.04));
+    -webkit-background-clip: text;
+    background-clip: text;
+    transform: scale(1.05) translateY(-4px);
+}
+
+/* Icon container with animated ring */
+.services-icon-wrap {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    overflow: visible;
+}
+
+.services-icon-wrap::before {
+    content: '';
+    position: absolute;
+    inset: -3px;
+    border-radius: inherit;
+    background: conic-gradient(from 0deg, transparent, var(--accent, #00ffb3), transparent);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: -1;
+    animation: iconRingSpin 3s linear infinite paused;
+}
+
+.services-magnetic-card:hover .services-icon-wrap::before {
+    opacity: 0.4;
+    animation-play-state: running;
+}
+
+.services-magnetic-card:hover .services-icon-wrap {
+    transform: scale(1.1) rotate(-5deg);
+    border-radius: 16px;
+}
+
+@keyframes iconRingSpin {
+    to { transform: rotate(360deg); }
+}
+
+/* Card content transitions */
+.services-card-content {
+    position: relative;
+    z-index: 1;
+}
+
+.services-card-content h3 {
+    transition: color 0.3s ease;
+}
+
+.services-magnetic-card:hover .services-card-content h3 {
+    color: var(--accent, #00ffb3);
+}
+
+/* Arrow reveal on hover */
+.services-card-arrow {
+    opacity: 0;
+    transform: translateX(-8px);
+    transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.services-magnetic-card:hover .services-card-arrow {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Bottom glow line */
+.services-card-glow-line {
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    right: 15%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent, #00ffb3), transparent);
+    transform: scaleX(0);
+    transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    z-index: 2;
+}
+
+.services-magnetic-card:hover .services-card-glow-line {
+    transform: scaleX(1);
+}
+
+/* Stagger entrance animations */
+@keyframes serviceCardReveal {
+    0% {
+        opacity: 0;
+        transform: translateY(60px) scale(0.95);
+        filter: blur(4px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        filter: blur(0);
+    }
+}
+
+.service-reveal {
+    opacity: 0;
+}
+
+.service-reveal.visible {
+    animation: serviceCardReveal 0.8s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+/* Heading gradient animation */
+@keyframes gradientShift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+.services-heading-gradient {
+    background: linear-gradient(135deg, #00ffb3, #00b7ff, #00ffb3, #00b7ff);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradientShift 6s ease infinite;
+}
+
+/* ===== BENEFITS SECTION - Unique Framer Animations ===== */
+
+/* Spring bounce entrance */
+@keyframes benefitSpringIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px) scale(0.8);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(-8px) scale(1.03);
+    }
+    70% {
+        transform: translateY(3px) scale(0.99);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.benefit-card {
+    opacity: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.benefit-card.benefit-visible {
+    animation: benefitSpringIn 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Rotating conic glow ring on hover */
+.benefit-card .benefit-ring {
+    position: absolute;
+    inset: -2px;
+    border-radius: inherit;
+    padding: 2px;
+    background: conic-gradient(from var(--ring-angle, 0deg), transparent 40%, var(--accent, #00ffb3), transparent 60%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.benefit-card:hover .benefit-ring {
+    opacity: 1;
+    animation: ringRotate 2s linear infinite;
+}
+
+@keyframes ringRotate {
+    to { --ring-angle: 360deg; }
+}
+
+@property --ring-angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
+/* Numbered badge */
+.benefit-number {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 28px;
+    height: 28px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 800;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.25);
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    z-index: 2;
+}
+
+.benefit-card:hover .benefit-number {
+    background: var(--accent, #00ffb3);
+    color: black;
+    border-color: transparent;
+    transform: scale(1.15) rotate(-5deg);
+}
+
+/* Icon glow pulse ring */
+.benefit-icon-wrap {
+    position: relative;
+    width: 56px;
+    height: 56px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    z-index: 1;
+}
+
+.benefit-icon-wrap::after {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border-radius: inherit;
+    background: var(--accent, #00ffb3);
+    opacity: 0;
+    filter: blur(12px);
+    transition: opacity 0.4s ease;
+    z-index: -1;
+}
+
+.benefit-card:hover .benefit-icon-wrap {
+    transform: scale(1.15) translateY(-3px);
+    border-radius: 14px;
+}
+
+.benefit-card:hover .benefit-icon-wrap::after {
+    opacity: 0.25;
+}
+
+/* Card bottom accent line */
+.benefit-card .benefit-accent-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--accent, #00ffb3), transparent);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    z-index: 2;
+}
+
+.benefit-card:hover .benefit-accent-line {
+    transform: scaleX(1);
+}
+
+/* Content lift on hover */
+.benefit-card .benefit-content {
+    position: relative;
+    z-index: 1;
+    transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.benefit-card:hover .benefit-content {
+    transform: translateY(-4px);
+}
+
+/* ===== Text Split Animation ===== */
+.txt-split .char {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(40px) rotateX(-80deg);
+    transform-origin: bottom center;
+    transition: none;
+}
+
+.txt-split .char.char-visible {
+    animation: charReveal 0.6s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+@keyframes charReveal {
+    0% {
+        opacity: 0;
+        transform: translateY(40px) rotateX(-80deg);
+        filter: blur(4px);
+    }
+    60% {
+        opacity: 1;
+        filter: blur(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) rotateX(0deg);
+        filter: blur(0);
+    }
+}
+
+/* Word reveal for description */
+.word-reveal .word {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(16px);
+    transition: none;
+}
+
+.word-reveal .word.word-visible {
+    animation: wordFadeUp 0.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+@keyframes wordFadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(16px);
+        filter: blur(2px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+/* Floating dots decoration */
+.services-dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: rgba(0, 255, 179, 0.3);
+    position: absolute;
+    pointer-events: none;
+}
+
 /* ===== Chain Connector Layout ===== */
 .chain-link {
     align-items: center;
